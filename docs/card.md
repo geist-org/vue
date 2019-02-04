@@ -1,1 +1,3 @@
 ### card
+
+<ex-card-normal/>
