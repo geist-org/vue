@@ -1,8 +1,9 @@
 <template lang="pug">
-.ex-side-content
-  p.zi-label Start
-  ul
-    li(v-for='name in list') #[a(:href='`#${name}`') {{ name }}]
+.ex-side
+  template(v-for='group in sides')
+    p.zi-label {{ group.name }}
+    ul(v-if='group.children && group.children.length')
+      li(v-for='item in group.children' v-if='item.name') #[a(:href='`#${item.name}`') {{ item.name }}]
 </template>
 
 <script>
@@ -12,18 +13,37 @@ export default {
   name: 'ex-side',
 
   data: () => ({
-    list: [],
+    sides: [],
   }),
 
   mounted() {
-    console.log(docs, typeof docs[0])
-    // this.list = Object.keys(docs)
+    this.sides = this.parseDocs(docs)
+  },
+
+  methods: {
+    parseDocs(list) {
+      return list.map(item => {
+        if (item.default) return Object.assign({}, item.default, {
+          name: this.pickName(item.default),
+        })
+        if (item.children) return Object.assign({}, item, {
+          children: this.parseDocs(item.children),
+        })
+        return { name: null }
+      })
+        .filter(r => r.name)
+    },
+
+    pickName(docModule) {
+      if (!docModule.__file) return null
+      return docModule.__file.replace('docs/', '')
+    },
   },
 }
 </script>
 
-<style module lang="stylus">
-.ex-side-content
+<style scoped lang="stylus">
+.ex-side
   position fixed
   width 170px
 
