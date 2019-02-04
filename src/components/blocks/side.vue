@@ -3,7 +3,7 @@
   template(v-for='group in sides')
     p.zi-label {{ group.name }}
     ul(v-if='group.children && group.children.length')
-      li(v-for='item in group.children' v-if='item.name') #[a(:href='`#${item.name}`') {{ item.name }}]
+      li(v-for='item in group.children' v-if='item.name') #[router-link(:to='`/docs/${item.name}`') {{ item.name }}]
 </template>
 
 <script>
@@ -36,7 +36,9 @@ export default {
 
     pickName(docModule) {
       if (!docModule.__file) return null
-      return docModule.__file.replace('docs/', '')
+      return docModule.__file
+        .replace('docs/', '')
+        .replace('.md', '')
     },
   },
 }

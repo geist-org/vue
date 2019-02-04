@@ -1,7 +1,6 @@
 const components = [
   require('./doc'),
   require('./blocks/side'),
-  require('./blocks/content'),
 ]
 
 export default {

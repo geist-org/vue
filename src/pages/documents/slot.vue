@@ -1,9 +1,33 @@
 <template lang="pug">
-  router-view
+.zi-main.zi-layout.ex-layout
+  .ex-side-shim
+    ex-side
+  .ex-content
+    router-view
 </template>
 
 <script>
 export default {
   name: 'document-slot',
+
+  mounted() {
+    console.log(123)
+  },
 }
 </script>
+
+<style scoped lang="stylus">
+.ex-layout
+  display flex
+  max-width 1100px
+  margin 0 auto
+
+.ex-side-shim
+  display flex
+  min-width 200px
+
+.ex-content
+  display flex
+  flex-direction column
+  overflow hidden
+</style>

@@ -1,28 +1,22 @@
 <template lang="pug">
-.zi-main.zi-layout.ex-layout
-  .ex-side-shim
-    ex-side
-  ex-content.ex-content
+  ex-doc(:doc-name='docName')
 </template>
 
 <script>
 export default {
   name: 'document-main',
+
+  data: () => ({
+    docName: '',
+  }),
+
+  beforeRouteUpdate(to, from, next) {
+    this.docName = to.params.name
+    next()
+  },
+
+  mounted() {
+    this.docName = this.$route.params.name
+  },
 }
 </script>
-
-<style scoped lang="stylus">
-.ex-layout
-  display flex
-  max-width 1100px
-  margin 0 auto
-
-.ex-side-shim
-  display flex
-  min-width 200px
-
-.ex-content
-  display flex
-  flex-direction column
-  overflow hidden
-</style>

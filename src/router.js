@@ -13,8 +13,10 @@ export default new Router({
     path: '/',
     redirect: '/docs',
   }, {
-    path: '/docs', name: 'DocumentSlot', component: DocumentSlot,
+    path: '/docs', component: DocumentSlot,
     children: [{
+      path: ':name', name: 'DocumentDetail', component: DocumentMain,
+    }, {
       path: '', name: 'DocumentMain', component: DocumentMain,
     }],
   }],
