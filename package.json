@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:lib": "vue-cli-service build --target lib --name zeit-ui ./packages/index.js && node ./scripts/release/index.js",
+    "release": "npm run build:lib && npm publish --access=public",
+    "start": "vue-cli-service serve"
   },
   "dependencies": {
-    "vue": "^2.5.22"
+    "@zeit-ui/style": "^0.1.0",
+    "vue": "^2.5.22",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
@@ -16,19 +20,19 @@
     "@vue/cli-service": "^3.4.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "eslint-config-haifengfe": "^0.1.5",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "terser": "^3.14.1",
+    "vue-cli-plugin-pug": "^1.0.7",
+    "vue-markdown-loader": "^2.4.1",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
     "root": true,
-    "env": {
-      "node": true
-    },
     "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
+      "haifengfe/vue"
     ],
-    "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
     }
@@ -38,9 +42,31 @@
       "autoprefixer": {}
     }
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 8"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version"
+    ]
+  },
+  "engines": {
+    "node": ">= 10.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "files": [
+    "LICENSE",
+    "dist/"
+  ],
+  "license": "MIT",
+  "main": "dist/zeit-ui.common.js",
+  "module": "dist/zeit-ui.common.js",
+  "peerDependencies": {
+    "vue": "^2.5.16"
+  },
+  "style": "dist/style.css",
+  "unpkg": "dist/zeit-ui.umd.js"
 }
