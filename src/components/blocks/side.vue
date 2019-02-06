@@ -1,7 +1,7 @@
 <template lang="pug">
 .ex-side
   template(v-for='group in sides')
-    p.zi-label {{ group.name }}
+    p.zi-title {{ group.name }}
     ul(v-if='group.children && group.children.length')
       li(v-for='item in group.children' v-if='item.name') #[router-link(:to='`/docs/${item.name}`') {{ item.name }}]
 </template>
@@ -47,7 +47,15 @@ export default {
 <style scoped lang="stylus">
 .ex-side
   position fixed
-  width 170px
+  width 185px
+  overflow-y auto
+  overflow-x hidden
+  height calc(100% - 10vh)
+  -ms-overflow-style none
+
+  &::-webkit-scrollbar
+    width: 0 !important
+    display none !important
 
   a
     color black

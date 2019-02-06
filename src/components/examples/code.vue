@@ -1,0 +1,54 @@
+<template lang="pug">
+  div.ex-code
+    p.zi-subheading.code-name EXAMPLE: #[b {{ codeName }}]
+    ex-code-render(:name="name" ref="codeRender")
+    br
+    prism(language="pug") {{ codeTemplate }}
+</template>
+
+<script>
+import 'prismjs'
+import 'prismjs/components/prism-pug'
+import Prism from 'vue-prism-component'
+
+export default {
+  name: 'ex-code',
+
+  components: { Prism },
+
+  data: () => ({
+    codeTemplate: '',
+    codeName: '',
+  }),
+
+  props: {
+    name: { type: String },
+  },
+
+  mounted() {
+    this.codeName = this.name.split('-').reverse()[0]
+
+    const template = this.findTemplate()
+    this.codeTemplate = template && template._meta ? template._meta() : ''
+  },
+
+  methods: {
+    findTemplate() {
+      if (!this.$refs.codeRender) return null
+      const children = this.$refs.codeRender.$children
+      if (!children || !children.length) return null
+      return children[0]
+    },
+  },
+}
+</script>
+
+<style scoped lang="stylus">
+.code-name
+  text-transform uppercase
+  font-size 12px
+  margin-bottom 5px
+
+  b
+    font-size 14px
+</style>

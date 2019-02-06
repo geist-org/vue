@@ -1,3 +1,3 @@
 ### card
 
-<ex-card-normal/>
+<ex-code name="ex-card-normal"/>

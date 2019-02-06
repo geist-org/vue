@@ -9,10 +9,6 @@
 <script>
 export default {
   name: 'document-slot',
-
-  mounted() {
-    console.log(123)
-  },
 }
 </script>
 
@@ -28,6 +24,6 @@ export default {
 
 .ex-content
   display flex
+  flex 1
   flex-direction column
-  overflow hidden
 </style>
