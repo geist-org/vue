@@ -11,6 +11,7 @@ export default [
     children: [
       require('./card.md'),
       require('./avatar.md'),
+      require('./badge.md'),
     ],
   },
 ]

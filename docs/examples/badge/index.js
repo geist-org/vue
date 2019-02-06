@@ -1,11 +1,8 @@
-export { default as ExAvatarDefault } from './default'
-export { default as ExAvatarDefaultTemplate } from '!raw-loader!./default'
+export { default as ExBadgeDefault } from './default'
+export { default as ExBadgeDefaultTemplate } from '!raw-loader!./default'
 
-export { default as ExAvatarSize } from './size'
-export { default as ExAvatarSizeTemplate } from '!raw-loader!./size'
+export { default as ExCombinationDefault } from './combination'
+export { default as ExCombinationDefaultTemplate } from '!raw-loader!./combination'
 
-export { default as ExAvatarText } from './text'
-export { default as ExAvatarTextTemplate } from '!raw-loader!./text'
-
-export { default as ExAvatarStacked } from './stacked'
-export { default as ExAvatarStackedTemplate } from '!raw-loader!./stacked'
+export { default as ExLimitDefault } from './limit'
+export { default as ExLimitDefaultTemplate } from '!raw-loader!./limit'

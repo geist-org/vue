@@ -1,6 +1,7 @@
 const examples = [
   require('./card'),
   require('./avatar'),
+  require('./badge'),
 ]
 
 
