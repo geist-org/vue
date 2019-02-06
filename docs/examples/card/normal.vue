@@ -1,10 +1,10 @@
 <template lang="pug">
-  div
-    zi-card
-      p a basic card.
-    br
-    zi-card(dark)
-      p a dark card.
+div
+  zi-card
+    p a basic card.
+  br
+  zi-card(dark)
+    p a dark card.
 </template>
 
 <script>

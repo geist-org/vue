@@ -2,8 +2,7 @@
   div.ex-code
     p.zi-subheading.code-name EXAMPLE: #[b {{ codeName }}]
     ex-code-render(:name="name" ref="codeRender")
-    br
-    prism(language="pug") {{ codeTemplate }}
+    prism(language="pug" class="ex-source-code") {{ codeTemplate }}
 </template>
 
 <script>
@@ -47,8 +46,11 @@ export default {
 .code-name
   text-transform uppercase
   font-size 12px
-  margin-bottom 5px
+  margin-bottom 8px
 
   b
     font-size 14px
+
+.ex-source-code
+  margin-top 10px
 </style>

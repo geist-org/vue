@@ -1,9 +1,10 @@
 <template lang="pug">
-  zi-card
+  zi-card(:hoverable="false")
+    p disable hoverable card.
 </template>
 
 <script>
 export default {
-  name: 'ex-card-color',
+  name: 'ex-card-hoverable',
 }
 </script>
