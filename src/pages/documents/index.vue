@@ -11,6 +11,9 @@ export default {
   }),
 
   beforeRouteUpdate(to, from, next) {
+    if (this.docName !== to.params.name) {
+      window.scrollTo({ top: 0 })
+    }
     this.docName = to.params.name
     next()
   },
