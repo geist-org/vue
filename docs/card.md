@@ -1,4 +1,7 @@
-### card
+# Card
+A common container component.
+
+## Examples
 
 <ex-code name="ex-card-normal"/></ex-code>
 <br/>
