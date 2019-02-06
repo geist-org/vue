@@ -1,6 +1,6 @@
-
 const examples = [
   require('./card'),
+  require('./avatar'),
 ]
 
 
@@ -9,7 +9,7 @@ const assignMetaTemplate = (component, meta) => {
   const methods = Object.assign(component.methods || {}, {
     _meta: () => meta,
   })
-  return Object.assign(component, { methods })
+  return Object.assign(component, {methods})
 }
 
 const findTemplate = (modules, name) => modules[`${name}Template`] || null

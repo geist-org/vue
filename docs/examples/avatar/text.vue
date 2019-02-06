@@ -8,6 +8,6 @@ div
 
 <script>
 export default {
-  name: 'ex-avatar-default',
+  name: 'ex-avatar-text',
 }
 </script>

@@ -1,5 +1,8 @@
-export { default as ExCardNormal } from './normal'
-export { default as ExCardNormalTemplate } from '!raw-loader!./normal.vue'
+export { default as ExAvatarDefault } from './default'
+export { default as ExAvatarDefaultTemplate } from '!raw-loader!./default'
 
-export { default as ExCardHoverable } from './hoverable'
-export { default as ExCardHoverableTemplate } from '!raw-loader!./hoverable'
+export { default as ExAvatarSize } from './size'
+export { default as ExAvatarSizeTemplate } from '!raw-loader!./size'
+
+export { default as ExAvatarText } from './text'
+export { default as ExAvatarTextTemplate } from '!raw-loader!./text'

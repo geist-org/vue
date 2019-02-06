@@ -10,6 +10,7 @@ export default [
     name: 'components',
     children: [
       require('./card.md'),
+      require('./avatar.md'),
     ],
   },
 ]
