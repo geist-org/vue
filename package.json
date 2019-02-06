@@ -1,13 +1,13 @@
 {
   "name": "@zeit-ui/vue",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
   "scripts": {
-    "build": "vue-cli-service build",
+    "start": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
+    "build": "vue-cli-service build",
     "build:lib": "vue-cli-service build --target lib --name zeit-ui ./packages/index.js && node ./scripts/release/index.js",
-    "release": "npm run build:lib && npm publish --access=public",
-    "start": "vue-cli-service serve"
+    "now-build": "NODE_ENV=production npm run build",
+    "release": "npm run build:lib && npm publish --access=public"
   },
   "dependencies": {
     "@zeit-ui/style": "^0.2.4",

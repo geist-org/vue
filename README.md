@@ -1,29 +1,17 @@
 # @zeit-ui/vue
 
-## Project setup
-```
-npm install
-```
+Vue implementation for [Zeit Style](https://github.com/zeit-ui/zeit-style), originating from [Zeit Design](https://zeit.co/design).
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+> the project is under development, you can learn more from [this link](https://zeit-vue.now.sh/).
 
-### Compiles and minifies for production
-```
-npm run build
-```
+<br/>
 
-### Run your tests
-```
-npm run test
-```
+## Development
+1. fork and clone.
+2. start: `npm i && npm start`
 
-### Lints and fixes files
-```
-npm run lint
-```
+<br/>
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## LICENSE
+[MIT](LICENSE)
+
