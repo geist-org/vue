@@ -1,8 +1,8 @@
 <template lang="pug">
-  div.ex-code
-    p.zi-subheading.code-name EXAMPLE: #[b {{ codeName }}]
-    ex-code-render(:name="name" ref="codeRender")
-    prism(language="pug" class="ex-source-code") {{ codeTemplate }}
+div.ex-code
+  p.zi-subheading.code-name EXAMPLE: #[b {{ codeName }}]
+  ex-code-render(:name="name" ref="codeRender")
+  prism(language="pug" class="ex-source-code") {{ codeTemplate }}
 </template>
 
 <script>
@@ -43,6 +43,9 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+.ex-code
+  margin-top 45px
+
 .code-name
   text-transform uppercase
   font-size 12px
