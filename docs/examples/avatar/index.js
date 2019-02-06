@@ -6,3 +6,6 @@ export { default as ExAvatarSizeTemplate } from '!raw-loader!./size'
 
 export { default as ExAvatarText } from './text'
 export { default as ExAvatarTextTemplate } from '!raw-loader!./text'
+
+export { default as ExAvatarStacked } from './stacked'
+export { default as ExAvatarStackedTemplate } from '!raw-loader!./stacked'

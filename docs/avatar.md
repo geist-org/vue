@@ -8,3 +8,5 @@
 
 <ex-code name="ex-avatar-text"/></ex-code>
 
+<ex-code name="ex-avatar-stacked"/></ex-code>
+

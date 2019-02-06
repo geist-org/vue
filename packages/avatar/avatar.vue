@@ -1,5 +1,5 @@
 <template lang="pug">
-span.zi-avatar(:class="[shape, size && size, isSingleText && 'single']")
+span.zi-avatar(:class="[shape, size && size, isSingleText && 'single', stacked && 'stacked']")
   img(:src="src" v-if="hasLink")
   span.zi-avatar-string(v-else) {{ text }}
 </template>
@@ -11,8 +11,9 @@ export default {
   name: 'zi-avatar',
 
   props: {
-    src: { type: String },
-    text: { type: String },
+    stacked: Boolean,
+    src: String,
+    text: String,
     size: {
       type: String,
       validator: validator.enums(['small', 'big', 'huge']),
