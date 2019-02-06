@@ -35,8 +35,8 @@ export default {
     },
 
     pickName(docModule) {
-      if (!docModule.__file) return null
-      return docModule.__file
+      if (!docModule.name) return null
+      return docModule.name
         .replace('docs/', '')
         .replace('.md', '')
     },
