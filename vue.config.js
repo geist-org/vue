@@ -11,6 +11,7 @@ module.exports = {
       .loader('vue-markdown-loader/lib/markdown-compiler')
       .options({
         raw: true,
+        wrapper: 'div',
       })
 
     config.resolve
