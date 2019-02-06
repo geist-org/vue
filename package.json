@@ -10,7 +10,7 @@
     "start": "vue-cli-service serve"
   },
   "dependencies": {
-    "@zeit-ui/style": "^0.2.1",
+    "@zeit-ui/style": "^0.2.3",
     "prismjs": "^1.15.0",
     "vue": "^2.5.22",
     "vue-prism-component": "^1.1.1",
