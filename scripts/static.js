@@ -1,0 +1,10 @@
+const express = require('express')
+const path = require('path')
+const { execSync } = require('child_process')
+
+const app = express()
+app.use(express.static(path.join(__dirname, '../dist')))
+app.use('/*', (req, res) => res.sendFile(path.join(__dirname, '../dist/index.html')))
+app.listen(3000)
+console.log('static server lift on port 3000\n')
+execSync('open http://127.0.0.1:3000')
