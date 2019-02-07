@@ -1,8 +1,6 @@
 <script>
 import docs from '#/docs/index'
 
-console.log(docs)
-
 export default {
   name: 'ex-doc',
 
@@ -12,19 +10,16 @@ export default {
 
   computed: {
     docComponent() {
-      const docModule = this.findDocModule(docs, new RegExp(this.docName))
-      return docModule || 'div'
+      return this.findDocModule(docs, this.docName) || 'div'
     },
   },
 
   methods: {
-    findDocModule(docs, reg) {
-      const doc = docs.find(item => item.default && reg.test(item.default.name))
-      if (doc && doc.default) return doc.default
-      return docs.reduce((collect, item) => {
-        if (!item.children) return collect
-        return this.findDocModule(item.children, reg) || collect
-      }, null)
+    findDocModule(docs, docName) {
+      const reg = new RegExp(docName)
+      return docs
+        .map(docModule => docModule.default)
+        .find(content => reg.test(content.name))
     },
   },
 

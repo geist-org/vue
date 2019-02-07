@@ -8,6 +8,10 @@
 
 <script>
 import docs from '#/docs/index'
+const SIDE_WEIGHT = {
+  start: 1,
+  components: 2,
+}
 
 export default {
   name: 'ex-side',
@@ -21,24 +25,19 @@ export default {
   },
 
   methods: {
-    parseDocs(list) {
-      return list.map(item => {
-        if (item.default) return Object.assign({}, item.default, {
-          name: this.pickName(item.default),
-        })
-        if (item.children) return Object.assign({}, item, {
-          children: this.parseDocs(item.children),
-        })
-        return { name: null }
-      })
-        .filter(r => r.name)
-    },
-
-    pickName(docModule) {
-      if (!docModule.name) return null
-      return docModule.name
-        .replace('docs/', '')
-        .replace('.md', '')
+    parseDocs(docs) {
+      const group = docs
+        .map(docModule => docModule.default)
+        .reduce((group, next) => {
+          group[next.groupName] = [...(group[next.groupName] || []), next]
+          return group
+        }, {})
+      return Object.keys(group)
+        .sort((a, b) => SIDE_WEIGHT[a] - SIDE_WEIGHT[b])
+        .map(name => ({
+          name,
+          children: group[name],
+        }))
     },
   },
 }

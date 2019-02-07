@@ -1,22 +1,16 @@
-const r = (mdModule, name) => {
-  mdModule.default.name = name
-  return mdModule
-}
+const context = require.context('./zh-cn/', true, /\.md$/)
 
-export default [
-  {
-    name: 'start',
-    children: [
-      r(require('./about.md'), 'about'),
-      r(require('./installation.md'), 'installation'),
-    ],
-  },
-  {
-    name: 'components',
-    children: [
-      r(require('./card.md'), 'card'),
-      r(require('./avatar.md'), 'avatar'),
-      r(require('./badge.md'), 'badge'),
-    ],
-  },
-]
+const pickGroupName = (name) => {
+  const result = name.match(/\.\/(\S+)\//)
+  if (!result || !result.length) return ''
+  return result[1]
+}
+const mdModules = context.keys().map(path => {
+  const mdModule = context(path)
+  const name = path.split('/').reverse()[0]
+  mdModule.default.groupName = pickGroupName(path) || 'default'
+  mdModule.default.name = name.replace(/.md/, '')
+  return mdModule
+})
+
+export default mdModules
