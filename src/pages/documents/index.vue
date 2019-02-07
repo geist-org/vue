@@ -20,6 +20,7 @@ export default {
 
   mounted() {
     this.docName = this.$route.params.name
+    !this.docNam && this.$router.push('/docs/about')
   },
 }
 </script>
