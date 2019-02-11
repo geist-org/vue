@@ -1,6 +1,7 @@
 <template lang="pug">
 div
   zi-button hello
+
 </template>
 
 <script>
