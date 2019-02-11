@@ -19,10 +19,11 @@ export default {
       const reg = new RegExp(docName)
       return docs
         .map(docModule => docModule.default)
-        .find(content => reg.test(content.name))
+        .find(content => reg.test(content.docName))
     },
 
     safeComponentName(component) {
+      if (!component.name) return component
       if (component.name && component.name.startsWith('md-')) {
         return component
       }

@@ -3,7 +3,7 @@
   template(v-for='group in sides')
     p.zi-title {{ group.name }}
     ul(v-if='group.children && group.children.length')
-      li(v-for='item in group.children' v-if='item.name') #[router-link(:to='`/docs/${item.name}`') {{ item.name }}]
+      li(v-for='item in group.children' v-if='item.docName') #[router-link(:to='`/docs/${item.docName}`') {{ item.docName }}]
 </template>
 
 <script>

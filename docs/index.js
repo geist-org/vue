@@ -9,7 +9,7 @@ const mdModules = context.keys().map(path => {
   const mdModule = context(path)
   const name = path.split('/').reverse()[0]
   mdModule.default.groupName = pickGroupName(path) || 'default'
-  mdModule.default.name = name.replace(/.md/, '')
+  mdModule.default.docName = name.replace(/.md/, '')
   return mdModule
 })
 
