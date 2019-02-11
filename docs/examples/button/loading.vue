@@ -1,10 +1,10 @@
 <template lang="pug">
 div
-  zi-button hello
+  zi-button(loading)
 </template>
 
 <script>
 export default {
-  name: 'ex-button-basic',
+  name: 'ex-button-loading',
 }
 </script>
