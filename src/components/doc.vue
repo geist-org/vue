@@ -21,10 +21,19 @@ export default {
         .map(docModule => docModule.default)
         .find(content => reg.test(content.name))
     },
+
+    safeComponentName(component) {
+      if (component.name && component.name.startsWith('md-')) {
+        return component
+      }
+      component.name = `md-${component.name}`
+      return component
+    },
   },
 
   render(h) {
-    return h(this.docComponent)
+    const safeComponent = this.safeComponentName(this.docComponent)
+    return h(safeComponent)
   },
 }
 </script>
