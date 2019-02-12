@@ -35,20 +35,6 @@
     "vue-markdown-loader": "^2.4.1",
     "vue-template-compiler": "^2.5.21"
   },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "haifengfe/vue"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
   "browserslist": {
     "production": [
       "> 1%",
