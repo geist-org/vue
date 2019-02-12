@@ -1,0 +1,12 @@
+{
+  "root": true,
+  "extends": [
+    "haifengfe/vue"
+  ],
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "rules": {
+    "vue/no-side-effects-in-computed-properties": false
+  }
+}
