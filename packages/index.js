@@ -6,7 +6,11 @@ import Checkbox from './checkbox'
 import Code from './code'
 import Collapse from './collapse'
 import Fieldset from './fieldset'
+<<<<<<< HEAD
 import Input  from './input'
+=======
+import Footnote from './footnote'
+>>>>>>> feat(footnote): add component footnote
 
 
 export default {
@@ -20,5 +24,6 @@ export default {
     Collapse.install(vue)
     Fieldset.install(vue)
     Input.install(vue)
+    Footnote.install(vue)
   },
 }
