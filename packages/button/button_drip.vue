@@ -33,7 +33,7 @@ export default {
     setStyle(event) {
       const { width, height } = bounding.getRealShape(this.$parent.$el)
       const limitX = Math.max(event.layerX, width - event.layerX)
-      const limitY=  Math.max(event.layerY, height - event.layerY)
+      const limitY = Math.max(event.layerY, height - event.layerY)
       const limit = Math.max(limitX, limitY)
       const scale = limit / 10
 
@@ -53,7 +53,7 @@ export default {
     reset() {
       this.styles = DEFAULT_STYLES
       this.show = false
-    }
+    },
   },
 }
 </script>
