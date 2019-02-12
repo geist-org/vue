@@ -1,5 +1,5 @@
 <template lang="pug">
-a.zi-footnote(:href="href")
+a.zi-footnote(:href="href" :target="target")
   slot
   i.zi-icon-footnote
 </template>
@@ -9,6 +9,7 @@ export default {
 
   props: {
     href: String,
+    target: { type: String, default: '_blank' },
   },
 }
 </script>

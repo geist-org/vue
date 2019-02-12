@@ -1,7 +1,7 @@
 <template lang="pug">
-  p Specification of 
-    zi-footnote(href="https://www.baidu.com")
-      span footnote
+p Specification of
+  zi-footnote(href="https://zeit-style.now.sh/#footnote")
+    span footnote
 </template>
 <script>
 export default {
