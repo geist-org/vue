@@ -6,7 +6,8 @@ import Checkbox from './checkbox'
 import Code from './code'
 import Collapse from './collapse'
 import Fieldset from './fieldset'
-import Input  from './input'
+import Input from './input'
+import Footnote from './footnote'
 
 
 export default {
@@ -20,5 +21,6 @@ export default {
     Collapse.install(vue)
     Fieldset.install(vue)
     Input.install(vue)
+    Footnote.install(vue)
   },
 }
