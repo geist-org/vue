@@ -1,6 +1,7 @@
 <template lang="pug">
-a(class="zi-footnote" :href="href")
+a.zi-footnote(:href="href")
   slot
+  i.zi-icon-footnote
 </template>
 <script>
 export default {
