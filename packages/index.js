@@ -4,6 +4,7 @@ import Badge from './badge'
 import Button from './button'
 import Checkbox from './checkbox'
 import Code from './code'
+import Collapse from './collapse'
 
 
 export default {
@@ -14,5 +15,6 @@ export default {
     Button.install(vue)
     Checkbox.install(vue)
     Code.install(vue)
+    Collapse.install(vue)
   },
 }
