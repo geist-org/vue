@@ -1,0 +1,25 @@
+language: node_js
+
+node_js:
+  - 10.0.0
+
+cache:
+  directories:
+  - "node_modules"
+
+notifications:
+  email:
+    on_success: never
+
+branches:
+  only:
+    - master
+
+before_install: git fetch --depth=1000
+
+install:
+  - npm i
+
+script:
+  - commitlint-travis
+  - npm run build
