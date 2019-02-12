@@ -6,6 +6,7 @@ import Checkbox from './checkbox'
 import Code from './code'
 import Collapse from './collapse'
 import Fieldset from './fieldset'
+import Input  from './input'
 
 
 export default {
@@ -18,5 +19,6 @@ export default {
     Code.install(vue)
     Collapse.install(vue)
     Fieldset.install(vue)
+    Input.install(vue)
   },
 }
