@@ -2,6 +2,7 @@
 span.zi-tag(:class="type || classes")
   slot
 </template>
+
 <script>
 import { validator } from '../utils'
 

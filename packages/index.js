@@ -15,6 +15,7 @@ import Switcher from './switcher'
 import Rate from './rate'
 import Tag from './tag'
 import Toast from './toast'
+import Note from './note'
 
 export default {
   install: vue => {
@@ -35,5 +36,6 @@ export default {
     Rate.install(vue)
     Tag.install(vue)
     Toast.install(vue)
+    Note.install(vue)
   },
 }
