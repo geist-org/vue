@@ -11,6 +11,7 @@ import Select from './select'
 import Footnote from './footnote'
 import More from './more'
 import Toggle from './toggle'
+import Switcher from './switcher'
 
 
 export default {
@@ -28,5 +29,6 @@ export default {
     Footnote.install(vue)
     More.install(vue)
     Toggle.install(vue)
+    Switcher.install(vue)
   },
 }
