@@ -8,6 +8,7 @@ import Collapse from './collapse'
 import Fieldset from './fieldset'
 import Input from './input'
 import Footnote from './footnote'
+import Note from './note'
 
 
 export default {
@@ -22,5 +23,6 @@ export default {
     Fieldset.install(vue)
     Input.install(vue)
     Footnote.install(vue)
+    Note.install(vue)
   },
 }
