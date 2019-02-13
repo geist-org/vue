@@ -2,6 +2,9 @@
   "name": "zeit-vue",
   "version": 2,
   "alias": "zeit-vue",
+  "github": {
+    "silent": true
+  },
   "builds": [
     {
       "src": "package.json",
