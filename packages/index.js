@@ -9,6 +9,7 @@ import Fieldset from './fieldset'
 import Input from './input'
 import Select from './select'
 import Footnote from './footnote'
+import More from './more'
 
 
 export default {
@@ -24,5 +25,6 @@ export default {
     Input.install(vue)
     Select.install(vue)
     Footnote.install(vue)
+    More.install(vue)
   },
 }
