@@ -54,12 +54,12 @@ export default {
     },
     size: {
       type: String,
-      validator: validator.enums(['mini', 'small', 'medium', 'big'])
+      validator: validator.enums(['mini', 'small', 'medium', 'big']),
     },
     type: {
       type: String,
       default: 'text',
-    }
+    },
   },
 
   computed: {

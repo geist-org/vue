@@ -4,7 +4,7 @@ p Specification of
     span footnote
 </template>
 <script>
-  export default {
-    name: 'ex-footnote-target',
-  }
+export default {
+  name: 'ex-footnote-target',
+}
 </script>

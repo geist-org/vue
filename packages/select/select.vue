@@ -27,7 +27,7 @@ export default {
     value: [String, Number, Boolean],
     size: {
       type: String,
-      validator: validator.enums(['mini', 'small', 'medium'])
+      validator: validator.enums(['mini', 'small', 'medium']),
     },
     autocomplete: Boolean,
     autofocus: Boolean,
