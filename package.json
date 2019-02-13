@@ -10,7 +10,7 @@
     "release": "npm run build:lib && npm publish --access=public"
   },
   "dependencies": {
-    "@zeit-ui/style": "0.2.6-alpha.12",
+    "@zeit-ui/style": "0.2.6-alpha.16",
     "prismjs": "^1.15.0",
     "vue": "^2.5.22",
     "vue-prism-component": "^1.1.1",
