@@ -10,6 +10,7 @@ import Input from './input'
 import Select from './select'
 import Footnote from './footnote'
 import More from './more'
+import Toggle from './toggle'
 
 
 export default {
@@ -26,5 +27,6 @@ export default {
     Select.install(vue)
     Footnote.install(vue)
     More.install(vue)
+    Toggle.install(vue)
   },
 }
