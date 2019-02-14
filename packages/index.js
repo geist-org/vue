@@ -13,6 +13,8 @@ import More from './more'
 import Toggle from './toggle'
 import Switcher from './switcher'
 import Rate from './rate'
+import Tag from './tag'
+
 
 export default {
   install: vue => {
@@ -31,5 +33,6 @@ export default {
     Toggle.install(vue)
     Switcher.install(vue)
     Rate.install(vue)
+    Tag.install(vue)
   },
 }
