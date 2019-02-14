@@ -25,7 +25,7 @@ export default {
     },
     type: {
       type: String,
-      validator: validator.enums(['primary', 'success', 'warning', 'danger', 'abort']),
+      validator: validator.enums(['primary', 'success', 'warning', 'danger', 'abort', 'normal']),
     },
     loading: Boolean,
     disabled: Boolean,
