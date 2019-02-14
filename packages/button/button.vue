@@ -27,29 +27,15 @@ export default {
       type: String,
       validator: validator.enums(['primary', 'success', 'warning', 'danger', 'abort']),
     },
-    loading: {
-      type: Boolean,
-      default: false,
-    },
-    disabled: {
-      type: Boolean,
-      default: false,
-    },
-    shadow: {
-      type: Boolean,
-      default: false,
-    },
-    circular: {
-      type: Boolean,
-      default: false,
-    },
+    loading: Boolean,
+    disabled: Boolean,
+    shadow: Boolean,
+    circular: Boolean,
+    auto: Boolean,
+    ghost: Boolean,
     effect: {
       type: Boolean,
       default: true,
-    },
-    auto: {
-      type: Boolean,
-      default: false,
     },
     icon: String,
   },
@@ -66,6 +52,7 @@ export default {
       this.shadow && (str += ' shadow')
       this.circular && (str += ' circular')
       this.auto && (str += ' auto')
+      this.ghost && (str += ' ghost')
       this.type && (str += ` ${this.type}`)
       this.size && (str += ` ${this.size}`)
       return str
