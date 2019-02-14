@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+div(:class="$style.tags")
   zi-tag Status: Unstable
   br
   zi-tag(type="success") Status: Success
@@ -12,8 +12,7 @@ export default {
   name: 'ex-tag-basic',
 }
 </script>
-<style>
-span {
-  margin-bottom: 10px;
-}
+<style module lang="stylus">
+.tags span
+    margin-bottom: 10px
 </style>
