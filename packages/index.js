@@ -12,7 +12,7 @@ import Footnote from './footnote'
 import More from './more'
 import Toggle from './toggle'
 import Switcher from './switcher'
-
+import Rate from './rate'
 
 export default {
   install: vue => {
@@ -30,5 +30,6 @@ export default {
     More.install(vue)
     Toggle.install(vue)
     Switcher.install(vue)
+    Rate.install(vue)
   },
 }
