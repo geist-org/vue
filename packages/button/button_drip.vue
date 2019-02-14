@@ -24,22 +24,22 @@ export default {
   methods: {
     trigger(event) {
       if (!event || typeof event !== 'object') return
-      if (!event.layerX && !event.layerY) return
+      if (!event.offsetX && !event.offsetY) return
       if (this.show) return
       this.show = true
       this.$nextTick(() => this.setStyle(event))
     },
 
     setStyle(event) {
-      const { width, height } = bounding.getRealShape(this.$parent.$el)
-      const limitX = Math.max(event.layerX, width - event.layerX)
-      const limitY = Math.max(event.layerY, height - event.layerY)
+      const { width, height } = bounding.getRect(this.$parent.$el)
+      const limitX = Math.max(event.offsetX, width - event.offsetX)
+      const limitY = Math.max(event.offsetY, height - event.offsetY)
       const limit = Math.max(limitX, limitY)
-      const scale = limit / 10
+      const scale = limit / 9
 
       this.styles = {
-        left: `${event.layerX}px`,
-        top: `${event.layerY}px`,
+        left: `${event.offsetX}px`,
+        top: `${event.offsetY}px`,
         opacity: 0.25,
         transform: `translate(-50%, -50%) scale(${scale})`,
       }
