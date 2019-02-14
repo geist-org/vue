@@ -69,7 +69,7 @@ export default {
     clickHandler(event) {
       if (this.loading || this.disabled) return
       // hide drip when button in shadow status
-      const showDrip = !this.shadow && this.effect && this.$refs.drip
+      const showDrip = !this.shadow && !this.ghost && this.effect && this.$refs.drip
       showDrip && this.$refs.drip.trigger(event)
       this.$emit('click', event)
     },
