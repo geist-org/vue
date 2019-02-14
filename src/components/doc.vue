@@ -16,10 +16,9 @@ export default {
 
   methods: {
     findDocModule(docs, docName) {
-      const reg = new RegExp(docName)
       return docs
         .map(docModule => docModule.default)
-        .find(content => reg.test(content.docName))
+        .find(content => content.docName === docName)
     },
 
     safeComponentName(component) {
