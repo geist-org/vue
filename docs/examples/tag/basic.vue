@@ -2,9 +2,9 @@
 div
   zi-tag Status: Unstable
   br
-  zi-tag(type="success") Status: Unstable
+  zi-tag(type="success") Status: Success
   br
-  zi-tag(warning) Status: Unstable
+  zi-tag(warning) Status: Warning
 
 </template>
 <script>
