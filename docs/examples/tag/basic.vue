@@ -13,7 +13,7 @@ export default {
 }
 </script>
 <style>
-span {
+.zi-tag {
   margin-bottom: 10px;
 }
 </style>
