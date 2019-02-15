@@ -16,6 +16,7 @@ import Rate from './rate'
 import Tag from './tag'
 import Toast from './toast'
 import Note from './note'
+import Spinner from './spinner'
 
 export default {
   install: vue => {
@@ -37,5 +38,6 @@ export default {
     Tag.install(vue)
     Toast.install(vue)
     Note.install(vue)
+    Spinner.install(vue)
   },
 }
