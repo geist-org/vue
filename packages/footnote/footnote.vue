@@ -1,5 +1,5 @@
 <template lang="pug">
-a.zi-footnote(:href="href" :target="target" :style="[isCursor]")
+a.zi-footnote(:href="href" :target="target" :style="[isHelp]")
   slot
   i.zi-icon-footnote
 </template>
@@ -11,12 +11,12 @@ export default {
   props: {
     href: String,
     target: { type: String, default: '_blank' },
-    cursor: Boolean,
+    help: Boolean,
   },
 
   computed: {
-    isCursor() {
-      return this.cursor ? { cursor: 'help' } : ''
+    isHelp() {
+      return this.help ? { cursor: 'help' } : ''
     },
   },
 }
