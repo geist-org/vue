@@ -1,13 +1,15 @@
 {
   "name": "@zeit-ui/vue",
   "version": "0.0.1",
+  "description": "A popular UI framework for Vue",
   "scripts": {
     "start": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
     "build": "vue-cli-service build",
     "build:lib": "vue-cli-service build --target lib --name zeit-ui ./packages/index.js && node ./scripts/release/index.js",
+    "clear": "rm -rf dist",
     "now-build": "NODE_ENV=production npm run build",
-    "release": "npm run build:lib && npm publish --access=public"
+    "release": "npm run clear && npm run build:lib && npm publish --access=public"
   },
   "dependencies": {
     "@zeit-ui/style": "0.3.1-alpha.4",
@@ -52,13 +54,19 @@
   },
   "files": [
     "LICENSE",
-    "dist/"
+    "dist/",
+    "packages/"
   ],
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
+  "keywords": [
+    "vue component",
+    "zeit",
+    "vue ui"
+  ],
   "license": "MIT",
   "main": "dist/zeit-ui.common.js",
   "module": "dist/zeit-ui.common.js",
