@@ -2,7 +2,7 @@ const components = [
   require('./doc'),
   require('./blocks/side'),
   require('./examples/code_render'),
-  require('./examples/code')
+  require('./examples/code'),
 ]
 
 export default {
