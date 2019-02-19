@@ -1,11 +1,11 @@
 <template lang="pug">
 p Specification of&nbsp;
-  zi-footnote(href="https://zeit-style.now.sh/#footnote" target="_self")
+  zi-footnote(href="https://zeit-style.now.sh/#footnote" cursor)
     span footnote
 </template>
 
 <script>
 export default {
-  name: 'ex-footnote-target',
+  name: 'ex-footnote-cursor',
 }
 </script>
