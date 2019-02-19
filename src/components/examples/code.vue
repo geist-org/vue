@@ -1,23 +1,29 @@
 <template lang="pug">
-div.ex-code
+.ex-code
   p.zi-subheading.code-name EXAMPLE: #[b {{ codeName }}]
-  ex-code-render(:name="name" ref="codeRender")
-  prism(language="pug" class="ex-source-code") {{ codeTemplate }}
+  zi-card.ex-code-box
+    ex-code-render(:name="name" ref="codeRender")
+    .ex-code-toggle(@click="showCode=!showCode")
+      i.zi-icon-code
+  zi-transition-expand
+    prism(language="pug" class="ex-source-code" v-if="showCode") {{ codeTemplate }}
 </template>
 
 <script>
 import 'prismjs'
 import 'prismjs/components/prism-pug'
+import * as transitions from '../../../packages/utils/transitions'
 import Prism from 'vue-prism-component'
 
 export default {
   name: 'ex-code',
 
-  components: { Prism },
+  components: { Prism, ZiTransitionExpand: transitions.ZiTransitionExpand },
 
   data: () => ({
     codeTemplate: '',
     codeName: '',
+    showCode: false,
   }),
 
   props: {
@@ -56,4 +62,26 @@ export default {
 
 .ex-source-code
   margin-top 10px
+
+.ex-code-box
+  position relative
+  padding-top 1.6rem
+  padding-bottom 1.5rem
+
+.ex-code-toggle
+  position absolute
+  width 20px
+  height 20px
+  right 5px
+  bottom 5px
+  cursor pointer
+  opacity .5
+  transition all .2s ease
+
+  &:hover
+    opacity 1
+
+  i
+    font-size 17px
+
 </style>

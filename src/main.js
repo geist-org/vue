@@ -6,7 +6,8 @@ import router from './router'
 import Examples from '../docs/examples'
 
 import '../packages/style.css'
-import './assets/styles/index.styl'
+import './assets/index.styl'
+
 
 Vue.config.productionTip = false
 Vue.use(ZeitUI)
