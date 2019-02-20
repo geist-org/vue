@@ -3,7 +3,8 @@
   template(v-for='group in sides')
     p.zi-title {{ group.name }}
     ul(v-if='group.children && group.children.length')
-      li(v-for='item in group.children' v-if='item.docName') #[router-link(:to='`/docs/${item.docName}`') {{ item.docName }}]
+      li(v-for='item in group.children' v-if='item.docName')
+        |#[router-link(:to='`/docs/${item.docName}`') {{ item.docName }}]
 </template>
 
 <script>
@@ -49,12 +50,9 @@ export default {
   width 185px
   overflow-y auto
   overflow-x hidden
+  text-transform capitalize
   height calc(100% - 10vh)
   -ms-overflow-style none
-
-  &::-webkit-scrollbar
-    width: 0 !important
-    display none !important
 
   a
     color black
@@ -67,4 +65,10 @@ export default {
 
   ul
     margin-left 0
+
+  >ul
+    margin-bottom 3rem
+
+.router-link-active
+  font-weight bold
 </style>
