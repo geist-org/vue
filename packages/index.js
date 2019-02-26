@@ -17,6 +17,7 @@ import Tag from './tag'
 import Toast from './toast'
 import Note from './note'
 import Spinner from './spinner'
+import Popover from './popover'
 
 export default {
   install: vue => {
@@ -39,5 +40,6 @@ export default {
     Toast.install(vue)
     Note.install(vue)
     Spinner.install(vue)
+    Popover.install(vue)
   },
 }

@@ -18,8 +18,8 @@ branches:
 before_install: git fetch --depth=1000
 
 install:
-  - npm i
+  - yarn
 
 script:
   - commitlint-travis
-  - npm run build
+  - yarn run build

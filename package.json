@@ -8,11 +8,11 @@
     "build": "vue-cli-service build",
     "build:lib": "vue-cli-service build --target lib --name zeit-ui ./packages/index.js && node ./scripts/release/index.js",
     "clear": "rm -rf dist",
-    "now-build": "NODE_ENV=production npm run build",
-    "release": "npm run clear && npm run build:lib && npm publish --access=public"
+    "now-build": "NODE_ENV=production yarn run build",
+    "release": "yarn run clear && yarn run build:lib && yarn publish --access public"
   },
   "dependencies": {
-    "@zeit-ui/style": "0.3.1-alpha.4",
+    "@zeit-ui/style": "0.4.0",
     "prismjs": "^1.15.0",
     "vue": "^2.6.6",
     "vue-prism-component": "^1.1.1",
