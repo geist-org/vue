@@ -22,6 +22,7 @@ import Popover from './popover'
 import Radio from './radio'
 import Link from './link'
 import Dialog from './dialog'
+import Table from './table'
 
 export default {
   install: vue => {
@@ -48,5 +49,6 @@ export default {
     Radio.install(vue)
     Link.install(vue)
     Dialog.install(vue)
+    Table.install(vue)
   },
 }
