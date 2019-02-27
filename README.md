@@ -4,6 +4,19 @@
 
 <br/>
 
+## Quick Start
+
+1. run `yarn add @zeit-ui/vue` or `npm i @zeit-ui/vue` install it.
+
+2. import to projcet:
+
+```js
+import ZeitUI from '@zeit-ui/vue'
+import '@zeit-ui/style'
+```
+
+<br/>
+
 ## Documentation
 [more](https://zeit-vue.now.sh/)
 
