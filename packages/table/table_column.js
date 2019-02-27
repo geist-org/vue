@@ -4,6 +4,7 @@ export default {
   props: {
     prop: String,
     label: String,
+    width: String,
   },
 
   beforeCreate() {
@@ -16,7 +17,9 @@ export default {
     const column = {
       label: this.label,
       prop: this.prop,
+      width: this.width,
       renderCell: null,
+      renderHeader: null,
     }
 
     this.column = column
@@ -28,6 +31,12 @@ export default {
     if (this.$scopedSlots.default) {
       this.column.renderCell = (h, data) => {
         return () => this.$scopedSlots.default(data)
+      }
+    }
+
+    if (this.$scopedSlots.header) {
+      this.column.renderHeader = (h, data) => {
+        return () => this.$scopedSlots.header(data)
       }
     }
     owner.store.commit('insertColumn', this.column)

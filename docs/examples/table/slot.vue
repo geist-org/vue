@@ -1,12 +1,16 @@
 <template lang="pug">
 zi-table(:data="list")
   zi-table-column(label="number" prop="number" width="20%")
-  zi-table-column(label="name" prop="name")
+  zi-table-column
+    template(#header)
+      zi-tag name
+    template(#default="{ name }")
+      zi-tag {{ name }}
 </template>
 
 <script>
 export default {
-  name: 'ex-table-basic',
+  name: 'ex-table-slot',
 
   data: () => ({
     list: [
