@@ -1,3 +1,4 @@
+import '@zeit-ui/style'
 import Card from './card'
 import Avatar from './avatar'
 import Badge from './badge'

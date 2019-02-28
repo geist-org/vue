@@ -1,12 +1,12 @@
 {
   "name": "@zeit-ui/vue",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A popular UI framework for Vue",
   "scripts": {
     "start": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
     "build": "vue-cli-service build",
-    "build:lib": "vue-cli-service build --target lib --name zeit-ui ./packages/index.js && node ./scripts/release/index.js",
+    "build:lib": "vue-cli-service build --target lib --name zeit-ui ./packages/index.js",
     "clear": "rm -rf dist",
     "now-build": "NODE_ENV=production yarn run build",
     "release": "yarn run clear && yarn run build:lib && yarn publish --access public"
@@ -73,6 +73,6 @@
   "peerDependencies": {
     "vue": "^2.5.16"
   },
-  "style": "dist/style.css",
+  "style": "dist/zeit-ui.css",
   "unpkg": "dist/zeit-ui.umd.js"
 }
