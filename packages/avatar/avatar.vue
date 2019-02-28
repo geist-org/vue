@@ -16,7 +16,7 @@ export default {
     text: String,
     size: {
       type: String,
-      validator: validator.enums(['small', 'big', 'huge']),
+      validator: validator.enums(['small', 'medium', 'big', 'huge']),
     },
     shape: {
       type: String,
