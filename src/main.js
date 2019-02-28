@@ -5,7 +5,7 @@ import ZeitUI from '../packages'
 import router from './router'
 import Examples from '../docs/examples'
 
-import '../packages/style.css'
+import '@zeit-ui/style'
 import './assets/index.styl'
 
 

@@ -11,7 +11,7 @@ and also need a package manager, [npm](https://www.npmjs.com/) or [yarn](https:/
 ```js
 import Vue from 'vue'
 import ZeitUI from '@zeit-ui/vue'
-import '@zeit-ui/style'  // require style
+import '@zeit-ui/vue/dist/zeit-ui.css' // require style
 Vue.use(ZeitUI)
 
 new Vue({
@@ -25,7 +25,7 @@ new Vue({
 Get the latest version from unpkg.com:
 
 ```jsx
-<link rel="stylesheet" href="//unpkg.com/@zeit-ui/vue@latest/dist/style.css">
+<link rel="stylesheet" href="//unpkg.com/@zeit-ui/vue@latest/dist/zeit-ui.css">
 
 <script src="//unpkg.com/@zeit-ui/vue@latest/dist/zeit-ui.umd.js"></script>
 ```

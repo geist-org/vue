@@ -12,7 +12,7 @@
 
 ```js
 import ZeitUI from '@zeit-ui/vue'
-import '@zeit-ui/style'
+import '@zeit-ui/vue/dist/zeit-ui.css'
 ```
 
 <br/>
