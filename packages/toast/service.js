@@ -11,12 +11,12 @@ const initArea = () => {
   return _div
 }
 
-const innsertToArea = (area, el, id) => {
+const insertToArea = (area, el, id) => {
   el.setAttribute('id', `zi-toast-${id}`)
   area.appendChild(el)
 }
 
-const destoryToast = (id, all) => {
+const destroyToast = (id, all) => {
   const el = all ? initArea() : document.getElementById(`zi-toast-${id}`)
   if (!el) return
   el.setAttribute('style', 'opacity: 0;')
@@ -33,8 +33,8 @@ const createToast = (options) => {
     },
   })
   instance.vm = instance.$mount()
-  instance.close = () => destoryToast(instance._uid)
-  innsertToArea(initArea(), instance.vm.$el, instance._uid)
+  instance.close = () => destroyToast(instance._uid)
+  insertToArea(initArea(), instance.vm.$el, instance._uid)
 
   // auto remove element
   if (options.duration || options.duration === undefined) {
@@ -54,6 +54,7 @@ const assignOptions = (options, obj) => {
 
 const hooks = () => ({
   show(options) {
+    console.log(options)
     return createToast(options)
   },
 
@@ -70,7 +71,7 @@ const hooks = () => ({
   },
 
   closeAll() {
-    destoryToast(0, true)
+    destroyToast(0, true)
   },
 })
 
