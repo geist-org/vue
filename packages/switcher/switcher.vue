@@ -15,7 +15,17 @@ export default {
   name: 'zi-switcher',
 
   props: {
-    options: Array,
+    options: {
+      type: Array,
+      required: true,
+      validator: (array) => {
+        return array.every(item => {
+          const label = item.label || item
+          const type = typeof label
+          return type === 'string' || type === 'number'
+        })
+      }
+    },
     value: [String, Number],
   },
 
@@ -43,7 +53,9 @@ export default {
     }
 
     this.privateOptions = this.options.map(item => {
-      return { label: item.label || item, value: item.value || item }
+      const label = item.label || item
+      const value = item.value || label
+      return { label: label, value: value }
     })
   },
 
