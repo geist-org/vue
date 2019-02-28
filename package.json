@@ -12,7 +12,7 @@
     "release": "yarn run clear && yarn run build:lib && yarn publish --access public"
   },
   "dependencies": {
-    "@zeit-ui/style": "0.4.0",
+    "@zeit-ui/style": "^0.5.0",
     "prismjs": "^1.15.0",
     "vue": "^2.6.6",
     "vue-prism-component": "^1.1.1",

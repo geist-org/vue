@@ -18,6 +18,7 @@ import Toast from './toast'
 import Note from './note'
 import Spinner from './spinner'
 import Popover from './popover'
+import Radio from './radio'
 
 export default {
   install: vue => {
@@ -41,5 +42,6 @@ export default {
     Note.install(vue)
     Spinner.install(vue)
     Popover.install(vue)
+    Radio.install(vue)
   },
 }
