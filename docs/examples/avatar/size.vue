@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   zi-avatar(:src="image" size="small")
-  zi-avatar(:src="image")
+  zi-avatar(:src="image" size="medium")
   zi-avatar(:src="image" size="big")
   zi-avatar(:src="image" size="huge")
 </template>
