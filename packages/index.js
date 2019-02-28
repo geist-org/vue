@@ -19,6 +19,7 @@ import Note from './note'
 import Spinner from './spinner'
 import Popover from './popover'
 import Radio from './radio'
+import Link from './link'
 
 export default {
   install: vue => {
@@ -43,5 +44,6 @@ export default {
     Spinner.install(vue)
     Popover.install(vue)
     Radio.install(vue)
+    Link.install(vue)
   },
 }
