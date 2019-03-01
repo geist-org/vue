@@ -18,7 +18,6 @@ export default {
 
   computed: {
     isBlock() {
-      console.log(this.block)
       if (this.inline) return false
       return this.bash || this.dark || this.block
     },
