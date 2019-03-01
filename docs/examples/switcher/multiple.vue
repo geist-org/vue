@@ -1,8 +1,10 @@
 <template lang="pug">
 div
-  zi-switcher(:options="list" :value="value")
+  zi-switcher(:options="list" v-model="value")
   br
-  zi-switcher(:options="list2" :value="value2")
+  br
+  zi-card(v-for="(item, index) in list" v-show="item === value" :dark="(index % 2) === 0")
+    p {{ item }}
 </template>
 <script>
 export default {
@@ -10,9 +12,7 @@ export default {
 
   data: () => ({
     value: 'Coding',
-    value2: 'Gitea',
-    list: ['Gitlab', 'Github'],
-    list2: ['Gitlab', 'Github', 'Coding', 'Gitea'],
+    list: ['Gitlab', 'Github', 'Coding', 'Gitea'],
   }),
 }
 </script>
