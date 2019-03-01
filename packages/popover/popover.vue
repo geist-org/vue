@@ -52,3 +52,6 @@ export default {
   },
 }
 </script>
+
+<style scoped lang="stylus" src="./popover.styl">
+</style>
