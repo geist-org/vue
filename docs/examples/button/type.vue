@@ -2,6 +2,7 @@
 div(:class="$style.buttons")
   zi-button(disabled) disabled
   zi-button(shadow) shadow
+  zi-button(shadow type="success") shadow with type
   zi-button(circular) circular
 </template>
 
