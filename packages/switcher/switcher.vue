@@ -24,7 +24,7 @@ export default {
           const type = typeof label
           return type === 'string' || type === 'number'
         })
-      }
+      },
     },
     value: [String, Number],
   },

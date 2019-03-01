@@ -3,7 +3,7 @@ div
   zi-switcher(:options="list" v-model="value")
   br
   br
-  zi-card(v-for="item in list" v-if="value === item.value" :dark="value === 2")
+  zi-card(v-for="item in list" :key="item.value" v-if="value === item.value" :dark="value === 2")
     p {{ item.label }}
 </template>
 <script>
