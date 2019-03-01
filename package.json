@@ -1,6 +1,6 @@
 {
   "name": "@zeit-ui/vue",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "A popular UI framework for Vue",
   "scripts": {
     "start": "vue-cli-service serve",
@@ -12,7 +12,7 @@
     "release": "yarn run clear && yarn run build:lib && yarn publish --access public"
   },
   "dependencies": {
-    "@zeit-ui/style": "^0.6.2",
+    "@zeit-ui/style": "^0.6.3",
     "prismjs": "^1.15.0",
     "vue": "^2.6.6",
     "vue-prism-component": "^1.1.1",
