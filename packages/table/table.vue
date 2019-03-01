@@ -1,8 +1,12 @@
 <template lang="pug">
-table.zi-table
-  zi-table-header(:store="store")
-  zi-table-body(:store="store")
-  slot
+div
+  table.zi-table
+    zi-table-header(:store="store")
+    zi-table-body(:store="store")
+    slot
+  div(v-if="!data || data.length === 0" :class="$style.empty")
+    span
+      slot(name="empty") {{ emptyText || 'empty data' }}
 </template>
 
 <script>
@@ -18,6 +22,7 @@ export default {
       type: Array,
       default: () => [],
     },
+    emptyText: String,
   },
 
   watch: {
@@ -39,3 +44,9 @@ export default {
   },
 }
 </script>
+
+<style module lang="stylus">
+.empty
+  padding 1rem
+  text-align center
+</style>
