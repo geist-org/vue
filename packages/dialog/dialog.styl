@@ -1,0 +1,118 @@
+.zi-dialog-root
+  width 100vw
+  height 100vh
+  left 0
+  top 0
+  right 0
+  bottom 0
+  position fixed
+  z-index 200
+  overflow auto
+  display flex
+  align-items center
+  justify-content center
+  flex-direction column
+
+.zi-dialog-backdrop
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background-color black
+  z-index -1
+  width 100%
+  height 100%
+  opacity .25
+  pointer-events none
+
+  &.responsive
+    background-color transparent
+    z-index 10
+    opacity 0
+    pointer-events unset
+
+.zi-dialog-wrapper
+  position relative
+  z-index 100
+  width auto
+  box-shadow rgba(0, 0, 0, 0.12) 0px 20px 30px 0px
+  color black
+  background-color white
+  display flex
+  flex-direction column
+  max-width 100%
+  border-radius 8px
+  transform translateY(-100px)
+
+.zi-dialog-content
+  font-size 14px
+  line-height 1.6
+  padding 30px 45px
+
+  >.header
+    text-align center
+    padding-bottom 15px
+    margin 0 auto
+    font-size 24px
+    font-weight 400
+    display block
+
+  >.body
+    text-align left
+    width 320px
+    max-width 100%
+
+.zi-dialog-footer
+  display flex
+  overflow hidden
+  border-bottom-right-radius 8px
+  border-bottom-left-radius 8px
+  border-top 1px solid rgb(234, 234, 234)
+
+  > .action
+    color rgb(153, 153, 153)
+    cursor pointer
+    font-size 12px
+    text-align center
+    text-transform uppercase
+    background-color white
+    transition all 200ms ease-in-out 0s
+    flex 1 1 100%
+    padding 19px 0
+    white-space nowrap
+    -webkit-box-align center
+    -webkit-align-items center
+    display inline-block
+    outline none
+    user-select none
+    border none
+    line-height 15px
+
+    &:focus, &:hover
+      color black
+      background-color rgb(250, 250, 250)
+
+
+
+    &:not(:last-child)
+      border-right 1px solid rgb(234, 234, 234)
+
+.zi-dialog-slide-enter-active,
+.zi-dialog-slide-leave-active
+  transition opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0s, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+.zi-dialog-slide-enter,
+.zi-dialog-slide-leave,
+.zi-dialog-slide-leave-active
+  opacity 0
+  transform translateY(-135px)
+
+.zi-dialog-backdrop-enter-active,
+.zi-dialog-backdrop-leave-active
+  transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+.zi-dialog-backdrop-enter,
+.zi-dialog-backdrop-leave,
+.zi-dialog-backdrop-leave-active
+  opacity 0
