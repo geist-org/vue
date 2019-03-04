@@ -1,0 +1,109 @@
+.zi-popover
+  display inline-block
+  position relative
+
+.zi-popover-dropdown
+  position absolute
+  top 100%
+  z-index 9999
+  display inline-flex
+  justify-content center
+  justify-items center
+  flex-direction column
+  box-shadow rgba(0, 0, 0, 0.12) 0px 6px 32px 0px
+  color black
+  background-color white
+  width 200px
+  border-radius 5px
+  padding 8px 0
+  text-align left
+  margin-top 12px
+  transition opacity 0.2s ease 0s, margin-top 0.2s ease 0s
+  contain layout
+
+  &.active
+    transform translateY(14px)
+    pointer-events unset
+    height unset
+    opacity 1
+
+  &.center
+    left 50%
+    transform translate(-50%)
+
+  &.left
+    left 0
+    transform translate(-5px)
+    &::before
+      left 10px
+      transform unset
+
+  &.right
+    right 0
+    transform translate(5px)
+    &::before
+      right 10px
+      left unset
+      transform unset
+
+  &::before
+    position absolute
+    border-style: solid;
+    border-width: 0 10px 12px 10px;
+    border-color: transparent transparent #fff transparent;
+    user-select none
+    content ''
+    top -12px
+    left 50%
+    transform translate(-50%)
+
+.zi-popover-host
+  cursor pointer
+
+.zi-popover-item
+  position relative
+  display inline-flex
+  justify-content space-between
+  align-items center
+  flex 1
+  font-size 14px
+  line-height 17px
+  padding 8px 20px
+  width 100%
+  color rgb(153, 153, 153)
+  user-select none
+  cursor pointer
+  transition color 0.2s ease 0s
+
+  &:not(.nohover):not(.disabled):hover
+    background-color #fafafa
+    color black
+
+  &.nohover
+    cursor default
+    pointer-events none
+
+  &.line
+    margin 8px 0
+    height 1px
+    background-color rgb(234, 234, 234)
+    padding 0
+
+  &.disabled
+    opacity .5
+    cursor not-allowed
+
+  &.primary
+    text-decoration none
+    color black
+
+  >.title
+    color black
+    font-size 14px
+    text-transform uppercase
+
+  >.subtitle
+    color rgb(153, 153, 153)
+    font-size 12px
+    text-transform uppercase
+

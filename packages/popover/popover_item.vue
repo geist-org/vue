@@ -1,5 +1,5 @@
 <template lang="pug">
-.zi-popover-item(:class="{ nohover, line, disabled }" @click.stop="clickHandler")
+.zi-popover-item(:class="{ primary, nohover, line, disabled }" @click.stop="clickHandler")
   span.text(v-if="!nohover")
     slot
   span.title(v-if="!line && title")
@@ -16,6 +16,7 @@ export default {
     line: Boolean,
     title: Boolean,
     subtitle: Boolean,
+    primary: Boolean,
     disabled: Boolean,
     href: String,
     to: String,
@@ -61,3 +62,6 @@ export default {
   },
 }
 </script>
+
+<style scoped lang="stylus" src="./popover.styl">
+</style>
