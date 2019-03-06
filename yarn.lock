@@ -1110,9 +1110,9 @@
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.1.tgz#5c85d662f76fa1d34575766c5dcd6615abcd30d8"
 
-"@zeit-ui/style@0.7.1":
-  version "0.7.1"
-  resolved "http://registry.npm.taobao.org/@zeit-ui/style/download/@zeit-ui/style-0.7.1.tgz#82214f0ed0b7699ecae53d9fa86e3bea08badbdf"
+"@zeit-ui/style@0.7.2":
+  version "0.7.2"
+  resolved "http://registry.npm.taobao.org/@zeit-ui/style/download/@zeit-ui/style-0.7.2.tgz#2343995c13e9a90a7362f96b1b5b083f90298341"
 
 JSONStream@^1.0.4:
   version "1.3.5"
