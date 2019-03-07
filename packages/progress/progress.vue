@@ -1,7 +1,7 @@
 <template lang="pug">
-div.zi-progress-bar(:class="fix")
-  div.zi-progress
-    div.zi-progress__inner(:style="styles")
+.zi-progress-bar(:class="fix")
+  .zi-progress
+    .zi-progress__inner(:style="styles")
   span.zi-progress__text {{ percentage <= 100 ? percentage : 100 }}
 </template>
 
@@ -13,7 +13,7 @@ export default {
 
   props: {
     percentage: {
-      type: Number,
+      type: [Number, String],
       default: 0,
     },
 
@@ -30,47 +30,27 @@ export default {
   }),
 
   computed: {
+    privatePercentage() {
+      if (Number.isNaN(Number(this.percentage))) throw new Error('error about percentage')
+      return Number(this.percentage)
+    },
+
     styles() {
-      const baseStyle = { width: `${ this.percentage <= 100 ? this.percentage : 100 }%` }
-      if (this.color) {
-        let styles = {}
-        typeof this.color === 'string' && (styles = Object.assign({}, baseStyle, {backgroundColor: this.color}))
-        Array.isArray(this.color) && (styles = Object.assign({}, baseStyle, { backgroundColor: this.background }))
-        return styles
-      }
-      return baseStyle
+      const baseStyle = { width: `${ this.privatePercentage <= 100 ? this.privatePercentage : 100 }%` }
+      if (!this.color) return baseStyle
+      return Object.assign({}, baseStyle, {
+        backgroundColor: Array.isArray(this.color) ? this.background : this.color,
+      })
     },
 
     background() {
-      const current = this.sortable.find((item, index) => {
-        if (index < this.sortable.length - 1) return this.percentage >= item.num && this.percentage < this.sortable[index + 1].num
-        return item
-      })
-      current && (this.currentColor = current.color)
-      return this.currentColor
+      const current = this.sortable.find(item => this.privatePercentage >= Number(item.num))
+      return current && (this.currentColor = current.color)
     },
 
     sortable() {
-      return this.color.sort((a, b) => a.num - b.num)
+      return this.color.sort((a, b) => Number(b.num) - Number(a.num))
     },
   },
 }
 </script>
-
-<style scoped>
-    .zi-progress-bar .top {
-        height: 3px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-
-    .bottom {
-       height: 3px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-
-</style>

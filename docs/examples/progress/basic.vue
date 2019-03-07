@@ -1,5 +1,5 @@
 <template lang="pug">
-zi-progress(:percentage="50")
+zi-progress(percentage="20")
 </template>
 
 <script>

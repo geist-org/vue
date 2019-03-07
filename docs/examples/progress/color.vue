@@ -12,8 +12,8 @@ export default {
   name: 'ex-progress-color',
 
   data: () => ({
-    percentage: 14,
-    progressColor: [{num: 0, color: '#409EFF'}, {num: 50, color: '#f56c6c'}, {num: 25, color: '#000'}, {num: 100, color: '#67c23a'}],
+    percentage: 10,
+    progressColor: [{num: 0, color: '#409eff'}, {num: '50', color: '#f56c6c'}, {num: 25, color: '#fff'}, {num: 75, color: '#ccc'}, {num: 100, color: '#67c23a'}],
   }),
 }
 </script>
