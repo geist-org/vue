@@ -52,6 +52,7 @@ export default {
   svg
     margin-left 7px
     color inherit
+    min-height 15px
 
   &:hover
     .more
@@ -70,4 +71,5 @@ export default {
   padding-left 5px
   transition padding-left .2s ease
   font-weight inherit
+  min-height 15px
 </style>
