@@ -104,6 +104,7 @@ export default {
 
 .status
   position absolute
+  z-index 10
   width 12px
   height 12px
   left -28px
