@@ -23,6 +23,7 @@ import Radio from './radio'
 import Link from './link'
 import Dialog from './dialog'
 import Progress from './progress'
+import Files from './files'
 
 export default {
   install: vue => {
@@ -50,5 +51,6 @@ export default {
     Link.install(vue)
     Dialog.install(vue)
     Progress.install(vue)
+    Files.install(vue)
   },
 }
