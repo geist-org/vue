@@ -24,6 +24,7 @@ import Link from './link'
 import Dialog from './dialog'
 import Progress from './progress'
 import Files from './files'
+import Table from './table'
 
 export default {
   install: vue => {
@@ -52,5 +53,6 @@ export default {
     Dialog.install(vue)
     Progress.install(vue)
     Files.install(vue)
+    Table.install(vue)
   },
 }
