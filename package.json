@@ -8,7 +8,7 @@
     "build": "vue-cli-service build",
     "build:lib": "vue-cli-service build --target lib --name zeit-ui ./packages/index.js",
     "clear": "rm -rf dist",
-    "now-build": "NODE_ENV=production yarn run build",
+    "now-build": "NODE_ENV=production yarn run build && cp ./public/favicon.ico ./dist",
     "release": "yarn run clear && yarn run build:lib && yarn publish --access public"
   },
   "dependencies": {
