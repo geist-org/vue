@@ -11,25 +11,24 @@
     "now-build": "NODE_ENV=production yarn run build && cp ./public/favicon.ico ./dist",
     "release": "yarn run clear && yarn run build:lib && yarn publish --access public"
   },
+  "pre-commit": [
+    "lint"
+  ],
   "dependencies": {
-    "@zeit-ui/style": "0.7.2",
+    "@zeit-ui/style": "0.7.3",
     "prismjs": "^1.15.0",
     "vue": "^2.6.6",
     "vue-prism-component": "^1.1.1",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.5.0",
-    "@commitlint/config-conventional": "^7.5.0",
-    "@commitlint/prompt-cli": "^7.5.0",
-    "@commitlint/travis-cli": "^7.5.0",
     "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-config-haifengfe": "^0.1.5",
-    "husky": "^1.3.1",
+    "pre-commit": "^1.2.2",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "terser": "^3.14.1",
@@ -57,11 +56,6 @@
     "dist/",
     "packages/"
   ],
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "keywords": [
     "vue component",
     "zeit",
