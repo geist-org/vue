@@ -17,19 +17,16 @@ TableStore.prototype.mutations = {
     const columnArray = states.columns
     if (typeof index !== 'undefined') {
       columnArray.splice(index, 0, column)
-    } else {
-      columnArray.push(column)
+      return
     }
+    columnArray.push(column)
   },
 }
 
 TableStore.prototype.commit = function(name, ...args) {
   const mutations = this.mutations
-  if (mutations[name]) {
-    mutations[name].apply(this, [this.states].concat(args))
-    return
-  }
-  throw new Error(`action not found: ${name}`)
+  if (!mutations[name]) throw new Error(`action not found: ${name}`)
+  mutations[name].apply(this, [this.states].concat(args))
 }
 
 export default TableStore

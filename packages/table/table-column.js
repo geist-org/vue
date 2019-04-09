@@ -2,7 +2,9 @@ import './table.styl'
 
 const getDefaultColumns = (options) => {
   const column = Object.keys(options).reduce((total, key) => {
-    if (options.hasOwnProperty(key)) typeof options[key] !== 'undefined' && (total[key] = options[key])
+    if (options.hasOwnProperty(key)) {
+      typeof options[key] !== 'undefined' && (total[key] = options[key])
+    }
     return total
   }, {})
   if (!column.minWidth) column.minWidth = 80
@@ -10,9 +12,9 @@ const getDefaultColumns = (options) => {
   return column
 }
 
-const parseIntWidth = (width, isMin) => {
+const formatWidth = (width, isMin) => {
   if (width === undefined) return width
-  let intWidth = parseInt(width)
+  let intWidth = ~~width
   if (Number.isNaN(intWidth)) intWidth = !isMin ? null : 80
   return intWidth
 }
@@ -40,24 +42,20 @@ export default {
     },
 
     width(newVal) {
-      if (this.defaultConfig) {
-        this.defaultConfig.width = parseIntWidth(newVal, false)
-      }
+      if (this.defaultConfig) this.defaultConfig.width = formatWidth(newVal, false)
     },
 
     minWidth(newVal) {
-      if (this.defaultConfig) {
-        this.defaultConfig.width = parseIntWidth(newVal, true)
-      }
+      if (this.defaultConfig) this.defaultConfig.width = formatWidth(newVal, true)
     },
   },
 
   render() {
-    return <div><slot></slot></div>
+    return <div></div>
   },
 
   computed: {
-    owner() {
+    isOwner() {
       let parent = this.$parent
       while (parent && parent.$options.name !== 'zi-table') {
         parent = parent.$parent
@@ -67,8 +65,8 @@ export default {
   },
 
   created() {
-    const width = parseIntWidth(this.width, false)
-    const minWidth = parseIntWidth(this.minWidth, true)
+    const width = formatWidth(this.width, false)
+    const minWidth = formatWidth(this.minWidth, true)
     const column = getDefaultColumns({
       label: this.label,
       prop: this.prop,
@@ -76,17 +74,17 @@ export default {
       minWidth,
     })
     let renderCell = function(h, data) {
-      return <div class="zi-table-cell">{ data.row[data.column.prop] }</div>
+      return <div class="table-cell">{ data.row[data.column.prop] }</div>
     }
     column.renderCell = (h, data) => {
       if (this.$scopedSlots.default) renderCell = () => this.$scopedSlots.default(data)
-      return <div class="zi-table-cell">{ renderCell(h, data) }</div>
+      return <div class="table-cell">{ renderCell(h, data) }</div>
     }
     this.defaultConfig = column
   },
 
   mounted() {
-    const store = this.owner.store
+    const store = this.isOwner.store
     store.commit('insertColumns', this.defaultConfig)
   },
 }

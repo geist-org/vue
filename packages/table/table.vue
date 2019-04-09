@@ -2,26 +2,19 @@
 .zi-table(:style="{ width: bodyWidth }")
   .hidden(ref="hiddenColumns")
     slot
-  div(
-      class="header-wrapper"
-      ref="headerWrapper"
-      )
+  div(class="header-wrapper" ref="headerWrapper")
     table-header(
       class="header-table"
       ref="tableHeader"
       :store="store"
       :style="{width: layout.bodyWidth + 'px'}")
-  div(
-      class="body-wrapper"
-      ref="bodyWrapper"
-      style="{ height: layout.bodyHeight + 'px' }"
-  )
+  div(class="body-wrapper" ref="bodyWrapper")
     table-body(
-    class="body-table"
-    ref="tableBody"
-    :store="store"
-    :empty-text="emptyText"
-    :style="{width: layout.bodyWidth + 'px'}")
+      class="body-table"
+      ref="tableBody"
+      :store="store"
+      :empty-text="emptyText"
+      :style="{ width: layout.bodyWidth + 'px' }")
 </template>
 
 <script>
@@ -104,8 +97,3 @@ export default {
   },
 }
 </script>
-
-<style scoped lang="stylus">
-.hidden
-    display none
-</style>

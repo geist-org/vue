@@ -1,10 +1,12 @@
 <template lang="pug">
-zi-table(:data="tableData" width="700px")
-  zi-table-column(prop="id" width="180")
-  zi-table-column(prop="name" label="fruit" width="180")
-  zi-table-column(prop="usage" label="usage" width="200")
-  zi-table-column(prop="point" label="point" width="250")
-  zi-table-column(prop="taste" label="taste" width="250")
+div
+  zi-table(:data="tableData" width="700px")
+    zi-table-column(prop="id")
+    zi-table-column(prop="name" label="fruit" width="150")
+    zi-table-column(prop="time" label="date" width="200")
+    zi-table-column(prop="point" label="point" width="350")
+    zi-table-column(prop="usage" label="usage" width="150")
+  zi-button(shadow style="margin-top: 10px") a scrollable table
 </template>
 
 <script>
@@ -12,11 +14,31 @@ export default {
   name: 'ex-table-width',
 
   data: () => ({
-    tableData: [
-      { id: 1, name: 'apple', usage: 'eat', point: 'red, I like it', taste: 'sweet'},
-      { id: 2, name: 'orange', usage: 'eat', point: 'orange, easy get inflamed ', taste: 'sour' },
-      { id: 3, name: 'lemon', usage: 'picture', point: 'sour', taste: 'sour' },
-      { id: 4, name: 'pear', usage: 'eat', point: 'yellow, code', taste: 'sweet' }],
+    tableData: [{
+      id: 1,
+      name: 'table',
+      time: '2019-03-09',
+      point: 'this is a scrollable table',
+      usage: 'write',
+    }, {
+      id: 2,
+      name: 'table',
+      time: '2019-03-10',
+      point: 'this is a scrollable table',
+      usage: 'read' ,
+    }, {
+      id: 3,
+      name: 'table',
+      time: '2019-05-03',
+      point: 'this is a scrollable table',
+      usage: 'work',
+    }, {
+      id: 4,
+      name: 'table',
+      time: '2019-05-04',
+      point: 'this is a scrollable table',
+      usage: 'option' ,
+    }],
   }),
 }
 </script>
