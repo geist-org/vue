@@ -5,6 +5,8 @@ export default {
     store: {
       required: true,
     },
+
+    emptyText: [String, Boolean],
   },
 
   render(h) {
@@ -12,19 +14,17 @@ export default {
       <table class="zi-table">
         <colgroup>
           {
-            this._l(this.columns, column => <col width={ column.realWidth ? column.realWidth : column.width }/>)
+            this._l(this.columns, column => <col width={ column.realWidth || column.width }/>)
           }
         </colgroup>
         <tbody>
           {
-            this._l(this.data, (row, $index) => [<tr>
+            this.data.length ? this._l(this.data, (row, $index) => [<tr class="table-row" >
               {
-                this._l(this.columns, (column) => {
-                  return <td>{
-                    column.renderCell.call(this._renderProxy, h, { row, column, $index })
-                  }</td>
-                })
-              }</tr>])
+                this._l(this.columns, column => <td>{
+                  column.renderCell.call(this._renderProxy, h, { row , column, $index })
+                }</td>)
+              }</tr>]) : <tr><td style="color:#ccc; text-align:center">{ this.emptyText || '没有数据' }</td></tr>
           }
         </tbody>
       </table>

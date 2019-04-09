@@ -7,11 +7,10 @@ class TableLayout {
     this.columns = null
 
     this.bodyWidth = null
-    for (const name in options) {
-      if (options.hasOwnProperty(name)) {
-        this[name] = options[name]
-      }
-    }
+    this.bodyHeight = 0
+    Object.keys(options).forEach(key => {
+      if (options.hasOwnProperty(key)) this[key] = options[key]
+    })
 
     if (!this.table) {
       throw new Error('table is required for Table Layout')
@@ -29,8 +28,8 @@ class TableLayout {
     const flexColumns = columns.filter(column => typeof column.width !== 'number')
     const fixedColumns = columns.filter(column => typeof column.width === 'number')
 
-    if (flexColumns.length > 1) {
-      bodyMinWidth = fixedColumns.reduce((total, column) => {
+    if (flexColumns.length > 0) {
+      fixedBodyWidth = fixedColumns.reduce((total, column) => {
         return total + column.width
       }, 0)
       flexColumns.forEach(column => {
@@ -46,8 +45,16 @@ class TableLayout {
           }
         })
       })
+      this.bodyWidth = Math.max(bodyWidth)
+      return
     }
-    this.bodyWidth = Math.max(bodyWidth)
+    this.bodyWidth = fixedColumns.reduce((total, column) => {
+      return total + column.width
+    }, 0)
+  }
+
+  onscrollableChange() {
+
   }
 }
 

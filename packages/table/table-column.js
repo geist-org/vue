@@ -1,21 +1,20 @@
 import './table.styl'
 
 const getDefaultColumns = (options) => {
-  const column = {}
-  for (const name in options) if (options.hasOwnProperty(name)) column[name] = typeof options[name] !== 'undefined' && options[name]
+  const column = Object.keys(options).reduce((total, key) => {
+    if (options.hasOwnProperty(key)) typeof options[key] !== 'undefined' && (total[key] = options[key])
+    return total
+  }, {})
   if (!column.minWidth) column.minWidth = 80
   column.realWidth = column.width === undefined ? column.minWidth : column.width
   return column
 }
 
 const parseIntWidth = (width, isMin) => {
-  if (width !== undefined) {
-    width = parseInt(width)
-    if (isNaN(width)) {
-      width = !isMin ? null : 80
-    }
-  }
-  return width
+  if (width === undefined) return width
+  let intWidth = parseInt(width)
+  if (Number.isNaN(intWidth)) intWidth = !isMin ? null : 80
+  return intWidth
 }
 export default {
   name: 'zi-table-column',

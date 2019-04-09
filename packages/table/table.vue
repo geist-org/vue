@@ -2,11 +2,30 @@
 .zi-table(:style="{ width: bodyWidth }")
   .hidden(ref="hiddenColumns")
     slot
-  table-header(ref="zi-table-header" :store="store" :style="{ width: layout.bodyWidth + 'px' }")
-  table-body(:store="store")
+  div(
+      class="header-wrapper"
+      ref="headerWrapper"
+      )
+    table-header(
+      class="header-table"
+      ref="tableHeader"
+      :store="store"
+      :style="{width: layout.bodyWidth + 'px'}")
+  div(
+      class="body-wrapper"
+      ref="bodyWrapper"
+      style="{ height: layout.bodyHeight + 'px' }"
+  )
+    table-body(
+    class="body-table"
+    ref="tableBody"
+    :store="store"
+    :empty-text="emptyText"
+    :style="{width: layout.bodyWidth + 'px'}")
 </template>
 
 <script>
+import './table.styl'
 import TableStore from './table-store'
 import TableHeader from './table-header'
 import TableBody from './table-body'
@@ -24,6 +43,8 @@ export default {
     },
 
     width: [String, Number],
+
+    emptyText: [String, Boolean],
   },
 
   computed: {
@@ -65,6 +86,13 @@ export default {
     doLayout() {
       this.layout.updateColumnWidth()
     },
+
+    bindEvent() {
+      const { bodyWrapper, headerWrapper } = this.$refs
+      bodyWrapper.addEventListener('scroll', function() {
+        headerWrapper.scrollLeft = this.scrollLeft
+      })
+    },
   },
 
   mounted () {
@@ -72,11 +100,12 @@ export default {
       width: this.$el.offsetWidth,
     }
     this.doLayout()
+    this.bindEvent()
   },
 }
 </script>
 
 <style scoped lang="stylus">
 .hidden
-  display none
+    display none
 </style>

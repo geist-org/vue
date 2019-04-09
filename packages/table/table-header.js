@@ -13,7 +13,7 @@ export default {
         <colgroup>
           {
             this._l(this.columns, column => <col
-              width={ column.realWidth ? column.realWidth : column.width }/>)
+              width={ column.realWidth || column.width }/>)
           }
         </colgroup>
         <thead>
