@@ -6,7 +6,7 @@ div
     zi-table-column(prop="time" label="date" width="200")
     zi-table-column(prop="point" label="point" width="350")
     zi-table-column(prop="usage" label="usage" width="150")
-  zi-button(shadow style="margin-top: 10px") a scrollable table
+  zi-card(pin style="margin-top: 10px") This is a scrollable table
 </template>
 
 <script>

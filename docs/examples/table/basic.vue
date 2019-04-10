@@ -32,11 +32,5 @@ export default {
       taste: 'sweet',
     }],
   }),
-
-  methods: {
-    getData(row, index) {
-      console.log(row, index)
-    },
-  },
 }
 </script>

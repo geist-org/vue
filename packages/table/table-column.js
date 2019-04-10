@@ -2,8 +2,8 @@ import './table.styl'
 
 const getDefaultColumns = (options) => {
   const column = Object.keys(options).reduce((total, key) => {
-    if (options.hasOwnProperty(key)) {
-      typeof options[key] !== 'undefined' && (total[key] = options[key])
+    if (options.hasOwnProperty(key) && typeof options[key] !== 'undefined') {
+      total[key] = options[key]
     }
     return total
   }, {})
