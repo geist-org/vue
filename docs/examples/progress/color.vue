@@ -13,7 +13,22 @@ export default {
 
   data: () => ({
     percentage: 10,
-    progressColor: [{num: 0, color: '#409eff'}, {num: '50', color: '#f56c6c'}, {num: 25, color: '#fff'}, {num: 75, color: '#ccc'}, {num: 100, color: '#67c23a'}],
+    progressColor: [{
+      num: 50,
+      color: '#409eff',
+    }, {
+      num: '50',
+      color: '#f56c6c',
+    }, {
+      num: 25,
+      color: '#fff',
+    }, {
+      num: 75,
+      color: '#ccc',
+    }, {
+      num: 100,
+      color: '#67c23a',
+    }],
   }),
 }
 </script>
