@@ -11,4 +11,3 @@
 <ex-code name="ex-toast-duration"/></ex-code>
 
 <ex-code name="ex-toast-handler"/></ex-code>
-

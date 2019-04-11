@@ -14,6 +14,7 @@
       ref="tableBody"
       :store="store"
       :empty-text="emptyText"
+      :isHover="hover"
       :style="{ width: layout.bodyWidth + 'px' }")
 </template>
 
@@ -38,6 +39,8 @@ export default {
     width: [String, Number],
 
     emptyText: [String, Boolean],
+
+    hover: [Boolean],
   },
 
   computed: {
