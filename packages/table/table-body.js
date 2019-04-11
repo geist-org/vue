@@ -6,6 +6,8 @@ export default {
       required: true,
     },
 
+    isHover: [Boolean],
+
     emptyText: [String, Boolean],
   },
 
@@ -19,7 +21,7 @@ export default {
         </colgroup>
         <tbody>
           {
-            this.data.length ? this._l(this.data, (row, $index) => [<tr class="table-row" >
+            this.data.length ? this._l(this.data, (row, $index) => [<tr class={ this.isHover ? 'table-row' : '' }>
               {
                 this._l(this.columns, column => <td>{
                   column.renderCell.call(this._renderProxy, h, { row , column, $index })
