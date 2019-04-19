@@ -15,7 +15,7 @@
     "lint"
   ],
   "dependencies": {
-    "@zeit-ui/style": "0.7.3",
+    "@zeit-ui/style": "0.7.4",
     "prismjs": "^1.15.0",
     "vue": "^2.6.6",
     "vue-prism-component": "^1.1.1",

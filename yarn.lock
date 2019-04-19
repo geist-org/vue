@@ -959,10 +959,10 @@
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.1.tgz#5c85d662f76fa1d34575766c5dcd6615abcd30d8"
 
-"@zeit-ui/style@0.7.3":
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/@zeit-ui/style/-/style-0.7.3.tgz#330821424e73b803935049123d26cbfc951f81e2"
-  integrity sha512-UQsInMnvfcd/BAH57GXXTiKtHRQMvAAD8BZkl3bJ4a2SSoeOKxZwmayvMbKXGgDBBM8VLGq8m4nypmtBCZ+Rkg==
+"@zeit-ui/style@0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@zeit-ui/style/-/style-0.7.4.tgz#8714b80774693332cef0f31a59b143653a982be4"
+  integrity sha512-paySzESHxXazI83X3RNLLiL99bJQFqkeAMCv8GkJGeX6uT5addBup2QBI+NIcER8GDu/eDoJAME+EXTONEsJfw==
 
 abab@^1.0.0:
   version "1.0.4"

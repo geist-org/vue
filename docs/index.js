@@ -1,4 +1,4 @@
-const context = require.context('./zh-cn/', true, /\.md$/)
+const context = require.context('./en-us/', true, /\.md$/)
 
 const pickGroupName = (name) => {
   const result = name.match(/\.\/(\S+)\//)

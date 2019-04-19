@@ -4,11 +4,12 @@
     p.zi-title {{ group.name }}
     ul(v-if='group.children && group.children.length')
       li(v-for='item in group.children' v-if='item.docName')
-        |#[router-link(:to='`/docs/${item.docName}`') {{ item.docName }}]
+        | #[router-link(:to='`/docs/${item.docName}`') {{ item.docName }}]
 </template>
 
 <script>
 import docs from '#/docs/index'
+
 const SIDE_WEIGHT = {
   start: 1,
   components: 2,
@@ -50,8 +51,12 @@ export default {
   width 185px
   overflow-y auto
   overflow-x hidden
+  -webkit-overflow-scrolling touch
   text-transform capitalize
-  height calc(100% - 10vh)
+  height 100%
+  padding-bottom 30px
+  top 0
+  padding-top 80px
   -ms-overflow-style none
 
   a
@@ -60,13 +65,14 @@ export default {
 
   li
     list-style none
+
     &:before
       content ''
 
   ul
     margin-left 0
 
-  >ul
+  > ul
     margin-bottom 3rem
 
 .router-link-active
