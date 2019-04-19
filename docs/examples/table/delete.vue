@@ -1,5 +1,5 @@
 <template lang="pug">
-zi-table(:data="tableData" empty-text="table is empty" width="700px")
+zi-table(:data="tableData" empty-text="table is empty" width="649px")
   zi-table-column(prop="name" label="fruit")
   zi-table-column(prop="usage" label="usage")
   zi-table-column(prop="area" label="area" min-width="250")
