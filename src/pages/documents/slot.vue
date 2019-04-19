@@ -15,13 +15,15 @@ export default {
 <style scoped lang="stylus">
 .ex-layout
   display flex
-  max-width 1400px
+  max-width 1000px
   margin 0 auto
 
 .ex-side-shim
   display flex
   min-width 200px
   max-width 300px
+  margin-left -20px
+  margin-right 20px
 
 .ex-content
   display flex

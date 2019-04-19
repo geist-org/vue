@@ -3,6 +3,7 @@ const components = [
   require('./blocks/side'),
   require('./examples/code_render'),
   require('./examples/code'),
+  require('./examples/footer'),
 ]
 
 export default {
