@@ -7,5 +7,3 @@
 <ex-code name="ex-checkbox-disabled"/></ex-code>
 
 <ex-code name="ex-checkbox-group"/></ex-code>
-
-
