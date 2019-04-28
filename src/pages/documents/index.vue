@@ -1,4 +1,5 @@
 <template lang="pug">
+div
   ex-doc(:doc-name='docName')
 </template>
 
@@ -8,6 +9,7 @@ export default {
 
   data: () => ({
     docName: '',
+    tableData: [],
   }),
 
   beforeRouteUpdate(to, from, next) {

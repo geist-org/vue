@@ -1,8 +1,8 @@
 <template lang="pug">
-span.zi-badge(v-if="!hasSlot" :class="status || ''") {{ countLable }}
+span.zi-badge(v-if="!hasSlot" :class="status || ''") {{ countLabel }}
 span.zi-badge-group(v-else)
   slot
-  span.zi-badge(:class="[status || '', dot && 'dot']" v-if="showSup") {{ countLable }}
+  span.zi-badge(:class="[status || '', dot && 'dot']" v-if="showSup") {{ countLabel }}
 </template>
 
 <script>
@@ -32,7 +32,7 @@ export default {
       return +this.count !== 0
     },
 
-    countLable() {
+    countLabel() {
       const max = +this.maxCount
       if (Number.isNaN(max)) return this.count
       if (this.count > max) return `${max}+`

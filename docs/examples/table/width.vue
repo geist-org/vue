@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  zi-table(:data="tableData" width="700px")
+  zi-table(:data="tableData" width="649px")
     zi-table-column(prop="id")
     zi-table-column(prop="name" label="fruit" width="150")
     zi-table-column(prop="time" label="date" width="200")
