@@ -12,9 +12,9 @@
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
-| **bash** | with bash style | `boolean` | - | `false` |
-| **block** | display code as block | `boolean` | - | `false` |
-| **dark** | black background | `boolean` | - | `false` |
-| **inline** | inline style | `boolean` | - | `false` |
+| **bash** | with bash style | `boolean` | `true` / `false` | `false` |
+| **block** | display code as block | `boolean` | `true` / `false` | `false` |
+| **dark** | black background | `boolean` | `true` / `false` | `false` |
+| **inline** | inline style | `boolean` | `true` / `false` | `false` |
 
 </ex-footer>

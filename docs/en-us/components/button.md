@@ -22,8 +22,8 @@
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **size** | button size | `string` | `small` / `mini` / `medium` / `big` / `huge` | `medium` |
 | **type** | button type | `string` | `primary` / `success` / `danger` / `warning` / `abort` / `normal` | - |
-| **loading** | loading for button content | `boolean` | `true` / `false` | - |
-| **disabled** | set button disabled | `boolean` | `true` / `false` | - |
+| **loading** | loading for button content | `boolean` | `true` / `false` | `false` |
+| **disabled** | set button disabled | `boolean` | `true` / `false` | `false` |
 | **shadow** | button with shadow | `boolean` | `true` / `false` | `false` |
 | **circular** | have border-radius | `boolean` | `true` / `false` | `false` |
 | **auto** | button width auto | `boolean` | `true` / `false` | `false` |

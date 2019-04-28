@@ -13,6 +13,6 @@
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **footer** | fieldset's footer content | `string` | - | - |
-| **disabled** | set fieldset disabled | `boolean` | - | `false` |
+| **disabled** | set fieldset disabled | `boolean` | `true` / `false` | `false` |
 
 </ex-footer>

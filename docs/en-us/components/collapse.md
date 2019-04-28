@@ -11,7 +11,7 @@
 | Attribute | Description | Type | Accepted values | Default
 | --------- | ---------- | ---- |  -------------- | ------ |
 | **value** | collapse value | `array | string | number` | - | - |
-| **accordion** | accordion mode | `string | boolean` | - | `false` |
+| **accordion** | accordion mode | `string | boolean` | `true` / `false` | `false` |
 | **title** | collapse-item's title | `string` | - | - |
 | **name** | collapse-item's name | `string | number` | - | - |
 

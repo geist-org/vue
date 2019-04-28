@@ -13,10 +13,10 @@
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **title** | dialog's title | `string` | - | - |
-| **value** | Switch the display hiding of dialog | `boolean` | - | `false` |
+| **value** | Switch the display hiding of dialog | `boolean` | `true` / `false` | `false` |
 | **cancel** | text of cancel button | `string` | - | `cancel` |
 | **done** | text of done button  | `string` | - | `done` |
 | **beforeDone** | callback before close dialog | `function` | - | `done => done()` |
-| **closeByModal** | click modal will close the dialog | `boolean` | - | `true` |
+| **closeByModal** | click modal will close the dialog | `boolean` | `true` / `false` | `true` |
 
 </ex-footer>
