@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   zi-button(size="small" auto @click="visible = true") show custom
-  zi-dialog(v-model="visible" title="Task Confim" done="ok!")
+  zi-dialog(v-model="visible" title="Task Confirm" done="ok!")
     p Mark all tasks as completed ?
 </template>
 
