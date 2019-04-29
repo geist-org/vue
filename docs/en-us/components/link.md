@@ -25,4 +25,3 @@
 | **rel** | a tag's rel attribute | `string` | - | - |
 
 </ex-footer>
-
