@@ -19,12 +19,12 @@ export default {
   margin 0 auto
 
   +layout(xs)
-    padding 3.7rem 1rem 0 1rem
+    padding 3.7rem 1rem 3.7rem 1rem
     max-width 100%
     width 100%
 
   +layout(sm)
-    padding 3.7rem 1rem 0
+    padding 3.7rem 1rem 3.7rem 1rem
     max-width 100%
     width 100%
 
