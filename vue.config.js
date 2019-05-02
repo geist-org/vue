@@ -1,6 +1,13 @@
 const path = require('path')
 
 module.exports = {
+  css: {
+    loaderOptions: {
+      stylus: {
+        import: [path.resolve(__dirname, 'src/assets/styles/index')]
+      }
+    }
+  },
   chainWebpack: config => {
     config.module.rule('md')
       .test(/\.md/)
