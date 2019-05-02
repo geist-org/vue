@@ -4,9 +4,9 @@ module.exports = {
   css: {
     loaderOptions: {
       stylus: {
-        import: [path.resolve(__dirname, 'src/assets/styles/index')]
-      }
-    }
+        import: [path.resolve(__dirname, 'src/assets/styles/index')],
+      },
+    },
   },
   chainWebpack: config => {
     config.module.rule('md')
