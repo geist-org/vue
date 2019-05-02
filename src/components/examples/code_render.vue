@@ -17,3 +17,9 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus">
+pre
+  max-width 90vw
+  overflow-y auto
+</style>

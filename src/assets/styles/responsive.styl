@@ -1,0 +1,16 @@
+layout(size = '')
+  if (size == xs)
+    @media only screen and (max-width $SCREEN_XS)
+      {block}
+  else if (size == sm)
+    @media screen and (min-width $SCREEN_XS) and (max-width $SCREEN_SM)
+      {block}
+  else if (size == md)
+    @media screen and (min-width $SCREEN_SM) and (max-width $SCREEN_MD)
+      {block}
+  else if (size == lg)
+    @media screen and (min-width $SCREEN_MD) and (max-width $SCREEN_LG)
+      {block}
+  else
+    @media only screen and (max-width $SCREEN_LG)
+      {block}
