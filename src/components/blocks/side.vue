@@ -1,8 +1,12 @@
 <template lang="pug">
-.ex-side
+.ex-side(:class="{ 'active': isActiveMenu }")
+  .bar
+    i.zi-icon-menu(@click="toggleMenu")
+    span @zeit-ui/vue
+  .bar-bg(:class="{ 'active': isActiveMenu }" @click="closeMenu")
   template(v-for='group in sides')
     p.zi-title {{ group.name }}
-    ul(v-if='group.children && group.children.length')
+    ul(v-if='group.children && group.children.length' @click="childEvent")
       li(v-for='item in group.children' v-if='item.docName')
         | #[router-link(:to='`/docs/${item.docName}`') {{ item.docName }}]
 </template>
@@ -20,6 +24,7 @@ export default {
 
   data: () => ({
     sides: [],
+    isActiveMenu: false,
   }),
 
   mounted() {
@@ -41,40 +46,30 @@ export default {
           children: group[name],
         }))
     },
+
+    toggleMenu() {
+      this.isActiveMenu = !this.isActiveMenu
+    },
+
+    closeMenu() {
+      this.isActiveMenu = false
+    },
+
+    childEvent(event) {
+      if (!this.isActiveMenu) return
+      if (`${event.target.nodeName}`.toUpperCase() !== 'A') return
+
+      // not support matchMedia
+      if (!window.matchMedia) return
+
+      // work only when matches is returned
+      const matchResult = window.matchMedia('(max-width: 959px)')
+      if (!matchResult || !matchResult.matches) return
+
+      this.closeMenu()
+    },
   },
 }
 </script>
 
-<style scoped lang="stylus">
-.ex-side
-  position fixed
-  width 185px
-  overflow-y auto
-  overflow-x hidden
-  -webkit-overflow-scrolling touch
-  text-transform capitalize
-  height 100%
-  padding-bottom 30px
-  top 0
-  padding-top 80px
-  -ms-overflow-style none
-
-  a
-    color black
-    font-size 14px
-
-  li
-    list-style none
-
-    &:before
-      content ''
-
-  ul
-    margin-left 0
-
-  > ul
-    margin-bottom 3rem
-
-.router-link-active
-  font-weight bold
-</style>
+<style scoped lang="stylus" src="./side.styl"></style>

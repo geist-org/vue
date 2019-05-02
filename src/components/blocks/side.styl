@@ -1,0 +1,109 @@
+.ex-side
+  position fixed
+  width 185px
+  overflow-y auto
+  overflow-x hidden
+  -webkit-overflow-scrolling touch
+  text-transform capitalize
+  height 100%
+  padding-bottom 30px
+  top 0
+  padding-top 80px
+  -ms-overflow-style none
+
+  a
+    color black
+    font-size 14px
+
+  li
+    list-style none
+
+    &:before
+      content ''
+
+  ul
+    margin-left 0
+
+  > ul
+    margin-bottom 3rem
+
+  +layout(xs)
+    top 0
+    left 0
+    right 0
+    height 3rem
+    z-index 1000
+    width 100%
+    padding 3.7rem 0 0 .5rem
+    text-align center
+    background-color #f2f2f2
+    transition height .2s ease-in
+    box-shadow 0 2px 5px 0 rgba(0, 0, 0, .12)
+
+    &.active
+      height 75vh
+
+    .bar
+      display flex
+
+  +layout(sm)
+    top 0
+    left 0
+    right 0
+    height 3rem
+    z-index 1000
+    width 100%
+    padding 3.7rem 0 0 .5rem
+    text-align center
+    background-color #f2f2f2
+    transition height .2s ease-in-out
+    box-shadow 0 2px 5px 0 rgba(0, 0, 0, .12)
+
+    &.active
+      height 75vh
+
+    .bar
+      display flex
+
+
+.router-link-active
+  font-weight bold
+
+.bar-bg
+  position fixed
+  top 0
+  left 0
+  right 0
+  height 0
+  width 100%
+  z-index -1
+  background-color transparent
+
+  &.active
+    height 100%
+
+.bar
+  display none
+  //display flex
+  position fixed
+  top 0
+  left 0
+  right 0
+  z-index 10000
+  height 3.7rem
+  width 100%
+  background-color #4e5769
+  align-items center
+  padding 0 1rem
+  color #fafafa
+
+  > i
+    font-size 2rem
+    line-height 3.7rem
+    cursor pointer
+
+  > span
+    display flex
+    padding-left 2rem
+    text-transform uppercase
+
