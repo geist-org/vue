@@ -12,7 +12,7 @@ export default {
     network() {
       this.$Toast.show({
         type: 'danger',
-        action: 'agian',
+        action: 'again',
         text: 'click to try to reconnect',
         handler: () => alert('ok'),
       })
