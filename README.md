@@ -28,6 +28,12 @@ import '@zeit-ui/vue/dist/zeit-ui.css'
 
 <br/>
 
+## Showcases
+
+- CDN link extraction tool: [jsdelivr](https://jsdelivr.now.sh/)
+
+<br/>
+
 ## LICENSE
 [MIT](LICENSE)
 
