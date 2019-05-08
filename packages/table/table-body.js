@@ -21,7 +21,7 @@ export default {
         </colgroup>
         <tbody>
           {
-            this.data.length ? this._l(this.data, (row, $index) => [<tr class={ this.isHover ? 'table-row' : '' }>
+            this.data.length ? this._l(this.data, (row, $index) => [<tr class={ this.isHover ? 'table-row' : '' } on-click={ $event => this.handleClick($event, row) }>
               {
                 this._l(this.columns, column => <td>{
                   column.renderCell.call(this._renderProxy, h, { row , column, $index })
@@ -44,6 +44,29 @@ export default {
 
     columns() {
       return this.store.states.columns
+    },
+  },
+
+  methods: {
+    getCell(event) {
+      let cell = event.target
+      while (cell && cell.tagName.toUpperCase() !== 'HTML') {
+        if (cell.tagName.toUpperCase() === 'TD') {
+          return cell
+        }
+        cell = cell.parentNode
+      }
+      return null
+    },
+
+    handleClick(event, row) {
+      const table = this.table
+      const cell = this.getCell(event)
+      if (cell) {
+        table.$emit('cell-click', cell, row, event)
+      }
+      this.store.commit('setCurrentRow', row)
+      table.$emit('row-click', row, event);
     },
   },
 }

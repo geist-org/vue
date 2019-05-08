@@ -39,7 +39,7 @@ export default {
       const baseStyle = { width: `${ this.privatePercentage <= 100 ? this.privatePercentage : 100 }%` }
       if (!this.color) return baseStyle
       return Object.assign({}, baseStyle, {
-        backgroundColor: Array.isArray(this.color) ? this.background : this.color,
+        backgroundColor: this.safeHex(Array.isArray(this.color) ? this.background : this.color),
       })
     },
 
@@ -50,6 +50,14 @@ export default {
 
     sortable() {
       return this.color.sort((a, b) => Number(b.num) - Number(a.num))
+    },
+  },
+
+  methods: {
+    safeHex(color) {
+      if (/^rgb/.test(color)) return color
+      if (/^#/.test(color)) return color
+      return `#${color}`
     },
   },
 }

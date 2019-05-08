@@ -11,6 +11,6 @@
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **v-model** | binding value[v-model] | `string` / `number` / `boolean` | - | - |
-| **disabled** | disable toogle | `boolean` | `true` / `false` | `false` |
+| **disabled** | disable toggle | `boolean` | `true` / `false` | `false` |
 
 </ex-footer>
