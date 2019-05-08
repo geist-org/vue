@@ -18,6 +18,8 @@
 | **width** | table's width | `string | number` | - | - |
 | **empty-text** | displayed text when table's content is empty | `string | boolean` | - | `false` |
 | **hover** | table's hover effect  | `boolean` | `true` / `false` | `false` |
+| **cell-click** | callback cell's dom by click  | `object` | - | - |
+| **row-click** | callback row's content by click  | `object` | - | - |
 
 <br/>
 <h3>zi-table-column</h3>

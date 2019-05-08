@@ -1,9 +1,10 @@
 <template lang="pug">
-zi-table(:data="tableData"
-          width="649px"
-          @cell-click="getCell"
-          @row-click="getRow"
-          hover)
+zi-table(
+  :data="tableData"
+  width="649px"
+  @cell-click="getCell"
+  @row-click="getRow"
+  hover)
   zi-table-column(prop="name" label="fruit")
   zi-table-column(prop="usage" label="usage")
   zi-table-column(prop="point" label="point")
