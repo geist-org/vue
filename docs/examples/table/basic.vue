@@ -1,5 +1,9 @@
 <template lang="pug">
-zi-table(:data="tableData" width="649px" hover)
+zi-table(:data="tableData"
+          width="649px"
+          @cell-click="getCell"
+          @row-click="getRow"
+          hover)
   zi-table-column(prop="name" label="fruit")
   zi-table-column(prop="usage" label="usage")
   zi-table-column(prop="point" label="point")
@@ -18,7 +22,8 @@ export default {
       taste: 'sweet',
     }, {
       name: 'orange',
-      usage: 'eat', point: 'orange, fire ',
+      usage: 'eat',
+      point: 'orange, fire ',
       taste: 'sour',
     }, {
       name: 'lemon',
@@ -32,5 +37,15 @@ export default {
       taste: 'sweet',
     }],
   }),
+
+  methods: {
+    getCell(cell, row, event) {
+      console.log(cell, row, event, 'cell')
+    },
+
+    getRow(row, event) {
+      console.log(row, event, 'row')
+    },
+  },
 }
 </script>

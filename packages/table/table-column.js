@@ -78,7 +78,7 @@ export default {
     }
     column.renderCell = (h, data) => {
       if (this.$scopedSlots.default) renderCell = () => this.$scopedSlots.default(data)
-      return <div class="table-cell">{ renderCell(h, data) }</div>
+      return renderCell(h, data, this._renderProxy)
     }
     this.defaultConfig = column
   },

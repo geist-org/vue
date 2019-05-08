@@ -5,6 +5,7 @@ const TableStore = function (table) {
     columns: [],
     data: null,
     width: null,
+    currentRow: null,
   }
 }
 
@@ -20,6 +21,13 @@ TableStore.prototype.mutations = {
       return
     }
     columnArray.push(column)
+  },
+
+  setCurrentRow(states, row) {
+    const preRow = states.currentRow
+    states.currentRow = row
+
+    if (preRow !== row) this.table.$emit('current-change', row, preRow)
   },
 }
 
