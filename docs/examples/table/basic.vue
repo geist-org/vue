@@ -1,7 +1,6 @@
 <template lang="pug">
 zi-table(
   :data="tableData"
-  width="649px"
   @cell-click="getCell"
   @row-click="getRow"
   hover)
