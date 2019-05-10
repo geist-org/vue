@@ -1,6 +1,6 @@
 {
   "name": "@zeit-ui/vue",
-  "version": "0.5.2-canary.0",
+  "version": "0.6.0",
   "description": "A popular UI framework for Vue",
   "scripts": {
     "start": "vue-cli-service serve",
@@ -15,7 +15,7 @@
     "lint"
   ],
   "dependencies": {
-    "@zeit-ui/style": "0.7.4",
+    "@zeit-ui/style": "^0.8.3",
     "prismjs": "^1.15.0",
     "vue": "^2.6.6",
     "vue-prism-component": "^1.1.1",
