@@ -49,6 +49,7 @@ export default {
     },
 
     bodyWidth() {
+      if (!this.width) return '100%'
       if (Number.isNaN(Number(this.width))) return this.width
       return this.width + 'px'
     },
