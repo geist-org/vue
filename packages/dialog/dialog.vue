@@ -59,10 +59,12 @@ export default {
 
   methods: {
     confirm(result) {
-      if (result) return this.beforeDone(() => {
-        this.model = false
-        this.$emit('done')
-      })
+      if (result) {
+        return this.beforeDone(() => {
+          this.model = false
+          this.$emit('done')
+        })
+      }
       this.model = false
       this.$emit('cancel')
     },

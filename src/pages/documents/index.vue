@@ -16,6 +16,7 @@ export default {
     if (this.docName !== to.params.name) {
       window.scrollTo({ top: 0 })
     }
+
     this.docName = to.params.name
     next()
   },

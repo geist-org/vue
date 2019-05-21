@@ -29,7 +29,7 @@ export default {
       name: 'lemon',
       usage: 'picture',
       point: 'sour',
-      taste: 'sour' ,
+      taste: 'sour',
     }, {
       name: 'pear',
       usage: 'eat',

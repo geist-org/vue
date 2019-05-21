@@ -25,7 +25,7 @@ export default {
       name: 'table',
       time: '2019-03-10',
       point: 'this is a scrollable table',
-      usage: 'read' ,
+      usage: 'read',
     }, {
       id: 3,
       name: 'table',
@@ -37,7 +37,7 @@ export default {
       name: 'table',
       time: '2019-05-04',
       point: 'this is a scrollable table',
-      usage: 'option' ,
+      usage: 'option',
     }],
   }),
 }

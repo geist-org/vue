@@ -4,6 +4,7 @@ span(:class="$style.drip" :style="styles" v-if="show")
 
 <script>
 import { bounding } from '../utils'
+
 const DEFAULT_STYLES = {
   left: '',
   top: '',

@@ -7,7 +7,7 @@ export default {
     },
   },
 
-  render () {
+  render() {
     return (
       <table class="zi-table">
         <colgroup>

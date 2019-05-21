@@ -86,13 +86,13 @@ export default {
 
     bindEvent() {
       const { bodyWrapper, headerWrapper } = this.$refs
-      bodyWrapper.addEventListener('scroll', function() {
+      bodyWrapper.addEventListener('scroll', function () {
         headerWrapper.scrollLeft = this.scrollLeft
       })
     },
   },
 
-  mounted () {
+  mounted() {
     this.resizeState = {
       width: this.$el.offsetWidth,
     }

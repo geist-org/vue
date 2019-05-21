@@ -24,7 +24,7 @@ export default {
             this.data.length ? this._l(this.data, (row, $index) => [<tr class={ this.isHover ? 'table-row' : '' } on-click={ $event => this.handleClick($event, row) }>
               {
                 this._l(this.columns, column => <td>{
-                  column.renderCell.call(this._renderProxy, h, { row , column, $index })
+                  column.renderCell.call(this._renderProxy, h, { row, column, $index })
                 }</td>)
               }</tr>]) : <tr><td style="color:#ccc; text-align:center">{ this.emptyText || '没有数据' }</td></tr>
           }

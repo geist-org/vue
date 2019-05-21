@@ -54,7 +54,5 @@ export default {
       this.model = status ? [...new Set(this.modelAlias.concat([name]))] : this.modelAlias.filter(r => r !== name)
     },
   },
-
-
 }
 </script>

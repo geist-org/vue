@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Toast from './toast'
+
 const ToastComponent = Vue.extend(Toast)
 
 const initArea = () => {
@@ -17,7 +18,7 @@ const insertToArea = (area, el, id) => {
 }
 
 const destroyToast = (id, all) => {
-  const el = all ? initArea() : document.getElementById(`zi-toast-${id}`)
+  const el = all ? initArea() : document.querySelector(`#zi-toast-${id}`)
   if (!el) return
   el.setAttribute('style', 'opacity: 0;')
   const timer = setTimeout(() => {
@@ -26,7 +27,7 @@ const destroyToast = (id, all) => {
   }, 500)
 }
 
-const createToast = (options) => {
+const createToast = options => {
   const instance = new ToastComponent({
     mounted() {
       this.init(options)
@@ -75,7 +76,6 @@ const hooks = () => ({
   },
 })
 
-
 export default {
-  install: vue => vue.prototype.$Toast = hooks(vue),
+  install: vue => (vue.prototype.$Toast = hooks(vue)),
 }
