@@ -3,12 +3,12 @@
   .zi-toast(:class="type && type")
     span.message {{ text }}
     zi-button(
-    v-if="action"
-    auto ghost
-    size="mini"
-    :type="type || 'normal'"
-    @click="handler && handler()"
-  ) {{ action }}
+      v-if="action"
+      auto ghost
+      size="mini"
+      :type="type || 'normal'"
+      @click="handler && handler()"
+    ) {{ action }}
 </template>
 
 <script>
