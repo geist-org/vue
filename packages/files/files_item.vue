@@ -16,6 +16,7 @@ div
 
 <script>
 import { transitions } from '../utils'
+
 const { ZiTransitionExpand } = transitions
 
 export default {
@@ -46,7 +47,7 @@ export default {
 
   methods: {
     isDir(type) {
-      return 'file' !== type
+      return type !== 'file'
     },
 
     lineClasses(index, item, depthIndex) {

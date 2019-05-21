@@ -36,7 +36,7 @@ export default {
     },
 
     styles() {
-      const baseStyle = { width: `${ this.privatePercentage <= 100 ? this.privatePercentage : 100 }%` }
+      const baseStyle = { width: `${this.privatePercentage <= 100 ? this.privatePercentage : 100}%` }
       if (!this.color) return baseStyle
       return Object.assign({}, baseStyle, {
         backgroundColor: this.safeHex(Array.isArray(this.color) ? this.background : this.color),
@@ -55,8 +55,9 @@ export default {
 
   methods: {
     safeHex(color) {
-      if (/^rgb/.test(color)) return color
-      if (/^#/.test(color)) return color
+      if (!color) return color
+      const str = `${color}`
+      if (str.startsWith('rgb') || str.startsWith('#')) return color
       return `#${color}`
     },
   },

@@ -6,6 +6,7 @@ span.zi-avatar(:class="[shape, size && size, isSingleText && 'single', stacked &
 
 <script>
 import { validator } from '../utils'
+
 export default {
   name: 'zi-avatar',
 

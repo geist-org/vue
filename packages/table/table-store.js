@@ -31,7 +31,7 @@ TableStore.prototype.mutations = {
   },
 }
 
-TableStore.prototype.commit = function(name, ...args) {
+TableStore.prototype.commit = function (name, ...args) {
   const mutations = this.mutations
   if (!mutations[name]) throw new Error(`action not found: ${name}`)
   mutations[name].apply(this, [this.states].concat(args))

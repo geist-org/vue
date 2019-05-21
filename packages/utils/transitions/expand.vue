@@ -29,7 +29,6 @@ export default {
         el.style.height = `${height}px`
         clearTimeout(tiemr)
       }, 0)
-
     },
 
     afterEnter(el) {

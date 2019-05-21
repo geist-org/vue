@@ -18,7 +18,7 @@ export default {
     options: {
       type: Array,
       required: true,
-      validator: (array) => {
+      validator: array => {
         return array.every(item => {
           const label = item.label || item
           const type = typeof label
@@ -55,7 +55,7 @@ export default {
     this.privateOptions = this.options.map(item => {
       const label = item.label || item
       const value = item.value || label
-      return { label: label, value: value }
+      return { label, value }
     })
   },
 

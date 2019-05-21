@@ -10,6 +10,7 @@
 
 <script>
 import { print, transitions } from '../utils'
+
 const { ZiTransitionExpand } = transitions
 
 export default {
@@ -28,7 +29,9 @@ export default {
     },
     name: {
       type: [String, Number],
-      default() { return this.title },
+      default() {
+        return this.title
+      },
     },
   },
 

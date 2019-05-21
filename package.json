@@ -4,16 +4,32 @@
   "description": "A popular UI framework for Vue",
   "scripts": {
     "start": "vue-cli-service serve",
-    "lint": "vue-cli-service lint",
     "build": "vue-cli-service build",
     "build:lib": "vue-cli-service build --target lib --name zeit-ui ./packages/index.js",
     "clear": "rm -rf dist",
+    "lint": "xo",
     "now-build": "NODE_ENV=production yarn run build && cp ./public/favicon.ico ./dist",
     "release": "yarn run clear && yarn run build:lib && yarn publish --access public"
   },
   "pre-commit": [
     "lint"
   ],
+  "xo": {
+    "extends": [
+      "lambdas/vue"
+    ],
+    "rules": {
+      "vue/no-side-effects-in-computed-properties": true,
+      "prefer-object-spread": 0
+    },
+    "extensions": [
+      "vue",
+      "js"
+    ],
+    "ignore": [
+      "scripts"
+    ]
+  },
   "dependencies": {
     "@zeit-ui/style": "^0.8.3",
     "prismjs": "^1.15.0",
@@ -23,18 +39,17 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-config-haifengfe": "^0.1.5",
+    "eslint-config-lambdas": "^0.0.11",
     "pre-commit": "^1.2.2",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "terser": "^3.14.1",
     "vue-cli-plugin-pug": "^1.0.7",
     "vue-markdown-loader": "^2.4.1",
-    "vue-template-compiler": "^2.6.6"
+    "vue-template-compiler": "^2.6.6",
+    "xo": "^0.24.0"
   },
   "browserslist": {
     "production": [

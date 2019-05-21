@@ -1,8 +1,8 @@
-export const warning = (msg) => {
+export const warning = msg => {
   console.warn(msg)
 }
 
-export const error = (msg) => {
+export const error = msg => {
   console.error(msg)
 }
 

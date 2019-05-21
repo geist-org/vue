@@ -1,8 +1,9 @@
 import './table.styl'
 
-const getDefaultColumns = (options) => {
+const getDefaultColumns = options => {
   const column = Object.keys(options).reduce((total, key) => {
-    if (options.hasOwnProperty(key) && typeof options[key] !== 'undefined') {
+    const isOwn = Object.prototype.hasOwnProperty.call(options, key)
+    if (isOwn && typeof options[key] !== 'undefined') {
       total[key] = options[key]
     }
     return total
@@ -73,7 +74,7 @@ export default {
       width,
       minWidth,
     })
-    let renderCell = function(h, data) {
+    let renderCell = function (h, data) {
       return <div class="table-cell">{ data.row[data.column.prop] }</div>
     }
     column.renderCell = (h, data) => {

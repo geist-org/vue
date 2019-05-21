@@ -8,7 +8,9 @@ class TableLayout {
     this.bodyWidth = null
 
     Object.keys(options).forEach(key => {
-      if (options.hasOwnProperty(key)) this[key] = options[key]
+      if (Object.prototype.hasOwnProperty.call(options, key)) {
+        this[key] = options[key]
+      }
     })
 
     if (!this.table) throw new Error('table is required for Table Layout')
