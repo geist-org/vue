@@ -15,7 +15,7 @@
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **href** | jump link | `string` | - | - |
-| **to** | use vue router | `string` | - | - |
+| **to** | use vue router | `string | object` | - | - |
 | **more** | link icon | `boolean` | `true` / `false` | - |
 | **nofollow** | rel equal nofollow | `boolean` | `true` / `false` | - |
 | **black** | font black | `boolean` | `true` / `false` | - |

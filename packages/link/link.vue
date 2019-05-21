@@ -11,7 +11,7 @@ export default {
 
   props: {
     href: String,
-    to: String,
+    to: [String, Object],
     more: Boolean,
     nofollow: Boolean,
     black: Boolean,
