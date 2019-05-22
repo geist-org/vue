@@ -55,7 +55,6 @@ const assignOptions = (options, obj) => {
 
 const hooks = () => ({
   show(options) {
-    console.log(options)
     return createToast(options)
   },
 

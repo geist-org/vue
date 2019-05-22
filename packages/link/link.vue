@@ -36,7 +36,7 @@ export default {
 
   methods: {
     goto() {
-      if (!this.$router) return
+      if (!this.$router || !this.to) return
       this.$router.push(this.to)
     },
   },
