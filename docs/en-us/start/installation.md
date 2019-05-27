@@ -30,6 +30,8 @@ Get the latest version from unpkg.com:
 <script src="//unpkg.com/@zeit-ui/vue@latest/dist/zeit-ui.umd.js"></script>
 ```
 
+You can also refer to [umd example](https://github.com/zeit-ui/vue/tree/master/examples/umd)
+
 <br>
 
 ### Import a component
