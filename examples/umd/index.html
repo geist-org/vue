@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>zeit-ui/vue</title>
+  <link rel="stylesheet" href="https://unpkg.com/@zeit-ui/vue@latest/dist/zeit-ui.css">
+</head>
+<body>
+<div id="app">
+  <template>
+    <div class="zi-layout zi-main">
+      <h2>umd example for zeit-ui/vue</h2>
+      <zi-card>
+        <p>click the button to change <code>count</code>.</p>
+        <p>Count: {{ count }}</p>
+
+        <zi-button @click="count++">add count</zi-button>
+      </zi-card>
+    </div>
+  </template>
+</div>
+
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<script src="https://unpkg.com/@zeit-ui/vue@latest/dist/zeit-ui.umd.js"></script>
+<script>
+  new Vue({
+    el: '#app',
+    data: () => ({ count: 1 }),
+  })
+</script>
+</body>
+</html>
