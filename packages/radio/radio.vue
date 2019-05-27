@@ -1,5 +1,5 @@
 <template lang="pug">
-label.zi-radio-container(:class="classes" style="margin-right: 10px")
+label.zi-radio-container(:class="classes")
   span.zi-radio(:class="classes")
   input.zi-radio-original(
     type="radio"

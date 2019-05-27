@@ -31,6 +31,6 @@
 | **disabled** | disable current row | `boolean` | `true` / `false` | `false` |
 | **href** | display a link | `string` | - | - |
 | **to** | display a vue router link | `string` | - | - |
-| **command** | callback text triggered by click | `string` / `object` | - | - |
+| **command** | callback text triggered by click | `string | object` | - | - |
 
 </ex-footer>

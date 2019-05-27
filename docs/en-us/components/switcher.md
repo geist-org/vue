@@ -4,7 +4,7 @@
 
 This component will be further revised in the next `minor version`.
 
- 
+
 
 ## Examples
 
@@ -16,7 +16,7 @@ This component will be further revised in the next `minor version`.
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
-| **v-model** | click binding value | `string` / `number` | - | - |
+| **v-model** | click binding value | `string | number` | - | - |
 | **options** | data source | `Array<string | number>` | - | `[]` |
 
 </ex-footer>
