@@ -26,33 +26,39 @@ import Progress from './progress'
 import Files from './files'
 import Table from './table'
 
+const install = vue => {
+  Card.install(vue)
+  Avatar.install(vue)
+  Badge.install(vue)
+  Button.install(vue)
+  Checkbox.install(vue)
+  Code.install(vue)
+  Collapse.install(vue)
+  Fieldset.install(vue)
+  Input.install(vue)
+  Select.install(vue)
+  Footnote.install(vue)
+  More.install(vue)
+  Toggle.install(vue)
+  Switcher.install(vue)
+  Rate.install(vue)
+  Tag.install(vue)
+  Toast.install(vue)
+  Note.install(vue)
+  Spinner.install(vue)
+  Popover.install(vue)
+  Radio.install(vue)
+  Link.install(vue)
+  Dialog.install(vue)
+  Progress.install(vue)
+  Files.install(vue)
+  Table.install(vue)
+}
+
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue)
+}
+
 export default {
-  install: vue => {
-    Card.install(vue)
-    Avatar.install(vue)
-    Badge.install(vue)
-    Button.install(vue)
-    Checkbox.install(vue)
-    Code.install(vue)
-    Collapse.install(vue)
-    Fieldset.install(vue)
-    Input.install(vue)
-    Select.install(vue)
-    Footnote.install(vue)
-    More.install(vue)
-    Toggle.install(vue)
-    Switcher.install(vue)
-    Rate.install(vue)
-    Tag.install(vue)
-    Toast.install(vue)
-    Note.install(vue)
-    Spinner.install(vue)
-    Popover.install(vue)
-    Radio.install(vue)
-    Link.install(vue)
-    Dialog.install(vue)
-    Progress.install(vue)
-    Files.install(vue)
-    Table.install(vue)
-  },
+  install,
 }
