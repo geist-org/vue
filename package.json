@@ -1,6 +1,6 @@
 {
   "name": "@zeit-ui/vue",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "A popular UI framework for Vue",
   "scripts": {
     "start": "vue-cli-service serve",
@@ -81,6 +81,10 @@
   "module": "dist/zeit-ui.common.js",
   "peerDependencies": {
     "vue": "^2.5.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeit-ui/vue.git"
   },
   "style": "dist/zeit-ui.css",
   "unpkg": "dist/zeit-ui.umd.js"
