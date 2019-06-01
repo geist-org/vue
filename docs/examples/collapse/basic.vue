@@ -13,7 +13,7 @@ export default {
   name: 'ex-collapse-basic',
 
   data: () => ({
-    value: '',
+    value: [],
   }),
 }
 </script>
