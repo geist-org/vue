@@ -1,4 +1,6 @@
-![@zeit-ui/vue](https://og-image.now.sh/%40zeit-ui%2Fvue.png?theme=light&md=1&fontSize=50px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fzeit-black-triangle.svg&images=https%3A%2F%2Fcn.vuejs.org%2Fimages%2Flogo.png)
+<p align="center" height="370">
+<img align="center" src="https://user-images.githubusercontent.com/11304944/58761972-c9d30700-857c-11e9-9ac7-8b1d02809fc8.png">
+</p>
 
 > @zeit-ui/vue -- Vue implementation for [Zeit Style](https://github.com/zeit-ui/zeit-style), originating from [Zeit Design](https://zeit.co/design).
 
