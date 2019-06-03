@@ -32,6 +32,7 @@ import '@zeit-ui/vue/dist/zeit-ui.css'
 
 ## Showcases
 
+- Vue icons for Zeit Design: [zeit-vue-icons](https://zeit-vue-icons.now.sh/)
 - CDN link extraction tool: [jsdelivr](https://jsdelivr.now.sh/)
 
 <br/>
