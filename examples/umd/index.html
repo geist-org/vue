@@ -10,44 +10,44 @@
   <template>
     <div class="zi-layout zi-main">
       <h2>umd example for zeit-ui/vue</h2>
-        <zi-card>
-          <p>click the button to change <code>count</code>.</p>
-          <p>Count: {{ count }}</p>
+      <zi-card>
+        <p>click the button to change <code>count</code>.</p>
+        <p>Count: {{ count }}</p>
 
-          <zi-button @click="count++">add count</zi-button>
-        </zi-card>
-        <br/>
+        <zi-button @click="count++">add count</zi-button>
+      </zi-card>
+      <br/>
 
-        <h2>form items example</h2>
-        <zi-card>
-          <form>
-            <div>
-             <zi-checkbox-group v-model="checkedValues">
-               <zi-checkbox v-for="city in cities" :label="city" :key="city"></zi-checkbox>
-             </zi-checkbox-group>
-           </div>
-            <br/>
-            <div>
-             <zi-radio-group v-model="city">
-               <zi-radio v-for="city in cities" :label="city" :key="city">{{ city }}</zi-radio>
-             </zi-radio-group>
-           </div>
-            <br/>
-            <div>
-             <label>name: </label>
-             <zi-input placeholder="enter your name" v-model="name"></zi-input>
-           </div>
-            <br/>
-            <div>
-             <label>city: </label>
-             <zi-select v-model="option">
-               <zi-option value="First option"></zi-option>
-               <zi-option value="Second option"></zi-option>
-             </zi-select>
-           </div>
-          </form>
-        </zi-card>
-      </div>
+      <h2>form items example</h2>
+      <zi-card>
+        <form>
+          <div>
+            <zi-checkbox-group v-model="checkedValues">
+              <zi-checkbox v-for="city in cities" :label="city" :key="city"></zi-checkbox>
+            </zi-checkbox-group>
+          </div>
+          <br/>
+          <div>
+            <zi-radio-group v-model="city">
+              <zi-radio v-for="city in cities" :label="city" :key="city">{{ city }}</zi-radio>
+            </zi-radio-group>
+          </div>
+          <br/>
+          <div>
+            <label>name: </label>
+            <zi-input placeholder="enter your name" v-model="name"></zi-input>
+          </div>
+          <br/>
+          <div>
+            <label>city: </label>
+            <zi-select v-model="option">
+              <zi-option value="First option"></zi-option>
+              <zi-option value="Second option"></zi-option>
+            </zi-select>
+          </div>
+        </form>
+      </zi-card>
+    </div>
   </template>
 </div>
 
