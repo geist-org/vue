@@ -43,7 +43,11 @@
   flex-direction column
   max-width 100%
   border-radius 8px
+  min-width 410px
   transform translateY(-100px)
+
+  @media screen and (max-width: 420px)
+    min-width 90vw
 
 .zi-dialog-content
   font-size 14px
@@ -60,7 +64,6 @@
 
   >.body
     text-align left
-    width 320px
     max-width 100%
 
 .zi-dialog-footer

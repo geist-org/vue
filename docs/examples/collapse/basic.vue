@@ -1,5 +1,5 @@
 <template lang="pug">
-zi-collapse
+zi-collapse(v-model="value")
   zi-collapse-item(title="Question A")
     p Lorem ipsum dolor sit amet,consectetur adipiscing elit,
       |sed do eiusmod tempor incididunt ut labore
@@ -11,5 +11,9 @@ zi-collapse
 <script>
 export default {
   name: 'ex-collapse-basic',
+
+  data: () => ({
+    value: [],
+  }),
 }
 </script>

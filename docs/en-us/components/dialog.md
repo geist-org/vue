@@ -12,6 +12,7 @@
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
+| **width** | dialog's width | `string` | - | - |
 | **title** | dialog's title | `string` | - | - |
 | **value** | Switch the display hiding of dialog | `boolean` | `true` / `false` | `false` |
 | **cancel** | text of cancel button | `string` | - | `cancel` |

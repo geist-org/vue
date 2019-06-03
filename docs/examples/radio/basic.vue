@@ -1,6 +1,6 @@
 <template lang="pug">
 div(class="name")
-  zi-radio(v-model="value" label="1") Sydney
+  zi-radio(v-model="value" label="1" style="margin-right: 20px") Sydney
   zi-radio(v-model="value" label="2") London
 </template>
 

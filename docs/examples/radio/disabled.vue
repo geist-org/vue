@@ -1,10 +1,7 @@
 <template lang="pug">
 div(class="name")
-  zi-radio(v-model="value" label="1" disabled) Sydney
-  zi-radio(v-model="value" label="2") London
-  br
-  zi-radio-group(v-model="checked" disabled)
-    zi-radio(v-for="item in data" :label="item.label" :key="item.value") {{ item.name }}
+  zi-radio(v-model="value" label="1" disabled style="margin-right: 20px") Sydney
+  zi-radio(v-model="value" label="2" disabled) London
 </template>
 
 <script>

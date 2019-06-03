@@ -6,9 +6,9 @@ div
     p
       zi-input(value="001" size="small")
     br
-    p select region
+    p select region:
     p
-      zi-radio(v-model="region" label="usa") USA
+      zi-radio(v-model="region" label="usa" style="margin-right: 20px") USA
       zi-radio(v-model="region" label="cn") CN
 </template>
 

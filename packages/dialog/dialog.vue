@@ -4,7 +4,7 @@ transition(name="zi-dialog-backdrop")
     .zi-dialog-backdrop
     .zi-dialog-backdrop.responsive(@click.self="close" v-if="closeByModal")
     transition(name="zi-dialog-slide")
-      .zi-dialog-wrapper(v-if="!!model")
+      .zi-dialog-wrapper(v-if="!!model" :style="{ width, minWidth: width || '' }")
         .zi-dialog-content
           h2.header(v-if="title") {{ title }}
           .body #[slot]
@@ -24,6 +24,7 @@ export default {
   props: {
     title: String,
     value: Boolean,
+    width: String,
     cancel: {
       type: String, default: 'cancel',
     },
