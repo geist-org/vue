@@ -1,6 +1,6 @@
 {
   "name": "@zeit-ui/vue",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "A popular UI framework for Vue",
   "scripts": {
     "start": "vue-cli-service serve",
