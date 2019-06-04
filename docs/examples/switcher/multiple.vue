@@ -1,18 +1,15 @@
 <template lang="pug">
 div
-  zi-switcher(:options="list" v-model="value")
-  br
-  br
-  zi-card(v-for="(item, index) in list" :key="item.value" v-show="item === value" :dark="(index % 2) === 0")
-    p {{ item }}
+  zi-switcher
+    zi-switcher-item(v-for="label in labels" :label="label")
+      .zi-comment the current choice is {{ label }}
 </template>
 <script>
 export default {
   name: 'ex-switcher-multiple',
 
   data: () => ({
-    value: 'Coding',
-    list: ['Gitlab', 'Github', 'Coding', 'Gitea'],
+    labels: ['Gitlab', 'Github', 'Coding', 'Gitea'],
   }),
 }
 </script>

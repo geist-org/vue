@@ -1,18 +1,19 @@
 <template lang="pug">
 div
-  zi-switcher(:options="list" v-model="value")
-  br
-  br
-  zi-card(v-for="item in list" :key="item.value" v-if="value === item.value" :dark="value === 2")
-    p {{ item.label }}
+  zi-switcher(@label-selected="selectHandler")
+    zi-switcher-item(label="Gitlab" active)
+      zi-note Gitlab content
+    zi-switcher-item(label="Github")
+      zi-note Github content
 </template>
 <script>
 export default {
   name: 'ex-switcher-basic',
 
-  data: () => ({
-    value: 1,
-    list: [{ label: 'Gitlab', value: 1 }, { label: 'Github', value: 2 }],
-  }),
+  methods: {
+    selectHandler(label) {
+      console.log(label)
+    },
+  },
 }
 </script>

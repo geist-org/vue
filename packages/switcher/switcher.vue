@@ -1,12 +1,10 @@
 <template lang="pug">
-div.zi-switcher
-  a(
-    :class="{ active: isSelected(item) }"
-    v-for="item in privateOptions"
-    :key="item.value"
-    @click="select(item)"
-  )
-    |{{ item.label }}
+div
+  .zi-switcher
+    a(v-for="label in labels" :key="label" @click="select(label)" :class="{ active: isSelected(label) }")
+      |{{ label }}
+  .zi-switcher-content
+    slot
 </template>
 <script>
 import { print } from '../utils'
@@ -14,65 +12,50 @@ import { print } from '../utils'
 export default {
   name: 'zi-switcher',
 
-  props: {
-    options: {
-      type: Array,
-      required: true,
-      validator: array => {
-        return array.every(item => {
-          const label = item.label || item
-          const type = typeof label
-          return type === 'string' || type === 'number'
-        })
-      },
-    },
-    value: [String, Number],
-  },
-
   data: () => ({
-    privateOptions: [],
-    privateModel: undefined,
+    labels: [],
+    currentActive: '',
+    subscribers: [],
   }),
 
-  computed: {
-    model: {
-      get() {
-        return this.privateModel || this.value
-      },
-
-      set(val) {
-        this.privateModel = val
-        this.$emit('input', val)
-      },
-    },
-  },
-
-  created() {
-    if (!this.options.length) {
-      return print.error(`${this.$options.name} prop :options Cannot be an empty array`)
-    }
-
-    this.privateOptions = this.options.map(item => {
-      const label = item.label || item
-      const value = item.value || label
-      return { label, value }
-    })
-  },
-
   methods: {
-    select(item) {
-      this.model = item.value
+    appendLabel(label) {
+      if (this.labels.find(item => item === label)) {
+        return print.error(`[zi-switcher] > Duplicate label (${label})`)
+      }
+      this.labels.push(label)
+
+      // select first label by default
+      if (this.labels.length === 1) {
+        this.select(label)
+      }
     },
 
-    isSelected(item) {
-      return this.model === item.value
+    appendSubscriber(handler) {
+      this.subscribers.push(handler)
     },
-  },
 
-  watch: {
-    value(newVal) {
-      this.privateModel = newVal
+    isSelected(label) {
+      return this.currentActive === label
+    },
+
+    select(label) {
+      if (this.currentActive !== label) {
+        this.$emit('label-selected', label)
+      }
+
+      this.currentActive = label
+      this.subscribers.forEach(item => {
+        if (typeof item !== 'function') return
+        item()
+      })
     },
   },
 }
 </script>
+
+<style lang="stylus" scoped>
+.zi-switcher-content
+  width 100%
+  margin-top 10px
+</style>
