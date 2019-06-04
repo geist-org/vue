@@ -38,7 +38,7 @@ export default {
     }
     this._group.appendSubscriber(this.updateSubscription.bind(this))
     this._group.appendLabel(this.label)
-    this.active && this._group.select(this.label)
+    this.active && this._group.select(this.label, true)
   },
 
   methods: {

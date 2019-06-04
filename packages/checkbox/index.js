@@ -1,5 +1,5 @@
 import Checkbox from './checkbox'
-import CheckboxGroup from './checkbox_group'
+import CheckboxGroup from './checkbox-group'
 
 Checkbox.install = vue => {
   vue.component(Checkbox.name, Checkbox)

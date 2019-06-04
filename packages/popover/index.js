@@ -1,5 +1,5 @@
 import Popover from './popover'
-import PopverItem from './popover_item'
+import PopverItem from './popover-item'
 
 Popover.install = vue => {
   vue.component(Popover.name, Popover)
