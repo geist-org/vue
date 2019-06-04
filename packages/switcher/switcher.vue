@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   .zi-switcher
-    a(v-for="label in labels" :key="label" @click="select(label)" :class="{ active: isSelected(label) }")
+    a(v-for="(label, index) in labels" :key="label + index" @click="select(label)" :class="{ active: isSelected(label) }")
       |{{ label }}
   .zi-switcher-content
     slot
@@ -27,7 +27,7 @@ export default {
 
       // select first label by default
       if (this.labels.length === 1) {
-        this.select(label)
+        this.select(label, true)
       }
     },
 
@@ -39,8 +39,8 @@ export default {
       return this.currentActive === label
     },
 
-    select(label) {
-      if (this.currentActive !== label) {
+    select(label, slient = false) {
+      if (slient || this.currentActive !== label) {
         this.$emit('label-selected', label)
       }
 
