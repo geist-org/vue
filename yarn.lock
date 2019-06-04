@@ -1101,10 +1101,10 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.1.tgz#5c85d662f76fa1d34575766c5dcd6615abcd30d8"
   integrity sha512-FZdkNBDqBRHKQ2MEbSC17xnPFOhZxeJ2YGSfr2BKf3sujG49Qe3bB+rGCwQfIaA7WHnGeGkSijX4FuBCdrzW/g==
 
-"@zeit-ui/style@^0.8.3":
-  version "0.8.3"
-  resolved "https://registry.yarnpkg.com/@zeit-ui/style/-/style-0.8.3.tgz#949c203959f78664a62655cfdf892f5abd5c75ec"
-  integrity sha512-3HkdBZ3VUkxusHz3WUrrcjEjGyPdCZbwEYuasIF5GSZJUR1SQXOh4uYB3t0QM5dTsWbSBTk7oa0JuhKgO/c9Og==
+"@zeit-ui/style@^0.9.2":
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/@zeit-ui/style/-/style-0.9.2.tgz#f3b02048d9c61be5ae24588463b464ab50e3115b"
+  integrity sha512-IbBQODLW8XG0FygcxN8bvQ4PQt70tv+zFY7y2J09hTLXZDGjpMf5LCJPYPc6/goCx9qZB/vu39BiL8YL8vR7XA==
 
 abab@^1.0.0:
   version "1.0.4"
