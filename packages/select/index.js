@@ -1,5 +1,5 @@
 import Select from './select'
-import SelectOption from './select_option'
+import SelectOption from './select-option'
 
 Select.install = vue => {
   vue.component(Select.name, Select)

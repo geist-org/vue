@@ -11,7 +11,7 @@ button.zi-btn(@click="clickHandler" :class="classes")
 </template>
 
 <script>
-import ZiButtonDrip from './button_drip'
+import ZiButtonDrip from './button-drip'
 import { validator } from '../utils'
 
 export default {
