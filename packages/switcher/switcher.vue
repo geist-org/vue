@@ -40,7 +40,7 @@ export default {
     },
 
     select(label, slient = false) {
-      if (slient || this.currentActive !== label) {
+      if (!slient || this.currentActive !== label) {
         this.$emit('label-selected', label)
       }
 
