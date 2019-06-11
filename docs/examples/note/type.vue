@@ -6,7 +6,7 @@ div
   br
   zi-note(type="alert") an alert note
   br
-  zi-note(label="note") a basic note
+  zi-note(label="note" type="error") a basic note
     br
     a A link to helpful information.
 </template>
