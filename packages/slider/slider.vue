@@ -71,17 +71,12 @@ export default {
     },
 
     setValue() {
-      const sliderRail = this.$refs.sliderRail
-      if (this.privateValue >= 100 && this.currentX >= this.startX + sliderRail.clientWidth) {
-        this.$emit('input', 100)
-        return
-      }
-      if (this.privateValue <= 0 && this.currentX < this.startX) {
-        this.$emit('input', 0)
-        return
-      }
-      const stepDistance = sliderRail.clientWidth / (100 / this.step)
-      this.$emit('input', Math.round((this.currentX - this.startX) / stepDistance) * this.step)
+      const railWidth = this.$refs.sliderRail.clientWidth
+      const stepDistance = railWidth / (100 / this.step)
+      let slideDistance = Math.round((this.currentX - this.startX) / stepDistance) * this.step
+      if (this.currentX - this.startX <= 0) slideDistance = 0
+      if (this.currentX - this.startX >= railWidth) slideDistance = 100
+      this.$emit('input', slideDistance)
     },
 
     onDragEnd() {

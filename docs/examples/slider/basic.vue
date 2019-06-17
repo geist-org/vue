@@ -9,5 +9,11 @@ export default {
   data: () => ({
     value: 14,
   }),
+
+  watch: {
+    value(val) {
+      console.log(val)
+    },
+  },
 }
 </script>
