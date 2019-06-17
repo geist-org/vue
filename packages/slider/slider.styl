@@ -1,0 +1,48 @@
+.zi-slider
+  display inline-flex
+  box-sizing border-box
+  background-color #fff
+  width 50%
+  height 14px
+  position relative
+  user-select none
+  touch-action none
+  vertical-align middle
+
+.zi-slider-rail
+  width 100%
+  height 8px
+  background-color #000
+  border-radius 5px
+  cursor pointer
+
+.zi-slider-handler
+  text-align center
+  position absolute
+  top -6px
+  vertical-align middle
+  height 20px
+  padding 0 6px
+  background-color #0076ff
+  color #fff
+  font-size 12px
+  font-weight 700
+  user-select none
+  line-height 20px
+  border-radius 10px
+  transform: translateX(-50%)
+  z-index 999
+
+  &:hover
+    cursor grab
+
+  &:active
+    cursor grabbing
+
+.zi-slider-dot
+  position absolute
+  width 2px
+  height 8px
+  background-color #fff
+
+
