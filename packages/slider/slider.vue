@@ -1,10 +1,11 @@
 <template lang="pug">
-.zi-slider
+.zi-slider(style="width: 60%")
   .zi-slider-rail(@click="onSliderClick" ref="sliderRail")
   .zi-slider-handler(
     ref="sliderHandler"
+    :class="isClick ? 'click_animation': ''"
     :style="{ left: `${ privateValue }%` }"
-    @mousedown="handleMouseDown"
+    @mousedown.stop="handleMouseDown"
     @mouseup="onDragEnd") {{ privateValue }}
   .zi-slider-dot(v-if="showStops" v-for="dot in dots" :style="{ left: `${ dot }%` }")
 </template>
@@ -47,18 +48,20 @@ export default {
     currentX: 0,
     startX: 0,
     startDrag: false,
+    isClick: false,
   }),
 
   methods: {
     onSliderClick(event) {
+      this.isClick = true
       this.startX = this.$refs.sliderRail.getBoundingClientRect().x
       this.currentX = event.clientX
       this.setValue()
     },
 
-    handleMouseDown(event) {
+    handleMouseDown() {
+      this.isClick = false
       this.startDrag = true
-      event.preventDefault()
       this.startX = this.$refs.sliderRail.getBoundingClientRect().x
       window.addEventListener('mousemove', this.onDragging)
       window.addEventListener('mouseup', this.onDragEnd)
@@ -72,6 +75,7 @@ export default {
 
     setValue() {
       const railWidth = this.$refs.sliderRail.clientWidth
+      // step把rail分为n块，每块的距离为stepDistance，计算滑块current到rail's start的距离有几个stepDistance, *step算出百分比
       const stepDistance = railWidth / (100 / this.step)
       let slideDistance = Math.round((this.currentX - this.startX) / stepDistance) * this.step
       if (this.currentX - this.startX <= 0) slideDistance = 0

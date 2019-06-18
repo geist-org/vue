@@ -2,7 +2,7 @@
   display inline-flex
   box-sizing border-box
   background-color #fff
-  width 50%
+  width 100%
   height 14px
   position relative
   user-select none
@@ -39,10 +39,14 @@
   &:active
     cursor grabbing
 
+  &.click_animation
+    transition: left 0.3s ease-out;
+
 .zi-slider-dot
   position absolute
   width 2px
   height 8px
   background-color #fff
+  transform translateX(-50%)
 
 
