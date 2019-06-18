@@ -1,3 +1,48 @@
+table
+  border-collapse separate
+  border-spacing 0
+  width 100%
+
+  thead th td
+    height rem(40)
+  tbody tr td
+    height rem(50)
+
+  th, td
+    padding 0 rem(10)
+    text-align left
+
+  th
+    height rem(40)
+    color #666
+    font-size rem(14)
+    font-weight 400
+    letter-spacing 0
+    background #fafafa
+    border-bottom 1px solid #eaeaea
+    border-top 1px solid #eaeaea
+
+  th:nth-child(1)
+    border-bottom 1px solid #eaeaea
+    border-left 1px solid #eaeaea
+    border-radius 4px 0 0 4px
+    border-top 1px solid #eaeaea
+
+  th:last-child
+    border-bottom 1px solid #eaeaea
+    border-radius 0 4px 4px 0
+    border-right 1px solid #eaeaea
+    border-top 1px solid #eaeaea
+
+  tr td
+    border-bottom 1px solid #eaeaea
+    color #444
+    font-size rem(14)
+    height rem(40)
+
+  & td:nth-child(1)
+    border-left 1px solid transparent
+
 .table-cell
   boxSizing border-box
   overflow hidden

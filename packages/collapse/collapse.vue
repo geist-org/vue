@@ -56,3 +56,5 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus" src="./collapse.styl"/>

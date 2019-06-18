@@ -1,0 +1,266 @@
+.zi-btn
+  -webkit-box-align center
+  -webkit-align-items center
+  display inline-block
+  padding: 0 rem(22)
+  border-radius 5px
+  font-weight 100
+  font-size rem(12)
+  cursor pointer
+  user-select none
+  outline none
+  justify-content center
+  text-transform uppercase
+  text-align center
+  height rem(38)
+  line-height rem(38)
+  width auto
+  min-width rem(200)
+  white-space nowrap
+  transition border 0.2s, background 0.2s, color 0.2s ease-out
+  position relative
+  overflow hidden
+
+  background white
+  border 1px solid #eaeaea
+  color #666
+
+  &:not(.loading):not(.shadow):hover
+    color black
+    background white
+    border-color black
+
+.zi-btn
+  &.mini
+    height rem(22)
+    line-height rem(22)
+    padding: 0 rem(30)
+    width initial
+    min-width rem(100)
+
+  &.small
+    height rem(30)
+    line-height rem(30)
+    padding: 0 rem(20)
+    width initial
+    min-width rem(150)
+
+  &.big, &.huge
+    height rem(42)
+    line-height rem(42)
+    padding: 0 rem(30)
+    width initial
+    min-width rem(250)
+
+  &.primary
+    background-color black
+    border: 1px solid black
+    color white
+
+    &:not(.loading):not(.shadow):hover
+      background white
+      color black
+      border 1px solid black
+
+  &.warning
+    border-color $STATUS_WARNING
+    background-color $STATUS_WARNING
+    color white
+
+    &:not(.loading):not(.shadow):hover
+      color $STATUS_WARNING
+      background white
+      border-color $STATUS_WARNING
+
+  &.danger, &.error
+    border-color $STATUS_DANGER
+    background-color $STATUS_DANGER
+    color white
+
+    &:not(.loading):not(.shadow):hover
+      color $STATUS_DANGER
+      background white
+      border-color $STATUS_DANGER
+
+  &.success
+    border-color $STATUS_SUCCESS
+    background-color $STATUS_SUCCESS
+    color #fff
+
+    &:not(.loading):not(.shadow):hover
+      color $STATUS_SUCCESS
+      background: #fff
+      border-color $STATUS_SUCCESS
+
+  &.abort
+    background-color transparent
+    border-color transparent
+    color #666
+
+    &:not(.loading):not(.shadow):hover
+      background-color transparent
+      border-color transparent
+      color #666
+
+  &.shadow
+    box-shadow 0 3px 10px rgba(0, 0, 0, 0.12)
+
+    &:not(.loading):hover
+      box-shadow 0 7px 20px rgba(0, 0, 0, 0.16)
+      transform translateY(-1px)
+
+  &.disabled
+    background #fafafa !important
+    border-color #eaeaea !important
+    color #ccc !important
+    cursor not-allowed !important
+
+    &:hover
+      background #fafafa !important
+      border-color #eaeaea !important
+      color #ccc !important
+      cursor not-allowed !important
+
+  &.loading
+    cursor default
+
+    &:hover
+      pointer-events none
+      color transparent
+
+.zi-loading-shim
+  position absolute
+  top 0
+  left 0
+  right 0
+  bottom 0
+  width 100%
+  height 100%
+  display flex
+  justify-content center
+  align-items center
+  background-color #fafafa
+
+  i
+    width 4px
+    height 4px
+    border-radius 50%
+    background-color #444
+    margin 0 1px
+    display inline-block
+    animation zi-loading-blink 1.4s infinite both
+
+    &:nth-child(2)
+      animation-delay 0.2s
+
+    &:nth-child(3)
+      animation-delay 0.4s
+
+
+@keyframes zi-loading-blink
+  0%
+    opacity 0.2
+  20%
+    opacity 1
+  100%
+    opacity 0.2
+
+
+.zi-btn .prefix, .zi-btn .suffix
+  position absolute
+  top 50%
+  transform translateY(-50%)
+  font-size rem(25)
+  pointer-events none
+
+
+.zi-btn
+  & .prefix
+    left rem(8)
+
+  & .suffix
+    right rem(8)
+
+  &.small .prefix, &.small .suffix
+    font-size rem(14)
+
+  &.circular
+    //padding rem(5) rem(15)
+    border-radius rem(100)
+    box-shadow 0 4px 4px rgba(0, 0, 0, 0.06)
+    text-transform uppercase
+    background-color #fff
+    height rem(28)
+    line-height rem(28)
+    border none
+
+    &:not(.loading):not(.shadow):hover
+      border none
+      color black
+      box-shadow 0 5px 9px rgba(0, 0, 0, 0.08)
+
+    i.prefix, i.suffix
+      font-size rem(12)
+      position initial
+      line-height inherit
+
+    i.prefix
+      margin-right rem(10)
+
+    i.suffix
+      margin-left rem(10)
+
+.zi-btn.auto
+  min-width min-content
+  padding 0 rem(20)
+
+  .mini
+    padding 0 rem(10)
+
+  .small
+    padding 0 rem(15)
+
+  .big, .huge
+    padding 0 rem(25)
+
+.zi-btn.ghost
+
+  &.primary
+    background-color white
+    border: 1px solid black
+    color black
+
+    &:not(.loading):not(.shadow):hover
+      background black
+      color white
+      border 1px solid white
+
+  &.warning
+    border-color $STATUS_WARNING
+    background-color white
+    color $STATUS_WARNING
+
+    &:not(.loading):not(.shadow):hover
+      color white
+      background $STATUS_WARNING
+      border-color white
+
+  &.danger, &.error
+    border-color $STATUS_DANGER
+    background-color white
+    color $STATUS_DANGER
+
+    &:not(.loading):not(.shadow):hover
+      color white
+      background $STATUS_DANGER
+      border-color white
+
+  &.success
+    border-color $STATUS_SUCCESS
+    background-color white
+    color $STATUS_SUCCESS
+
+    &:not(.loading):not(.shadow):hover
+      color white
+      background: $STATUS_SUCCESS
+      border-color white

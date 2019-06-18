@@ -2,13 +2,14 @@
 .zi-collapse
   .zi-collapse-title(@click="clickHandler")
     h3 {{ title }}
-    i(:class="model ? 'zi-icon-minus' : 'zi-icon-plus'")
+    downIcon.icon(:class="{ reverse: model }")
   zi-transition-expand
     .zi-collapse-content(v-if="model" style="padding: 0")
       slot
 </template>
 
 <script>
+import downIcon from '@zeit-ui/vue-icons/packages/down'
 import { print, transitions } from '../utils'
 
 const { ZiTransitionExpand } = transitions
@@ -16,7 +17,10 @@ const { ZiTransitionExpand } = transitions
 export default {
   name: 'zi-collapse-item',
 
-  components: { ZiTransitionExpand },
+  components: {
+    downIcon,
+    ZiTransitionExpand,
+  },
 
   data: () => ({
     privateModel: false,

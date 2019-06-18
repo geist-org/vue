@@ -1,12 +1,17 @@
 <template lang="pug">
-a.zi-footnote(:href="href" :target="target" :style="[isHelp]")
+a.zi-footnote(:href="href" :target="target" :style="[isHelp]"
+  @mouseenter="isActive = true" @mouseleave="isActive = false")
   slot
-  i.zi-icon-footnote
+  zi-footnote-icon.zi-footnote-icon(:is-active="isActive")
 </template>
 
 <script>
 export default {
   name: 'zi-footnote',
+
+  data: () => ({
+    isActive: false,
+  }),
 
   props: {
     href: String,
@@ -21,3 +26,5 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus" src="./footnote.styl"/>

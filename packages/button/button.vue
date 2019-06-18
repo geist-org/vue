@@ -77,3 +77,4 @@ export default {
 }
 </script>
 
+<style lang="stylus" src="./button.styl"/>

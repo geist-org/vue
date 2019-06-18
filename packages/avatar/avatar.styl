@@ -1,0 +1,58 @@
+.zi-avatar
+  display inline-block
+  position relative
+  overflow hidden
+  width rem(30)
+  height rem(30)
+  border-radius 50%
+  border 1px solid #eee
+  vertical-align top
+  background-color #f6f6f6
+
+  img
+    display inline-block
+    width 100%
+    height 100%
+    border-radius 50%
+
+  &+&
+    margin-left 0
+
+  &.small
+    width rem(20)
+    height rem(20)
+
+  &.big
+    width rem(60)
+    height rem(60)
+    .zi-avatar-string
+      font-size rem(20)
+
+  &.huge
+    width rem(90)
+    height rem(90)
+    .zi-avatar-string
+      font-size rem(20)
+
+  &.stacked
+    &+&
+      margin-left rem(-10)
+
+  &.square
+    border-radius rem(5)
+    img
+      border-radius rem(5)
+
+  &.single
+    .zi-avatar-string
+      transform translate(-50%, -50%) scale(1)
+
+.zi-avatar-string
+  position absolute
+  left 50%
+  top 50%
+  font-size rem(14)
+  text-align center
+  transform translate(-50%, -50%) scale(.6)
+  white-space nowrap
+  user-select none

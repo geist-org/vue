@@ -1,5 +1,5 @@
 import './assets/index.styl'
-import '@zeit-ui/style'
+// import '@zeit-ui/style'
 import Vue from 'vue'
 import App from './app.vue'
 import Components from './components'

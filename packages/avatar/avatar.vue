@@ -37,3 +37,4 @@ export default {
 }
 </script>
 
+<style lang="stylus" src="./avatar.styl"/>

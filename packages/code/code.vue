@@ -24,3 +24,5 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus" src="./code.styl"></style>

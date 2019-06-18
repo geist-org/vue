@@ -1,0 +1,43 @@
+pre, code
+  font-family Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif
+
+pre
+  color #000
+  background-color transparent
+  border 1px solid #eaeaea
+  margin 0
+  padding rem(20)
+  font-size rem(13)
+  overflow auto
+  white-space pre
+  line-height rem(20)
+
+  &.zi-bash:before
+    content '$ '
+
+  span, p
+    font-size inherit
+    color inherit
+
+  code
+    font-size inherit
+    color inherit
+
+    &:before, &:after
+      content ''
+
+pre.zi-dark
+  background black
+  color: white
+
+code
+  font-size rem(13)
+  color #d400ff
+  white-space pre-wrap
+
+  &:before, &:after
+    content '`'
+
+.zi-bash
+  pre:before
+    content '$ '

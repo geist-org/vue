@@ -40,6 +40,7 @@ export default {
     },
 
     statusStyle() {
+      if (this.depth === 0) return `left: ${-24}px;`
       const left = this.depth * 34 - 28
       return `left: ${left}px;`
     },
@@ -146,8 +147,4 @@ export default {
 
   &:hover span
     font-weight 600
-
-.icon
-  width 24px
-  margin-right 8px
 </style>
