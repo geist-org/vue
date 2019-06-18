@@ -1,0 +1,127 @@
+.zi-input
+  font-family -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Avenir', 'PingFang SC', 'Helvetica Neue', Helvetica
+  padding 0 rem(11)
+  display inline-flex
+  vertical-align middle
+  align-items center
+  border-radius 5px
+  background-color transparent
+  font-size rem(14)
+  height rem(37)
+  line-height rem(27)
+  width initial
+  outline 0
+  box-sizing border-box
+  margin 4px 10px
+  border 1px solid #e1e1e1
+  -webkit-appearance none
+  transition border 0.2s ease, color 0.2s ease
+
+  &:focus
+    border-color #888
+
+  &.disabled
+    background #fafafa
+    color #999
+    cursor not-allowed
+
+  &.error
+    color $STATUS_DANGER
+    border-color $STATUS_DANGER
+
+  &.success
+    color $STATUS_SUCCESS
+    border-color $STATUS_SUCCESS
+
+  &.small
+    font-size rem(12)
+    height rem(32)
+    line-height rem(22)
+
+  &.mini
+    font-size rem(12)
+    height rem(28)
+    line-height rem(20)
+
+  &.big, &.huge
+    font-size rem(16)
+    height rem(42)
+    line-height rem(38)
+
+.zi-input-group-empty
+  display inline-flex
+  border-radius 5px
+  background-color transparent
+
+  input
+    flex 1
+    margin 0
+
+.zi-input-group
+  display inline-flex
+  border-radius 5px
+  background-color transparent
+
+  input
+    flex 1
+    margin 0
+
+  >.zi-label
+    display inline-flex
+    justify-content center
+    align-items center
+    background-color #fafafa
+    border-radius 5px
+    border-bottom 1px solid #e1e1e1
+    border-top 1px solid #e1e1e1
+    color #9b9b9b
+    font-size rem(14)
+    line-height 1
+    width initial
+    padding 0 rem(10)
+    user-select none
+
+    i
+      margin 0 rem(4)
+
+  &.suffix
+    input
+      border-top-right-radius 0
+      border-bottom-right-radius 0
+
+    >.zi-label.suffix
+      border-left none
+      border-right 1px solid #e1e1e1
+      border-top-left-radius 0
+      border-bottom-left-radius 0
+
+  &.prefix
+    input
+      border-top-left-radius 0
+      border-bottom-left-radius 0
+
+    >.zi-label.prefix
+      border-right none
+      border-left 1px solid #e1e1e1
+      border-top-right-radius 0
+      border-bottom-right-radius 0
+
+.zi-input-group-empty, .zi-input-group
+  &.clearable
+    position relative
+
+    input
+      padding-right rem(28)
+
+    .close
+      color #9b9b9b
+      width rem(13)
+      height rem(13)
+      position absolute
+      top 50%
+      right rem(10)
+      transform translateY(-50%)
+      z-index 1
+      background-color transparent
+      cursor pointer
+      transition all .15s ease

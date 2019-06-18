@@ -10,14 +10,18 @@
     :disabled="disabled"
   )
     slot
-  i.arrow.zi-icon-up(v-if="!simple")
+  .arrow-box(v-if="!simple")
+    down.arrow
 </template>
 
 <script>
+import down from '@zeit-ui/vue-icons/packages/down'
 import { validator } from '../utils'
 
 export default {
   name: 'zi-select',
+
+  components: { down },
 
   data: () => ({
     privateModel: undefined,
@@ -51,3 +55,5 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus" src="./select.styl"></style>

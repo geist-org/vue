@@ -54,8 +54,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-.zi-switcher-content
-  width 100%
-  margin-top 10px
-</style>
+<style lang="stylus" src="./switcher.styl"/>

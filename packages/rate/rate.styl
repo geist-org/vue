@@ -1,0 +1,24 @@
+.zi-rate
+  height rem(20)
+  line-height 1
+
+  &.disabled
+    .zi-rate-icon
+      cursor default
+
+.zi-rate-icon
+  width rem(18)
+  height rem(18)
+  cursor pointer
+  fill #999
+  margin-right rem(8)
+  transition color .12s ease-in
+
+  &:not(.active):not(.disabled):hover
+    fill #222
+
+  &:not(.active):not(.disabled).hover
+    fill #222
+
+  &.active
+    fill #f5a623

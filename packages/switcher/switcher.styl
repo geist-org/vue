@@ -1,0 +1,50 @@
+.zi-switcher
+  display inline-flex
+  align-items center
+  background-color white
+  border-radius 4px
+  border 1px solid #eaeaea
+  overflow hidden
+  color black
+
+  a
+    color inherit
+    font-size rem(12)
+    height rem(28)
+    line-height rem(28)
+    cursor pointer
+    display flex
+    justify-content center
+    align-items center
+    padding 0 rem(12)
+    min-width rem(128)
+    user-select none
+    transition background-color .12 ease
+    position relative
+
+    &::after
+      position absolute
+      height rem(16)
+      border-right 1px solid #eaeaea
+      right 0
+      top 50%
+      transform translateY(-50%)
+      content ''
+
+    &:last-child::after
+      display none
+
+    &:not(.active):hover
+      text-decoration none
+      background-color #fafafa
+
+    &.active
+      pointer-events none
+      font-weight 500
+
+.zi-drak .zi-switcher
+  color white
+
+.zi-switcher-content
+  width 100%
+  margin-top 10px

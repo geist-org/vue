@@ -45,3 +45,5 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus" src="./more.styl"/>

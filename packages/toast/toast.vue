@@ -36,3 +36,5 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus" src="./toast.styl"/>

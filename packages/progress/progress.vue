@@ -63,3 +63,5 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus" src="./progress.styl"></style>

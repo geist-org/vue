@@ -1,0 +1,49 @@
+.zi-progress-bar
+  display inline-flex
+  justify-content space-between
+  align-items center
+  height rem(6)
+  user-select none
+
+  &.top, &.bottom
+    position fixed
+    height rem(3)
+    width 100vw
+    left 0
+    z-index 9999
+    overflow hidden
+
+    .zi-progress__text
+      display none
+      pointer-events none
+
+    .zi-progress
+      width 100%
+
+  &.top
+    top 0
+
+  &.bottom
+    bottom 0
+
+.zi-progress
+  width rem(300)
+  height 100%
+  background-color #ebeef5
+  border-radius rem(4)
+
+.zi-progress__inner
+  width 0
+  height 100%
+  background-color #000
+  border-radius 4px
+  transition: width 0.6s ease, background-color 1s ease
+
+.zi-progress__text
+  border-radius rem(16)
+  background #0076ff
+  padding rem(2) rem(5)
+  color #fff
+  font-size rem(12)
+  font-weight bolder
+  margin-left rem(10)

@@ -1,8 +1,9 @@
 <template lang="pug">
 div.zi-rate(:class="{ disabled }")
-  i.zi-rate-star(
+  zi-rate-icon.zi-rate-icon(
     v-for="index in 5"
     :key="index"
+    :is-active="isActive(index)"
     @click="clickHandler(index)"
     @mousemove="!disabled && (hoverIndex = index)"
     @mouseleave="hoverIndex = 0"
@@ -49,9 +50,13 @@ export default {
       this.model = index
     },
 
+    isActive(index) {
+      return index <= this.model
+    },
+
     classes(index) {
       let str = ''
-      str = index <= this.model ? ' zi-icon-star active' : ' zi-icon-star-off'
+      str = index <= this.model ? 'active' : ' '
       if (index <= this.hoverIndex) {
         str += ' hover'
       }
@@ -60,3 +65,5 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus" src="./rate.styl"/>
