@@ -6,7 +6,7 @@
     Fullscreen.ex-code-toggle(@click="showCode=!showCode" v-if="!showCode" :dark="isDark")
     FullscreenClose.ex-code-toggle(@click="showCode=!showCode" v-if="showCode" :dark="isDark")
   zi-transition-expand
-    prism(language="pug" class="ex-source-code" v-if="showCode") {{ codeTemplate }}
+    prism(language="pug" class="ex-source-code" v-if="showCode" :code="codeTemplate")
 </template>
 
 <script>
@@ -63,6 +63,7 @@ export default {
 }
 </script>
 
+<style lang="stylus" src="./code.styl"></style>
 <style scoped lang="stylus">
 .ex-code
   margin-top 45px

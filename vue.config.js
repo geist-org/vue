@@ -1,4 +1,5 @@
 const path = require('path')
+const Prism = require('prismjs')
 
 const isBuildLib = process.env.npm_lifecycle_event === 'build:lib'
 const styleModule = isBuildLib
@@ -24,6 +25,9 @@ module.exports = {
       .options({
         raw: true,
         wrapper: 'div',
+        highlight: str => {
+          return Prism.highlight(str, Prism.languages.javascript, 'javascript')
+        },
       })
 
     config.resolve
