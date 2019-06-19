@@ -20,12 +20,12 @@ div(:class="[groupClass, { prefix: hasPrefix, suffix: hasSuffix, clearable }]")
   span.zi-label.suffix(v-if="suffixLabel") {{ suffixLabel }}
   span.zi-label.suffix(v-if="suffixIcon")
     i(:class="suffixIcon")
-  DeleteIcon.close(v-if="clearable && showCloseIcon" @click="clear")
+  DeleteIcon.close(v-if="clearable && showCloseIcon" @click="clear" :dark="isDark")
 </template>
 
 <script>
 import DeleteIcon from '@zeit-ui/vue-icons/packages/delete'
-import { validator } from '../utils'
+import { validator, theme } from '../utils'
 
 export default {
   name: 'zi-input',
@@ -33,6 +33,7 @@ export default {
   data: () => ({
     privateModel: '',
     showCloseIcon: false,
+    isDark: theme.getCurrentTheme().includes('dark'),
   }),
 
   components: { DeleteIcon },
@@ -90,6 +91,10 @@ export default {
     },
   },
 
+  mounted() {
+    theme.subscribeChange(name => this.updateTheme(name))
+  },
+
   methods: {
     clear() {
       if (!this.clearable) return
@@ -101,6 +106,10 @@ export default {
         this.showCloseIcon = false
         clearTimeout(timer)
       }, 50)
+    },
+
+    updateTheme(name) {
+      this.isDark = name.includes('dark')
     },
   },
 }
