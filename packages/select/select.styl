@@ -1,0 +1,140 @@
+.zi-select
+  color black
+  border 1px solid #eaeaea
+  box-shadow none
+  background transparent
+  background-image none
+  height rem(40)
+  line-height rem(40)
+  font-size rem(14)
+  margin-right rem(-20)
+  appearance none
+  -webkit-appearance none
+  -moz-appearance none
+  width initial
+  padding 0 rem(36) 0 rem(16)
+  text-transform none
+  transition border .2s, background .2s, color .2s ease-out, box-shadow .2s ease
+
+  &:not(.disabled):hover, &:not(.disabled):focus-within
+    box-shadow 0 2px 6px rgba(0, 0, 0, 0.1)
+    border-color #ddd
+
+.zi-select-container
+  display inline-flex
+  border 1px solid #eaeaea
+  border-radius 5px
+  height rem(40)
+  line-height rem(40)
+  outline none
+  font-size rem(12)
+  user-select none
+  text-transform uppercase
+  font-weight 100
+  color black
+  background-color #fff
+  white-space nowrap
+  width auto
+  min-width rem(160)
+  overflow hidden
+  position relative
+  transition border .2s, background .2s, color .2s ease-out, box-shadow .2s ease
+
+  select
+    border none
+    margin 0
+    width 100%
+    height 100%
+
+  &:not(.disabled):hover, &:not(.disabled):focus-within
+    box-shadow 0 2px 6px rgba(0, 0, 0, 0.1)
+    border-color #ddd
+
+  &.simple
+    width initial
+    min-width unset
+
+  .arrow-box
+    width rem(40)
+    height 100%
+    display inline-flex
+    justify-content center
+    align-items center
+    border-left 1px solid #eaeaea
+    pointer-events none
+    background-color #fff
+    position absolute
+    right 0
+
+  .arrow
+    display inline-flex
+    width rem(12)
+    height rem(12)
+
+.zi-select-container, .zi-select
+  &.disabled
+    cursor not-allowed
+    opacity .6
+
+    select
+      cursor not-allowed
+
+  &.mini
+    height rem(24)
+    line-height rem(24)
+    font-size rem(12)
+    min-width rem(120)
+
+    select
+      height rem(24)
+      line-height rem(24)
+      font-size rem(12)
+
+    .arrow-box
+      width rem(30)
+      border none
+
+    .arrow
+      border none
+      width rem(10)
+      height rem(10)
+
+  &.small
+    height rem(32)
+    line-height rem(32)
+    font-size rem(12)
+    min-width rem(150)
+
+    select
+      height rem(32)
+      line-height rem(32)
+      font-size rem(12)
+
+    .arrow-box
+      width rem(34)
+      border none
+    .arrow
+      width rem(10)
+      height rem(10)
+
+
+.zi-dark-theme
+  .zi-select-container
+    background-color black
+    border-color #333
+    color white
+
+    &:not(.disabled):hover, &:not(.disabled):focus-within
+      box-shadow 0 2px 6px rgba(0, 0, 0, 0.1)
+      border-color #888
+
+  .zi-select
+    background-color black
+    border-color #333
+    color white
+
+  .arrow-box
+    background-color black
+    border-color #333
+
+

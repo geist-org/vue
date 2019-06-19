@@ -1,0 +1,67 @@
+.zi-fieldset
+  background-color white
+  border 1px solid #eaeaea
+  border-radius 5px
+  overflow hidden
+
+.zi-fieldset-content
+  background-color white
+  font-size rem(13)
+  padding rem(20)
+
+  h1
+    font-size rem(20)
+  h2, h3, h4, h5, h6, p, span
+    font-size rem(13)
+  p, div, h1, h2, h3, h4, h5, h6
+    margin-top 0
+    line-height rem(20)
+    margin-bottom rem(14)
+
+.zi-fieldset-footer
+  background-color #fafafa
+  border-top 1px solid #eaeaea
+  color #444
+  display flex
+  justify-content space-between
+  align-items center
+  font-size rem(12)
+  padding rem(15)
+  box-sizing border-box
+
+  p, span, div
+    font-size rem(12)
+    line-height rem(24)
+    margin 0
+
+
+.disabled .zi-fieldset, .disabled .zi-fieldset-content, .disabled .zi-fieldset-footer
+  background-color #fafafa
+  color #999
+
+  button
+    background #fafafa !important
+    border-color #eaeaea !important
+    color #ccc !important
+    cursor not-allowed !important
+
+
+.zi-dark-theme
+  .zi-fieldset
+    border-color #333
+
+  .zi-fieldset-content
+    background-color black
+
+    > div, p, span, h1, h2, h3
+      color white
+
+  .zi-fieldset-footer
+    background-color #111
+    border-color #111
+    color #999
+
+    > div, p, span
+      color #999
+
+

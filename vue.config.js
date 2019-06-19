@@ -1,10 +1,15 @@
 const path = require('path')
 
+const isBuildLib = process.env.npm_lifecycle_event === 'build:lib'
+const styleModule = isBuildLib
+  ? [path.resolve(__dirname, 'packages/utils/styles/base')]
+  : [path.resolve(__dirname, 'src/assets/styles/index'), path.resolve(__dirname, 'packages/utils/styles/base')]
+
 module.exports = {
   css: {
     loaderOptions: {
       stylus: {
-        import: [path.resolve(__dirname, 'src/assets/styles/index')],
+        import: styleModule,
       },
     },
   },

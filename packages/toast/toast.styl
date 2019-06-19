@@ -1,0 +1,113 @@
+.zi-toast-area
+  position fixed
+  bottom rem(10)
+  right rem(20)
+  max-width rem(420)
+  z-index 2000
+  transition transform .4s, opacity .4s ease
+
+.zi-toast-container
+  transform translate3d(0, -0, -0) scale(1)
+  transition all .4s ease
+  position absolute
+  bottom 0
+  height rem(72)
+  right 0
+
+  &:nth-last-child(1)
+    animation zi-toast-show-1 .4s ease forwards
+    z-index 2002
+
+  &:nth-last-child(2)
+    animation zi-toast-show-2 .4s ease forwards
+    z-index 2001
+
+  &:nth-last-child(3)
+    animation zi-toast-show-3 .4s ease forwards
+    z-index 2000
+
+  &:nth-last-child(4)
+    animation zi-toast-show-3 .4s ease forwards
+    z-index 2000
+
+  &:nth-last-child(n+4)
+    visibility hidden
+
+@keyframes zi-toast-show-1
+  from
+    transform translate3d(0, 72px, 0)
+  to
+    transform translate3d(0, 0, 0)
+
+@keyframes zi-toast-show-2
+  from
+    transform translate3d(0, 0, 0) scale(1)
+  to
+    transform translate3d(0, -14px, 0) scale(0.95)
+
+@keyframes zi-toast-show-3
+  from
+    transform translate3d(0, -14px, 0) scale(0.95)
+  to
+    transform translate3d(0, -28px, 0) scale(0.9)
+
+@keyframes zi-toast-show-4
+  from
+    transform translate3d(0, -28px, 0) scale(0.9)
+    opacity 1
+  to
+    transform translate3d(0, -32px, 0) scale(0.85)
+    opacity 0
+
+.zi-toast
+  padding 0 rem(20)
+  border-radius 5px
+  border 0
+  width rem(420)
+  height rem(60)
+  color black
+  background-color white
+  display flex
+  justify-content space-between
+  align-items center
+  box-shadow 0 4px 9px rgba(0, 0, 0, 0.12)
+  font-size rem(14)
+
+  &.error, &.danger
+    background-color $STATUS_DANGER
+    color white
+
+  &.warning
+    background-color $STATUS_WARNING
+    color white
+
+  &.success
+    background-color $STATUS_SUCCESS
+    color white
+
+  .message
+    text-overflow ellipsis
+    white-space nowrap
+    overflow hidden
+    flex 1
+    max-width 70%
+    margin 0
+    padding 0
+
+.zi-dark-theme
+  .zi-toast
+    background-color black
+    color white
+    border 1px solid #333
+
+    &.error, &.danger
+      border-color $STATUS_DANGER
+      color $STATUS_DANGER
+
+    &.warning
+      border-color $STATUS_WARNING
+      color $STATUS_WARNING
+
+    &.success
+      border-color $STATUS_SUCCESS
+      color $STATUS_SUCCESS

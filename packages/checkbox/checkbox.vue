@@ -67,3 +67,5 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus" src="./checkbox.styl"></style>

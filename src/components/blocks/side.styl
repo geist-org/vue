@@ -1,6 +1,6 @@
 .ex-side
   position fixed
-  width 185px
+  width 190px
   overflow-y auto
   overflow-x hidden
   -webkit-overflow-scrolling touch
@@ -11,12 +11,9 @@
   padding-top 80px
   -ms-overflow-style none
 
-  a
-    color black
-    font-size 14px
-
   li
     list-style none
+    position relative
 
     &:before
       content ''
@@ -26,47 +23,6 @@
 
   > ul
     margin-bottom 3rem
-
-  +layout(xs)
-    top 0
-    left 0
-    right 0
-    height 3rem
-    z-index 1000
-    width 100%
-    padding 3.7rem 0 0 .5rem
-    text-align center
-    background-color #f2f2f2
-    transition height .2s ease-in
-    box-shadow 0 2px 5px 0 rgba(0, 0, 0, .12)
-
-    &.active
-      height 75vh
-
-    .bar
-      display flex
-
-  +layout(sm)
-    top 0
-    left 0
-    right 0
-    height 3rem
-    z-index 1000
-    width 100%
-    padding 3.7rem 0 0 .5rem
-    text-align center
-    background-color #f2f2f2
-    transition height .2s ease-in-out
-    box-shadow 0 2px 5px 0 rgba(0, 0, 0, .12)
-
-    &.active
-      height 75vh
-
-    .bar
-      display flex
-
-.router-link-active
-  font-weight bold
 
 .bar-bg
   position fixed
@@ -91,17 +47,87 @@
   z-index 10000
   height 3.7rem
   width 100%
-  background-color #4e5769
+  background-color #fff
   align-items center
-  padding 0 1rem
+  justify-content space-between
+  padding 0 3rem
   color #fafafa
 
-  > i
-    font-size 2rem
-    line-height 3.7rem
+  > .bar-toggle
+    width 15px
+    height 15px
+    display inline-flex
     cursor pointer
 
-  > span
-    display flex
-    padding-left 2rem
+  > .bar-title
+    color #333
+    font-size 12px
+    display inline-flex
     text-transform uppercase
+
+.component
+  color black
+  font-size 14px
+  font-weight normal
+  padding-right 10px
+  padding-left 3px
+  transition all .15 ease-in-out
+
+  &.router-link-active
+    font-weight bold
+    background-color #333
+    color #fff
+    text-transform uppercase
+    &:after
+      font-weight bold
+
+@media only screen and (max-width $SCREEN_SM)
+  .ex-side
+    top 0
+    left 0
+    right 0
+    height 3rem
+    z-index 1000
+    width 100%
+    padding 3.7rem 3rem 0
+    text-align center
+    background-color #fff
+    transition height .2s ease-in-out
+    box-shadow 0 2px 5px 0 rgba(0, 0, 0, .12)
+
+    &.active
+      height 75vh
+
+    .bar
+      display flex
+
+    li
+      width 100%
+      height 50px
+      line-height 50px
+      text-align left
+      border-bottom 1px solid #eee
+
+    .zi-title
+      text-align left
+      display block
+
+  .zi-dark-theme
+    .bar
+      background-color #000
+    .ex-side
+      background-color #000
+
+      li
+        border-color #333
+
+.zi-dark-theme
+  .component
+    color #eaeaea
+
+    &.router-link-active
+      background-color #eaeaea
+      color #333
+
+  .bar-title
+    color #eaeaea

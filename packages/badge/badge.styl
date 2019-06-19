@@ -1,0 +1,44 @@
+.zi-badge
+  padding: 0 4px
+  background-color black
+  color: #fff
+  display: inline-block
+  font-size rem(10)
+  font-weight bold
+  line-height rem(15)
+  min-width: rem(15)
+  border-radius 8px
+  text-align center
+
+  &.red
+    background-color red
+
+  &.success
+    background-color $STATUS_SUCCESS
+
+  &.warning
+    background-color $STATUS_WARNING
+
+  &.error, &.danger
+    background-color $STATUS_DANGER
+
+  &.dot
+    width rem(6)
+    height rem(6)
+    border-radius 50%
+    padding 0
+    min-width unset
+    overflow hidden
+    line-height 0
+    color transparent
+
+.zi-badge-group
+  position relative
+  display inline-block
+
+  .zi-badge
+    position absolute
+    right 0
+    top 0
+    transform translate(50%, -50%)
+    vertical-align baseline

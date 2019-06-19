@@ -10,17 +10,22 @@
     :disabled="disabled"
   )
     slot
-  i.arrow.zi-icon-up(v-if="!simple")
+  .arrow-box(v-if="!simple")
+    down(:dark="isDark").arrow
 </template>
 
 <script>
-import { validator } from '../utils'
+import down from '@zeit-ui/vue-icons/packages/down'
+import { validator, theme } from '../utils'
 
 export default {
   name: 'zi-select',
 
+  components: { down },
+
   data: () => ({
     privateModel: undefined,
+    isDark: theme.getCurrentTheme().includes('dark'),
   }),
 
   props: {
@@ -49,5 +54,17 @@ export default {
       },
     },
   },
+
+  mounted() {
+    theme.subscribeChange(name => this.updateTheme(name))
+  },
+
+  methods: {
+    updateTheme(name) {
+      this.isDark = name.includes('dark')
+    },
+  },
 }
 </script>
+
+<style lang="stylus" src="./select.styl"></style>

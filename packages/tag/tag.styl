@@ -1,0 +1,24 @@
+.zi-tag
+  display inline-block
+  line-height rem(24)
+  height rem(24)
+  font-size rem(12)
+  border-radius 5px
+  border 1px solid #eaeaea
+  font-weight 500
+  background-color #fafafa
+  padding 0 rem(8)
+
+  &.success
+    color $STATUS_SUCCESS
+
+  &.warning
+    color $STATUS_WARNING
+
+  &.error, &.danger
+    color $STATUS_DANGER
+
+.zi-dark-theme
+  .zi-tag
+    background-color black
+    border 1px solid #333

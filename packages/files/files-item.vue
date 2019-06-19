@@ -1,20 +1,27 @@
 <template lang="pug">
 div
   li.item(v-for="(item, i) in files" v-if="item" :key="item.name + i" :class="{ 'has-children': isDir(item.type) && !isTop }")
-    zi-files-status.status(v-if="isDir(item.type)" :style="statusStyle" :isExpand="isExpand(i)" @click="toggleExpand(i)")
+    FilesStatus.status(
+      v-if="isDir(item.type)"
+      :style="statusStyle" :is-expand="isExpand(i)" :is-dark="isDark"
+      @click="toggleExpand(i)"
+    )
     a.link(@click="toggleExpand(i, !isDir(item.type), item)")
       span.line(v-if="!isTop" v-for="index in depth" :key="`line-${index}`" :class="lineClasses(i, item, index)")
-      zi-files-icon.icon(:is-dir="isDir(item.type)")
+      FilesIcon.icon(:is-dir="isDir(item.type)")
       |#[span {{ item.name }}]
     zi-transition-expand
       zi-files-item(v-if="item.files && isExpand(i)"
         :files="item.files"
         :depth="depth + 1"
         :default-expand="defaultExpand"
+        :is-dark="isDark"
         @file-click="childClickHandler($event, item)")
 </template>
 
 <script>
+import FilesIcon from './files-icon'
+import FilesStatus from './files-status'
 import { transitions } from '../utils'
 
 const { ZiTransitionExpand } = transitions
@@ -22,12 +29,17 @@ const { ZiTransitionExpand } = transitions
 export default {
   name: 'zi-files-item',
 
-  components: { ZiTransitionExpand },
+  components: {
+    FilesIcon,
+    FilesStatus,
+    ZiTransitionExpand,
+  },
 
   props: {
     files: { type: Array, default: () => ([]) },
     depth: { type: Number, default: 0 },
     defaultExpand: Boolean,
+    isDark: Boolean,
   },
 
   data: () => ({
@@ -40,6 +52,7 @@ export default {
     },
 
     statusStyle() {
+      if (this.depth === 0) return `left: ${-24}px;`
       const left = this.depth * 34 - 28
       return `left: ${left}px;`
     },
@@ -147,7 +160,10 @@ export default {
   &:hover span
     font-weight 600
 
-.icon
-  width 24px
-  margin-right 8px
+.zi-dark-theme
+  .item
+    color white
+
+  .link
+    color white
 </style>

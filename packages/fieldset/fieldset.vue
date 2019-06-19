@@ -17,3 +17,5 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus" src="./fieldset.styl"/>

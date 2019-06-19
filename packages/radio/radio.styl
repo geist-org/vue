@@ -1,0 +1,80 @@
+.zi-radio
+  cursor pointer
+  display inline-flex
+  height rem(13)
+  width rem(13)
+  border 1px solid #999
+  border-radius 50%
+  position relative
+  &:before
+    content: ''
+    position absolute
+    top rem(2)
+    left rem(2)
+    height rem(7)
+    width rem(7)
+    border 1px solid #000
+    border-radius 50%
+    background-color #000
+    transform: scale(0);
+    transition: transform .15s ease-in;
+
+  &.disabled
+    border-color #ccc
+    background-color #fafafa
+    cursor not-allowed
+
+  &.checked
+    &:before
+      transform: scale(1);
+
+    &.disabled
+      background-color #fafafa
+      &:before
+        border-color #ccc
+        background-color #ccc
+
+.zi-radio-group
+  .zi-radio-container
+    margin-right rem(30)
+
+.zi-radio-container
+  height rem(14)
+  line-height rem(14)
+  display inline-flex
+  justify-content center
+  align-items center
+  width auto
+
+  &.disabled
+    cursor not-allowed
+    .zi-radio-label
+      cursor not-allowed
+
+  .zi-radio-label
+    font-size rem(14)
+    line-height rem(14)
+    padding-left rem(8)
+    user-select none
+    cursor pointer
+
+  .zi-radio-original
+    opacity 0
+    outline none
+    position absolute
+    width 0
+    height 0
+    margin 0
+    padding 0
+    z-index -1
+    background-color transparent
+
+
+.zi-dark-theme
+  .zi-radio
+    &.disabled
+      border-color #ccc
+      background-color #888
+    &:before
+      background-color white
+

@@ -1,0 +1,108 @@
+.zi-spinner
+  display block
+  width rem(20)
+  height rem(20)
+
+  &.small
+    width rem(16)
+    height rem(16)
+    .zi-spinner-bar
+      width rem(4)
+      height rem(1)
+
+  &.mini
+    width rem(12)
+    height rem(12)
+    .zi-spinner-bar
+      width rem(3)
+      height rem(1)
+
+  &.big
+    width rem(30)
+    height rem(30)
+    .zi-spinner-bar
+      width rem(7)
+      height rem(3)
+
+  &.auto
+    width 100%
+    height 100%
+    .zi-spinner-bar
+      width 24%
+      height 8%
+
+.zi-spinner-container
+  width 100%
+  height 100%
+  position relative
+  left 50%
+  top 50%
+
+.zi-spinner-bar
+  background-color black
+  position absolute
+  top -3.9%
+  left -10%
+  width rem(5)
+  height rem(1.6)
+  border-radius 5px
+  animation zi-spinner-spin 1.2s linear 0s infinite normal none running
+
+  &:nth-child(1)
+    animation-delay -1.2s
+    transform rotate(0deg) translate(146%)
+
+  &:nth-child(2)
+    animation-delay -1.1s
+    transform rotate(30deg) translate(146%)
+
+  &:nth-child(3)
+    animation-delay -1s
+    transform rotate(60deg) translate(146%)
+
+  &:nth-child(4)
+    animation-delay -.9s
+    transform rotate(90deg) translate(146%)
+
+  &:nth-child(5)
+    animation-delay -.8s
+    transform rotate(120deg) translate(146%)
+
+  &:nth-child(6)
+    animation-delay -.7s
+    transform rotate(150deg) translate(146%)
+
+  &:nth-child(7)
+    animation-delay -.6s
+    transform rotate(180deg) translate(146%)
+
+  &:nth-child(8)
+    animation-delay -.5s
+    transform rotate(210deg) translate(146%)
+
+  &:nth-child(9)
+    animation-delay -.4s
+    transform rotate(240deg) translate(146%)
+
+  &:nth-child(10)
+    animation-delay -.3s
+    transform rotate(270deg) translate(146%)
+
+  &:nth-child(11)
+    animation-delay -.2s
+    transform rotate(300deg) translate(146%)
+
+  &:nth-child(12)
+    animation-delay -.1s
+    transform rotate(330deg) translate(146%)
+
+@keyframes zi-spinner-spin
+  0%
+    opacity 1
+  100%
+    opacity .15
+
+
+.zi-dark-theme
+  .zi-spinner-bar
+    background-color #eaeaea

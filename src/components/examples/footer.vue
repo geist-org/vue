@@ -26,4 +26,8 @@ export default {
 
 .link
   margin-top 30px
+
+.zi-dark-theme
+  .ex-attributes
+    background-color black
 </style>

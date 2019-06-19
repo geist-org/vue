@@ -1,0 +1,37 @@
+.zi-collapse
+  text-align left
+  border-bottom 1px solid #eaeaea
+
+  &:first-child
+    border-top 1px solid #eaeaea
+
+.zi-collapse-title
+  min-height rem(75)
+  width 100%
+  display flex
+  justify-content space-between
+  align-items center
+  font-size rem(20)
+  color black
+  text-transform none
+  margin 0
+  cursor pointer
+
+  >.icon
+    width rem(16)
+    height rem(16)
+    font-weight lighter
+    transition all .15s ease-out
+
+    &.reverse
+      transform rotateZ(180deg)
+
+.zi-collapse-content
+  width 100%
+  padding-bottom rem(20)
+  transition height 0.2s ease
+
+
+.zi-dark-theme
+  .zi-collapse-title
+    color #fff

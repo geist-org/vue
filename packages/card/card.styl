@@ -1,0 +1,36 @@
+.zi-card
+  background #fff
+  box-shadow 0 2px 5px 0 rgba(0, 0, 0, 0.12)
+  border-radius 5px
+  margin 0
+  transition all .2s ease
+  padding: rem(14) rem(30)
+
+  p, h1, h2, h3, h4, h5, h6
+    margin 0 0 10px 0
+    line-height 1.5
+
+  &:not(.pin):hover
+    box-shadow 0 5px 10px 0 rgba(0, 0, 0, 0.12)
+
+  &.pin
+    border 1px solid rgb(234, 234, 234)
+    box-shadow none
+
+
+.zi-dark .zi-card, .zi-card.zi-dark
+  background-color black
+  color white
+
+.zi-dark-theme
+  .zi-card
+    border none
+    color #fff
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 5px 0px
+    background-color black
+
+    &:hover
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 5px 0px
+
+    pre
+      background-color black

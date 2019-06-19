@@ -1,4 +1,5 @@
-import '@zeit-ui/style'
+import './utils/styles/index.styl'
+import * as theme from './utils/theme'
 import Card from './card'
 import Avatar from './avatar'
 import Badge from './badge'
@@ -61,4 +62,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
+  theme,
 }

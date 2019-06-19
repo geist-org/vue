@@ -1,0 +1,42 @@
+.zi-main
+  background-color #fafafa
+  min-height 100%
+
+.zi-center
+  text-align center
+
+  img
+    margin 0 auto
+
+  blockquote
+    margin .9rem auto
+
+.zi-layout
+  margin 0 auto
+  padding rem(50) 0
+  box-sizing border-box
+
+  &:before
+    position fixed
+    content ''
+    left -500px
+    right -500px
+    top -500px
+    bottom -500px
+    background-color #fafafa
+    z-index -1
+
+.zi-layout
+  +layout(xs)
+    width 100%
+    padding rem(15) rem(25) rem(25)
+  +layout(sm)
+    padding rem(15) rem(25) rem(30)
+  +layout(md)
+    width 950px
+    padding rem(20) rem(25) rem(40)
+    min-width 70%
+  +layout(lg)
+    width 1100px
+    padding rem(25) rem(35) rem(45)
+    max-width 85%

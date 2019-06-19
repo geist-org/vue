@@ -1,0 +1,46 @@
+.zi-toggle
+  display inline-block
+  background-color #ccc
+  border 1px solid #ccc
+  border-radius rem(14)
+  height rem(14)
+  line-height rem(14)
+  position relative
+  transition-timing-function cubic-bezier(0, 0, 0.2, 1)
+  width rem(28)
+  cursor pointer
+
+  &.checked
+    background-color #067df7
+    border 1px solid #067df7
+
+    &:before
+      right 0
+      transform translate(0, -50%)
+
+  &.disabled
+    opacity .6
+    cursor not-allowed
+
+  &:before
+    content ''
+    position absolute
+    width rem(12)
+    height rem(12)
+    top 50%
+    transition-property right, transform
+    transition-duration .28s
+    right 100%
+    border 1px solid #fff
+    border-radius 50%
+    transform translate(100%, -50%)
+    transition-timing-function cubic-bezier(0, 0, 0.2, 1)
+    background-color #fff
+
+
+.zi-dark-theme
+  .zi-toggle
+    &:before
+      background-color black
+      border-color black
+

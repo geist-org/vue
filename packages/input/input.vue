@@ -15,15 +15,16 @@ div(:class="[groupClass, { prefix: hasPrefix, suffix: hasSuffix, clearable }]")
     :form="form"
     :type="type"
     @focus="showCloseIcon = true"
-    @blur="hiddenCloseIcon"
+    @blur.self="hiddenCloseIcon"
   )
   span.zi-label.suffix(v-if="suffixLabel") {{ suffixLabel }}
   span.zi-label.suffix(v-if="suffixIcon")
     i(:class="suffixIcon")
-  i.close.zi-icon-close(v-if="clearable && showCloseIcon" @click.stop="clear")
+  DeleteIcon.close(v-if="clearable && showCloseIcon" @click="clear")
 </template>
 
 <script>
+import DeleteIcon from '@zeit-ui/vue-icons/packages/delete'
 import { validator } from '../utils'
 
 export default {
@@ -33,6 +34,8 @@ export default {
     privateModel: '',
     showCloseIcon: false,
   }),
+
+  components: { DeleteIcon },
 
   props: {
     value: [String, Number],
@@ -102,3 +105,5 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus" src="./input.styl"/>

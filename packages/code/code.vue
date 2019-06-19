@@ -1,5 +1,5 @@
 <template lang="pug">
-pre(:class="{ 'zi-dark': dark, 'zi-bash': bash }" v-if="isBlock")
+pre(:class="{ 'zi-bash': bash }" v-if="isBlock")
   slot
 code(v-else)
   slot
@@ -11,7 +11,6 @@ export default {
 
   props: {
     bash: Boolean,
-    dark: Boolean,
     block: Boolean,
     inline: Boolean,
   },
@@ -19,8 +18,10 @@ export default {
   computed: {
     isBlock() {
       if (this.inline) return false
-      return this.bash || this.dark || this.block
+      return this.bash || this.block
     },
   },
 }
 </script>
+
+<style lang="stylus" src="./code.styl"></style>
