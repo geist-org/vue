@@ -1,6 +1,6 @@
 .ex-side
   position fixed
-  width 185px
+  width 190px
   overflow-y auto
   overflow-x hidden
   -webkit-overflow-scrolling touch
@@ -11,12 +11,9 @@
   padding-top 80px
   -ms-overflow-style none
 
-  a
-    color black
-    font-size 14px
-
   li
     list-style none
+    position relative
 
     &:before
       content ''
@@ -65,9 +62,6 @@
     .bar
       display flex
 
-.router-link-active
-  font-weight bold
-
 .bar-bg
   position fixed
   top 0
@@ -106,7 +100,27 @@
     padding-left 2rem
     text-transform uppercase
 
+.component
+  color black
+  font-size 14px
+  font-weight normal
+  padding-right 10px
+  padding-left 3px
+  transition all .15 ease-in-out
+
+  &.router-link-active
+    font-weight bold
+    background-color #333
+    color #fff
+    text-transform uppercase
+    &:after
+      font-weight bold
+
 .zi-dark-theme
-  .ex-side
-    a
-      color white
+  .component
+    color #eaeaea
+
+    &.router-link-active
+      background-color #eaeaea
+      color #333
+

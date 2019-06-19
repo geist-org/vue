@@ -9,7 +9,6 @@ import Examples from '../docs/examples'
 
 Vue.config.productionTip = false
 Vue.use(ZeitUI)
-ZeitUI.theme.setTheme('zi-dark-theme')
 Components.install(Vue)
 Examples.install(Vue)
 
