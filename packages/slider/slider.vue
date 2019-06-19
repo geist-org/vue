@@ -92,4 +92,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped src="./slider.styl"></style>
+<style lang="stylus" scoped src="./slider.styl"/>
