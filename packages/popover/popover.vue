@@ -4,14 +4,18 @@
     slot
   transition(name="zi-fade-in")
     .zi-popover-dropdown(:class="align" v-show="visible")
+      PopoverIcon.zi-popover-icon
       slot(name="dropdown")
 </template>
 
 <script>
+import PopoverIcon from './popover-icon'
 import { validator } from '../utils'
 
 export default {
   name: 'zi-popover',
+
+  components: { PopoverIcon },
 
   data: () => ({
     visible: false,

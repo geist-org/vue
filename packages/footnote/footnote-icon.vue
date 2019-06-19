@@ -5,7 +5,7 @@
         <g transform="translate(255.000000, 133.000000)">
           <circle stroke="#eaeaea" cx="7" cy="7" r="7"></circle>
           <text font-family="SFUIText-Bold, SF UI Text" font-size="10" font-weight="bold"
-            :fill="isActive ? '#000000' : '#999999'">
+            :fill="isActive ? activeColor : '#999'">
             <tspan x="4.25" y="10.5">?</tspan>
           </text>
         </g>
@@ -15,11 +15,21 @@
 </template>
 
 <script>
+import { theme } from '../utils'
+
 export default {
   name: 'zi-footnote-icon',
 
   props: {
     isActive: Boolean,
+  },
+
+  computed: {
+    activeColor() {
+      const isDark = theme.getCurrentTheme().includes('dark')
+      console.log(isDark)
+      return isDark ? '#fff' : '#000'
+    },
   },
 }
 </script>

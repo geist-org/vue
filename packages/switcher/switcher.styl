@@ -42,9 +42,21 @@
       pointer-events none
       font-weight 500
 
-.zi-drak .zi-switcher
-  color white
-
 .zi-switcher-content
   width 100%
   margin-top 10px
+
+.zi-dark-theme
+  .zi-switcher
+    background-color black
+    color #999
+
+    a
+      font-weight normal
+      &:not(.active):hover
+        background-color #111
+
+      &.active
+        font-weight 600
+        color #fff
+

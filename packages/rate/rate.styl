@@ -12,7 +12,7 @@
   cursor pointer
   fill #999
   margin-right rem(8)
-  transition color .12s ease-in
+  transition all .12s ease-in
 
   &:not(.active):not(.disabled):hover
     fill #222
@@ -22,3 +22,15 @@
 
   &.active
     fill #f5a623
+
+.zi-dark-theme
+  .zi-rate-icon
+    fill #333
+    &:not(.active):not(.disabled):hover
+      fill #111
+
+    &:not(.active):not(.disabled).hover
+      fill #888
+    &.active
+      fill #f5a623
+

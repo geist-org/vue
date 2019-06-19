@@ -4,7 +4,7 @@
   display inline-block
   padding: 0 rem(22)
   border-radius 5px
-  font-weight 100
+  font-weight 400
   font-size rem(12)
   cursor pointer
   user-select none
@@ -175,15 +175,6 @@
 
 
 .zi-btn
-  & .prefix
-    left rem(8)
-
-  & .suffix
-    right rem(8)
-
-  &.small .prefix, &.small .suffix
-    font-size rem(14)
-
   &.circular
     //padding rem(5) rem(15)
     border-radius rem(100)
@@ -199,17 +190,6 @@
       color black
       box-shadow 0 5px 9px rgba(0, 0, 0, 0.08)
 
-    i.prefix, i.suffix
-      font-size rem(12)
-      position initial
-      line-height inherit
-
-    i.prefix
-      margin-right rem(10)
-
-    i.suffix
-      margin-left rem(10)
-
 .zi-btn.auto
   min-width min-content
   padding 0 rem(20)
@@ -224,7 +204,6 @@
     padding 0 rem(25)
 
 .zi-btn.ghost
-
   &.primary
     background-color white
     border: 1px solid black
@@ -264,3 +243,80 @@
       color white
       background: $STATUS_SUCCESS
       border-color white
+
+.zi-dark-theme
+  .zi-btn:not(.warning):not(.danger):not(.error):not(.success):not(.abort):not(.ghost)
+    background: black
+    border 1px solid #eaeaea
+    color #666
+
+    &:not(.loading):not(.shadow):hover
+      color white
+      background black
+      border-color black
+
+    &.primary
+      background-color white
+      border: 1px solid white
+      color black
+
+      &:not(.loading):not(.shadow):hover
+        background black
+        color white
+        border 1px solid white
+
+.zi-dark-theme
+  .zi-btn:not(.ghost)
+    &.warning, &.danger, &.error, &.success, &.abort
+      //color black
+      &:not(.loading):not(.shadow):hover
+        background black
+
+    &.abort
+      color #888
+
+    &.shadow
+      box-shadow 0 3px 10px rgba(0, 0, 0, 0.12)
+
+      &:not(.loading):hover
+        box-shadow 0 7px 20px rgba(0, 0, 0, 0.16)
+        transform translateY(-1px)
+
+    &.disabled
+      background #111 !important
+      border-color #333 !important
+      color #666 !important
+      cursor not-allowed !important
+
+      &:hover
+        background #111 !important
+        border-color #333 !important
+        color #666 !important
+        cursor not-allowed !important
+
+    &.loading
+      border 1px solid #333 !important
+      background-color black
+      .zi-loading-shim
+        background-color black
+
+
+.zi-dark-theme
+  .zi-btn.ghost
+    &.primary
+      background-color black
+      border: 1px solid white
+      color white
+
+      &:not(.loading):not(.shadow):hover
+        background white
+        color black
+        border 1px solid black
+
+    &.warning, &.danger, &.error,&.success
+      background-color black
+      &:not(.loading):not(.shadow):hover
+        color black
+        border-color black
+
+

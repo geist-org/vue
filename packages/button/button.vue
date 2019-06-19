@@ -1,13 +1,11 @@
 <template lang="pug">
 button.zi-btn(@click="clickHandler" :class="classes")
-  i(v-if="icon && !hasSuffix" :class="icon")
   span.zi-loading-shim(v-if="loading")
     i
     i
     i
   zi-button-drip(ref="drip")
   slot
-  i(v-if="icon && hasSuffix" :class="icon")
 </template>
 
 <script>
@@ -37,7 +35,6 @@ export default {
       type: Boolean,
       default: true,
     },
-    icon: String,
   },
 
   data: () => ({

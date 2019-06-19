@@ -120,3 +120,26 @@
 .zi-dialog-backdrop-leave,
 .zi-dialog-backdrop-leave-active
   opacity 0
+
+.zi-dark-theme
+  .zi-dialog-wrapper
+    background-color #111
+
+  .zi-dialog-content
+    color white
+
+  .zi-dialog-footer
+    border-top 1px solid #333
+
+    >.action
+      background-color #111
+
+      &:focus, &:hover
+        color white
+        background-color #111
+
+      &:not(:last-child)
+        border-right 1px solid #333
+
+      &:last-child
+        color white

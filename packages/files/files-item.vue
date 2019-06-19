@@ -1,7 +1,11 @@
 <template lang="pug">
 div
   li.item(v-for="(item, i) in files" v-if="item" :key="item.name + i" :class="{ 'has-children': isDir(item.type) && !isTop }")
-    zi-files-status.status(v-if="isDir(item.type)" :style="statusStyle" :isExpand="isExpand(i)" @click="toggleExpand(i)")
+    zi-files-status.status(
+      v-if="isDir(item.type)"
+      :style="statusStyle" :is-expand="isExpand(i)" :is-dark="isDark"
+      @click="toggleExpand(i)"
+    )
     a.link(@click="toggleExpand(i, !isDir(item.type), item)")
       span.line(v-if="!isTop" v-for="index in depth" :key="`line-${index}`" :class="lineClasses(i, item, index)")
       zi-files-icon.icon(:is-dir="isDir(item.type)")
@@ -11,6 +15,7 @@ div
         :files="item.files"
         :depth="depth + 1"
         :default-expand="defaultExpand"
+        :is-dark="isDark"
         @file-click="childClickHandler($event, item)")
 </template>
 
@@ -28,6 +33,7 @@ export default {
     files: { type: Array, default: () => ([]) },
     depth: { type: Number, default: 0 },
     defaultExpand: Boolean,
+    isDark: Boolean,
   },
 
   data: () => ({
@@ -147,4 +153,11 @@ export default {
 
   &:hover span
     font-weight 600
+
+.zi-dark-theme
+  .item
+    color white
+
+  .link
+    color white
 </style>

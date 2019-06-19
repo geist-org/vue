@@ -2,7 +2,7 @@
 .zi-collapse
   .zi-collapse-title(@click="clickHandler")
     h3 {{ title }}
-    downIcon.icon(:class="{ reverse: model }")
+    downIcon.icon(:class="{ reverse: model }" :dark="isDark")
   zi-transition-expand
     .zi-collapse-content(v-if="model" style="padding: 0")
       slot
@@ -10,7 +10,7 @@
 
 <script>
 import downIcon from '@zeit-ui/vue-icons/packages/down'
-import { print, transitions } from '../utils'
+import { print, transitions, theme } from '../utils'
 
 const { ZiTransitionExpand } = transitions
 
@@ -24,6 +24,7 @@ export default {
 
   data: () => ({
     privateModel: false,
+    isDark: theme.getCurrentTheme().includes('dark'),
   }),
 
   props: {
@@ -44,6 +45,7 @@ export default {
       return print.error(`${this.$options.name} \
       required parent component: [zi-collapse]`)
     }
+    theme.subscribeChange(name => this.updateTheme(name))
   },
 
   computed: {
@@ -75,6 +77,10 @@ export default {
   methods: {
     clickHandler() {
       this.model = !this.model
+    },
+
+    updateTheme(name) {
+      this.isDark = name.includes('dark')
     },
   },
 }

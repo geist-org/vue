@@ -34,28 +34,25 @@
   &.left
     left 0
     transform translate(-5px)
-    &::before
+    .zi-popover-icon
       left 10px
       transform unset
 
   &.right
     right 0
     transform translate(5px)
-    &::before
+    .zi-popover-icon
       right 10px
       left unset
       transform unset
 
-  &::before
-    position absolute
-    border-style: solid;
-    border-width: 0 10px 12px 10px;
-    border-color: transparent transparent #fff transparent;
-    user-select none
-    content ''
-    top -12px
-    left 50%
-    transform translate(-50%)
+.zi-popover-icon
+  position absolute
+  user-select none
+  content ''
+  top -12px
+  left 50%
+  transform translate(-50%)
 
 .zi-popover-host
   cursor pointer
@@ -86,6 +83,7 @@
   &.line
     margin 8px 0
     height 1px
+    flex-basis 1px
     background-color rgb(234, 234, 234)
     padding 0
 
@@ -106,4 +104,33 @@
     color rgb(153, 153, 153)
     font-size 12px
     text-transform uppercase
+
+
+.zi-dark-theme
+  .zi-popover-item
+    color #666
+
+    &:not(.nohover):not(.disabled):hover
+      background-color #252525
+      color #f2f2f2
+
+    &.line
+      background-color #333
+
+    &.primary
+      color #666
+
+    >.title
+      color white
+
+    >.subtitle
+      color #666
+
+  .zi-popover-dropdown
+    background-color black
+    border 1px solid #333
+
+    &::before
+      border-color: transparent transparent black transparent
+
 

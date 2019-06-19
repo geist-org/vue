@@ -85,10 +85,6 @@
     background-color $STATUS_SUCCESS
     color white
 
-  &.dark
-    background-color black
-    color white
-
   .message
     text-overflow ellipsis
     white-space nowrap
@@ -97,3 +93,21 @@
     max-width 70%
     margin 0
     padding 0
+
+.zi-dark-theme
+  .zi-toast
+    background-color black
+    color white
+    border 1px solid #333
+
+    &.error, &.danger
+      border-color $STATUS_DANGER
+      color $STATUS_DANGER
+
+    &.warning
+      border-color $STATUS_WARNING
+      color $STATUS_WARNING
+
+    &.success
+      border-color $STATUS_SUCCESS
+      color $STATUS_SUCCESS

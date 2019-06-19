@@ -12,7 +12,7 @@
 
 <ex-code name="ex-button-ghost"></ex-code>
 
-<ex-code name="ex-button-icon"></ex-code>
+<!--<ex-code name="ex-button-icon"></ex-code>-->
 
 <ex-code name="ex-button-size"></ex-code>
 
@@ -29,6 +29,5 @@
 | **auto** | button width auto | `boolean` | `true` / `false` | `false` |
 | **ghost** | transparent background | `boolean` | `true` / `false` | `false` |
 | **effect** | click animation | `boolean` | `true` / `false` | `true` |
-| **icon** | button with icon | `string` | `true` / `false` | `false` |
 
 </ex-footer>
