@@ -1,14 +1,14 @@
 <template lang="pug">
 div
   li.item(v-for="(item, i) in files" v-if="item" :key="item.name + i" :class="{ 'has-children': isDir(item.type) && !isTop }")
-    zi-files-status.status(
+    FilesStatus.status(
       v-if="isDir(item.type)"
       :style="statusStyle" :is-expand="isExpand(i)" :is-dark="isDark"
       @click="toggleExpand(i)"
     )
     a.link(@click="toggleExpand(i, !isDir(item.type), item)")
       span.line(v-if="!isTop" v-for="index in depth" :key="`line-${index}`" :class="lineClasses(i, item, index)")
-      zi-files-icon.icon(:is-dir="isDir(item.type)")
+      FilesIcon.icon(:is-dir="isDir(item.type)")
       |#[span {{ item.name }}]
     zi-transition-expand
       zi-files-item(v-if="item.files && isExpand(i)"
@@ -20,6 +20,8 @@ div
 </template>
 
 <script>
+import FilesIcon from './files-icon'
+import FilesStatus from './files-status'
 import { transitions } from '../utils'
 
 const { ZiTransitionExpand } = transitions
@@ -27,7 +29,11 @@ const { ZiTransitionExpand } = transitions
 export default {
   name: 'zi-files-item',
 
-  components: { ZiTransitionExpand },
+  components: {
+    FilesIcon,
+    FilesStatus,
+    ZiTransitionExpand,
+  },
 
   props: {
     files: { type: Array, default: () => ([]) },

@@ -2,12 +2,16 @@
 a.zi-footnote(:href="href" :target="target" :style="[isHelp]"
   @mouseenter="isActive = true" @mouseleave="isActive = false")
   slot
-  zi-footnote-icon.zi-footnote-icon(:is-active="isActive")
+  FootnoteIcon.zi-footnote-icon(:is-active="isActive")
 </template>
 
 <script>
+import FootnoteIcon from './footnote-icon'
+
 export default {
   name: 'zi-footnote',
+
+  components: { FootnoteIcon },
 
   data: () => ({
     isActive: false,

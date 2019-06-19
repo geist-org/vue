@@ -1,6 +1,6 @@
 <template lang="pug">
 div.zi-rate(:class="{ disabled }")
-  zi-rate-icon.zi-rate-icon(
+  RateIcon.zi-rate-icon(
     v-for="index in 5"
     :key="index"
     :is-active="isActive(index)"
@@ -12,8 +12,12 @@ div.zi-rate(:class="{ disabled }")
 </template>
 
 <script>
+import RateIcon from './rate-icon'
+
 export default {
   name: 'zi-rate',
+
+  components: { RateIcon },
 
   data: () => ({
     privateModel: undefined,
