@@ -1,8 +1,8 @@
 <template lang="pug">
 .ex-side(:class="{ 'active': isActiveMenu }")
   .bar
-    i.zi-icon-menu(@click="toggleMenu")
-    span @zeit-ui/vue
+    Setting.bar-toggle(@click="toggleMenu" :dark="isDark")
+    span.bar-title @zeit-ui/vue
   .bar-bg(:class="{ 'active': isActiveMenu }" @click="closeMenu")
   a(@click="toggleTheme(isDark)").zi-title {{ isDark? 'DARK_OFF' : 'DARK_ON' }}
   template(v-for='group in sides')
@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import Setting from '@zeit-ui/vue-icons/packages/setting'
 import ZeitUI from '../../../packages'
 import docs from '#/docs/index'
 
@@ -23,6 +24,8 @@ const SIDE_WEIGHT = {
 
 export default {
   name: 'ex-side',
+
+  components: { Setting },
 
   data: () => ({
     sides: [],

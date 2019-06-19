@@ -3,8 +3,8 @@
   p.zi-subheading.code-name EXAMPLE: #[b {{ codeName }}]
   zi-card.ex-code-box
     ex-code-render(:name="name" ref="codeRender")
-    .ex-code-toggle(@click="showCode=!showCode")
-      i.zi-icon-code
+    Fullscreen.ex-code-toggle(@click="showCode=!showCode" v-if="!showCode" :dark="isDark")
+    FullscreenClose.ex-code-toggle(@click="showCode=!showCode" v-if="showCode" :dark="isDark")
   zi-transition-expand
     prism(language="pug" class="ex-source-code" v-if="showCode") {{ codeTemplate }}
 </template>
@@ -12,18 +12,27 @@
 <script>
 import 'prismjs'
 import 'prismjs/components/prism-pug'
+import Fullscreen from '@zeit-ui/vue-icons/packages/fullscreen'
+import FullscreenClose from '@zeit-ui/vue-icons/packages/fullscreen-close'
+import ZeitUI from '../../../packages'
 import * as transitions from '../../../packages/utils/transitions'
 import Prism from 'vue-prism-component'
 
 export default {
   name: 'ex-code',
 
-  components: { Prism, ZiTransitionExpand: transitions.ZiTransitionExpand },
+  components: {
+    Prism,
+    Fullscreen,
+    FullscreenClose,
+    ZiTransitionExpand: transitions.ZiTransitionExpand,
+  },
 
   data: () => ({
     codeTemplate: '',
     codeName: '',
     showCode: false,
+    isDark: ZeitUI.theme.getCurrentTheme().includes('dark'),
   }),
 
   props: {
@@ -35,6 +44,8 @@ export default {
 
     const template = this.findTemplate()
     this.codeTemplate = template && template._meta ? template._meta() : ''
+
+    ZeitUI.theme.subscribeChange(name => this.updateTheme(name))
   },
 
   methods: {
@@ -43,6 +54,10 @@ export default {
       const children = this.$refs.codeRender.$children
       if (!children || !children.length) return null
       return children[0]
+    },
+
+    updateTheme(name) {
+      this.isDark = name.includes('dark')
     },
   },
 }
@@ -70,10 +85,10 @@ export default {
 
 .ex-code-toggle
   position absolute
-  width 20px
-  height 20px
-  right 5px
-  bottom 5px
+  width 15px
+  height 15px
+  right 10px
+  bottom 7px
   cursor pointer
   opacity .5
   transition all .2s ease
