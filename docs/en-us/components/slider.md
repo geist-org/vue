@@ -10,8 +10,8 @@
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
-| **v-model** | binding value[v-model] | `number` | `0 - 100` | - |
-| **step** | length of per step | `number` | - | - |
+| **v-model** | binding value[v-model] | `number` | `0 - 100` | `0`|
+| **step** | length of per step | `number` | - | `1` |
 | **show-stops** | show dot | `boolean` | `true` / `false` | `false` |
 
 </ex-footer>

@@ -7,7 +7,7 @@
     :style="{ left: `${ privateValue }%` }"
     @mousedown.stop="handleMouseDown"
     @mouseup="onDragEnd") {{ privateValue }}
-  .zi-slider-dot(v-if="showStops" v-for="dot in dots" :style="{ left: `${ dot }%` }")
+  .zi-slider-dot(v-if="showStops" v-for="dot in dots" :key="dot" :style="{ left: `${ dot }%` }")
 </template>
 
 <script>
@@ -29,7 +29,7 @@ export default {
   computed: {
     dots() {
       if (this.step !== 1) {
-        const dotsNum = Math.floor(100 / this.step) - 1
+        const dotsNum = !(100 % this.step) ? Math.floor(100 / this.step) - 1 : Math.ceil(100 / this.step) - 1
         const coordinates = []
         for (let i = 1; i <= dotsNum; i++) coordinates.push(this.step * i)
         return coordinates
@@ -75,8 +75,9 @@ export default {
 
     setValue() {
       const railWidth = this.$refs.sliderRail.clientWidth
-      // step把rail分为n块，每块的距离为stepDistance，计算滑块current到rail's start的距离有几个stepDistance, *step算出百分比
+      // step divide the rail into n pieces, count per (100/step)'s distance
       const stepDistance = railWidth / (100 / this.step)
+      // Calculate the currentX - startX has how many stepDistance, then * step can get the percent of the rail
       let slideDistance = Math.round((this.currentX - this.startX) / stepDistance) * this.step
       if (this.currentX - this.startX <= 0) slideDistance = 0
       if (this.currentX - this.startX >= railWidth) slideDistance = 100

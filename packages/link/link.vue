@@ -42,38 +42,4 @@ export default {
 }
 </script>
 
-<<<<<<< HEAD
 <style lang="stylus" src="./link.styl"/>
-=======
-<style scoped lang="stylus">
-.link
-  display inline-flex
-  align-items center
-  color #0076ff
-
-  svg
-    margin-left 7px
-    color inherit
-    min-height 15px
-
-  &:hover
-    .more
-      padding-left 8px
-
-  &.no-decoration
-    text-decoration none
-
-  &.black
-    color black
-
-  &.bold
-    font-weight 700
-
-.more
-  padding-left 5px
-  transition padding-left .2s ease
-  font-weight inherit
-  min-height 15px
-  font-style inherit
-</style>
->>>>>>> fix(link): link icon style
