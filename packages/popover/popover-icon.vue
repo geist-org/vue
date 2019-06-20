@@ -14,5 +14,15 @@ export default {
   data: () => ({
     isDark: theme.getCurrentTheme().includes('dark'),
   }),
+
+  mounted() {
+    theme.subscribeChange(name => this.updateTheme(name))
+  },
+
+  methods: {
+    updateTheme(name) {
+      this.isDark = name.includes('dark')
+    },
+  },
 }
 </script>

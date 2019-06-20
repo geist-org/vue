@@ -1,8 +1,8 @@
-.zi-popover
+.popover
   display inline-block
   position relative
 
-.zi-popover-dropdown
+.dropdown
   position absolute
   top 100%
   z-index 9999
@@ -34,19 +34,24 @@
   &.left
     left 0
     transform translate(-5px)
-    .zi-popover-icon
+    .icon
       left 10px
       transform unset
 
   &.right
     right 0
     transform translate(5px)
-    .zi-popover-icon
+    .icon
       right 10px
       left unset
       transform unset
 
-.zi-popover-icon
+.slot-container
+  width 100%
+  height 100%
+  overflow hidden
+
+.icon
   position absolute
   user-select none
   content ''
@@ -54,10 +59,10 @@
   left 50%
   transform translate(-50%)
 
-.zi-popover-host
+.host
   cursor pointer
 
-.zi-popover-item
+.popover-item
   position relative
   display inline-flex
   justify-content space-between
@@ -107,7 +112,7 @@
 
 
 .zi-dark-theme
-  .zi-popover-item
+  .popover-item
     color #666
 
     &:not(.nohover):not(.disabled):hover
@@ -126,7 +131,7 @@
     >.subtitle
       color #666
 
-  .zi-popover-dropdown
+  .dropdown
     background-color black
     border 1px solid #333
 

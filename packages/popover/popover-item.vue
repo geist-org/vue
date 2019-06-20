@@ -1,5 +1,5 @@
 <template lang="pug">
-.zi-popover-item(:class="{ primary, nohover, line, disabled }" @click.stop="clickHandler")
+.popover-item(:class="{ primary, nohover, line, disabled }" @click.stop="clickHandler")
   span.text(v-if="!nohover")
     slot
   span.title(v-if="!line && title")
