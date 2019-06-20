@@ -26,6 +26,7 @@ import Dialog from './dialog'
 import Progress from './progress'
 import Files from './files'
 import Table from './table'
+import Slider from './slider'
 
 const install = vue => {
   Card.install(vue)
@@ -54,6 +55,7 @@ const install = vue => {
   Progress.install(vue)
   Files.install(vue)
   Table.install(vue)
+  Slider.install(vue)
 }
 
 if (typeof window !== 'undefined' && window.Vue) {

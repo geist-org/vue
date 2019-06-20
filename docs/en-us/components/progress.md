@@ -15,5 +15,6 @@
 | **percentage** | current percentage | `number` | `0 - 100` | `0` |
 | **fix** | display in fixed mode | `string` | `top` / `bottom` | - |
 | **color** | background color | `string` | hex color | - |
+| **show-text** | show number label | `boolean` | `true` / `false` | - |
 
 </ex-footer>

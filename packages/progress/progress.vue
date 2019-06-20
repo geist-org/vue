@@ -2,7 +2,7 @@
 .zi-progress-bar(:class="fix")
   .zi-progress
     .zi-progress__inner(:style="styles")
-  span.zi-progress__text {{ percentage <= 100 ? percentage : 100 }}
+  span.zi-progress__text(v-show="showText") {{ percentage <= 100 ? percentage : 100 }}
 </template>
 
 <script>
@@ -23,6 +23,11 @@ export default {
     },
 
     color: [Array, String],
+
+    showText: {
+      type: Boolean,
+      default: true,
+    },
   },
 
   data: () => ({

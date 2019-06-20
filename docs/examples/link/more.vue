@@ -1,5 +1,6 @@
 <template lang="pug">
-zi-link(href="//github.com/zeit-ui/vue" more) view more
+div
+  zi-link(href="//github.com/zeit-ui/vue" more) view more
 </template>
 
 <script>
