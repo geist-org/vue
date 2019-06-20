@@ -1,11 +1,12 @@
 <template lang="pug">
-.zi-popover(@click.stop)
-  span.zi-popover-host(@click.stop="toggle")
+.popover(@click.stop)
+  span.host(@click.stop="toggle")
     slot
   transition(name="zi-fade-in")
-    .zi-popover-dropdown(:class="align" v-show="visible")
-      PopoverIcon.zi-popover-icon
-      slot(name="dropdown")
+    .dropdown(:class="align" v-show="visible")
+      PopoverIcon.icon
+      .slot-container
+        slot(name="dropdown")
 </template>
 
 <script>
