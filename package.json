@@ -5,8 +5,8 @@
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:lib": "vue-cli-service build --target lib --name zeit-ui ./packages/index.js",
-    "clear": "rm -rf dist",
+    "build:lib": "node scripts/build.js",
+    "clear": "rm -rf dist lib",
     "lint": "xo",
     "now-build": "NODE_ENV=production yarn run build && cp ./public/favicon.ico ./dist",
     "release": "yarn run clear && yarn run build:lib && yarn publish --access public"
@@ -27,7 +27,11 @@
       "js"
     ],
     "ignore": [
-      "scripts"
+      "scripts",
+      "lib",
+      "dist",
+      "public",
+      "examples"
     ]
   },
   "dependencies": {
@@ -38,10 +42,13 @@
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
+    "@types/fs-extra": "^7.0.0",
     "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
     "babel-eslint": "^10.0.1",
     "eslint-config-lambdas": "^0.0.11",
+    "execa": "^1.0.0",
+    "fs-extra": "^8.0.1",
     "pre-commit": "^1.2.2",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
