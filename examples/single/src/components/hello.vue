@@ -7,8 +7,8 @@
 
 <script>
 import Vue from 'vue'
-import '../../../../lib/button.css'
-import Button from '../../../../lib/button.common'
+import '@zeit-ui/vue/lib/button.css'
+import Button from '@zeit-ui/vue/lib/button.common'
 
 Button.install(Vue)
 export default {}

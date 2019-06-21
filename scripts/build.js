@@ -1,6 +1,7 @@
 const path = require('path')
 const fs = require('fs-extra')
 const execa = require('execa')
+const utils = require('./utils')
 
 const packagePath = path.join(__dirname, '../packages')
 const args = ['build', '--target', 'lib', '--name', 'zeit-ui', './packages/index.js']
@@ -62,6 +63,7 @@ const buildMain = async () => {
 
 const build = async () => {
   console.log(log('> collect packages...'))
+  utils.setBabelConfig(false)
   await bundleComponents()
   await buildMain()
 }

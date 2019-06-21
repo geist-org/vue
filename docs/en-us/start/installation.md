@@ -40,7 +40,8 @@ You can also refer to [umd example](https://github.com/zeit-ui/vue/tree/master/e
 
 ```js
 import Vue from 'vue'
-import Button from '@zeit-ui/vue/packages/button'
+import '@zeit-ui/vue/lib/button.css'
+import Button from '@zeit-ui/vue/lib/button.common'
 
 Button.install(Vue)
 ```
