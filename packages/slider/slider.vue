@@ -67,6 +67,8 @@ export default {
       this.startX = this.$refs.sliderRail.getBoundingClientRect().x
       window.addEventListener('mousemove', this.onDragging)
       window.addEventListener('touchmove', this.onDragging)
+      window.addEventListener('mouseup', this.onDragEnd)
+      window.addEventListener('touchend', this.onDragEnd)
     },
 
     onDragging(event) {
