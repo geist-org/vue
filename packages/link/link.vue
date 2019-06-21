@@ -1,8 +1,10 @@
 <template lang="pug">
-a(:href="hrefValue" @click="goto" :target="target" :rel="relValue" :class="{ 'no-decoration': this.more, bold }").zi-link
-  slot
+span(class="zi-link-wrapper")
+  a(:href="hrefValue" @click="goto" :target="target" :rel="relValue" :class="{ 'no-decoration': this.more, bold, 'default-color': this.more }").zi-link
+    slot
   span.zi-link-more(v-if="!pure && more") →
-  <svg v-if="!pure && !more" width="13" height="13" xmlns="http://www.w3.org/2000/svg"><g stroke="#0076ff" fill="none" fill-rule="evenodd"><path d="M6.2 6.7l5-5.3" stroke-linecap="square"></path><g stroke-linecap="square"><path d="M7.9.9h4M11.9.9v4"></path></g><path d="M9.9 7.4v2.5a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2v-5c0-1.1.9-2 2-2h2.5"></path></g></svg>
+  a(class="zi-link-default")
+    <svg v-if="!pure && !more" width="13" height="13" xmlns="http://www.w3.org/2000/svg"><g stroke="#000" stroke-width="0.8" fill="none" fill-rule="evenodd"><path d="M6.2 6.7l5-5.3" stroke-linecap="square"></path><g stroke-linecap="square"><path d="M7.9.9h4M11.9.9v4"></path></g><path d="M9.9 7.4v2.5a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2v-5c0-1.1.9-2 2-2h2.5"></path></g></svg>
 </template>
 
 <script>
