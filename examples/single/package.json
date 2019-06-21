@@ -1,0 +1,20 @@
+{
+  "name": "single",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@zeit-ui/vue": "^1.2.0-alpha.1",
+    "vue": "^2.6.6",
+    "vue-auto": "^0.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "vue-template-compiler": "^2.5.21"
+  }
+}

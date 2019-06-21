@@ -14,6 +14,13 @@ module.exports = {
       },
     },
   },
+
+  configureWebpack: {
+    output: {
+      libraryExport: 'default',
+    },
+  },
+
   chainWebpack: config => {
     config.module.rule('md')
       .test(/\.md/)
