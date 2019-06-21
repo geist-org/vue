@@ -13,6 +13,20 @@ const getPackages = async () => {
     .filter(name => name !== 'index.js' && name !== 'utils')
 }
 
+const runPackage = async (name, count) => {
+  await execa('vue-cli-service', [
+    'build',
+    '--target', 'lib',
+    '--dest', 'lib',
+    '--name', name,
+    `./packages/${name}/index.js`,
+  ])
+  console.log(
+    '\u001B[1A',
+    log(`> Lib bundle ${cyan(name)} ${log('done. No.' + count)}      `),
+  )
+}
+
 const bundleComponents = async () => {
   const packages = await getPackages()
   const dest = path.join(__dirname, '../lib')
@@ -20,22 +34,21 @@ const bundleComponents = async () => {
   await fs.mkdir(dest)
   console.log(log(`\u001B[1A> Package ready, ${packages.length}.      `))
   let count = 0
-  console.log(process.env.CIRCLE_JOB, 'circleci_test')
 
-  await Promise.all(packages.map(async name => {
-    await execa('vue-cli-service', [
-      'build',
-      '--target', 'lib',
-      '--dest', 'lib',
-      '--name', name,
-      `./packages/${name}/index.js`,
-    ])
-    count ++
-    console.log(
-      '\u001B[1A',
-      log(`> Lib bundle ${cyan(name)} ${log('done. Count ' + count + '.')}      `),
-    )
-  }))
+  // circle-ci memory limit
+  // create multiple subprocesses results in insufficient memory
+  if (process.env.CIRCLE_JOB === 'package') {
+    for (const name of packages) {
+      count ++
+      await runPackage(name, count)
+    }
+  } else {
+    await Promise.all(packages.map(async name => {
+      count ++
+      await runPackage(name, count)
+    }))
+  }
+
   console.log(
     '\u001B[1A',
     log(`> Libs bundle done. Count ${count}.               `),
