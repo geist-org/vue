@@ -6,7 +6,9 @@
     :class="isClick ? 'click_animation': ''"
     :style="{ left: `${ privateValue }%` }"
     @mousedown.stop="handleMouseDown"
-    @mouseup="onDragEnd") {{ privateValue }}
+    @mouseup="onDragEnd"
+    @touchstart="handleMouseDown"
+    @touchend="onDragEnd") {{ privateValue }}
   .zi-slider-dot(v-if="showStops" v-for="dot in dots" :key="dot" :style="{ left: `${ dot }%` }")
 </template>
 
@@ -64,12 +66,15 @@ export default {
       this.startDrag = true
       this.startX = this.$refs.sliderRail.getBoundingClientRect().x
       window.addEventListener('mousemove', this.onDragging)
+      window.addEventListener('touchmove', this.onDragging)
       window.addEventListener('mouseup', this.onDragEnd)
+      window.addEventListener('touchend', this.onDragEnd)
     },
 
     onDragging(event) {
       if (!this.startDrag) return
       this.currentX = event.clientX
+      if (event.type === 'touchmove') this.currentX = event.changedTouches[0].clientX
       this.setValue()
     },
 
