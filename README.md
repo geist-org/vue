@@ -34,6 +34,7 @@ import '@zeit-ui/vue/dist/zeit-ui.css'
 
 - Vue icons for Zeit Design: [zeit-vue-icons](https://zeit-vue-icons.now.sh/)
 - CDN link extraction tool: [jsdelivr](https://jsdelivr.now.sh/)
+- NUT - born for micro frontends: [nut docs](https://nut.js.org/)
 
 <br/>
 
