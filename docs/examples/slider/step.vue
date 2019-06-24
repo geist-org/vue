@@ -1,5 +1,5 @@
 <template lang="pug">
-zi-slider(v-model="value" :step="20" :show-stops="true")
+zi-slider(style="width: 60%" v-model="value" :step="20" :show-stops="true")
 </template>
 
 <script>
