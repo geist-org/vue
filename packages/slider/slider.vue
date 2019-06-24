@@ -1,15 +1,15 @@
 <template lang="pug">
-.zi-slider(style="width: 60%")
+.zi-slider
   .zi-slider-rail(@click="onSliderClick" ref="sliderRail")
-  .zi-slider-handler(
-    ref="sliderHandler"
-    :class="isClick ? 'click_animation': ''"
-    :style="{ left: `${ privateValue }%` }"
-    @mousedown.stop="handleMouseDown"
-    @mouseup="onDragEnd"
-    @touchstart="handleMouseDown"
-    @touchend="onDragEnd") {{ privateValue }}
-  .zi-slider-dot(v-if="showStops" v-for="dot in dots" :key="dot" :style="{ left: `${ dot }%` }")
+    .zi-slider-handler(
+      ref="sliderHandler"
+      :class="isClick ? 'click_animation': ''"
+      :style="{ left: `${ privateValue }%` }"
+      @mousedown.stop="handleMouseDown"
+      @mouseup="onDragEnd"
+      @touchstart.stop="handleMouseDown"
+      @touchend="onDragEnd") {{ privateValue }}
+    .zi-slider-dot(v-if="showStops" v-for="dot in dots" :key="dot" :style="{ left: `${ dot }%` }")
 </template>
 
 <script>
@@ -51,11 +51,13 @@ export default {
     startX: 0,
     startDrag: false,
     isClick: false,
+    railWidth: 0,
   }),
 
   methods: {
     onSliderClick(event) {
       this.isClick = true
+      this.resetSize()
       this.startX = this.$refs.sliderRail.getBoundingClientRect().x
       this.currentX = event.clientX
       this.setValue()
@@ -75,17 +77,17 @@ export default {
       if (!this.startDrag) return
       this.currentX = event.clientX
       if (event.type === 'touchmove') this.currentX = event.changedTouches[0].clientX
+      this.resetSize()
       this.setValue()
     },
 
     setValue() {
-      const railWidth = this.$refs.sliderRail.clientWidth
       // step divide the rail into n pieces, count per (100/step)'s distance
-      const stepDistance = railWidth / (100 / this.step)
+      const stepDistance = this.railWidth / (100 / this.step)
       // Calculate the currentX - startX has how many stepDistance, then * step can get the percent of the rail
       let slideDistance = Math.round((this.currentX - this.startX) / stepDistance) * this.step
       if (this.currentX - this.startX <= 0) slideDistance = 0
-      if (this.currentX - this.startX >= railWidth) slideDistance = 100
+      if (this.currentX - this.startX >= this.railWidth) slideDistance = 100
       this.$emit('input', slideDistance)
     },
 
@@ -93,7 +95,22 @@ export default {
       this.startDrag = false
       window.removeEventListener('mousemove', this.onDragging)
       window.removeEventListener('mouseup', this.onDragEnd)
+      window.removeEventListener('touchmove', this.onDragging)
+      window.removeEventListener('touchend', this.onDragEnd)
     },
+
+    resetSize() {
+      if (this.$refs.sliderRail) this.railWidth = this.$refs.sliderRail.clientWidth
+    },
+  },
+
+  mounted() {
+    this.resetSize()
+    window.addEventListener('resize', this.resetSize)
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('resize', this.resetSize)
   },
 }
 </script>
