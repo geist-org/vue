@@ -7,7 +7,7 @@
       class="header-table"
       ref="tableHeader"
       :store="store"
-      :style="{width: layout.bodyWidth + 'px'}")
+      :style="{ width: layout.bodyWidth + 'px' }")
   div(class="body-wrapper" ref="bodyWrapper")
     table-body(
       class="body-table"
