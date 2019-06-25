@@ -6,7 +6,7 @@ const ident = 'useBuiltIns: false'
 const base = `module.exports={"presets":[["@vue/app",{ ${ident} }]]}`
 
 const setBabelConfig = (useBuiltIns = false) => {
-  if (!useBuiltIns && JSON.stringify(babelConfig).includes(ident)) return
+  if (!useBuiltIns && JSON.stringify(babelConfig).includes('"useBuiltIns":false')) return
 
   const value = useBuiltIns ? '"usage"' : false
   const configStr = base
