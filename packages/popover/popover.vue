@@ -4,14 +4,14 @@
     slot
   transition(name="zi-fade-in")
     .dropdown(:class="align" v-show="visible")
-      PopoverIcon.icon
+      PopoverIcon.icon(:is-dark="isDark")
       .slot-container
         slot(name="dropdown")
 </template>
 
 <script>
 import PopoverIcon from './popover-icon'
-import { validator } from '../utils'
+import { validator, theme } from '../utils'
 
 export default {
   name: 'zi-popover',
@@ -20,6 +20,7 @@ export default {
 
   data: () => ({
     visible: false,
+    isDark: false,
   }),
 
   props: {
@@ -36,6 +37,8 @@ export default {
 
   methods: {
     toggle() {
+      this.isDark = theme.getCurrentTheme().includes('dark')
+
       this.visible = !this.visible
       document.removeEventListener('click', this.globalHandler)
       if (this.visible) {
