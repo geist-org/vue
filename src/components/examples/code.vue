@@ -27,7 +27,6 @@ export default {
   data: () => ({
     codeTemplate: '',
     codeName: '',
-    isDark: ZeitUI.theme.getCurrentTheme().includes('dark'),
   }),
 
   props: {
@@ -36,11 +35,8 @@ export default {
 
   mounted() {
     this.codeName = this.name.split('-').reverse()[0]
-
     const template = this.findTemplate()
     this.codeTemplate = template && template._meta ? template._meta() : ''
-
-    ZeitUI.theme.subscribeChange(name => this.updateTheme(name))
   },
 
   methods: {
@@ -49,10 +45,6 @@ export default {
       const children = this.$refs.codeRender.$children
       if (!children || !children.length) return null
       return children[0]
-    },
-
-    updateTheme(name) {
-      this.isDark = name.includes('dark')
     },
 
     async copy() {

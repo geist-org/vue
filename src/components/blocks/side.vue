@@ -28,7 +28,7 @@ export default {
   data: () => ({
     sides: [],
     isActiveMenu: false,
-    isDark: ZeitUI.theme.getCurrentTheme().includes('dark'),
+    isDark: false,
   }),
 
   mounted() {
@@ -59,7 +59,11 @@ export default {
 
     toggleTheme(isDark) {
       const next = isDark ? 'light-theme' : 'dark-theme'
-      ZeitUI.theme.setTheme(next)
+      if (isDark) {
+        ZeitUI.theme.enableLight()
+      } else {
+        ZeitUI.theme.enableDark()
+      }
       localStorage.setItem('theme', next)
       this.isDark = !isDark
     },

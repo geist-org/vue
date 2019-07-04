@@ -8,9 +8,5 @@
 <script>
 export default {
   name: 'zi-popover-icon',
-
-  props: {
-    isDark: Boolean,
-  },
 }
 </script>
