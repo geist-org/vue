@@ -8,7 +8,7 @@
 
 <ex-code name="ex-checkbox-group"/></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/checkbox.md">
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/checkbox.md">
 
 <h3> zi-checkbox </h3>
 

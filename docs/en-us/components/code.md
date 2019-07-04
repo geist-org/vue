@@ -6,7 +6,7 @@
 
 <ex-code name="ex-code-block"/></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/code.md">
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/code.md">
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |

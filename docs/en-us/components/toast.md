@@ -12,7 +12,7 @@
 
 <ex-code name="ex-toast-handler"/></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/toast.md">
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/toast.md">
 
 prototype: `$Toast`
 

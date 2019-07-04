@@ -6,7 +6,7 @@
 
 <ex-code name="ex-toggle-disabled"/></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/toogle.md">
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/toogle.md">
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |

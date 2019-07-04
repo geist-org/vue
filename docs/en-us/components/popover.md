@@ -10,7 +10,7 @@
 
 <ex-code name="ex-popover-command"/></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/popover.md">
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/popover.md">
 <h3> zi-popover </h3>
 
 | Attribute | Description | Type | Accepted values | Default

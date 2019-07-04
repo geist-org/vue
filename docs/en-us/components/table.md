@@ -8,7 +8,7 @@
 
 <ex-code name="ex-table-width"></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/table.md">
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/table.md">
 
 <h3>zi-table</h3>
 

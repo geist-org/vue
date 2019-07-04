@@ -10,7 +10,7 @@
 
 <ex-code name="ex-select-disabled"></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/select.md">
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/select.md">
 <h3>zi-select</h3>
 
 | Attribute | Description | Type | Accepted values | Default

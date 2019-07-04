@@ -6,7 +6,7 @@
 
 <ex-code name="ex-collapse-multiple"/></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/collapse.md">
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/collapse.md">
 
 | Attribute | Description | Type | Accepted values | Default
 | --------- | ---------- | ---- |  -------------- | ------ |

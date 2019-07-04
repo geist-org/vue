@@ -7,7 +7,7 @@
 
 <ex-code name="ex-switcher-multiple"></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/switcher.md">
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/switcher.md">
 
 <h3>zi-switcher</h3>
 

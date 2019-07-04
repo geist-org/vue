@@ -8,7 +8,7 @@
 
 <ex-code name="ex-badge-limit"></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/badge.md">
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/badge.md">
 
 | Attribute&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description | Type | Accepted values | Default
 | ------------- | ------- | ----- |  ------------- | --- |
