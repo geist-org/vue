@@ -1,6 +1,6 @@
-# Spinner
+## Spinner
 
-## Examples
+Indicate an action running in the background.
 
 <ex-code name="ex-spinner-basic"/></ex-code>
 

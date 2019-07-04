@@ -1,6 +1,6 @@
-# Radio
+## Radio
 
-## Examples
+Provides single user input from a selection of options.
 
 <ex-code name="ex-radio-basic"></ex-code>
 

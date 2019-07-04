@@ -1,12 +1,18 @@
-# Checkbox
+## Checkbox
 
-## Examples
+<ex-code name="ex-checkbox-basic"/>
 
-<ex-code name="ex-checkbox-basic"/></ex-code>
+Returns <code>true</code> or <code>false</code> when there is only one value.
+
+</ex-code>
 
 <ex-code name="ex-checkbox-disabled"/></ex-code>
 
-<ex-code name="ex-checkbox-group"/></ex-code>
+<ex-code name="ex-checkbox-group"/>
+
+Return an <code>Array</code> when you have a group.
+
+</ex-code>
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/checkbox.md">
 

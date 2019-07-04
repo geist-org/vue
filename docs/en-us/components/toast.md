@@ -1,6 +1,6 @@
-# Toast
+## Toast
 
-## Examples
+Display an important message globally.
 
 <ex-code name="ex-toast-basic"/></ex-code>
 

@@ -1,6 +1,6 @@
-# Toggle
+## Toggle
 
-## Examples
+Displays a boolean value.
 
 <ex-code name="ex-toggle-basic"/></ex-code>
 

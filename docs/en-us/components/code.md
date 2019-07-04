@@ -1,6 +1,4 @@
-# Code
-
-## Examples
+## Code
 
 <ex-code name="ex-code-basic"/></ex-code>
 

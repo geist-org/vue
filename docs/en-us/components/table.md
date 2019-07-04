@@ -1,6 +1,6 @@
-# Table
+## Table
 
-## Examples
+Display tabular data in row format.
 
 <ex-code name="ex-table-basic"></ex-code>
 

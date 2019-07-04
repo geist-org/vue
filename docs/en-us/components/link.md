@@ -1,12 +1,24 @@
-# Link
+## Link
 
-## Examples
+Hyperlinks between pages.
 
-<ex-code name="ex-link-basic"/></ex-code>
+<ex-code name="ex-link-basic"/>
 
-<ex-code name="ex-link-more"/></ex-code>
+The default component <code>Link</code> adds an icon to the link.
 
-<ex-code name="ex-link-to"/></ex-code>
+</ex-code>
+
+<ex-code name="ex-link-more"/>
+
+This is another style.
+
+</ex-code>
+
+<ex-code name="ex-link-to"/>
+
+<code>Link</code> also support <code>Vue Router</code>.
+
+</ex-code>
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/link.md">
 

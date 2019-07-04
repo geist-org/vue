@@ -1,10 +1,14 @@
-# Card
+## Card
 A common container component.
 
-## Examples
+<ex-code name="ex-card-normal"/>
 
-<ex-code name="ex-card-normal"/></ex-code>
+You can also add more styles to the card.
+
+</ex-code>
+
 <br/>
+
 <ex-code name="ex-card-hoverable"></ex-code>
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/card.md">

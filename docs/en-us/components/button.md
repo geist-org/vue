@@ -1,20 +1,42 @@
-# Button
+## Button
 
-## Examples
+Used to trigger an operation.
 
-<ex-code name="ex-button-basic"></ex-code>
+<ex-code name="ex-button-basic">
 
-<ex-code name="ex-button-type"></ex-code>
+The button contains a ripple effect.
 
-<ex-code name="ex-button-loading"></ex-code>
+</ex-code>
 
-<ex-code name="ex-button-status"></ex-code>
+<ex-code name="ex-button-type">
 
-<ex-code name="ex-button-ghost"></ex-code>
+You may need different forms of buttons in different scenarios.
+
+</ex-code>
+
+<ex-code name="ex-button-loading">
+
+Any <code>Button</code> can add <code>loading</code> state.
+
+</ex-code>
+
+<ex-code name="ex-button-status">
+
+</ex-code>
+
+<ex-code name="ex-button-ghost">
+
+Contrary background and border.
+
+</ex-code>
 
 <!--<ex-code name="ex-button-icon"></ex-code>-->
 
-<ex-code name="ex-button-size"></ex-code>
+<ex-code name="ex-button-size">
+
+Buttons have different sizes, but you can also specify styles.
+
+</ex-code>
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/button.md">
 
@@ -22,12 +44,12 @@
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **size** | button size | `string` | `small` / `mini` / `medium` / `big` / `huge` | `medium` |
 | **type** | button type | `string` | `primary` / `success` / `danger` / `warning` / `abort` / `normal` | - |
-| **loading** | loading for button content | `boolean` | `true` / `false` | `false` |
-| **disabled** | set button disabled | `boolean` | `true` / `false` | `false` |
-| **shadow** | button with shadow | `boolean` | `true` / `false` | `false` |
-| **circular** | have border-radius | `boolean` | `true` / `false` | `false` |
-| **auto** | button width auto | `boolean` | `true` / `false` | `false` |
-| **ghost** | transparent background | `boolean` | `true` / `false` | `false` |
-| **effect** | click animation | `boolean` | `true` / `false` | `true` |
+| **loading** | loading for button content | `boolean` | - | `false` |
+| **disabled** | set button disabled | `boolean` | - | `false` |
+| **shadow** | button with shadow | `boolean` | - | `false` |
+| **circular** | have border-radius | `boolean` | - | `false` |
+| **auto** | button width auto | `boolean` | - | `false` |
+| **ghost** | transparent background | `boolean` | - | `false` |
+| **effect** | click animation | `boolean` | - | `true` |
 
 </ex-footer>

@@ -1,6 +1,4 @@
-# Tag
-
-## Examples
+## Tag
 
 <ex-code name="ex-tag-basic"></ex-code>
 

@@ -1,8 +1,12 @@
-# Slider
+## Slider
 
-## Examples
+Display a numeric value within a range.
 
-<ex-code name="ex-slider-basic"></ex-code>
+<ex-code name="ex-slider-basic">
+
+Accept clicks or drag actions.
+
+</ex-code>
 
 <ex-code name="ex-slider-step"></ex-code>
 

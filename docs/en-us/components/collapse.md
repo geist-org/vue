@@ -1,6 +1,6 @@
-# Collapse
+## Collapse
 
-## Examples
+Display large amounts of text in collapsible sections. Commonly referred to as an accordion.
 
 <ex-code name="ex-collapse-basic"/></ex-code>
 

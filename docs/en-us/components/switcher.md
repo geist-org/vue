@@ -1,7 +1,4 @@
-
-# Switcher
-
-## Examples
+## Switcher
 
 <ex-code name="ex-switcher-basic"></ex-code>
 

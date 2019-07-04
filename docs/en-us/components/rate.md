@@ -1,6 +1,4 @@
-# Rate
-
-## Examples
+## Rate
 
 <ex-code name="ex-rate-basic"/></ex-code>
 

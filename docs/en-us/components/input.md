@@ -1,14 +1,24 @@
-# Input
+## Input
 
-## Examples
+Retrieve text input from a user.
 
-<ex-code name="ex-input-basic"/></ex-code>
+<ex-code name="ex-input-basic"/>
 
-<ex-code name="ex-input-size"/></ex-code>
+</ex-code>
+
+<ex-code name="ex-input-size"/>
+
+Inputs have different sizes, but you can also specify styles.
+
+</ex-code>
 
 <ex-code name="ex-input-label"/></ex-code>
 
-<ex-code name="ex-input-clearable"/></ex-code>
+<ex-code name="ex-input-clearable"/>
+
+Clear all text at a button.
+
+</ex-code>
 
 <ex-code name="ex-input-disabled"/></ex-code>
 

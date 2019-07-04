@@ -1,6 +1,7 @@
-# Note
+## Note
 
-## Examples
+Display text that requires attention or provides additional information.
+
 
 <ex-code name="ex-note-basic"></ex-code>
 
