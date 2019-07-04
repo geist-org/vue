@@ -1,14 +1,22 @@
-# Dialog
+## Dialog
 
-## Examples
+Dialog boxes with multiple elements.
 
-<ex-code name="ex-dialog-basic"/></ex-code>
+<ex-code name="ex-dialog-basic"/>
+
+The <code>Dialog</code> contains two buttons by default
+
+</ex-code>
 
 <ex-code name="ex-dialog-custom"/></ex-code>
 
-<ex-code name="ex-dialog-more"/></ex-code>
+<ex-code name="ex-dialog-more"/>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/avatar.md">
+You can add more components to content.
+
+</ex-code>
+
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/avatar.md">
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |

@@ -1,14 +1,26 @@
-# Progress
+## Progress
 
-## Examples
+Progress in expressing events in time.
 
-<ex-code name="ex-progress-basic"></ex-code>
+<ex-code name="ex-progress-basic">
 
-<ex-code name="ex-progress-color"></ex-code>
+Display a bar and a number box by default.
 
-<ex-code name="ex-progress-fixed"></ex-code>
+</ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/progress.md">
+<ex-code name="ex-progress-color">
+
+You can set different stages to display different colors.
+
+</ex-code>
+
+<ex-code name="ex-progress-fixed">
+
+This fixed progress bar is displayed at the top of the page.
+
+</ex-code>
+
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/progress.md">
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |

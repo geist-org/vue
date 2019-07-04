@@ -1,16 +1,32 @@
-# Popover
+## Popover
 
-## Examples
+The primary header navigation menu.
 
-<ex-code name="ex-popover-basic"/></ex-code>
+<ex-code name="ex-popover-basic"/>
 
-<ex-code name="ex-popover-align"/></ex-code>
+Only contains two buttons.
 
-<ex-code name="ex-popover-split"/></ex-code>
+</ex-code>
 
-<ex-code name="ex-popover-command"/></ex-code>
+<ex-code name="ex-popover-align"/>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/popover.md">
+Specify different alignment styles.
+
+</ex-code>
+
+<ex-code name="ex-popover-split"/>
+
+Auxiliary attrs help you build complex menus.
+
+</ex-code>
+
+<ex-code name="ex-popover-command"/>
+
+Of course, you can get click events for each button.
+
+</ex-code>
+
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/popover.md">
 <h3> zi-popover </h3>
 
 | Attribute | Description | Type | Accepted values | Default

@@ -1,14 +1,26 @@
-# Badge
+## Badge
 
-## Examples
+Display an indicator that requires attention.
 
-<ex-code name="ex-badge-default"></ex-code>
+<ex-code name="ex-badge-default">
 
-<ex-code name="ex-badge-combination"></ex-code>
+You can add some styles to <code>Badge</code>.
 
-<ex-code name="ex-badge-limit"></ex-code>
+</ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/badge.md">
+<ex-code name="ex-badge-combination">
+
+<code>Badge</code> can be used in combination with <code>Avatar</code> or <code>Text</code>.
+
+</ex-code>
+
+<ex-code name="ex-badge-limit">
+
+You can set a maximum for <code>Badge</code>.
+
+</ex-code>
+
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/badge.md">
 
 | Attribute&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description | Type | Accepted values | Default
 | ------------- | ------- | ----- |  ------------- | --- |

@@ -1,16 +1,24 @@
-# Select
+## Select
 
-## Examples
+Display a dropdown list of items.
 
 <ex-code name="ex-select-basic"></ex-code>
 
 <ex-code name="ex-select-size"></ex-code>
 
-<ex-code name="ex-select-simple"></ex-code>
+<ex-code name="ex-select-simple">
 
-<ex-code name="ex-select-disabled"></ex-code>
+Style without icons.
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/select.md">
+</ex-code>
+
+<ex-code name="ex-select-disabled">
+
+You can disable one <code>Item</code> or all <code>Option</code>.
+
+</ex-code>
+
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/select.md">
 <h3>zi-select</h3>
 
 | Attribute | Description | Type | Accepted values | Default

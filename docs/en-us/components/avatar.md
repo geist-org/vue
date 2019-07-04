@@ -1,16 +1,32 @@
-# Avatar
+## Avatar
 
-## Examples
+Avatars represent a user or a team. Stacked avatars represent a group of people.
 
-<ex-code name="ex-avatar-default"/></ex-code>
+<ex-code name="ex-avatar-default"/>
 
-<ex-code name="ex-avatar-size"/></ex-code>
+The <code>Avatar</code> contains circle and square.
 
-<ex-code name="ex-avatar-text"/></ex-code>
+</ex-code>
 
-<ex-code name="ex-avatar-stacked"/></ex-code>
+<ex-code name="ex-avatar-size"/>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/avatar.md">
+You can specify different sizes of <code>Avatar</code>.
+
+</ex-code>
+
+<ex-code name="ex-avatar-text"/>
+
+Sometimes it's more convenient to display texts.
+
+</ex-code>
+
+<ex-code name="ex-avatar-stacked"/>
+
+Multiple avatars can overlap and stack together.
+
+</ex-code>
+
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/avatar.md">
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |

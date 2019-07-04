@@ -1,14 +1,18 @@
-# Fieldset
+## Fieldset
 
-## Examples
+Display a collection of related information in a single unit.
 
 <ex-code name="ex-fieldset-basic"></ex-code>
 
 <ex-code name="ex-fieldset-custom"></ex-code>
 
-<ex-code name="ex-fieldset-disabled"></ex-code>
+<ex-code name="ex-fieldset-disabled">
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/avatar.md">
+<code>disabled</code> affects all the child elements.
+
+</ex-code>
+
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/avatar.md">
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |

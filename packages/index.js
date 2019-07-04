@@ -24,6 +24,7 @@ import Link from './link'
 import Dialog from './dialog'
 import Progress from './progress'
 import Files from './files'
+import Image from './image'
 import Table from './table'
 import Slider from './slider'
 
@@ -52,6 +53,7 @@ const install = vue => {
   Dialog.install(vue)
   Progress.install(vue)
   Files.install(vue)
+  Image.install(vue)
   Table.install(vue)
   Slider.install(vue)
 }
