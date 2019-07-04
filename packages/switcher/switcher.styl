@@ -1,11 +1,11 @@
 .zi-switcher
   display inline-flex
   align-items center
-  background-color white
+  background-color var(--geist-background)
   border-radius 4px
-  border 1px solid #eaeaea
+  border 1px solid var(--accents-2)
   overflow hidden
-  color black
+  color var(--geist-foreground)
 
   a
     color inherit
@@ -25,7 +25,7 @@
     &::after
       position absolute
       height rem(16)
-      border-right 1px solid #eaeaea
+      border-right 1px solid var(--accents-2)
       right 0
       top 50%
       transform translateY(-50%)
@@ -36,7 +36,7 @@
 
     &:not(.active):hover
       text-decoration none
-      background-color #fafafa
+      background-color var(--accents-1)
 
     &.active
       pointer-events none
@@ -45,18 +45,3 @@
 .zi-switcher-content
   width 100%
   margin-top 10px
-
-.zi-dark-theme
-  .zi-switcher
-    background-color black
-    color #999
-
-    a
-      font-weight normal
-      &:not(.active):hover
-        background-color #111
-
-      &.active
-        font-weight 600
-        color #fff
-

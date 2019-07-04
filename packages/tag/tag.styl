@@ -4,21 +4,16 @@
   height rem(24)
   font-size rem(12)
   border-radius 5px
-  border 1px solid #eaeaea
+  border 1px solid var(--accents-2)
   font-weight 500
-  background-color #fafafa
+  background-color var(--accents-1)
   padding 0 rem(8)
 
   &.success
-    color $STATUS_SUCCESS
+    color var(--geist-success)
 
   &.warning
-    color $STATUS_WARNING
+    color var(--geist-warning)
 
   &.error, &.danger
-    color $STATUS_DANGER
-
-.zi-dark-theme
-  .zi-tag
-    background-color black
-    border 1px solid #333
+    color var(--geist-error)

@@ -11,7 +11,6 @@ A common container component.
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
-| **dark** | dark card | `boolean` | `true` / `false` | `false` |
 | **hoverable** | enable hover | `boolean` | `true` / `false` | `false` |
 
 </ex-footer>

@@ -1,22 +1,13 @@
 <template lang="pug">
 .files
-  zi-files-item(:files="files" @file-click="fileClickHandler"
-    :default-expand="defaultExpand" :is-dark="isDark")
+  zi-files-item(:files="files" @file-click="fileClickHandler" :default-expand="defaultExpand")
 </template>
 
 <script>
-import { theme, print } from '../utils'
+import { print } from '../utils'
 
 export default {
   name: 'zi-files',
-
-  data: () => ({
-    isDark: theme.getCurrentTheme().includes('dark'),
-  }),
-
-  mounted() {
-    theme.subscribeChange(name => this.updateTheme(name))
-  },
 
   props: {
     files: {
@@ -36,10 +27,6 @@ export default {
   methods: {
     fileClickHandler(event) {
       this.$emit('file-click', event)
-    },
-
-    updateTheme(name) {
-      this.isDark = name.includes('dark')
     },
   },
 }

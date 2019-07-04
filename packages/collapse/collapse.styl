@@ -1,9 +1,9 @@
 .zi-collapse
   text-align left
-  border-bottom 1px solid #eaeaea
+  border-bottom 1px solid var(--accents-2)
 
   &:first-child
-    border-top 1px solid #eaeaea
+    border-top 1px solid var(--accents-2)
 
 .zi-collapse-title
   min-height rem(75)
@@ -12,7 +12,7 @@
   justify-content space-between
   align-items center
   font-size rem(20)
-  color black
+  color var(--geist-foreground)
   text-transform none
   margin 0
   cursor pointer
@@ -30,8 +30,3 @@
   width 100%
   padding-bottom rem(20)
   transition height 0.2s ease
-
-
-.zi-dark-theme
-  .zi-collapse-title
-    color #fff

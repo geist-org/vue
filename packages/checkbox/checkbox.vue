@@ -1,6 +1,7 @@
 <template lang="pug">
-label.zi-checkbox-container(:class="classes")
-  span.zi-checkbox(:class="classes")
+label.zi-checkbox-container(:class="{ disabled: isDisabled }")
+  checked.zi-checkbox(v-if="model" :class="{ disabled: isDisabled }")
+  unchecked.zi-checkbox(v-if="!model" :class="{ disabled: isDisabled }")
   input.zi-checkbox-original(
     type="checkbox"
     :disabled="isDisabled"
@@ -12,8 +13,16 @@ label.zi-checkbox-container(:class="classes")
 </template>
 
 <script>
+import unchecked from '@zeit-ui/vue-icons/packages/unchecked'
+import checked from '@zeit-ui/vue-icons/packages/checked'
+
 export default {
   name: 'zi-checkbox',
+
+  components: {
+    unchecked,
+    checked,
+  },
 
   data: () => ({
     _model: false,
@@ -44,13 +53,6 @@ export default {
     isDisabled() {
       if (!this.inGroup) return this.disabled
       return this._group.disabled || this.disabled
-    },
-
-    classes() {
-      let str = ''
-      this.model && (str += ' checked')
-      this.isDisabled && (str += ' disabled')
-      return str
     },
 
     inGroup() {

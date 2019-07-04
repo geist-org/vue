@@ -2,33 +2,25 @@
   padding rem(16) rem(24)
   font-size rem(14)
   line-height 1.8
-  border 1px solid #ddd
-  background-color white
-  border-radius 4px
+  border 1px solid var(--accents-7)
+  background-color var(--geist-background)
+  border-radius var(--geist-radius)
 
   >.zi-note-type
     text-transform uppercase
     font-weight 500
 
   &.hint, &.success
-    border-color $STATUS_SUCCESS
+    border-color var(--geist-success)
     >.zi-note-type
-      color $STATUS_SUCCESS
+      color var(--geist-success)
 
   &.alert, &.warning
-    border-color $STATUS_WARNING
+    border-color var(--geist-warning)
     >.zi-note-type
-      color $STATUS_WARNING
+      color var(--geist-warning)
 
   &.error, &.danger
-    border-color $STATUS_DANGER
+    border-color var(--geist-error)
     >.zi-note-type
-      color $STATUS_DANGER
-
-.zi-dark-theme
-  .zi-note
-    background-color black
-    color #eaeaea
-
-  .zi-note-type
-    color #eaeaea
+      color var(--geist-error)

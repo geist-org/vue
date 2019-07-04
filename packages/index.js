@@ -10,7 +10,6 @@ import Collapse from './collapse'
 import Fieldset from './fieldset'
 import Input from './input'
 import Select from './select'
-import Footnote from './footnote'
 import More from './more'
 import Toggle from './toggle'
 import Switcher from './switcher'
@@ -39,7 +38,6 @@ const install = vue => {
   Fieldset.install(vue)
   Input.install(vue)
   Select.install(vue)
-  Footnote.install(vue)
   More.install(vue)
   Toggle.install(vue)
   Switcher.install(vue)

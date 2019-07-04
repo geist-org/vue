@@ -3,7 +3,7 @@ div
   li.item(v-for="(item, i) in files" v-if="item" :key="item.name + i" :class="{ 'has-children': isDir(item.type) && !isTop }")
     FilesStatus.status(
       v-if="isDir(item.type)"
-      :style="statusStyle" :is-expand="isExpand(i)" :is-dark="isDark"
+      :style="statusStyle" :is-expand="isExpand(i)"
       @click="toggleExpand(i)"
     )
     a.link(@click="toggleExpand(i, !isDir(item.type), item)")
@@ -15,7 +15,6 @@ div
         :files="item.files"
         :depth="depth + 1"
         :default-expand="defaultExpand"
-        :is-dark="isDark"
         @file-click="childClickHandler($event, item)")
 </template>
 
@@ -39,7 +38,6 @@ export default {
     files: { type: Array, default: () => ([]) },
     depth: { type: Number, default: 0 },
     defaultExpand: Boolean,
-    isDark: Boolean,
   },
 
   data: () => ({
@@ -111,6 +109,7 @@ export default {
   white-space nowrap
   user-select none
   list-style none
+  margin-bottom 0
   position relative
 
 .item + .item
@@ -132,7 +131,7 @@ export default {
   line-height 28px
   vertical-align top
   background-repeat no-repeat
-  background-image linear-gradient(to right, transparent 11px, rgb(234, 234, 234) 11px, rgb(234, 234, 234) 12px, transparent 12px)
+  background-image linear-gradient(to right, transparent 11px, var(--accents-2) 11px, var(--accents-2) 12px, transparent 12px)
 
   &.first
     background-position center 5px
@@ -148,7 +147,7 @@ export default {
   text-decoration none
   line-height 28px
   height 28px
-  color black
+  color var(--geist-foreground)
   white-space nowrap
   user-select none
   display flex
@@ -159,11 +158,4 @@ export default {
 
   &:hover span
     font-weight 600
-
-.zi-dark-theme
-  .item
-    color white
-
-  .link
-    color white
 </style>

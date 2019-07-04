@@ -1,6 +1,10 @@
+select
+  &:hover, &:active, &:focus
+    outline none
+
 .zi-select
-  color black
-  border 1px solid #eaeaea
+  color var(--geist-foreground)
+  border 1px solid var(--accents-2)
   box-shadow none
   background transparent
   background-image none
@@ -18,11 +22,11 @@
 
   &:not(.disabled):hover, &:not(.disabled):focus-within
     box-shadow 0 2px 6px rgba(0, 0, 0, 0.1)
-    border-color #ddd
+    border-color var(--accents-3)
 
 .zi-select-container
   display inline-flex
-  border 1px solid #eaeaea
+  border 1px solid var(--accents-2)
   border-radius 5px
   height rem(40)
   line-height rem(40)
@@ -32,7 +36,7 @@
   text-transform uppercase
   font-weight 100
   color black
-  background-color #fff
+  background-color var(--geist-background)
   white-space nowrap
   width auto
   min-width rem(160)
@@ -48,7 +52,10 @@
 
   &:not(.disabled):hover, &:not(.disabled):focus-within
     box-shadow 0 2px 6px rgba(0, 0, 0, 0.1)
-    border-color #ddd
+    border-color var(--accents-7)
+
+    .arrow-box
+      border-color var(--accents-7)
 
   &.simple
     width initial
@@ -60,9 +67,10 @@
     display inline-flex
     justify-content center
     align-items center
-    border-left 1px solid #eaeaea
+    border-left 1px solid var(--accents-2)
     pointer-events none
-    background-color #fff
+    background-color var(--geist-background)
+    transition border .2s, background .2s, color .2s ease-out, box-shadow .2s ease
     position absolute
     right 0
 
@@ -116,25 +124,3 @@
     .arrow
       width rem(10)
       height rem(10)
-
-
-.zi-dark-theme
-  .zi-select-container
-    background-color black
-    border-color #333
-    color white
-
-    &:not(.disabled):hover, &:not(.disabled):focus-within
-      box-shadow 0 2px 6px rgba(0, 0, 0, 0.1)
-      border-color #888
-
-  .zi-select
-    background-color black
-    border-color #333
-    color white
-
-  .arrow-box
-    background-color black
-    border-color #333
-
-

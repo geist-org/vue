@@ -37,8 +37,8 @@
   z-index 100
   width auto
   box-shadow rgba(0, 0, 0, 0.12) 0px 20px 30px 0px
-  color black
-  background-color white
+  color var(--geist-foreground)
+  background-color var(--accents-1)
   display flex
   flex-direction column
   max-width 100%
@@ -71,15 +71,15 @@
   overflow hidden
   border-bottom-right-radius 8px
   border-bottom-left-radius 8px
-  border-top 1px solid rgb(234, 234, 234)
+  border-top 1px solid var(--accents-2)
 
   > .action
-    color rgb(153, 153, 153)
+    color var(--accents-3)
     cursor pointer
     font-size 12px
     text-align center
     text-transform uppercase
-    background-color white
+    background-color var(--accents-1)
     transition all 200ms ease-in-out 0s
     flex 1 1 100%
     padding 19px 0
@@ -93,14 +93,14 @@
     line-height 15px
 
     &:focus, &:hover
-      color black
-      background-color rgb(250, 250, 250)
+      color var(--geist-foreground)
+      background-color var(--accents-1)
 
     &:not(:last-child)
-      border-right 1px solid rgb(234, 234, 234)
+      border-right 1px solid var(--accents-2)
 
     &:last-child
-      color black
+      color var(--geist-foreground)
 
 .zi-dialog-slide-enter-active,
 .zi-dialog-slide-leave-active
@@ -120,26 +120,3 @@
 .zi-dialog-backdrop-leave,
 .zi-dialog-backdrop-leave-active
   opacity 0
-
-.zi-dark-theme
-  .zi-dialog-wrapper
-    background-color #111
-
-  .zi-dialog-content
-    color white
-
-  .zi-dialog-footer
-    border-top 1px solid #333
-
-    >.action
-      background-color #111
-
-      &:focus, &:hover
-        color white
-        background-color #111
-
-      &:not(:last-child)
-        border-right 1px solid #333
-
-      &:last-child
-        color white

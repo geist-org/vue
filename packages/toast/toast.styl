@@ -65,8 +65,8 @@
   border 0
   width rem(420)
   height rem(60)
-  color black
-  background-color white
+  color var(--geist-foreground)
+  background-color var(--geist-background)
   display flex
   justify-content space-between
   align-items center
@@ -74,16 +74,16 @@
   font-size rem(14)
 
   &.error, &.danger
-    background-color $STATUS_DANGER
-    color white
+    background-color var(--geist-error)
+    color var(--geist-background)
 
   &.warning
-    background-color $STATUS_WARNING
-    color white
+    background-color var(--geist-warning)
+    color var(--geist-background)
 
   &.success
-    background-color $STATUS_SUCCESS
-    color white
+    background-color var(--geist-success)
+    color var(--geist-background)
 
   .message
     text-overflow ellipsis
@@ -93,21 +93,3 @@
     max-width 70%
     margin 0
     padding 0
-
-.zi-dark-theme
-  .zi-toast
-    background-color black
-    color white
-    border 1px solid #333
-
-    &.error, &.danger
-      border-color $STATUS_DANGER
-      color $STATUS_DANGER
-
-    &.warning
-      border-color $STATUS_WARNING
-      color $STATUS_WARNING
-
-    &.success
-      border-color $STATUS_SUCCESS
-      color $STATUS_SUCCESS

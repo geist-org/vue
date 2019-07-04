@@ -10,11 +10,11 @@
   justify-content center
   justify-items center
   flex-direction column
-  box-shadow rgba(0, 0, 0, 0.12) 0px 6px 32px 0px
-  color black
-  background-color white
+  color var(--geist-foreground)
+  box-shadow var(--shadow-medium)
+  background-color var(--geist-background)
   width 200px
-  border-radius 5px
+  border-radius var(--geist-radius)
   padding 8px 0
   text-align left
   margin-top 12px
@@ -78,8 +78,8 @@
   transition color 0.2s ease 0s
 
   &:not(.nohover):not(.disabled):hover
-    background-color #fafafa
-    color black
+    background-color var(--accents-1)
+    color var(--geist-foreground)
 
   &.nohover
     cursor default
@@ -89,7 +89,7 @@
     margin 8px 0
     height 1px
     flex-basis 1px
-    background-color rgb(234, 234, 234)
+    background-color var(--accents-2)
     padding 0
 
   &.disabled
@@ -98,10 +98,10 @@
 
   &.primary
     text-decoration none
-    color black
+    color var(--geist-foreground)
 
   >.title
-    color black
+    color var(--geist-foreground)
     font-size 14px
     text-transform uppercase
 
@@ -109,33 +109,3 @@
     color rgb(153, 153, 153)
     font-size 12px
     text-transform uppercase
-
-
-.zi-dark-theme
-  .popover-item
-    color #666
-
-    &:not(.nohover):not(.disabled):hover
-      background-color #252525
-      color #f2f2f2
-
-    &.line
-      background-color #333
-
-    &.primary
-      color #666
-
-    >.title
-      color white
-
-    >.subtitle
-      color #666
-
-  .dropdown
-    background-color black
-    border 1px solid #333
-
-    &::before
-      border-color: transparent transparent black transparent
-
-

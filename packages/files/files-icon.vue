@@ -1,13 +1,12 @@
 <template lang="pug">
 div.icon-box
-  DirectoryIcon.icon(v-if="isDir" :dark="isDark")
-  FileIcon.icon-file(v-else :dark="isDark")
+  DirectoryIcon.icon(v-if="isDir")
+  FileIcon.icon-file(v-else)
 </template>
 
 <script>
 import FileIcon from '@zeit-ui/vue-icons/packages/file'
 import DirectoryIcon from '@zeit-ui/vue-icons/packages/directory'
-import { theme } from '../utils'
 
 export default {
   name: 'zi-files-icon',
@@ -17,22 +16,8 @@ export default {
     DirectoryIcon,
   },
 
-  data: () => ({
-    isDark: theme.getCurrentTheme().includes('dark'),
-  }),
-
   props: {
     isDir: Boolean,
-  },
-
-  mounted() {
-    theme.subscribeChange(name => this.updateTheme(name))
-  },
-
-  methods: {
-    updateTheme(name) {
-      this.isDark = name.includes('dark')
-    },
   },
 }
 </script>

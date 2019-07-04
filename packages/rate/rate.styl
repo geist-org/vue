@@ -10,27 +10,15 @@
   width rem(18)
   height rem(18)
   cursor pointer
-  fill #999
+  fill var(--accents-3)
   margin-right rem(8)
   transition all .12s ease-in
 
   &:not(.active):not(.disabled):hover
-    fill #222
+    fill var(--accents-7)
 
   &:not(.active):not(.disabled).hover
-    fill #222
+    fill var(--accents-7)
 
   &.active
     fill #f5a623
-
-.zi-dark-theme
-  .zi-rate-icon
-    fill #333
-    &:not(.active):not(.disabled):hover
-      fill #111
-
-    &:not(.active):not(.disabled).hover
-      fill #888
-    &.active
-      fill #f5a623
-

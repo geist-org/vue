@@ -1,11 +1,11 @@
 .zi-fieldset
-  background-color white
-  border 1px solid #eaeaea
+  background-color var(--geist-background)
+  border 1px solid var(--accents-2)
   border-radius 5px
   overflow hidden
 
 .zi-fieldset-content
-  background-color white
+  background-color var(--geist-background)
   font-size rem(13)
   padding rem(20)
 
@@ -19,9 +19,9 @@
     margin-bottom rem(14)
 
 .zi-fieldset-footer
-  background-color #fafafa
-  border-top 1px solid #eaeaea
-  color #444
+  background-color var(--accents-1)
+  border-top 1px solid var(--accents-2)
+  color var(--accents-6)
   display flex
   justify-content space-between
   align-items center
@@ -36,19 +36,19 @@
 
 
 .disabled .zi-fieldset, .disabled .zi-fieldset-content, .disabled .zi-fieldset-footer
-  background-color #fafafa
-  color #999
+  background-color var(--accents-1)
+  color var(--accents-3)
 
   button
-    background #fafafa !important
-    border-color #eaeaea !important
+    background var(--accents-1) !important
+    border-color var(--accents-2) !important
     color #ccc !important
     cursor not-allowed !important
 
 
 .zi-dark-theme
   .zi-fieldset
-    border-color #333
+    border-color var(--accents-7)
 
   .zi-fieldset-content
     background-color black

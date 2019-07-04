@@ -87,7 +87,6 @@ export default {
   padding-bottom var(--geist-page-margin)
   border-bottom-left-radius 0
   border-bottom-right-radius 0
-  overflow hidden
 
 .details
   border-bottom-left-radius var(--geist-radius)

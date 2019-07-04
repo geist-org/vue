@@ -13,25 +13,25 @@
   outline 0
   box-sizing border-box
   margin 4px 10px
-  border 1px solid #e1e1e1
+  border 1px solid var(--accents-2)
   -webkit-appearance none
   transition border 0.2s ease, color 0.2s ease
 
   &:focus
-    border-color #888
+    border-color var(--accents-4)
 
   &.disabled
-    background #fafafa
-    color #999
+    background var(--accents-1)
+    color var(--accents-3)
     cursor not-allowed
 
   &.error
-    color $STATUS_DANGER
-    border-color $STATUS_DANGER
+    color var(--geist-error)
+    border-color var(--geist-error)
 
   &.success
-    color $STATUS_SUCCESS
-    border-color $STATUS_SUCCESS
+    color var(--geist-success)
+    border-color var(--geist-success)
 
   &.small
     font-size rem(12)
@@ -70,11 +70,11 @@
     display inline-flex
     justify-content center
     align-items center
-    background-color #fafafa
+    background-color var(--accents-1)
     border-radius 5px
-    border-bottom 1px solid #e1e1e1
-    border-top 1px solid #e1e1e1
-    color #9b9b9b
+    border-bottom 1px solid var(--accents-2)
+    border-top 1px solid var(--accents-2)
+    color var(--accents-3)
     font-size rem(14)
     line-height 1
     width initial
@@ -91,7 +91,7 @@
 
     >.zi-label.suffix
       border-left none
-      border-right 1px solid #e1e1e1
+      border-right 1px solid var(--accents-2)
       border-top-left-radius 0
       border-bottom-left-radius 0
 
@@ -102,7 +102,7 @@
 
     >.zi-label.prefix
       border-right none
-      border-left 1px solid #e1e1e1
+      border-left 1px solid var(--accents-2)
       border-top-right-radius 0
       border-bottom-right-radius 0
 
@@ -114,7 +114,7 @@
       padding-right rem(28)
 
     .close
-      color #9b9b9b
+      color var(--accents-3)
       width rem(13)
       height rem(13)
       position absolute

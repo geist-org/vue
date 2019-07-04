@@ -4,41 +4,41 @@ table
   width 100%
 
   thead th td
-    height rem(40)
+    height 2.5rem
   tbody tr td
-    height rem(50)
+    height 3.333rem
 
   th, td
-    padding 0 rem(10)
+    padding 0 0.625rem
     text-align left
 
   th
-    height rem(40)
-    color #666
-    font-size rem(12)
+    height 2.5rem
+    color var(--accents-5)
+    font-size 0.75rem
     font-weight 400
     letter-spacing 0
-    background #fafafa
-    border-bottom 1px solid #eaeaea
-    border-top 1px solid #eaeaea
+    background var(--accents-1)
+    border-bottom 1px solid var(--accents-2)
+    border-top 1px solid var(--accents-2)
 
   th:nth-child(1)
-    border-bottom 1px solid #eaeaea
-    border-left 1px solid #eaeaea
+    border-bottom 1px solid var(--accents-2)
+    border-left 1px solid var(--accents-2)
     border-radius 4px 0 0 4px
-    border-top 1px solid #eaeaea
+    border-top 1px solid var(--accents-2)
 
   th:last-child
-    border-bottom 1px solid #eaeaea
+    border-bottom 1px solid var(--accents-2)
     border-radius 0 4px 4px 0
-    border-right 1px solid #eaeaea
-    border-top 1px solid #eaeaea
+    border-right 1px solid var(--accents-2)
+    border-top 1px solid var(--accents-2)
 
   tr td
-    border-bottom 1px solid #eaeaea
-    color #444
-    font-size rem(14)
-    height rem(40)
+    border-bottom 1px solid var(--accents-2)
+    color var(--accents-6)
+    font-size 0.875rem
+    height 2.5rem
 
   & td:nth-child(1)
     border-left 1px solid transparent
@@ -64,12 +64,7 @@ table
   transition background-color .25s ease
 
   &:hover
-    background-color #fcfcfc
+    background-color var(--accents-1)
 
 .hidden
   display none
-
-.zi-dark-theme
-  .table-row
-    &:hover
-      background-color #111

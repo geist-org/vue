@@ -1,14 +1,10 @@
 <template>
-  <svg v-if="!isExpand" @click="$emit('click', $event)" width="11" height="11" fill="none">
-    <rect x="0" y="0" width="11" height="11" rx="1.5" :fill="isDark ? '#000' : '#fff'"></rect>
-    <rect x="1" y="1" width="9" height="9" rx="1.5" stroke="#333"></rect>
-    <line x1="3.5" y1="5.5" x2="7.5" y2="5.5" :stroke="isDark ? '#666' : '#666'"></line>
-    <line x1="5.5" y1="3.5" x2="5.5" y2="7.5" :stroke="isDark ? '#666' : '#666'"></line>
-  </svg>
-  <svg v-else width="11" @click="$emit('click', $event)" height="11" fill="none">
-    <rect x="0" y="0" width="11" height="11" rx="1.5" :fill="isDark ? '#000' : '#fff'"></rect>
-    <rect x="1" y="1" width="9" height="9" rx="1.5" stroke="#333"></rect>
-    <line x1="3.5" y1="5.5" x2="7.5" y2="5.5" stroke="#333"></line>
+  <svg v-on="listeners" width="11px" height="11px" viewBox="0 0 11 11">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <rect x="0" y="0" width="11" height="11" rx="1.5"></rect>
+      <rect stroke="var(--geist-foreground)" stroke-width="0.8" x="1" y="1" width="9" height="9" rx="1.5"></rect>
+      <path :d="!isExpand ? 'M3.5 5.5h4m-2-2v4' : 'M3.5 5.5h4'" stroke="var(--geist-foreground)" stroke-width="0.8"></path>
+    </g>
   </svg>
 </template>
 
@@ -18,7 +14,12 @@ export default {
 
   props: {
     isExpand: Boolean,
-    isDark: Boolean,
+  },
+
+  computed: {
+    listeners() {
+      return { ...this.$listeners }
+    },
   },
 }
 </script>

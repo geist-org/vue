@@ -29,29 +29,21 @@
 .zi-progress
   width rem(300)
   height 100%
-  background-color #ebeef5
+  background-color var(--accents-2)
   border-radius rem(4)
 
 .zi-progress__inner
   width 0
   height 100%
-  background-color #000
-  border-radius 4px
+  background-color var(--geist-foreground)
+  border-radius var(--geist-radius)
   transition: width 0.6s ease, background-color 1s ease
 
 .zi-progress__text
   border-radius rem(16)
-  background #0076ff
+  background var(--geist-foreground)
   padding rem(1) rem(5)
-  color #fff
+  color var(--geist-background)
   font-size rem(12)
   font-weight bolder
   margin-left rem(10)
-
-
-.zi-dark-theme
-  .zi-progress__inner
-    background-color white
-
-  .zi-progress
-    background-color #333

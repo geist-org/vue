@@ -21,14 +21,14 @@
   position relative
   overflow hidden
 
-  background white
-  border 1px solid #eaeaea
-  color #666
+  background var(--geist-background)
+  border 1px solid var(--accents-2)
+  color var(--accents-5)
 
   &:not(.loading):not(.shadow):hover
-    color black
-    background white
-    border-color black
+    color var(--geist-foreground)
+    background var(--geist-background)
+    border-color var(--geist-foreground)
 
 .zi-btn
   &.mini
@@ -53,54 +53,54 @@
     min-width rem(250)
 
   &.primary
-    background-color black
-    border: 1px solid black
-    color white
+    background-color var(--geist-foreground)
+    border: 1px solid var(--geist-foreground)
+    color var(--geist-background)
 
     &:not(.loading):not(.shadow):hover
-      background white
-      color black
-      border 1px solid black
+      background var(--geist-background)
+      color var(--geist-foreground)
+      border 1px solid var(--geist-foreground)
 
   &.warning
-    border-color $STATUS_WARNING
-    background-color $STATUS_WARNING
+    border-color var(--geist-warning)
+    background-color var(--geist-warning)
     color white
 
     &:not(.loading):not(.shadow):hover
-      color $STATUS_WARNING
-      background white
-      border-color $STATUS_WARNING
+      color var(--geist-warning)
+      background var(--geist-background)
+      border-color var(--geist-warning)
 
   &.danger, &.error
-    border-color $STATUS_DANGER
-    background-color $STATUS_DANGER
+    border-color var(--geist-error)
+    background-color var(--geist-error)
     color white
 
     &:not(.loading):not(.shadow):hover
-      color $STATUS_DANGER
-      background white
-      border-color $STATUS_DANGER
+      color var(--geist-error)
+      background var(--geist-background)
+      border-color var(--geist-error)
 
   &.success
-    border-color $STATUS_SUCCESS
-    background-color $STATUS_SUCCESS
+    border-color var(--geist-success)
+    background-color var(--geist-success)
     color #fff
 
     &:not(.loading):not(.shadow):hover
-      color $STATUS_SUCCESS
-      background: #fff
-      border-color $STATUS_SUCCESS
+      color var(--geist-success)
+      background: var(--geist-background)
+      border-color var(--geist-success)
 
   &.abort
     background-color transparent
     border-color transparent
-    color #666
+    color var(--accents-5)
 
     &:not(.loading):not(.shadow):hover
       background-color transparent
       border-color transparent
-      color #666
+      color var(--accents-5)
 
   &.shadow
     box-shadow 0 3px 10px rgba(0, 0, 0, 0.12)
@@ -110,14 +110,14 @@
       transform translateY(-1px)
 
   &.disabled
-    background #fafafa !important
-    border-color #eaeaea !important
+    background var(--accents-1) !important
+    border-color var(--accents-2) !important
     color #ccc !important
     cursor not-allowed !important
 
     &:hover
-      background #fafafa !important
-      border-color #eaeaea !important
+      background var(--accents-1) !important
+      border-color var(--accents-2) !important
       color #ccc !important
       cursor not-allowed !important
 
@@ -139,13 +139,13 @@
   display flex
   justify-content center
   align-items center
-  background-color #fafafa
+  background-color var(--accents-1)
 
   i
     width 4px
     height 4px
     border-radius 50%
-    background-color #444
+    background-color var(--accents-6)
     margin 0 1px
     display inline-block
     animation zi-loading-blink 1.4s infinite both
@@ -180,14 +180,14 @@
     border-radius rem(100)
     box-shadow 0 4px 4px rgba(0, 0, 0, 0.06)
     text-transform uppercase
-    background-color #fff
+    background-color var(--geist-background)
     height rem(28)
     line-height rem(28)
     border none
 
     &:not(.loading):not(.shadow):hover
       border none
-      color black
+      color var(--geist-foreground)
       box-shadow 0 5px 9px rgba(0, 0, 0, 0.08)
 
 .zi-btn.auto
@@ -205,44 +205,44 @@
 
 .zi-btn.ghost
   &.primary
-    background-color white
-    border: 1px solid black
-    color black
+    background-color var(--geist-background)
+    border: 1px solid var(--geist-foreground)
+    color var(--geist-foreground)
 
     &:not(.loading):not(.shadow):hover
-      background black
-      color white
-      border 1px solid white
+      background var(--geist-foreground)
+      color var(--geist-background)
+      border 1px solid var(--geist-background)
 
   &.warning
-    border-color $STATUS_WARNING
-    background-color white
-    color $STATUS_WARNING
+    border-color var(--geist-warning)
+    background-color var(--geist-background)
+    color var(--geist-warning)
 
     &:not(.loading):not(.shadow):hover
       color white
-      background $STATUS_WARNING
-      border-color white
+      background var(--geist-warning)
+      border-color var(--geist-background)
 
   &.danger, &.error
-    border-color $STATUS_DANGER
-    background-color white
-    color $STATUS_DANGER
+    border-color var(--geist-error)
+    background-color var(--geist-background)
+    color var(--geist-error)
 
     &:not(.loading):not(.shadow):hover
       color white
-      background $STATUS_DANGER
-      border-color white
+      background var(--geist-error)
+      border-color var(--geist-background)
 
   &.success
-    border-color $STATUS_SUCCESS
-    background-color white
-    color $STATUS_SUCCESS
+    border-color var(--geist-success)
+    background-color var(--geist-background)
+    color var(--geist-success)
 
     &:not(.loading):not(.shadow):hover
       color white
-      background: $STATUS_SUCCESS
-      border-color white
+      background: var(--geist-success)
+      border-color var(--geist-background)
 
 .zi-dark-theme
   .zi-btn:not(.warning):not(.danger):not(.error):not(.success):not(.abort):not(.ghost)
@@ -251,7 +251,7 @@
     color #666
 
     &:not(.loading):not(.shadow):hover
-      color white
+      color var(--geist-background)
       background black
       border-color black
 
@@ -299,24 +299,3 @@
       background-color black
       .zi-loading-shim
         background-color black
-
-
-.zi-dark-theme
-  .zi-btn.ghost
-    &.primary
-      background-color black
-      border: 1px solid white
-      color white
-
-      &:not(.loading):not(.shadow):hover
-        background white
-        color black
-        border 1px solid black
-
-    &.warning, &.danger, &.error, &.success
-      background-color black
-      &:not(.loading):not(.shadow):hover
-        color black
-        border-color black
-
-

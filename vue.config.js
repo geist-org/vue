@@ -3,8 +3,8 @@ const Prism = require('prismjs')
 
 const isBuildLib = process.env.npm_lifecycle_event === 'build:lib'
 const styleModule = isBuildLib
-  ? [path.resolve(__dirname, 'packages/utils/styles/base')]
-  : [path.resolve(__dirname, 'src/assets/styles/index'), path.resolve(__dirname, 'packages/utils/styles/base')]
+  ? [path.resolve(__dirname, 'packages/utils/styles/methods')]
+  : [path.resolve(__dirname, 'src/assets/styles/index'), path.resolve(__dirname, 'packages/utils/styles/methods')]
 
 module.exports = {
   css: {

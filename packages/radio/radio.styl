@@ -3,7 +3,7 @@
   display inline-flex
   height rem(13)
   width rem(13)
-  border 1px solid #999
+  border 1px solid var(--accents-3)
   border-radius 50%
   position relative
   &:before
@@ -13,23 +13,25 @@
     left rem(2)
     height rem(7)
     width rem(7)
-    border 1px solid #000
+    border 1px solid var(--geist-foreground)
     border-radius 50%
-    background-color #000
+    background-color var(--geist-foreground)
     transform: scale(0);
     transition: transform .15s ease-in;
 
   &.disabled
+    opacity .4
     border-color #ccc
-    background-color #fafafa
+    background-color var(--accents-1)
     cursor not-allowed
 
   &.checked
     &:before
-      transform: scale(1);
+      transform scale(1)
 
     &.disabled
-      background-color #fafafa
+      opacity .4
+      background-color var(--accents-1)
       &:before
         border-color #ccc
         background-color #ccc
@@ -68,13 +70,3 @@
     padding 0
     z-index -1
     background-color transparent
-
-
-.zi-dark-theme
-  .zi-radio
-    &.disabled
-      border-color #ccc
-      background-color #888
-    &:before
-      background-color white
-
