@@ -23,8 +23,6 @@ const SIDE_WEIGHT = {
 }
 
 export default {
-  name: 'ex-side',
-
   components: { Setting },
 
   data: () => ({
@@ -60,7 +58,7 @@ export default {
     },
 
     toggleTheme(isDark) {
-      const next = isDark ? 'zi-light-theme' : 'zi-dark-theme'
+      const next = isDark ? 'light-theme' : 'dark-theme'
       ZeitUI.theme.setTheme(next)
       localStorage.setItem('theme', next)
       this.isDark = !isDark

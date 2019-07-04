@@ -10,6 +10,7 @@
   top 0
   padding-top 80px
   -ms-overflow-style none
+  background-color var(--geist-background)
 
   li
     list-style none
@@ -47,7 +48,7 @@
   z-index 10000
   height 3.7rem
   width 100%
-  background-color #fff
+  background-color var(--geist-background)
   align-items center
   justify-content space-between
   padding 0 3rem
@@ -60,13 +61,13 @@
     cursor pointer
 
   > .bar-title
-    color #333
+    color var(--accents-7)
     font-size 12px
     display inline-flex
     text-transform uppercase
 
 .component
-  color black
+  color var(--geist-foreground)
   font-size 14px
   font-weight normal
   padding-right 10px
@@ -75,8 +76,8 @@
 
   &.router-link-active
     font-weight bold
-    background-color #333
-    color #fff
+    background-color var(--accents-7)
+    color var(--geist-background)
     text-transform uppercase
     &:after
       font-weight bold
@@ -106,28 +107,8 @@
       height 50px
       line-height 50px
       text-align left
-      border-bottom 1px solid #eee
+      border-bottom 1px solid var(--accents-2)
 
     .zi-title
       text-align left
       display block
-
-  .zi-dark-theme
-    .bar
-      background-color #000
-    .ex-side
-      background-color #000
-
-      li
-        border-color #333
-
-.zi-dark-theme
-  .component
-    color #eaeaea
-
-    &.router-link-active
-      background-color #eaeaea
-      color #333
-
-  .bar-title
-    color #eaeaea

@@ -5,8 +5,6 @@ div
 
 <script>
 export default {
-  name: 'document-main',
-
   data: () => ({
     docName: '',
     tableData: [],

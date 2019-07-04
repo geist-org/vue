@@ -1,5 +1,5 @@
 <template lang="pug">
-.zi-card(:class="[dark && 'zi-dark', { pin }]")
+.zi-card(:class="[dark && 'zi-dark', { hoverable }]")
   slot
 </template>
 
@@ -9,6 +9,7 @@ export default {
 
   props: {
     dark: Boolean,
+    hoverable: Boolean,
     pin: Boolean,
   },
 }

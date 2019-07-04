@@ -1,10 +1,10 @@
 <template lang="pug">
-zi-card(pin)
-  p disable hoverable card.
+zi-card(hoverable)
+  p hoverable card.
 </template>
 
 <script>
 export default {
-  name: 'ex-card-pin',
+  name: 'ex-card-hoverable',
 }
 </script>

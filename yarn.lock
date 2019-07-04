@@ -1113,15 +1113,15 @@
   resolved "https://registry.yarnpkg.com/@zeit-ui/themes/-/themes-0.1.0.tgz#7cc0fe6bd34139092c08f7c6d76efc1a4d65f7bc"
   integrity sha512-ZAqssnKcEzqCbxx5KvXgCv+PVPxh7XzIH+lNqaNVOTpTVj/vhhwKPTJBEelqeI0owWvwyAlXXVPC4/53BT25UA==
 
-"@zeit-ui/typographic@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@zeit-ui/typographic/-/typographic-0.1.0.tgz#5d3e732be75224e4df3f30a227d64016912e950c"
-  integrity sha512-P7ShGVM3ETWrgiz7JxiSeX4dwqKcSC9YMd4NtyTiORPKDFEzRmtirRah6B63SnT8HrmLUnUklmnRZYV2KYC3sA==
+"@zeit-ui/typographic@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@zeit-ui/typographic/-/typographic-0.2.3.tgz#d2a6341f01464b608acb54f157778deb6e24f40c"
+  integrity sha512-9l2mlgrTWKZ0KcWgGuK3+6Cl8LJLebJ3W8v2zj8ZsDxHPJUc15v1VR69jSDXTUrg9Nhvq1zKm5+RirNdwluS6g==
 
-"@zeit-ui/vue-icons@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@zeit-ui/vue-icons/-/vue-icons-0.1.1.tgz#5ec70e94883661b2c4d11ac0ff7af29ab6afb946"
-  integrity sha512-m12lb5U54cBhMCTrX1OOFV8+wXGxCa7bhnYWKFx3zmPO37+c1L6oQodqDQcfpwk2pSEDKyjuHffiM7Wpr1ig0Q==
+"@zeit-ui/vue-icons@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@zeit-ui/vue-icons/-/vue-icons-2.0.0.tgz#61813952fd8e0c458ae0d49bfff98653daf63246"
+  integrity sha512-m0vH+TnUj4LrVCb5OGsE6IcLr95PKWOE3qjFcshgfkOQojVjS2W8l4GhKLMdd9uWBNWBA7tjNGplkPp461ARyQ==
 
 abab@^1.0.0:
   version "1.0.4"
@@ -9147,6 +9147,11 @@ void-elements@^2.0.1:
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
   integrity sha1-wGavtYK7HLQSjWDqkjkulNXp2+w=
 
+vue-auto@^0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/vue-auto/-/vue-auto-0.2.5.tgz#4dde00c91f58e8cc7c7d86da75cb00c9ae408e62"
+  integrity sha512-upER5DUJiVRDBoUcMaunPd9cIoP1NrdeXAA6zv7z6cwNy+IzWxn0EvzAyZZOubD9wg5IvkRHyjMPVoLlYW3ZXA==
+
 vue-cli-plugin-pug@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/vue-cli-plugin-pug/-/vue-cli-plugin-pug-1.0.7.tgz#6ba0b3d402fdae80c0e788323df63fb9ea2e1598"
@@ -9155,6 +9160,13 @@ vue-cli-plugin-pug@^1.0.7:
     pug "^2.0.3"
     pug-plain-loader "^1.0.0"
     raw-loader "^0.5.1"
+
+vue-clipboard2@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/vue-clipboard2/-/vue-clipboard2-0.3.0.tgz#b04d3f9a2d46f12ca85178445930b38463640b22"
+  integrity sha512-6/Y9NJErWb4LNBLMgsJSdKb7KpF6/jqXagvKlYut6VQzQsNj6515FpwH0r5hhmeJMqaPzf1kxAw8L8Qvw/QBJQ==
+  dependencies:
+    clipboard "^2.0.0"
 
 vue-eslint-parser@^5.0.0:
   version "5.0.0"

@@ -1,5 +1,5 @@
 const themes = [
-  'zi-dark-theme', 'zi-light-theme',
+  'dark-theme', 'light-theme',
 ]
 const html = document.querySelector('html')
 const subscriptions = []
@@ -18,7 +18,7 @@ export const getAllThemes = () => themes
 
 export const getCurrentTheme = () => {
   const htmlClass = document.querySelector('html').classList.value
-  return htmlClass.includes('zi-dark-theme') ? 'zi-dark-theme' : 'zi-light-theme'
+  return htmlClass.includes('dark-theme') ? 'dark-theme' : 'light-theme'
 }
 
 export const subscribeChange = fn => {

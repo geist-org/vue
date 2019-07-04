@@ -1,14 +1,16 @@
 import './assets/index.styl'
 import Vue from 'vue'
+import VueClipboard from 'vue-clipboard2'
+import * as VueAuto from 'vue-auto'
 import App from './app.vue'
-import Components from './components'
 import ZeitUI from '../packages'
 import router from './router'
 import Examples from '../docs/examples'
 
+VueAuto.install(Vue, { prefix: 'ex' })
 Vue.config.productionTip = false
 Vue.use(ZeitUI)
-Components.install(Vue)
+Vue.use(VueClipboard)
 Examples.install(Vue)
 
 new Vue({

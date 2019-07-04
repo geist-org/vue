@@ -59,7 +59,7 @@ export default {
           size: 3993,
         }, {
           type: 'file',
-          name: 'index.js',
+          name: 'document-main.vue.js',
           size: 843,
         }],
       }, {

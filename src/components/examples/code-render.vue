@@ -1,7 +1,5 @@
 <script>
 export default {
-  name: 'ex-code-render',
-
   props: {
     name: { type: String },
   },

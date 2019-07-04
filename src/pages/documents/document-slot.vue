@@ -6,12 +6,6 @@
     router-view
 </template>
 
-<script>
-export default {
-  name: 'document-slot',
-}
-</script>
-
 <style scoped lang="stylus">
 .ex-layout
   display flex

@@ -1,22 +1,15 @@
 .zi-card
-  background #fff
-  box-shadow 0 2px 5px 0 rgba(0, 0, 0, 0.12)
-  border-radius 5px
+  background var(--geist-background)
   margin 0
+  width 100%
   transition all .2s ease
-  padding: rem(14) rem(30)
+  padding: var(--geist-gap-half) var(--geist-page-margin)
+  border-radius var(--geist-radius)
+  border 1px solid var(--accents-2)
+  box-sizing border-box
 
-  p, h1, h2, h3, h4, h5, h6
-    margin 0 0 10px 0
-    line-height 1.5
-
-  &:not(.pin):hover
-    box-shadow 0 5px 10px 0 rgba(0, 0, 0, 0.12)
-
-  &.pin
-    border 1px solid rgb(234, 234, 234)
-    box-shadow none
-
+  &.hoverable:hover
+    box-shadow var(--shadow-small)
 
 .zi-dark .zi-card, .zi-card.zi-dark
   background-color black

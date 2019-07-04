@@ -3,35 +3,30 @@
   p.zi-subheading.code-name EXAMPLE: #[b {{ codeName }}]
   zi-card.ex-code-box
     ex-code-render(:name="name" ref="codeRender")
-    Fullscreen.ex-code-toggle(@click="showCode=!showCode" v-if="!showCode" :dark="isDark")
-    FullscreenClose.ex-code-toggle(@click="showCode=!showCode" v-if="showCode" :dark="isDark")
-  zi-transition-expand
-    prism(language="pug" class="ex-source-code" v-if="showCode" :code="codeTemplate")
+  details.details
+    summary
+      span #[Dropdown.down] Code Editor
+      ex-copy-icon.copy(@click.stop.prevent="copy")
+    prism(language="pug" class="ex-source-code" :code="codeTemplate")
 </template>
 
 <script>
 import 'prismjs'
 import 'prismjs/components/prism-pug'
-import Fullscreen from '@zeit-ui/vue-icons/packages/fullscreen'
-import FullscreenClose from '@zeit-ui/vue-icons/packages/fullscreen-close'
+import Dropdown from '@zeit-ui/vue-icons/packages/dropdown'
 import ZeitUI from '../../../packages'
-import * as transitions from '../../../packages/utils/transitions'
 import Prism from 'vue-prism-component'
 
 export default {
   name: 'ex-code',
 
   components: {
-    Prism,
-    Fullscreen,
-    FullscreenClose,
-    ZiTransitionExpand: transitions.ZiTransitionExpand,
+    Prism, Dropdown,
   },
 
   data: () => ({
     codeTemplate: '',
     codeName: '',
-    showCode: false,
     isDark: ZeitUI.theme.getCurrentTheme().includes('dark'),
   }),
 
@@ -59,6 +54,13 @@ export default {
     updateTheme(name) {
       this.isDark = name.includes('dark')
     },
+
+    async copy() {
+      await this.$copyText(this.codeTemplate)
+      this.$Toast.success({
+        text: 'Copied to clipboard!',
+      })
+    },
   },
 }
 </script>
@@ -81,22 +83,58 @@ export default {
 
 .ex-code-box
   position relative
-  padding-top 1.6rem
-  padding-bottom 1.5rem
+  padding-top var(--geist-page-margin)
+  padding-bottom var(--geist-page-margin)
+  border-bottom-left-radius 0
+  border-bottom-right-radius 0
+  overflow hidden
 
-.ex-code-toggle
-  position absolute
-  width 15px
-  height 15px
-  right 10px
-  bottom 7px
-  cursor pointer
-  opacity .5
-  transition all .2s ease
+.details
+  border-bottom-left-radius var(--geist-radius)
+  border-bottom-right-radius var(--geist-radius)
 
-  &:hover
-    opacity 1
+  &[open]
+    summary
+      border-bottom none
 
-  i
-    font-size 17px
+    .down
+      transform rotateZ(0deg)
+
+    .copy
+      opacity 1
+      visibility visible
+
+  summary
+    padding var(--geist-gap-half) var(--geist-gap)
+    border-left 1px solid var(--accents-2)
+    border-bottom 1px solid var(--accents-2)
+    border-right 1px solid var(--accents-2)
+    display flex
+    flex 1
+    justify-content space-between
+    align-items center
+
+    span
+      display flex
+      align-items center
+
+  pre
+    border-top-left-radius 0
+    border-top-right-radius 0
+    margin 0
+    background-color var(--geist-background)
+
+.down
+  display inline-flex
+  width 12px
+  height 8px
+  margin-right 4px
+  transform rotateZ(-90deg)
+  transition all .1s ease
+
+.copy
+  transition all .1s ease-in
+  color var(--accents-5)
+  opacity 0
+  visibility hidden
 </style>

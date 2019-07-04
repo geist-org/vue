@@ -11,7 +11,7 @@ const cyan = (text) => `\u001b[36m${text}\u001b[39m`
 const getPackages = async () => {
   const files = await fs.readdir(packagePath)
   return files
-    .filter(name => name !== 'index.js' && name !== 'utils')
+    .filter(name => name !== 'document-main.vue.js' && name !== 'utils')
 }
 
 const runPackage = async (name, count) => {
