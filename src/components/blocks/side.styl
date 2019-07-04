@@ -1,4 +1,5 @@
 .ex-side
+  box-sizing border-box
   position fixed
   width 190px
   overflow-y auto
@@ -33,21 +34,19 @@
   height 0
   width 100%
   z-index -1
-  background-color transparent
+  background-color var(--geist-background)
 
   &.active
     height 100%
 
 .bar
   display none
-  //display flex
   position fixed
   top 0
   left 0
   right 0
   z-index 10000
   height 3.7rem
-  width 100%
   background-color var(--geist-background)
   align-items center
   justify-content space-between
