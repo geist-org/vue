@@ -1,5 +1,6 @@
 <template lang="pug">
-div.zi-row(:styles="styles" :class="classes")
+.zi-row(:style="styles" :class="classes")
+  slot
 </template>
 
 <script>
@@ -9,7 +10,7 @@ export default {
   name: 'zi-row',
 
   props: {
-    gutter: Number,
+    gutter: [Number, String],
     justify: {
       type: String,
       default: 'start',
@@ -23,10 +24,21 @@ export default {
   },
 
   computed: {
+    safeGutter() {
+      if (this.gutter === undefined) return this.gutter
+      if (typeof this.gutter === 'number') return this.gutter
+      if (Number.isNaN(+this.gutter)) {
+        console.error('zi-row: [gutter] expected a number.')
+        return 0
+      }
+
+      return +this.gutter
+    },
+
     styles() {
       const style = {}
       if (this.gutter) {
-        style.marginLeft = `-${this.gutter / 2}px;`
+        style.marginLeft = `-${this.gutter / 2}px`
         style.marginRight = style.marginLeft
       }
       return style
@@ -34,11 +46,9 @@ export default {
 
     classes() {
       let _class = ''
-
       if (this.justify !== 'start') {
         _class += ` zi-justify-${this.justify}`
       }
-
       if (this.align !== 'top') {
         _class += ` zi-align-${this.align}`
       }
@@ -59,7 +69,7 @@ export default {
   justify-content center
 
 .zi-justify-end
-  justify-content end
+  justify-content flex-end
 
 .zi-justify-space-around
   justify-content space-around
