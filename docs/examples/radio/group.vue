@@ -12,14 +12,13 @@ export default {
     checked: '1',
     data: [{
       label: '1',
-      name: 'BaiJing',
-      description: 'Description for option1',
+      name: 'Sydney',
     }, {
       label: '2',
-      name: 'DongBai',
+      name: 'London',
     }, {
       label: '3',
-      name: 'HeLan',
+      name: 'China',
     }],
   }),
 
