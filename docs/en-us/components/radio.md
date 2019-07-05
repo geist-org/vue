@@ -23,6 +23,7 @@ Provides single user input from a selection of options.
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **v-model** | binding value[v-model] | `string | number` | - | - |
 | **label** | text of label | `string` | - | - |
+ **description** | options's description | `string` | - | - |
 | **disabled** | disable radio | `boolean` | `true` / `false` | `false` |
 
 </ex-footer>

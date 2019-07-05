@@ -1,15 +1,17 @@
 <template lang="pug">
-label.zi-radio-container(:class="classes")
-  span.zi-radio(:class="classes")
-  input.zi-radio-original(
-    type="radio"
-    name="-1"
-    :value="label"
-    :disabled="isDisabled"
-    v-model="model"
-  )
-  span.zi-radio-label
-    slot
+.zi-radio-container
+  label.zi-radio(:class="classes")
+    span.zi-radio-input(:class="classes")
+    input.zi-radio-original(
+      type="radio"
+      name="-1"
+      :value="label"
+      :disabled="isDisabled"
+      v-model="model"
+    )
+    span.zi-radio-label
+      slot
+    span.zi-radio-description(v-if="description") {{ description }}
 </template>
 
 <script>
@@ -27,6 +29,7 @@ export default {
       type: Boolean,
       defaultValue: false,
     },
+    description: [String, Number],
   },
 
   computed: {

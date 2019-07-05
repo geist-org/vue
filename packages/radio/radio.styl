@@ -1,28 +1,26 @@
-.zi-radio
+.zi-radio-input
   cursor pointer
-  display inline-flex
-  height rem(13)
-  width rem(13)
-  border 1px solid var(--accents-3)
+  box-sizing border-box
+  height 14px
+  width 14px
+  border 1px solid var(--accents-2)
   border-radius 50%
-  position relative
+  position absolute
+  left 0
   &:before
     content: ''
     position absolute
-    top rem(2)
-    left rem(2)
-    height rem(7)
-    width rem(7)
-    border 1px solid var(--geist-foreground)
+    height 14px
+    width 14px
+    top -1px
+    left -1px
     border-radius 50%
     background-color var(--geist-foreground)
     transform: scale(0);
-    transition: transform .15s ease-in;
+    transition: transform .2s ease 0s;
 
   &.disabled
-    opacity .4
-    border-color #ccc
-    background-color var(--accents-1)
+    border-color var(--accents-2)
     cursor not-allowed
 
   &.checked
@@ -30,35 +28,38 @@
       transform scale(1)
 
     &.disabled
-      opacity .4
-      background-color var(--accents-1)
       &:before
-        border-color #ccc
-        background-color #ccc
+        background-color var(--accents-2)
 
-.zi-radio-group
-  .zi-radio-container
-    margin-right rem(30)
-
-.zi-radio-container
-  height rem(14)
+.zi-radio
   line-height rem(14)
-  display inline-flex
-  justify-content center
-  align-items center
-  width auto
+  display flex
+  align-items flex-start
+  flex-direction column
+  -webkit-box-pack start
+  overflow hidden
+  padding rem(4) 0 rem(4) rem(30)
 
   &.disabled
     cursor not-allowed
     .zi-radio-label
       cursor not-allowed
+      color var(--accents-5)
 
   .zi-radio-label
-    font-size rem(14)
-    line-height rem(14)
-    padding-left rem(8)
+    font-size rem(16)
+    font-weight 600
     user-select none
     cursor pointer
+
+  .zi-radio-description
+    color var(--accents-3)
+    font-size 14px
+    margin-top 8px
+    width 100%
+    white-space nowrap
+    overflow hidden
+    text-overflow ellipsis
 
   .zi-radio-original
     opacity 0
@@ -70,3 +71,8 @@
     padding 0
     z-index -1
     background-color transparent
+
+.zi-radio-container
+  position relative
+  display inline-flex
+  margin-right rem(30)
