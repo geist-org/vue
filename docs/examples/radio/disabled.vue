@@ -1,6 +1,6 @@
 <template lang="pug">
 div(class="name")
-  zi-radio(v-model="value" label="1" disabled style="margin-right: 20px") Sydney
+  zi-radio(v-model="value" label="1" disabled) Sydney
   zi-radio(v-model="value" label="2" disabled) London
 </template>
 
@@ -10,8 +10,6 @@ export default {
 
   data: () => ({
     value: '1',
-    checked: '3',
-    data: [{ label: '3', name: 'BaiJing' }, { label: '4', name: 'DongBai' }, { label: '5', name: 'HeLan' }],
   }),
 }
 </script>

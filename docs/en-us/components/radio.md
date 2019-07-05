@@ -14,7 +14,7 @@ Provides single user input from a selection of options.
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **v-model** | binding value[v-model] | `string | number` | - | - |
-| **disabled** | disable group | `boolean` | `true` / `false` | `false` |
+| **disabled** | disable group | `boolean` | - | `false` |
 
 <br/>
 <h3>zi-radio</h3>
@@ -23,6 +23,7 @@ Provides single user input from a selection of options.
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **v-model** | binding value[v-model] | `string | number` | - | - |
 | **label** | text of label | `string` | - | - |
-| **disabled** | disable radio | `boolean` | `true` / `false` | `false` |
+|**description** | options's description | `string` | - | - |
+| **disabled** | disable radio | `boolean` | - | `false` |
 
 </ex-footer>
