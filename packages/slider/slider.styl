@@ -8,6 +8,21 @@
   touch-action none
   vertical-align middle
 
+  &.disabled
+
+    .zi-slider-rail
+      background-color var(--accents-2)
+      cursor no-drop
+
+    .zi-slider-handler
+      background-color var(--accents-2)
+      color var(--accents-4)
+      cursor not-allowed
+      touch-action none
+
+      &:active
+        box-shadow var(--shadow-small)
+
 .zi-slider-rail
   position relative
   width 100%
@@ -22,7 +37,7 @@
   top -6px
   vertical-align middle
   height 20px
-  padding 0 6px
+  padding 0 rem(8)
   background-color #0076ff
   color white
   font-size 12px

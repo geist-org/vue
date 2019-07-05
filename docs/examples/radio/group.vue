@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   zi-radio-group(v-model="checked")
-    zi-radio(v-for="item in data" :label="item.label" :description="item.description" :key="item.label") {{ item.name }}
+    zi-radio(v-for="item in data" :label="item.label" :key="item.label") {{ item.name }}
 </template>
 
 <script>

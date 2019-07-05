@@ -1,10 +1,10 @@
 <template lang="pug">
-.zi-slider
+.zi-slider(:class="disabled ? 'disabled' : ''")
   .zi-slider-rail(@click="onSliderClick" ref="sliderRail")
     .zi-slider-handler(
       ref="sliderHandler"
       :class="isClick ? 'click_animation': ''"
-      :style="{ left: `${ privateValue }%` }"
+      :style="{ left: `${ sliderMoveStyle }%` }"
       @mousedown.stop="handleMouseDown"
       @mouseup="onDragEnd"
       @touchstart.stop="handleMouseDown"
@@ -26,23 +26,39 @@ export default {
       default: 0,
     },
     showStops: Boolean,
+    disabled: Boolean,
+    max: {
+      type: Number,
+      default: 100,
+    },
+    min: {
+      type: Number,
+      default: 0,
+    },
   },
 
   computed: {
     dots() {
       if (this.step !== 1) {
-        const dotsNum = !(100 % this.step) ? Math.floor(100 / this.step) - 1 : Math.ceil(100 / this.step) - 1
+        const totalPercent = this.max - this.min
+        const divideDots = Math.floor(totalPercent / this.step) - 1
+        const remainderDots = Math.ceil(totalPercent / this.step) - 1
+        const dotsNum = !(totalPercent % this.step) ? divideDots : remainderDots
         const coordinates = []
-        for (let i = 1; i <= dotsNum; i++) coordinates.push(this.step * i)
+        for (let i = 1; i <= dotsNum; i++) coordinates.push(this.step * i * 100 / totalPercent)
         return coordinates
       }
       return []
     },
 
     privateValue() {
-      if (this.value >= 100) return 100
-      if (this.value <= 0) return 0
-      return this.value
+      if (this.value >= this.max) return this.max
+      if (this.value <= this.min) return this.min
+      return Number.isInteger(this.value) ? this.value : this.value.toFixed(1)
+    },
+
+    sliderMoveStyle() {
+      return (this.privateValue - this.min) * 100 / (this.max - this.min)
     },
   },
 
@@ -54,8 +70,19 @@ export default {
     railWidth: 0,
   }),
 
+  watch: {
+    max() {
+      this.setValue()
+    },
+
+    min() {
+      this.setValue()
+    },
+  },
+
   methods: {
     onSliderClick(event) {
+      if (this.disabled) return
       this.isClick = true
       this.resetSize()
       this.startX = this.$refs.sliderRail.getBoundingClientRect().x
@@ -64,6 +91,7 @@ export default {
     },
 
     handleMouseDown() {
+      if (this.disabled) return
       this.isClick = false
       this.startDrag = true
       this.startX = this.$refs.sliderRail.getBoundingClientRect().x
@@ -82,13 +110,18 @@ export default {
     },
 
     setValue() {
-      // step divide the rail into n pieces, count per (100/step)'s distance
-      const stepDistance = this.railWidth / (100 / this.step)
+      if (this.max - this.min < 1) {
+        console.error('[Slider Error]max is at least 1 larger than min')
+        return
+      }
+      // step divide the rail into n pieces, count per step's distance
+      const stepDistance = this.railWidth / (this.max - this.min) * this.step
       // Calculate the currentX - startX has how many stepDistance, then * step can get the percent of the rail
-      let slideDistance = Math.round((this.currentX - this.startX) / stepDistance) * this.step
-      if (this.currentX - this.startX <= 0) slideDistance = 0
-      if (this.currentX - this.startX >= this.railWidth) slideDistance = 100
-      this.$emit('input', slideDistance)
+      const slideDistance = Math.round((this.currentX - this.startX) / stepDistance) * this.step + this.min
+      let value = Number.isInteger(slideDistance) ? slideDistance : Number.parseFloat(slideDistance.toFixed(1))
+      if (this.currentX - this.startX <= 0) value = this.min
+      if (this.currentX - this.startX >= this.railWidth) value = this.max
+      this.$emit('input', value)
     },
 
     onDragEnd() {

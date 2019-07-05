@@ -7,7 +7,7 @@ export default {
   name: 'ex-slider-basic',
 
   data: () => ({
-    value: 14,
+    value: 10,
   }),
 
   watch: {
