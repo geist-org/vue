@@ -10,7 +10,7 @@ div
   br
   zi-note(fill) This is a filled note.
   br
-  zi-note(label="" fill) This is a filled note with label.
+  zi-note(label="" fill) This is a filled note without label.
 </template>
 
 <script>

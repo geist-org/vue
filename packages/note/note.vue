@@ -1,7 +1,7 @@
 <template lang="pug">
-.zi-note(:class="`${ inUseType || '' } ${ fill ? 'fill' : '' }`")
+.zi-note(:class="`${inUseType || ''} ${fill ? 'fill' : ''}`")
    span.zi-note-type(v-if="label !== ''")
-     b {{ `${ label || inUseType || 'note' }:&nbsp` }}
+     b {{ `${label || inUseType || 'note'}:&nbsp` }}
    slot
 </template>
 

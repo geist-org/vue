@@ -1,10 +1,10 @@
 <template lang="pug">
 div
-  zi-note(type="success") This is a hint note.
+  zi-note(type="success") This is a success note.
   br
-  zi-note(type="error") This is a error note.
+  zi-note(type="error") This is an error note.
   br
-  zi-note(type="warning") This is an alert note.
+  zi-note(type="warning") This is an warning note.
   br
   zi-note(type="secondary") This is a secondary note.
   br

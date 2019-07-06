@@ -4,7 +4,7 @@ div
   br
   br
   br
-  zi-slider(v-model="value2" :min="0" :max="1" style="width: 60%" :step="0.1")
+  zi-slider(v-model="value2" :min="0" :max="1" :step="0.1" style="width: 60%")
 </template>
 
 <script>

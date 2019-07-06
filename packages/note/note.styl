@@ -9,12 +9,13 @@
   >.zi-note-type
     text-transform uppercase
     font-weight 500
+    user-select none
 
   &.fill
     background-color var(--geist-foreground)
     color var(--geist-background)
 
-  &.hint, &.success
+  &.success
     border-color var(--geist-success)
     color var(--geist-success)
 
@@ -22,7 +23,7 @@
       background-color var(--geist-success)
       color #fff
 
-  &.alert, &.warning
+  &.warning
     border-color var(--geist-warning)
     color var(--geist-warning)
 
@@ -30,7 +31,7 @@
       background-color var(--geist-warning)
       color #fff
 
-  &.error, &.danger
+  &.error
     border-color var(--geist-error)
     color var(--geist-error)
 
