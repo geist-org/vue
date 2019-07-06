@@ -27,19 +27,28 @@ Of course, you can also override these variables in your own projects.
 
 <br>
 
-### Icons
-
-`@zeit-ui/vue` uses `@zeit-ui/icons` as a icon provider, you can use these icons through [@zeit-ui/icons](https://github.com/zeit-ui/vue-icons), 
-all icons automatically change according to the theme.
-
-<br/>
-
 ### Typographic
 
 Similar to themes and icons, typographic is provide by a separate repository: [@zeit-ui/typographic](https://github.com/zeit-ui/typographic).
 
 `@zeit-ui/vue` contains `typographic` by default.
 
+<br/>
 
+### Icons
+
+`@zeit-ui/vue` uses `@zeit-ui/icons` as a icon provider, you can use these icons through [@zeit-ui/icons](https://github.com/zeit-ui/vue-icons), 
+all icons automatically change according to the theme.
+
+- install icons: `yarn add @zeit-ui/vue-icons`
+
+- import all icons:
+
+    ```js
+    import { install } from '@zeit-ui/vue-icons'
+    install(Vue)
+    ```
+    
+- [more documents for icons](https://zeit-vue-icons.now.sh/)
 
 

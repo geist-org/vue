@@ -3,7 +3,7 @@ div.ex-attributes
   h3.title Attributes
   zi-card
     slot
-  zi-link(:href="editLink").link Edit Page
+  zi-link(:href="editLink").ex-footer-link Edit Page
 </template>
 
 <script>
@@ -25,7 +25,7 @@ export default {
 </style>
 
 <style lang="stylus">
-.link
+.ex-footer-link
   margin-top rem(10)
   float right
   color var(--accents-7)
