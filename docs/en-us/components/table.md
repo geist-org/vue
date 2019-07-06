@@ -2,11 +2,23 @@
 
 Display tabular data in row format.
 
-<ex-code name="ex-table-basic"></ex-code>
+<ex-code name="ex-table-basic">
 
-<ex-code name="ex-table-delete"></ex-code>
+Display formatted data in rows and columns.
 
-<ex-code name="ex-table-width"></ex-code>
+</ex-code>
+
+<ex-code name="ex-table-delete">
+
+Custom elements can be displayed in the table, and any changes will be immediately rendered.
+
+</ex-code>
+
+<ex-code name="ex-table-width">
+
+You can specify the width of a column. Of course, each of the remaining columns will be resiliently adapted.
+
+</ex-code>
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/table.md">
 
