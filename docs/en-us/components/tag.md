@@ -1,4 +1,5 @@
 ## Tag
+Marking the state of a document or function.
 
 <ex-code name="ex-tag-basic"></ex-code>
 

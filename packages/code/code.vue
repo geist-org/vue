@@ -1,6 +1,7 @@
 <template lang="pug">
 pre(:class="{ 'zi-bash': bash }" v-if="isBlock")
-  slot
+  code
+    slot
 code(v-else)
   slot
 </template>
