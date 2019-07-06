@@ -1,6 +1,7 @@
 <template lang="pug">
-.zi-note(:class="inUseType")
-   span.zi-note-type(v-if="label || inUseType") {{ `${ label || inUseType }:&nbsp` }}
+.zi-note(:class="`${ inUseType || '' } ${ fill ? 'fill' : '' }`")
+   span.zi-note-type(v-if="label !== ''")
+     b {{ `${ label || inUseType || 'note' }:&nbsp` }}
    slot
 </template>
 
@@ -13,22 +14,26 @@ export default {
   props: {
     type: {
       type: String,
-      validator: validator.enums(['hint', 'error', 'alert']),
+      validator: validator.enums(['success', 'error', 'warning', 'secondary']),
     },
+    fill: Boolean,
     label: String,
-    hint: Boolean,
-    alert: Boolean,
+    success: Boolean,
+    warning: Boolean,
     error: Boolean,
+    secondary: Boolean,
   },
 
   computed: {
     classes() {
       let str = ''
-      this.hint && (str += 'hint')
+      this.success && (str += 'success')
       this.error && (str += 'error')
-      this.alert && (str += 'alert')
+      this.warning && (str += 'warning')
+      this.secondary && (str += 'secondary')
       return str
     },
+
     inUseType() {
       return this.classes || this.type
     },

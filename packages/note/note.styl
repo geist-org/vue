@@ -10,17 +10,38 @@
     text-transform uppercase
     font-weight 500
 
+  &.fill
+    background-color var(--geist-foreground)
+    color var(--geist-background)
+
   &.hint, &.success
     border-color var(--geist-success)
-    >.zi-note-type
-      color var(--geist-success)
+    color var(--geist-success)
+
+    &.fill
+      background-color var(--geist-success)
+      color #fff
 
   &.alert, &.warning
     border-color var(--geist-warning)
-    >.zi-note-type
-      color var(--geist-warning)
+    color var(--geist-warning)
+
+    &.fill
+      background-color var(--geist-warning)
+      color #fff
 
   &.error, &.danger
     border-color var(--geist-error)
-    >.zi-note-type
-      color var(--geist-error)
+    color var(--geist-error)
+
+    &.fill
+      background-color var(--geist-error)
+      color #fff
+
+  &.secondary
+    border-color var(--geist-secondary)
+    color var(--geist-secondary)
+
+    &.fill
+      background-color var(--geist-secondary)
+      color #fff
