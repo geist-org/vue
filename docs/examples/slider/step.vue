@@ -7,7 +7,7 @@ export default {
   name: 'ex-slider-step',
 
   data: () => ({
-    value: 0,
+    value: 20,
   }),
 
   watch: {
