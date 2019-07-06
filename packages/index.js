@@ -27,6 +27,8 @@ import Files from './files'
 import Image from './image'
 import Table from './table'
 import Slider from './slider'
+import Col from './col'
+import Row from './row'
 
 const install = vue => {
   Card.install(vue)
@@ -56,6 +58,8 @@ const install = vue => {
   Image.install(vue)
   Table.install(vue)
   Slider.install(vue)
+  Col.install(vue)
+  Row.install(vue)
 }
 
 if (typeof window !== 'undefined' && window.Vue) {

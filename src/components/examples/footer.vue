@@ -1,8 +1,9 @@
 <template lang="pug">
-zi-card.ex-attributes
-  h2 Attributes
-  slot
-  zi-link(pure :href="editLink").link Edit this page on github
+div.ex-attributes
+  h3.title Attributes
+  zi-card
+    slot
+  zi-link(:href="editLink").link Edit Page
 </template>
 
 <script>
@@ -13,13 +14,24 @@ export default {
 
 <style lang="stylus" scoped>
 .ex-attributes
-  margin-top 60px
-  margin-bottom 60px
-  padding 20px 10px
+  margin-top rem(70)
+  margin-bottom rem(60)
 
-  h2
-    margin 0 0 20px 0
+.title
+  text-transform uppercase
+  font-size 1.2rem
+  line-height 1
+  margin-bottom rem(22)
+</style>
 
+<style lang="stylus">
 .link
-  margin-top 30px
+  margin-top rem(10)
+  float right
+  color var(--accents-7)
+  font-size .8rem
+  text-transform uppercase
+
+  .zi-link
+    margin-bottom -3px
 </style>
