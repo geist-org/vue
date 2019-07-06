@@ -1,12 +1,19 @@
 ## Installation
 
 ### Install library
-1. Ensure your have the latest version of [NodeJS](https://nodejs.org/en/download/), 
-and also need a package manager, [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/).
 
-2. run script to download, npm: `npm i @zeit-ui/vue` or yarn: `yarn add @zeit-ui/vue`.
+<br/>
 
-3. import `@zeit-ui/vue` to your Vue project (don't forget to import styles):
+<zi-note>
+Ensure your have the latest version of <zi-link src="https://nodejs.org/en/download/">NodeJS</zi-link>, 
+and also need a package manager of NodeJS: <zi-link src="https://www.npmjs.com/">NPM</zi-link> or <zi-link src="https://yarnpkg.com/">Yarn</zi-link>.
+</zi-note>
+
+<br/>
+
+1. Run script to download: `npm i @zeit-ui/vue`.
+
+2. Import `@zeit-ui/vue` to your Vue project (don't forget to import styles):
 
 ```js
 import Vue from 'vue'
