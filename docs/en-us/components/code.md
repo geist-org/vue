@@ -1,8 +1,23 @@
 ## Code
+Display code in a uniform style
 
-<ex-code name="ex-code-basic"/></ex-code>
+<ex-code name="ex-code-basic"/>
 
-<ex-code name="ex-code-block"/></ex-code>
+Display code in paragraph.
+
+</ex-code>
+
+<ex-code name="ex-code-bash"/>
+
+Display the shell code block.
+
+</ex-code>
+
+<ex-code name="ex-code-block"/>
+
+Multi-line code block.
+
+</ex-code>
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/code.md">
 
