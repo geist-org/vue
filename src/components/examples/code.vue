@@ -6,7 +6,7 @@
     ex-code-render(:name="name" ref="codeRender")
   details.details(ref="details")
     summary
-      span #[Dropdown.down] Code Editor
+      span.preview #[Dropdown.down] Code Preview
       ex-copy-icon.copy(@click.stop.prevent="copy")
     div(ref="prism")
       prism(language="pug" class="ex-source-code" :code="codeTemplate")
@@ -150,4 +150,7 @@ export default {
   color var(--accents-5)
   opacity 0
   visibility hidden
+
+.preview
+  font-size rem(13)
 </style>

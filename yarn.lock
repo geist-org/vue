@@ -1113,10 +1113,10 @@
   resolved "https://registry.yarnpkg.com/@zeit-ui/themes/-/themes-0.1.0.tgz#7cc0fe6bd34139092c08f7c6d76efc1a4d65f7bc"
   integrity sha512-ZAqssnKcEzqCbxx5KvXgCv+PVPxh7XzIH+lNqaNVOTpTVj/vhhwKPTJBEelqeI0owWvwyAlXXVPC4/53BT25UA==
 
-"@zeit-ui/typographic@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@zeit-ui/typographic/-/typographic-0.2.3.tgz#d2a6341f01464b608acb54f157778deb6e24f40c"
-  integrity sha512-9l2mlgrTWKZ0KcWgGuK3+6Cl8LJLebJ3W8v2zj8ZsDxHPJUc15v1VR69jSDXTUrg9Nhvq1zKm5+RirNdwluS6g==
+"@zeit-ui/typographic@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@zeit-ui/typographic/-/typographic-0.2.5.tgz#192cb414f1db5a5010a14b13a1fd9157da814351"
+  integrity sha512-xXNiHgIXWuG3C5nHSYBSBcrIhLgwl361WS8lx5P7m3NptFqUqcvOvGBcuwtNx5bc5D3rYmmsOVyCIxFRDPKHUA==
 
 "@zeit-ui/vue-icons@^2.0.0":
   version "2.0.0"
