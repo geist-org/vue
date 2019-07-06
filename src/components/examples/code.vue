@@ -108,6 +108,8 @@ export default {
   &[open]
     summary
       border-bottom none
+      border-bottom-left-radius 0
+      border-bottom-right-radius 0
 
     .down
       transform rotateZ(0deg)
@@ -121,6 +123,8 @@ export default {
     border-left 1px solid var(--accents-2)
     border-bottom 1px solid var(--accents-2)
     border-right 1px solid var(--accents-2)
+    border-bottom-left-radius var(--geist-radius)
+    border-bottom-right-radius var(--geist-radius)
     display flex
     flex 1
     justify-content space-between
@@ -139,8 +143,7 @@ export default {
 
 .down
   display inline-flex
-  width 12px
-  height 8px
+  width 8px
   margin-right 4px
   transform rotateZ(-90deg)
   transition all .1s ease
@@ -150,6 +153,7 @@ export default {
   color var(--accents-5)
   opacity 0
   visibility hidden
+  width rem(14)
 
 .preview
   font-size rem(13)
