@@ -1,5 +1,5 @@
 <template lang="pug">
-zi-slider(style="width: 60%" v-model="value" :step="0.2" :show-stops="true" :min="0" :max="1")
+zi-slider(style="width: 60%" v-model="value" :step="20" :show-stops="true")
 </template>
 
 <script>
@@ -7,7 +7,7 @@ export default {
   name: 'ex-slider-step',
 
   data: () => ({
-    value: 0,
+    value: 20,
   }),
 
   watch: {
