@@ -1,5 +1,5 @@
 <template lang="pug">
-zi-note a basic note
+zi-note A basic note
 </template>
 
 <script>

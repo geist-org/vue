@@ -6,21 +6,46 @@
   background-color var(--geist-background)
   border-radius var(--geist-radius)
 
+  h1, h2, h3, h4, h5, h6, p
+    margin 0
+
   >.zi-note-type
     text-transform uppercase
     font-weight 500
+    user-select none
 
-  &.hint, &.success
+  &.fill
+    background-color var(--geist-foreground)
+    color var(--geist-background)
+
+  &.success
     border-color var(--geist-success)
-    >.zi-note-type
-      color var(--geist-success)
+    color var(--geist-success)
 
-  &.alert, &.warning
+    &.fill
+      background-color var(--geist-success)
+      color #fff
+
+  &.warning
     border-color var(--geist-warning)
-    >.zi-note-type
-      color var(--geist-warning)
+    color var(--geist-warning)
 
-  &.error, &.danger
+    &.fill
+      background-color var(--geist-warning)
+      color #fff
+
+  &.error
     border-color var(--geist-error)
-    >.zi-note-type
-      color var(--geist-error)
+    color var(--geist-error)
+
+    &.fill
+      background-color var(--geist-error)
+      color #fff
+
+  &.secondary
+    border-color var(--geist-secondary)
+    color var(--geist-secondary)
+
+    &.fill
+      background-color var(--geist-secondary)
+      color #fff

@@ -1,12 +1,14 @@
 <template lang="pug">
 div
-  zi-note(type="hint") a hint note
+  zi-note(type="success") This is a success note.
   br
-  zi-note(type="error") an error note
+  zi-note(type="error") This is an error note.
   br
-  zi-note(type="alert") an alert note
+  zi-note(type="warning") This is an warning note.
   br
-  zi-note(label="note" type="error") a basic note
+  zi-note(type="secondary") This is a secondary note.
+  br
+  zi-note(label="tip" type="error") This is an error note with label.
     br
     a A link to helpful information.
 </template>
