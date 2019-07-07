@@ -19,7 +19,6 @@
       "lambdas/vue"
     ],
     "rules": {
-      "vue/no-side-effects-in-computed-properties": true,
       "prefer-object-spread": 0
     },
     "extensions": [
@@ -36,7 +35,8 @@
   },
   "dependencies": {
     "@zeit-ui/themes": "^0.1.0",
-    "@zeit-ui/typographic": "^0.2.5"
+    "@zeit-ui/typographic": "^0.2.5",
+    "popper.js": "^1.15.0"
   },
   "devDependencies": {
     "@types/fs-extra": "^7.0.0",
@@ -44,7 +44,7 @@
     "@vue/cli-service": "^3.4.0",
     "@zeit-ui/vue-icons": "^2.0.0",
     "babel-eslint": "^10.0.1",
-    "eslint-config-lambdas": "^0.0.11",
+    "eslint-config-lambdas": "^0.2.3",
     "execa": "^1.0.0",
     "fs-extra": "^8.0.1",
     "pre-commit": "^1.2.2",
