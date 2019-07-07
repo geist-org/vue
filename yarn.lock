@@ -3295,10 +3295,10 @@ eslint-ast-utils@^1.0.0:
     lodash.get "^4.4.2"
     lodash.zip "^4.2.0"
 
-eslint-config-lambdas@^0.0.11:
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/eslint-config-lambdas/-/eslint-config-lambdas-0.0.11.tgz#06807268a629c2ca64661151b1ac16b344c3c0dc"
-  integrity sha512-+SaAYI57xWQ6U39DyuU9tU8DvZELrWiwTYQST/hU3KaOjWzE6VIcZZbANt6DwAU3mWTmtfijbCWpSNoSDpQFhA==
+eslint-config-lambdas@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-lambdas/-/eslint-config-lambdas-0.2.3.tgz#cc4f05bbeac86d5e23ecd7fbde8d8351a0c67609"
+  integrity sha512-NovSIoFBAmRoBzXZ3DqtpQ5p/2nFbQlx45tSwIbhu2w3SM0NWhSJbPm7h9f9kUVD+/YmC3GkUe/cRbi/b31zuQ==
   dependencies:
     eslint-plugin-markdown "^1.0.0"
     eslint-plugin-vue "^5.2.2"
@@ -6658,6 +6658,11 @@ plur@^3.0.1:
   integrity sha512-t1Ax8KUvV3FFII8ltczPn2tJdjqbd1sIzu6t4JL7nQ3EyeL/lTrj5PWKb06ic5/6XYDr65rQ4uzQEGN70/6X5w==
   dependencies:
     irregular-plurals "^2.0.0"
+
+popper.js@^1.15.0:
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.15.0.tgz#5560b99bbad7647e9faa475c6b8056621f5a4ff2"
+  integrity sha512-w010cY1oCUmI+9KwwlWki+r5jxKfTFDVoadl7MSrIujHU5MJ5OR6HTDj6Xo8aoR/QsA56x8jKjA59qGH4ELtrA==
 
 portfinder@^1.0.20:
   version "1.0.20"

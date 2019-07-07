@@ -29,6 +29,7 @@ import Table from './table'
 import Slider from './slider'
 import Col from './col'
 import Row from './row'
+import Tooltip from './tooltip'
 
 const install = vue => {
   Card.install(vue)
@@ -60,6 +61,7 @@ const install = vue => {
   Slider.install(vue)
   Col.install(vue)
   Row.install(vue)
+  Tooltip.install(vue)
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
