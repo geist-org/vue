@@ -2,7 +2,7 @@
   display inline-flex
   align-items center
   background-color var(--geist-background)
-  border-radius 4px
+  border-radius var(--geist-radius)
   border 1px solid var(--accents-2)
   overflow hidden
   color var(--geist-foreground)
@@ -16,20 +16,21 @@
     display flex
     justify-content center
     align-items center
-    padding 0 rem(12)
-    min-width rem(128)
+    padding rem(1.2) rem(12)
+    min-width rem(76)
     user-select none
     transition background-color .12 ease
     position relative
+    text-decoration none
 
     &::after
       position absolute
-      height rem(16)
-      border-right 1px solid var(--accents-2)
+      height 100%
+      top 0
+      bottom 0
       right 0
-      top 50%
-      transform translateY(-50%)
       content ''
+      border-right 1px solid var(--accents-2)
 
     &:last-child::after
       display none
@@ -39,8 +40,10 @@
       background-color var(--accents-1)
 
     &.active
+      text-decoration none
       pointer-events none
-      font-weight 500
+      font-weight bold
+      background-color var(--accents-1)
 
 .zi-switcher-content
   width 100%
