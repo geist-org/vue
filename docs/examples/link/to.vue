@@ -1,5 +1,5 @@
 <template lang="pug">
-zi-link(to="/docs/more") use vue router
+zi-link(to="/docs/more") Vue Router
 </template>
 
 <script>

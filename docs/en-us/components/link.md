@@ -26,10 +26,10 @@ This is another style.
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **href** | jump link | `string` | - | - |
 | **to** | use vue router | `string | object` | - | - |
-| **more** | link icon | `boolean` | `true` / `false` | - |
-| **nofollow** | rel equal nofollow | `boolean` | `true` / `false` | - |
-| **bold** | font bold | `boolean` | `true` / `false` | - |
-| **pure** | jump link | `boolean` | `true` / `false` | - |
+| **more** | link icon | `boolean` | - | `false` |
+| **color** | show active color | `boolean` | - | `false` |
+| **bold** | font bold | `boolean` | - | `false` |
+| **pure** | hide icon | `boolean` | - | `false` |
 | **target** | jump target | `string` | - | `_blank` |
 | **rel** | a tag's rel attribute | `string` | - | - |
 
