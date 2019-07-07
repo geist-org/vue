@@ -1,5 +1,8 @@
 <template lang="pug">
-zi-link(href="https://github.com/zeit-ui/vue" nofollow) Github url
+div
+  zi-link(href="https://github.com/zeit-ui/vue") Github url
+  br
+  zi-link(href="https://github.com/zeit-ui/vue" color) Github url
 </template>
 
 <script>

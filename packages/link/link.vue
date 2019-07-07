@@ -1,29 +1,34 @@
 <template lang="pug">
 span(class="zi-link-wrapper")
-  a(:href="hrefValue" @click="goto" :target="target" :rel="relValue" :class="{ 'no-decoration': this.more, bold, 'default-color': this.more }").zi-link
+  a(:href="hrefValue"
+    @click="goto"
+    :target="target"
+    :rel="relValue"
+    :class="{ 'no-decoration': more, bold, color }"
+  ).zi-link
     slot
-  span.zi-link-more(v-if="!pure && more") →
+  span.zi-link-more(v-if="!pure && more" :class="{ color }") →
   a(class="zi-link-default")
-    externalLink(v-if="!pure && !more")
+    LinkIcon(v-if="!pure && !more" :color="color")
 </template>
 
 <script>
-import externalLink from '@zeit-ui/vue-icons/packages/external-link'
+import LinkIcon from './link-icon'
 
 export default {
   name: 'zi-link',
 
   components: {
-    externalLink,
+    LinkIcon,
   },
 
   props: {
     href: String,
     to: [String, Object],
     more: Boolean,
-    nofollow: Boolean,
     bold: Boolean,
     pure: Boolean,
+    color: Boolean,
     target: { type: String, default: '_blank' },
     rel: { type: String },
   },
@@ -31,7 +36,6 @@ export default {
   computed: {
     relValue() {
       if (this.rel) return this.rel
-      if (this.nofollow) return 'nofollow'
       return 'bookmark'
     },
 

@@ -32,11 +32,10 @@ Get the latest version from unpkg.com:
 
 ```
 <link rel="stylesheet" href="//unpkg.com/@zeit-ui/vue@latest/dist/zeit-ui.css">
-
 <script src="//unpkg.com/@zeit-ui/vue@latest/dist/zeit-ui.umd.js"></script>
 ```
 
-You can also refer to [Example with UMD](https://github.com/zeit-ui/vue/tree/master/examples/umd)
+You can also refer to [Example with UMD](https://github.com/zeit-ui/vue/blob/master/examples/umd/index.html)
 
 <br>
 
