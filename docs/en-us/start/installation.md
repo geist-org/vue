@@ -45,6 +45,7 @@ You can also refer to [Example with UMD](https://github.com/zeit-ui/vue/blob/mas
 
 ```js
 import Vue from 'vue'
+import '@zeit-ui/themes/index.css'
 import Button from '@zeit-ui/vue/lib/button.common'
 import '@zeit-ui/vue/lib/button.css'
 
