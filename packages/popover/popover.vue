@@ -1,5 +1,9 @@
 <template lang="pug">
-.popover(@click.stop)
+.popover(
+  @click.stop
+  @mousemove="hoverToggle(true)"
+  @mouseleave="hoverToggle(false)"
+)
   span.host(@click.stop="toggle")
     slot
   transition(name="zi-fade-in")
@@ -32,15 +36,34 @@ export default {
       type: Boolean,
       default: true,
     },
+    hoverable: Boolean,
+    delay: [Number, String],
   },
 
   methods: {
     toggle() {
+      if (this.hoverable) return
+
       this.visible = !this.visible
       document.removeEventListener('click', this.globalHandler)
       if (this.visible) {
         document.addEventListener('click', this.globalHandler)
       }
+    },
+
+    hoverToggle(next) {
+      if (!this.hoverable) return
+
+      const t = Number.isNaN(+this.delay) ? 300 : +this.delay
+      if (next) {
+        this.timer && clearTimeout(this.timer)
+        this.visible = true
+        return
+      }
+      this.timer = setTimeout(() => {
+        this.visible = false
+        clearTimeout(this.timer)
+      }, t)
     },
 
     globalHandler() {
