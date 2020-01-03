@@ -90,6 +90,7 @@
   "license": "MIT",
   "main": "dist/zeit-ui.common.js",
   "module": "dist/zeit-ui.common.js",
+  "types": "src/index.d.ts",
   "peerDependencies": {
     "vue": "^2.5.16"
   },
