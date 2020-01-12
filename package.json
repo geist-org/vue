@@ -9,7 +9,7 @@
     "clear": "rm -rf dist lib",
     "lint": "xo",
     "now-build": "node scripts/now-build.js && yarn run build && cp ./public/favicon.ico ./dist",
-    "release": "yarn run clear && yarn run build:lib && yarn publish --access public"
+    "release": "yarn run clear && yarn run build:lib && yarn publish --access public --non-interactive"
   },
   "pre-commit": [
     "lint"
