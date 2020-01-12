@@ -9,7 +9,7 @@
     "clear": "rm -rf dist lib",
     "lint": "xo",
     "now-build": "node scripts/now-build.js && yarn run build && cp ./public/favicon.ico ./dist",
-    "release": "yarn run clear && yarn run build:lib && yarn publish --access public"
+    "release": "yarn run clear && yarn run build:lib && yarn publish --access public --non-interactive"
   },
   "pre-commit": [
     "lint"
@@ -59,7 +59,7 @@
     "vue-markdown-loader": "^2.4.1",
     "vue-prism-component": "^1.1.1",
     "vue-router": "^3.0.1",
-    "vue-template-compiler": "^2.6.10",
+    "vue-template-compiler": "^2.6.11",
     "xo": "^0.24.0"
   },
   "browserslist": {
