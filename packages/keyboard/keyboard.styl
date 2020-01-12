@@ -1,0 +1,28 @@
+.zi-kbd
+  color var(--accents-5)
+  font-size 0.875rem
+  line-height 2em
+  text-align center
+  background-color var(--accents-1)
+  font-family var(--font-sans)
+  min-width calc(1.5 * var(--geist-gap))
+  padding 0 var(--geist-gap-quarter)
+  border-radius var(--geist-radius)
+  border 1px solid var(--accents-2)
+  display inline-block
+
+  span
+    line-height 2em
+    font-size 0.875rem
+    text-align center
+
+    +span
+      margin-left var(--geist-gap-quarter)
+
+  +.zi-kbd
+    margin-left var(--geist-gap-quarter)
+
+.zi-kbd-small
+  padding 0
+  font-size .75rem
+  min-width var(--geist-gap)
