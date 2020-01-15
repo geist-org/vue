@@ -1,0 +1,27 @@
+.zi-textarea-wrapper
+  display inline-flex
+  align-items center
+  position relative
+  vertical-align middle
+  -webkit-box-align center
+
+.zi-textarea
+  width 100%
+  resize none
+  outline none
+  border-radius 5px
+  border 1px solid var(--accents-2)
+  background-color transparent
+  transition border 0.2s ease 0s, color 0.2s ease 0s
+  padding rem(10)
+
+  &.disabled
+    background-color var(--accents-1)
+    color var(--accents-4)
+
+  &:focus
+    border-color var(--accents-6)
+
+  &::-webkit-input-placeholder
+    color var(--accents-3)
+
