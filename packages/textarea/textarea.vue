@@ -2,7 +2,7 @@
 .zi-textarea-container
   .zi-textarea-wrapper
     textarea.zi-textarea(
-      :class="{ disabled, error }"
+      :class="[{ disabled }, type]"
       v-model="model"
       :placeholder="placeholder"
       @blur="handleBlur"
@@ -14,6 +14,8 @@
 </template>
 
 <script>
+import { validator } from '../utils'
+
 export default {
   name: 'zi-textarea',
 
@@ -21,13 +23,17 @@ export default {
     value: [String, Number],
     placeholder: String,
     disabled: Boolean,
-    error: Boolean,
     readonly: Boolean,
     autofocus: Boolean,
     form: String,
     rows: {
       type: Number,
       default: 3,
+    },
+    type: {
+      type: String,
+      validator: validator.enums(['primary', 'danger', 'success', 'warning']),
+      default: 'primary',
     },
   },
 

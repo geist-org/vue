@@ -4,4 +4,4 @@
 
 <ex-code name="ex-textarea-disabled"></ex-code>
 
-<ex-code name="ex-textarea-error"></ex-code>
+<ex-code name="ex-textarea-type"></ex-code>

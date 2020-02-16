@@ -25,7 +25,7 @@ export default {
 
   mounted() {
     if (!this.inGroup) {
-      return print.error(`${this.$options.name} \
+      return print.type(`${this.$options.name} \
       required parent component: [zi-popover]`)
     }
   },

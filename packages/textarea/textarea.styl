@@ -14,7 +14,7 @@
   width 100%
   resize none
   outline none
-  border-radius 5px
+  border-radius var(--geist-radius)
   box-sizing border-box
   border 1px solid var(--accents-2)
   background-color transparent
@@ -24,6 +24,7 @@
   &.disabled
     background-color var(--accents-1)
     color var(--accents-4)
+    cursor not-allowed
 
   &:focus
     border-color var(--accents-6)
@@ -31,6 +32,12 @@
   &::-webkit-input-placeholder
     color var(--accents-3)
 
-  &.error
+  &.danger
     border 1px solid var(--geist-error)
     color var(--geist-error)
+
+  &.warning
+    border 1px solid var(--geist-warning)
+
+  &.success
+    border 1px solid var(--geist-success)

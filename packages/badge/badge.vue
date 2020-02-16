@@ -18,7 +18,7 @@ export default {
     dot: Boolean,
     status: {
       type: String,
-      validator: validator.enums(['success', 'warning', 'error']),
+      validator: validator.enums(['success', 'warning', 'type.vue']),
     },
   },
 
