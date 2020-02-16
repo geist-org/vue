@@ -4,7 +4,7 @@ zi-table(:data="tableData" empty-text="table is empty" width="649px")
   zi-table-column(prop="usage" label="usage")
   zi-table-column(prop="area" label="area" min-width="250")
   zi-table-column(label="operate")
-    template(#default="scope")
+    template(slot-scope="scope")
       a(@click="deleteRow(scope.row, scope.$index)") delete
 </template>
 
@@ -34,7 +34,6 @@ export default {
 
   methods: {
     deleteRow(row, index) {
-      console.log(row)
       this.tableData.splice(index, 1)
     },
   },

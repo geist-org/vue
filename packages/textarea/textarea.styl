@@ -1,15 +1,22 @@
+.zi-textarea-container
+  display flex
+  max-width 100%
+
 .zi-textarea-wrapper
   display inline-flex
   align-items center
+  width 100%
   position relative
   vertical-align middle
   -webkit-box-align center
 
 .zi-textarea
+  font-family var(--font-sans)
   width 100%
   resize none
   outline none
-  border-radius 5px
+  border-radius var(--geist-radius)
+  box-sizing border-box
   border 1px solid var(--accents-2)
   background-color transparent
   transition border 0.2s ease 0s, color 0.2s ease 0s
@@ -18,10 +25,32 @@
   &.disabled
     background-color var(--accents-1)
     color var(--accents-4)
-
-  &:focus
-    border-color var(--accents-6)
+    cursor not-allowed
 
   &::-webkit-input-placeholder
     color var(--accents-3)
 
+  &.primary
+    border 1px solid var(--accents-2)
+
+    &:focus
+      border-color var(--accents-6)
+
+  &.danger
+    border 1px solid rgba(255, 0, 0, 0.4)
+    color var(--geist-error)
+
+    &:focus
+      border-color var(--geist-error)
+
+  &.warning
+    border 1px solid rgba(245, 166, 35, 0.4)
+
+    &:focus
+      border-color var(--geist-warning)
+
+  &.success
+    border 1px solid rgba(0, 112, 243, 0.4)
+
+    &:focus
+      border-color var(--geist-success)
