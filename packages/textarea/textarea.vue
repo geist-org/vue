@@ -1,30 +1,32 @@
 <template lang="pug">
-.zi-textarea-wrapper
-  textarea.zi-textarea(
-    :class="{ disabled }"
-    v-model="model"
-    :placeholder="placeholder"
-    @blur="handleBlur"
-    :disabled="disabled"
-    :rows="rows"
-    :cols="cols")
+.zi-textarea-container
+  .zi-textarea-wrapper
+    textarea.zi-textarea(
+      :class="[{ disabled }, type]"
+      v-model="model"
+      @blur="handleBlur"
+      :disabled="disabled"
+      v-bind="$attrs"
+      :rows="rows")
 </template>
 
 <script>
+import { validator } from '../utils'
+
 export default {
   name: 'zi-textarea',
 
   props: {
     value: [String, Number],
-    placeholder: String,
     disabled: Boolean,
     rows: {
       type: Number,
       default: 3,
     },
-    cols: {
-      type: Number,
-      default: 45,
+    type: {
+      type: String,
+      validator: validator.enums(['primary', 'danger', 'success', 'warning']),
+      default: 'primary',
     },
   },
 
@@ -53,4 +55,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./textarea.styl"/>
+<style lang="stylus" scoped src="./textarea.styl"/>
