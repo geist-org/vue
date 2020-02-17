@@ -51,7 +51,7 @@ export default {
     customListeners() {
       const newListeners = {}
       Object.keys(this.$listeners).forEach(listener => {
-        if(listener !== 'input') newListeners[listener] = this.$listeners[listener]
+        if (listener !== 'input') newListeners[listener] = this.$listeners[listener]
       })
       return newListeners
     },
