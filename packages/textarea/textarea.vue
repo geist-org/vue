@@ -4,8 +4,8 @@
     textarea.zi-textarea(
       :class="[{ disabled }, type]"
       v-model="model"
-      @blur="handleBlur"
       :disabled="disabled"
+      v-on="customListeners"
       v-bind="$attrs"
       :rows="rows")
 </template>
@@ -15,6 +15,8 @@ import { validator } from '../utils'
 
 export default {
   name: 'zi-textarea',
+
+  inheritAttrs: true,
 
   props: {
     value: [String, Number],
@@ -45,11 +47,13 @@ export default {
         this.$emit('input', val)
       },
     },
-  },
 
-  methods: {
-    handleBlur(event) {
-      this.$emit('blur', event.target.value)
+    customListeners() {
+      const newListeners = {}
+      Object.keys(this.$listeners).forEach(listener => {
+        if(listener !== 'input') newListeners[listener] = this.$listeners[listener]
+      })
+      return newListeners
     },
   },
 }
