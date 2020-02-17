@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  zi-badge(count="150" :max-count="100" status="type.vue" style="margin-right: 20px;")
+  zi-badge(count="150" :max-count="100" status="error" style="margin-right: 20px;")
     zi-avatar(shape="square" :src="image")
   zi-badge(count="0" status="error" style="margin-right: 20px;")
     zi-avatar(shape="square" :src="image")

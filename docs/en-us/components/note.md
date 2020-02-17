@@ -13,7 +13,7 @@ Display text that requires attention or provides additional information.
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
-| **type** | note type | `string` | `success` / `error` / `warning` / `secondary` | - |
+| **type** | note type | `string` | `success` / `danger` / `warning` / `secondary` | - |
 | **label** | note label | `string` | - | - |
 | **fill** | background is fill with type's color | `boolean` | - | `false` |
 

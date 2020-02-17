@@ -1,5 +1,5 @@
 <template lang="pug">
-zi-input(placeholder="placeholder" v-model="value" success)
+zi-input(placeholder="placeholder" v-model="value")
 </template>
 
 <script>

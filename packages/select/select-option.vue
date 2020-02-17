@@ -40,7 +40,7 @@ export default {
 
   mounted() {
     if (!this.inGroup) {
-      return print.type(`${this.$options.name} \
+      return print.error(`${this.$options.name} \
       required parent component: [zi-select]`)
     }
   },

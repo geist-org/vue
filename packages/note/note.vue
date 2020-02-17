@@ -14,7 +14,7 @@ export default {
   props: {
     type: {
       type: String,
-      validator: validator.enums(['success', 'error', 'warning', 'secondary']),
+      validator: validator.enums(['success', 'danger', 'warning', 'secondary']),
     },
     fill: Boolean,
     label: String,
@@ -28,7 +28,7 @@ export default {
     classes() {
       let str = ''
       this.success && (str += 'success')
-      this.error && (str += 'error')
+      this.error && (str += 'danger')
       this.warning && (str += 'warning')
       this.secondary && (str += 'secondary')
       return str
