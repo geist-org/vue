@@ -2,7 +2,7 @@
 div
   zi-note(type="success" fill) This is a filled note.
   br
-  zi-note(type="type.vue" fill) This is a filled note.
+  zi-note(type="danger" fill) This is a filled note.
   br
   zi-note(type="secondary" fill) This is a filled note.
   br
