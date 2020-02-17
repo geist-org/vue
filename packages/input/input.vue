@@ -4,7 +4,7 @@ div(:class="[groupClass, { prefix: hasPrefix, suffix: hasSuffix, clearable }]")
   span.zi-label.prefix(v-if="prefixIcon")
     i(:class="prefixIcon")
   input.zi-input(
-    :class="[{ 'disabled': disabled }, size && size]"
+    :class="[{ 'disabled': disabled }, size && size, type]"
     v-model="model"
     :placeholder="placeholder"
     :disabled="disabled"
@@ -61,7 +61,8 @@ export default {
     },
     type: {
       type: String,
-      default: 'text',
+      validator: validator.enums(['primary', 'danger', 'success', 'warning']),
+      default: 'primary',
     },
   },
 

@@ -11,6 +11,7 @@
   -webkit-box-align center
 
 .zi-textarea
+  font-family -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Avenir', 'PingFang SC', 'Helvetica Neue', Helvetica
   width 100%
   resize none
   outline none
@@ -26,18 +27,30 @@
     color var(--accents-4)
     cursor not-allowed
 
-  &:focus
-    border-color var(--accents-6)
-
   &::-webkit-input-placeholder
     color var(--accents-3)
 
+  &.primary
+    border 1px solid var(--accents-2)
+
+    &:focus
+      border-color var(--accents-6)
+
   &.danger
-    border 1px solid var(--geist-error)
+    border 1px solid rgba(255,0,0, 40%)
     color var(--geist-error)
 
+    &:focus
+      border-color var(--geist-error)
+
   &.warning
-    border 1px solid var(--geist-warning)
+    border 1px solid rgba(245,166,35, 40%)
+
+    &:focus
+      border-color var(--geist-warning)
 
   &.success
-    border 1px solid var(--geist-success)
+    border 1px solid rgba(0,112,243, 40%)
+
+    &:focus
+      border-color var(--geist-success)

@@ -22,6 +22,8 @@ Clear all text at a button.
 
 <ex-code name="ex-input-disabled"/></ex-code>
 
+<ex-code name="ex-input-type"></ex-code>
+
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/input.md">
 
 | Attribute | Description | Type | Accepted values | Default
@@ -30,7 +32,7 @@ Clear all text at a button.
 | **placeholder** | input placeholder | `string` | - | - |
 | **clearable** | clear input value | `boolean` | `true` / `false` | `false` |
 | **size** | input size | `string` | `mini` / `small` / `medium` / `big` | - |
-| **type** | input type | `string` | - | `text` |
+| **type** | input type | `string` | `primary` / `danger` / `success` / `warning` | `primary` |
 | **autocomplete** | input auto complete | `string` | `on` / `off` | `off` |
 | **form** | input value | `string` | - | - |
 | **spellcheck** | input spell check | `boolean` | `true` / `false` | - |
