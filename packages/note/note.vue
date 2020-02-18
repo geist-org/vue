@@ -14,7 +14,7 @@ export default {
   props: {
     type: {
       type: String,
-      validator: validator.enums(['success', 'error', 'warning', 'secondary']),
+      validator: validator.enums(['primary', 'success', 'error', 'warning', 'secondary']),
     },
     fill: Boolean,
     label: String,
