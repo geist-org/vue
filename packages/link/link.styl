@@ -3,13 +3,16 @@
   align-items center
 
 .zi-link
-  line-height 30px
+  display inline-flex
+  line-height inherit
   color inherit
 
   svg
-    margin-left 7px
+    display inline-flex
+    margin 0 5px
     color inherit
-    min-height 15px
+    width 1em
+    height 1em
 
   &:hover
     .more
@@ -34,10 +37,3 @@
 
   &.color
     color var(--geist-success)
-
-.zi-link-default
-  display flex
-  align-items center
-  margin-left 7px
-  width .9em
-  height .9em

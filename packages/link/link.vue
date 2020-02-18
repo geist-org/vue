@@ -1,5 +1,5 @@
 <template lang="pug">
-span(class="zi-link-wrapper")
+span.zi-link-wrapper
   a(:href="hrefValue"
     @click="goto"
     :target="target"
@@ -7,8 +7,7 @@ span(class="zi-link-wrapper")
     :class="{ 'no-decoration': more, bold, color }"
   ).zi-link
     slot
-  span.zi-link-more(v-if="!pure && more" :class="{ color }") →
-  a(class="zi-link-default")
+    span.zi-link-more(v-if="!pure && more" :class="{ color }") →
     LinkIcon(v-if="!pure && !more" :color="color")
 </template>
 

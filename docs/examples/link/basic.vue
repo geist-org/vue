@@ -1,8 +1,9 @@
 <template lang="pug">
 div
-  zi-link(href="https://github.com/zeit-ui/vue") Github url
-  br
-  zi-link(href="https://github.com/zeit-ui/vue" color) Github url
+  p
+    zi-link(href="https://github.com/zeit-ui/vue") Github url
+  p
+    zi-link(href="https://github.com/zeit-ui/vue" color) Github url with colors
 </template>
 
 <script>
