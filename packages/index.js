@@ -32,6 +32,7 @@ import Row from './row'
 import Tooltip from './tooltip'
 import Description from './description'
 import Keyboard from './keyboard'
+import Textarea from './textarea'
 
 const install = vue => {
   Card.install(vue)
@@ -66,6 +67,7 @@ const install = vue => {
   Tooltip.install(vue)
   Description.install(vue)
   Keyboard.install(vue)
+  Textarea.install(vue)
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
