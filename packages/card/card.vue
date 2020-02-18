@@ -1,5 +1,5 @@
 <template lang="pug">
-.zi-card(:class="[{ hoverable }]")
+.zi-card(:class="[{ hoverable }]" v-on="$listeners")
   slot
 </template>
 

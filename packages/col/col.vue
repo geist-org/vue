@@ -1,5 +1,5 @@
 <template lang="pug">
-div(:style="styles" :class="classes")
+div(:style="styles" :class="classes" v-on="$listeners")
   slot
 </template>
 

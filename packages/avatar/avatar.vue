@@ -1,5 +1,5 @@
 <template lang="pug">
-span.zi-avatar(:class="[shape, size && size, isSingleText && 'single', stacked && 'stacked']")
+span.zi-avatar(:class="[shape, size && size, isSingleText && 'single', stacked && 'stacked']" v-on="$listeners")
   img(:src="src" v-if="hasLink" draggable="false")
   span.zi-avatar-string(v-else) {{ text }}
 </template>
