@@ -1,5 +1,5 @@
 <template lang="pug">
-.zi-row(:style="styles" :class="classes")
+.zi-row(:style="styles" :class="classes" v-on="$listeners")
   slot
 </template>
 
