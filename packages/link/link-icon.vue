@@ -1,8 +1,9 @@
 <template>
-  <svg width="13px" height="13px" viewBox="0 0 13 13" aria-label="external link">
-    <g :stroke="currentColor" stroke-width="0.8" fill="none" fill-rule="evenodd">
-      <path d="M6.2 6.7l5-5.3M7.9.9h4m0 0v4m-2 2.5v2.5a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2v-5c0-1.1.9-2 2-2h2.5"></path>
-    </g>
+  <svg viewBox="0 0 24 24" width="1em" height="1em" :stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+       stroke-linejoin="round" fill="none" shape-rendering="geometricPrecision" :style="{ color: currentColor }">
+    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+    <path d="M15 3h6v6"/>
+    <path d="M10 14L21 3"/>
   </svg>
 </template>
 
