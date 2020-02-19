@@ -47,7 +47,7 @@ please refer to <zi-link color href="https://github.com/zeit-ui/vue-icons">zeit-
 | **disabled** | input disabled | `boolean` | `true` / `false` | `false` |
 | **prefixLabel** | prefix label | `string | number` | - | - |
 | **suffixLabel** | suffix label | `string | number` | - | - |
-| **prefixIcon**[slot] | input prefix icon (see the example code above for the usage) | `slot` | - | - |
-| **suffixIcon**[slot] | suffix icon (see the example code above for the usage) | `slot` | - | - |
+| **prefixIcon** (slot) | input prefix icon (see the example code above for the usage) | `slot` | - | - |
+| **suffixIcon** (slot) | suffix icon (see the example code above for the usage) | `slot` | - | - |
 
 </ex-footer>
