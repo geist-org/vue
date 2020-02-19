@@ -1,7 +1,7 @@
 .zi-toggle
   display inline-block
-  background-color #ccc
-  border 1px solid #ccc
+  background-color var(--accents-2)
+  border 1px solid var(--accents-2)
   border-radius rem(14)
   height rem(14)
   line-height rem(14)
@@ -14,13 +14,21 @@
     background-color #067df7
     border 1px solid #067df7
 
+    &.disabled
+      background-color var(--accents-4)
+      border-color var(--accents-4)
+
     &:before
       right 0
       transform translate(0, -50%)
 
   &.disabled
-    opacity .6
+    background-color var(--accents-1)
     cursor not-allowed
+
+    &:before
+      background-color var(--accents-2)
+      border-color var(--accents-2)
 
   &:before
     content ''
@@ -36,3 +44,4 @@
     transform translate(100%, -50%)
     transition-timing-function cubic-bezier(0, 0, 0.2, 1)
     background-color var(--geist-background)
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.1)
