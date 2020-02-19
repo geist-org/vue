@@ -15,7 +15,7 @@
 <script>
 import 'prismjs'
 import 'prismjs/components/prism-pug'
-import Dropdown from '@zeit-ui/vue-icons/packages/dropdown'
+import Dropdown from '@zeit-ui/vue-icons/packages/down'
 import Prism from 'vue-prism-component'
 import { getRealShape } from '../../../packages/utils/bounding'
 
@@ -142,9 +142,9 @@ export default {
     overflow-x auto
 
 .down
-  display inline-flex
-  width 8px
-  margin-right 4px
+  width rem(10)
+  height rem(10)
+  margin-right 5px
   transform rotateZ(-90deg)
   transition all .1s ease
 

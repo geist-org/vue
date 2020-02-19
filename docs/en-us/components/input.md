@@ -22,6 +22,13 @@ Clear all text at a button.
 
 <ex-code name="ex-input-type"></ex-code>
 
+<ex-code name="ex-input-icon">
+
+You can get more icons from <zi-code>zeit-ui/vue-icons</zi-code> library,
+please refer to <zi-link color href="https://github.com/zeit-ui/vue-icons">zeit-ui/vue-icons</zi-link> .
+
+</ex-code>
+
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/input.md">
 
 | Attribute | Description | Type | Accepted values | Default
@@ -31,16 +38,16 @@ Clear all text at a button.
 | **clearable** | clear input value | `boolean` | `true` / `false` | `false` |
 | **size** | input size | `string` | `mini` / `small` / `medium` / `big` | - |
 | **type** | input type | `string` | `primary` / `success` / `danger` / `warning` | `primary` |
-| **_type** | original property | `string` | - | `text` |
-| **autocomplete** | input auto complete | `string` | `on` / `off` | `off` |
 | **form** | input value | `string` | - | - |
-| **spellcheck** | input spell check | `boolean` | `true` / `false` | - |
-| **autofocus** | input auto focus | `boolean` | `true` / `false` | `false` |
+| **_type** | original property | `string` | - | `text` |
+| **autocomplete** | original property, read [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) to learn more | `string` | `on` / `off` | `off` |
+| **spellcheck** | original property | `boolean` | `true` / `false` | - |
+| **autofocus** | original property | `boolean` | `true` / `false` | `false` |
 | **readonly** | input readonly | `boolean` | `true` / `false` | `false` |
 | **disabled** | input disabled | `boolean` | `true` / `false` | `false` |
-| **prefixIcon** | input prefix icon | `boolean` | `true` / `false` | `false` |
-| **suffixIcon** | suffix icon | `boolean` | `true` / `false` | `false` |
 | **prefixLabel** | prefix label | `string | number` | - | - |
 | **suffixLabel** | suffix label | `string | number` | - | - |
+| **prefixIcon** (slot) | input prefix icon (see the example code above for the usage) | `slot` | - | - |
+| **suffixIcon** (slot) | suffix icon (see the example code above for the usage) | `slot` | - | - |
 
 </ex-footer>

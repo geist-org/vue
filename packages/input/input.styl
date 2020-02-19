@@ -46,6 +46,9 @@
     &:focus
       border-color var(--geist-success)
 
+
+
+.zi-input, .zi-input-group > .zi-label
   &.small
     font-size rem(12)
     height rem(32)
@@ -79,7 +82,7 @@
     flex 1
     margin 0
 
-  >.zi-label
+  .zi-label
     display inline-flex
     justify-content center
     align-items center
@@ -94,8 +97,10 @@
     padding 0 rem(10)
     user-select none
 
-    i
+    svg
       margin 0 rem(4)
+      width 1em
+      height 1em
 
   &.suffix
     input
@@ -138,28 +143,3 @@
       background-color transparent
       cursor pointer
       transition all .15s ease
-
-
-.zi-dark-theme
-  .zi-input
-    border 1px solid #333
-
-    &:focus
-      border-color gray
-
-    &.disabled
-      background #111
-
-  .zi-label
-    background-color black
-    border-color #444
-
-  .zi-input-group.prefix >.zi-label.prefix
-    border-left 1px solid #444
-
-  .zi-input-group.suffix >.zi-label.suffix
-    border-right 1px solid #444
-
-
-
-

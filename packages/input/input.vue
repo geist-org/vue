@@ -1,8 +1,8 @@
 <template lang="pug">
 div(:class="[groupClass, { prefix: hasPrefix, suffix: hasSuffix, clearable }]")
-  span.zi-label.prefix(v-if="prefixLabel") {{ prefixLabel }}
-  span.zi-label.prefix(v-if="prefixIcon")
-    i(:class="prefixIcon")
+  span.zi-label.prefix(v-if="prefixLabel" :class="size && size") {{ prefixLabel }}
+  span.zi-label.prefix(v-if="hasPrefixIcon" :class="size && size")
+    slot(name="prefixIcon")
   input.zi-input(
     :class="[{ 'disabled': disabled }, size && size, type]"
     v-model="model"
@@ -13,9 +13,9 @@ div(:class="[groupClass, { prefix: hasPrefix, suffix: hasSuffix, clearable }]")
     @focus="showCloseIcon = true"
     @blur.self="hiddenCloseIcon"
   )
-  span.zi-label.suffix(v-if="suffixLabel") {{ suffixLabel }}
-  span.zi-label.suffix(v-if="suffixIcon")
-    i(:class="suffixIcon")
+  span.zi-label.suffix(v-if="suffixLabel" :class="size && size") {{ suffixLabel }}
+  span.zi-label.suffix(v-if="hasSuffixIcon" :class="size && size")
+    slot(name="suffixIcon")
   DeleteIcon.close(v-if="clearable && showCloseIcon" @click="clear")
 </template>
 
@@ -66,11 +66,19 @@ export default {
     },
 
     hasPrefix() {
-      return this.prefixIcon || this.prefixLabel
+      return this.hasPrefixIcon || this.prefixLabel
+    },
+
+    hasPrefixIcon() {
+      return !!this.$slots.prefixIcon
     },
 
     hasSuffix() {
-      return this.suffixIcon || this.suffixLabel
+      return this.hasSuffixIcon || this.suffixLabel
+    },
+
+    hasSuffixIcon() {
+      return !!this.$slots.suffixIcon
     },
 
     groupClass() {
