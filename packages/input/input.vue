@@ -4,16 +4,12 @@ div(:class="[groupClass, { prefix: hasPrefix, suffix: hasSuffix, clearable }]")
   span.zi-label.prefix(v-if="prefixIcon")
     i(:class="prefixIcon")
   input.zi-input(
-    :class="[{ 'disabled': disabled }, size && size]"
+    :class="[{ 'disabled': disabled }, size && size, type]"
     v-model="model"
-    :placeholder="placeholder"
     :disabled="disabled"
-    :readonly="readonly"
-    :autofocus="autofocus"
-    :autocomplete="autocomplete"
-    :spellcheck="spellcheck"
-    :form="form"
-    :type="type"
+    :type="_type"
+    v-bind="$attrs"
+    v-on="customListeners"
     @focus="showCloseIcon = true"
     @blur.self="hiddenCloseIcon"
   )
@@ -39,30 +35,22 @@ export default {
 
   props: {
     value: [String, Number],
-    placeholder: [String, Number],
     clearable: Boolean,
     prefixIcon: String,
     suffixIcon: String,
     prefixLabel: [String, Number],
     suffixLabel: [String, Number],
     disabled: Boolean,
-    readonly: Boolean,
-    autofocus: Boolean,
-    spellcheck: Boolean,
-    form: String,
-    autocomplete: {
-      type: String,
-      validator: validator.enums(['on', 'off']),
-      default: 'off',
-    },
     size: {
       type: String,
       validator: validator.enums(['mini', 'small', 'medium', 'big']),
     },
     type: {
       type: String,
-      default: 'text',
+      validator: validator.enums(['primary', 'success', 'warning', 'danger']),
+      default: 'primary',
     },
+    _type: String,
   },
 
   computed: {
@@ -87,6 +75,14 @@ export default {
 
     groupClass() {
       return this.hasPrefix || this.hasSuffix ? 'zi-input-group' : 'zi-input-group-empty'
+    },
+
+    customListeners() {
+      const newListeners = {}
+      Object.keys(this.$listeners).forEach(listener => {
+        if (listener !== 'input') newListeners[listener] = this.$listeners[listener]
+      })
+      return newListeners
     },
   },
 

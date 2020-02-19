@@ -13,25 +13,38 @@
   outline 0
   box-sizing border-box
   margin 4px 10px
-  border 1px solid var(--accents-2)
   -webkit-appearance none
   transition border 0.2s ease, color 0.2s ease
-
-  &:focus
-    border-color var(--accents-4)
 
   &.disabled
     background var(--accents-1)
     color var(--accents-3)
     cursor not-allowed
 
-  &.error
+  &.primary
+    border 1px solid var(--accents-2)
+
+    &:focus
+      border-color var(--accents-4)
+
+  &.danger
+    border 1px solid rgba(255, 0, 0, 0.4)
     color var(--geist-error)
-    border-color var(--geist-error)
+
+    &:focus
+      border-color var(--geist-error)
+
+  &.warning
+    border 1px solid rgba(245, 166, 35, 0.4)
+
+    &:focus
+      border-color var(--geist-warning)
 
   &.success
-    color var(--geist-success)
-    border-color var(--geist-success)
+    border 1px solid rgba(0, 112, 243, 0.4)
+
+    &:focus
+      border-color var(--geist-success)
 
   &.small
     font-size rem(12)
