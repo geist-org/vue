@@ -2,25 +2,25 @@
 
 Retrieve text input from a user.
 
-<ex-code name="ex-input-basic"/>
+<ex-code name="ex-input-basic"></ex-code>
 
-</ex-code>
-
-<ex-code name="ex-input-size"/>
+<ex-code name="ex-input-size">
 
 Inputs have different sizes, but you can also specify styles.
 
 </ex-code>
 
-<ex-code name="ex-input-label"/></ex-code>
+<ex-code name="ex-input-label"></ex-code>
 
-<ex-code name="ex-input-clearable"/>
+<ex-code name="ex-input-clearable">
 
 Clear all text at a button.
 
 </ex-code>
 
-<ex-code name="ex-input-disabled"/></ex-code>
+<ex-code name="ex-input-disabled"></ex-code>
+
+<ex-code name="ex-input-type"></ex-code>
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/input.md">
 
@@ -30,7 +30,8 @@ Clear all text at a button.
 | **placeholder** | input placeholder | `string` | - | - |
 | **clearable** | clear input value | `boolean` | `true` / `false` | `false` |
 | **size** | input size | `string` | `mini` / `small` / `medium` / `big` | - |
-| **type** | input type | `string` | - | `text` |
+| **type** | input type | `string` | `primary` / `success` / `danger` / `warning` | `primary` |
+| **_type** | original property | `string` | - | `text` |
 | **autocomplete** | input auto complete | `string` | `on` / `off` | `off` |
 | **form** | input value | `string` | - | - |
 | **spellcheck** | input spell check | `boolean` | `true` / `false` | - |
