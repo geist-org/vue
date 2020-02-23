@@ -5,7 +5,7 @@
 <br/>
 
 <zi-note>
-Ensure your have the latest version of <zi-link href="https://nodejs.org/en/download/">NodeJS</zi-link>, 
+Ensure your have the latest version of <zi-link href="https://nodejs.org/en/download/">NodeJS</zi-link>,
 and also need a package manager of NodeJS: <zi-link href="https://www.npmjs.com/">NPM</zi-link> or <zi-link href="https://yarnpkg.com/">Yarn</zi-link>.
 </zi-note>
 
@@ -15,7 +15,7 @@ and also need a package manager of NodeJS: <zi-link href="https://www.npmjs.com/
 
 <zi-code bash>npm i @zeit-ui/vue</zi-code>
 
-2. Import `@zeit-ui/vue` to your Vue project (don't forget to import styles):
+2. Import `@zeit-ui/vue` to your Vue project:
 
 ```js
 import Vue from 'vue'
@@ -38,6 +38,7 @@ Get the latest version from unpkg.com:
 You can also refer to [Example with UMD](https://github.com/zeit-ui/vue/blob/master/examples/umd/index.html)
 
 <br>
+<br>
 
 ### Import a component
 
@@ -45,8 +46,8 @@ You can also refer to [Example with UMD](https://github.com/zeit-ui/vue/blob/mas
 
 ```js
 import Vue from 'vue'
-import '@zeit-ui/themes/index.css'
 import Button from '@zeit-ui/vue/lib/button.common'
+import '@zeit-ui/themes/index.css'
 import '@zeit-ui/vue/lib/button.css'
 
 Button.install(Vue)

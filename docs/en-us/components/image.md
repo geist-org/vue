@@ -13,6 +13,13 @@ A picture and description.
 
 </ex-code>
 
+<ex-code name="ex-image-shadow">
+
+A picture with shadow.
+
+</ex-code>
+
+
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/image.md">
 
 | Attribute | Description | Type | Accepted values | Default
@@ -20,6 +27,7 @@ A picture and description.
 | **src** | image url | `string` | - | - |
 | **width** | image width attr | `string` | - | `auto` |
 | **caption** | caption for image | `string` | - | - |
+| **shadow** | shadow style | `boolean` | - | `false` |
 
 </ex-footer>
 
