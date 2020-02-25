@@ -1,0 +1,27 @@
+.zi-dot-wrapper
+  display inline-flex
+  align-items center
+
+  .zi-dot
+    width rem(10)
+    height rem(10)
+    border-radius 50%
+
+    &.primary
+      background-color var(--accents-2)
+
+    &.success
+      background-color var(--geist-success)
+
+    &.danger
+      background-color var(--geist-error)
+
+    &.warning
+      background-color var(--geist-warning)
+
+  .zi-dot-label
+    margin-left rem(8)
+    line-height 16px
+    font-size 16px
+    text-transform capitalize
+

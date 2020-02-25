@@ -33,6 +33,7 @@ import Tooltip from './tooltip'
 import Description from './description'
 import Keyboard from './keyboard'
 import Textarea from './textarea'
+import Dot from './dot'
 
 const install = vue => {
   Card.install(vue)
@@ -68,6 +69,7 @@ const install = vue => {
   Description.install(vue)
   Keyboard.install(vue)
   Textarea.install(vue)
+  Dot.install(vue)
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
