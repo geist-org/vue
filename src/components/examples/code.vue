@@ -16,7 +16,6 @@
 import 'prismjs'
 import 'prismjs/components/prism-pug'
 import Dropdown from '@zeit-ui/vue-icons/packages/down'
-import Apple from '@zeit-ui/vue-icons/packages/apple'
 import Prism from 'vue-prism-component'
 import { getRealShape } from '../../../packages/utils/bounding'
 
@@ -24,7 +23,7 @@ export default {
   name: 'ex-code',
 
   components: {
-    Prism, Dropdown, Apple,
+    Prism, Dropdown,
   },
 
   data: () => ({

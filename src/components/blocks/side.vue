@@ -1,10 +1,10 @@
 <template lang="pug">
 .ex-side(:class="{ 'active': isActiveMenu }")
   .bar
-    Setting.bar-toggle(@click="toggleMenu" :dark="isDark")
+    sliders.bar-toggle(@click="toggleMenu")
     span.bar-title @zeit-ui/vue
   .bar-bg(:class="{ 'active': isActiveMenu }" @click="closeMenu")
-  a(@click="toggleTheme(isDark)" id="toggle-theme").zi-title {{ isDark? 'DARK_OFF' : 'DARK_ON' }}
+  ex-widgets
   template(v-for='group in sides')
     p.zi-title {{ group.name }}
     ul(v-if='group.children && group.children.length' @click="childEvent")
@@ -13,15 +13,14 @@
 </template>
 
 <script>
-import Setting from '@zeit-ui/vue-icons/packages/setting'
-import ZeitUI from '../../../packages'
+import sliders from '@zeit-ui/vue-icons/packages/sliders'
 import docs from '#/docs/index'
 
 const SIDE_WEIGHT = {
-  start: 1,
+  'start': 1,
   'getting-started': 2,
-  customization: 3,
-  components: 5,
+  'customization': 3,
+  'components': 5,
 }
 
 const DOC_WEIGHT = {
@@ -35,18 +34,15 @@ const DOC_WEIGHT = {
 }
 
 export default {
-  components: { Setting },
+  components: { sliders },
 
   data: () => ({
     sides: [],
     isActiveMenu: false,
-    isDark: false,
   }),
 
   mounted() {
     this.sides = this.parseDocs(docs)
-    const isDark = `${localStorage.getItem('theme')}`.includes('dark')
-    this.toggleTheme(!isDark)
   },
 
   methods: {
@@ -71,17 +67,6 @@ export default {
 
     toggleMenu() {
       this.isActiveMenu = !this.isActiveMenu
-    },
-
-    toggleTheme(isDark) {
-      const next = isDark ? 'light-theme' : 'dark-theme'
-      if (isDark) {
-        ZeitUI.theme.enableLight()
-      } else {
-        ZeitUI.theme.enableDark()
-      }
-      localStorage.setItem('theme', next)
-      this.isDark = !isDark
     },
 
     closeMenu() {

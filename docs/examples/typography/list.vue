@@ -16,8 +16,8 @@ export default {
   name: 'ex-typography-list',
 
   data: () => ({
-    text: 'Our mission is to make cloud computing accessible to everyone. ' +
-      'We build products for developers and designers. And those who aspire to become one.',
+    text: 'Our mission is to make cloud computing accessible to everyone. '
+      + 'We build products for developers and designers. And those who aspire to become one.',
   }),
 }
 </script>

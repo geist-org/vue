@@ -5,7 +5,7 @@ export default {
   name: 'ex-doc',
 
   props: {
-    docName: { type: String, default: 'about' },
+    docName: { type: String, default: 'introduction' },
   },
 
   computed: {
