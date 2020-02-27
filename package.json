@@ -34,7 +34,7 @@
     ]
   },
   "dependencies": {
-    "@zeit-ui/themes": "^0.1.0",
+    "@zeit-ui/themes": "^1.0.0",
     "@zeit-ui/typography": "^1.0.1",
     "popper.js": "^1.15.0"
   },
@@ -55,7 +55,7 @@
     "vue": "^2.6.6",
     "vue-auto": "^0.2.5",
     "vue-cli-plugin-pug": "^1.0.7",
-    "vue-clipboard2": "^0.3.0",
+    "vue-clipboard2": "^0.3.1",
     "vue-markdown-loader": "^2.4.1",
     "vue-prism-component": "^1.1.1",
     "vue-router": "^3.0.1",

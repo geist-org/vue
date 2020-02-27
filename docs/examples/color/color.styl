@@ -1,0 +1,41 @@
+.colors
+  display flex
+  flex-direction column
+
+.color
+  display flex
+  justify-content space-between
+  align-items center
+  padding rem(21)
+  height rem(100)
+  position relative
+
+  h4
+    margin 0
+    cursor pointer
+    user-select none
+
+  &:first-child
+    border-top-left-radius var(--geist-radius)
+    border-top-right-radius var(--geist-radius)
+
+  &:last-child
+    border-bottom-left-radius var(--geist-radius)
+    border-bottom-right-radius var(--geist-radius)
+
+.value
+  font-size rem(14)
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
+  cursor pointer
+  user-select none
+  padding 1rem 0
+
+.cssValue
+  font-size rem(14)
+  text-transform uppercase
+  cursor pointer
+  user-select none
+  padding 1rem 0

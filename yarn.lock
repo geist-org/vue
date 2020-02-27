@@ -1157,10 +1157,10 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
-"@zeit-ui/themes@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@zeit-ui/themes/-/themes-0.1.0.tgz#7cc0fe6bd34139092c08f7c6d76efc1a4d65f7bc"
-  integrity sha512-ZAqssnKcEzqCbxx5KvXgCv+PVPxh7XzIH+lNqaNVOTpTVj/vhhwKPTJBEelqeI0owWvwyAlXXVPC4/53BT25UA==
+"@zeit-ui/themes@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@zeit-ui/themes/-/themes-1.0.0.tgz#02827668223790ac5c2dde71228125db70a45e72"
+  integrity sha512-AYiPyum2z+Wcv9Ybi6/r4r1vhlJiOoCZ9ukn7eCVt5lwyTRmJa20YWAcpnbE6zfx5snXv0Av9jLxEqMvX6FYQA==
 
 "@zeit-ui/typography@^1.0.1":
   version "1.0.1"
@@ -9371,7 +9371,7 @@ vue-cli-plugin-pug@^1.0.7:
     pug-plain-loader "^1.0.0"
     raw-loader "^0.5.1"
 
-vue-clipboard2@^0.3.0:
+vue-clipboard2@^0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/vue-clipboard2/-/vue-clipboard2-0.3.1.tgz#6e551fb7bd384889b28b0da3b12289ed6bca4894"
   integrity sha512-H5S/agEDj0kXjUb5GP2c0hCzIXWRBygaWLN3NEFsaI9I3uWin778SFEMt8QRXiPG+7anyjqWiw2lqcxWUSfkYg==

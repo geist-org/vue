@@ -2,9 +2,9 @@
 .ex-code
   h3.zi-subheading.code-name {{ codeName }}
   p.desc(v-if="$slots.default") #[slot]
-  zi-card.ex-code-box
+  zi-card.ex-code-box(:class="{ 'box-hidden-code': hiddenCode }")
     ex-code-render(:name="name" ref="codeRender")
-  details.details(ref="details")
+  details.details(ref="details" v-if="!hiddenCode")
     summary
       span.preview #[Dropdown.down] Code Preview
       ex-copy-icon.copy(@click.stop.prevent="copy")
@@ -16,6 +16,7 @@
 import 'prismjs'
 import 'prismjs/components/prism-pug'
 import Dropdown from '@zeit-ui/vue-icons/packages/down'
+import Apple from '@zeit-ui/vue-icons/packages/apple'
 import Prism from 'vue-prism-component'
 import { getRealShape } from '../../../packages/utils/bounding'
 
@@ -23,7 +24,7 @@ export default {
   name: 'ex-code',
 
   components: {
-    Prism, Dropdown,
+    Prism, Dropdown, Apple,
   },
 
   data: () => ({
@@ -33,6 +34,7 @@ export default {
 
   props: {
     name: { type: String },
+    hiddenCode: Boolean,
     desc: String,
   },
 
@@ -99,6 +101,10 @@ export default {
   padding-bottom var(--geist-page-margin)
   border-bottom-left-radius 0
   border-bottom-right-radius 0
+
+.box-hidden-code
+  border-bottom-left-radius var(--geist-radius)
+  border-bottom-right-radius var(--geist-radius)
 
 .details
   border-bottom-left-radius var(--geist-radius)
