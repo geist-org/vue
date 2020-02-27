@@ -7,7 +7,7 @@ const pickGroupName = name => {
   return result[1]
 }
 
-const makeModules = (context) => {
+const makeModules = context => {
   return context
     .keys()
     .map(path => {

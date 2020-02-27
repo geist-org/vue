@@ -1,3 +1,4 @@
+/* eslint-disable quote-props */
 const cnSide = {
   'getting-started': '快速开始',
   customization: '定制与主题',
@@ -9,5 +10,5 @@ const cnSide = {
   typography: '文字排版',
   icons: '图标',
 }
-
+/* eslint-enable quote-props */
 export default cnSide
