@@ -31,12 +31,12 @@ Of course, you can also override these variables in your own projects.
 <br>
 <br>
 
-### Typographic
+### Typography
 
-Similar to themes and icons, typographic is provide by a separate repository: [@zeit-ui/typographic](https://github.com/zeit-ui/typographic).
+Similar to themes and icons, typography is provide by a separate repository: [@zeit-ui/typography](https://github.com/zeit-ui/typography).
 
 <zi-note>
-<code>@zeit-ui/vue</code> contains <code>@zeit-ui/typographic</code> by default.
+<code>@zeit-ui/vue</code> contains <code>@zeit-ui/typography</code> by default.
 </zi-note>
 
 <br/>

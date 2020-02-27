@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@zeit-ui/themes": "^0.1.0",
-    "@zeit-ui/typographic": "^1.0.0",
+    "@zeit-ui/typography": "^1.0.1",
     "popper.js": "^1.15.0"
   },
   "devDependencies": {
