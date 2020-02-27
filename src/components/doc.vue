@@ -4,13 +4,26 @@ import docs from '#/docs/index'
 export default {
   name: 'ex-doc',
 
+  data: () => ({
+    language: 'en-us',
+  }),
+
   props: {
     docName: { type: String, default: 'introduction' },
   },
 
+  created() {
+    const languages = Object.keys(docs)
+    const param = `${this.$route.params.language}`.toLowerCase()
+    if (languages.includes(param)) {
+      this.language = param
+    }
+  },
+
   computed: {
     docComponent() {
-      return this.findDocModule(docs, this.docName) || 'div'
+      const currentDocs = docs[this.language]
+      return this.findDocModule(currentDocs, this.docName) || 'div'
     },
   },
 

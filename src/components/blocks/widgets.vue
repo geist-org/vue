@@ -5,6 +5,8 @@
     moon(v-if="!isDark")
   zi-button.tool(@click="toGithub" auto type="abort")
     github
+  zi-button.tool(@click="switchLanguage" auto type="abort" :loading="isLoading")
+    span.language {{ isEnglish ? 'ZH' : 'EN' }}
 </template>
 
 <script>
@@ -20,9 +22,13 @@ export default {
 
   data: () => ({
     isDark: false,
+    language: 'en-us',
+    isEnglish: true,
+    isLoading: false,
   }),
 
   mounted() {
+    this.isEnglish = `${this.$route.params.language}`.toLowerCase().includes('en')
     const isDark = `${localStorage.getItem('theme')}`.includes('dark')
     if (this.isDark !== isDark) {
       this.switchTheme()
@@ -41,6 +47,21 @@ export default {
       this.isDark = !this.isDark
     },
 
+    switchLanguage() {
+      this.isLoading = true
+      const next = this.isEnglish ? 'zh-cn' : 'en-us'
+      const path = `/${next}/${this.$route.params.name}`
+      this.isEnglish = !this.isEnglish
+      this.$router
+        .push(path)
+        .finally(() => {
+          setTimeout(() => {
+            this.isLoading = false
+            location.reload()
+          }, 400)
+        })
+    },
+
     toGithub() {
       window.open('https://github.com/zeit-ui/vue')
     },
@@ -50,6 +71,10 @@ export default {
 
 <style lang="stylus" scoped>
 .widgets
+  height rem(40)
+  display flex
+  align-items center
+
   &:before
     content ''
     display inline-block
@@ -64,8 +89,18 @@ export default {
   display inline-flex
   justify-content center
   align-items center
+  text-align center
 
   svg
     width rem(15)
     height rem(15)
+
+.language
+  font-size .8rem
+  color var(--geist-foreground)
+  display block
+  width 100%
+  height 100%
+  margin-top 1px
+  background-color var(--geist-background)
 </style>
