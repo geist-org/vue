@@ -1,35 +1,6 @@
 {
-  "name": "zeit-vue",
   "version": 2,
-  "alias": "zeit-vue",
   "github": {
     "silent": true
-  },
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "^/js/(.*)",
-      "dest": "/js/$1"
-    },
-    {
-      "src": "^/css/(.*)",
-      "dest": "/css/$1"
-    },
-    {
-      "src": "^/favicon.ico",
-      "dest": "/favicon.ico"
-    },
-    {
-      "src": ".*",
-      "dest": "/index.html"
-    }
-  ]
+  }
 }

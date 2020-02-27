@@ -21,3 +21,5 @@ package-lock.json
 *.njsproj
 *.sln
 *.sw*
+
+.now
