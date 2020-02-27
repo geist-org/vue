@@ -8,9 +8,9 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: withRouters([{
-    path: '/', redirect: '/docs',
+    path: '/', redirect: '/:language',
   }, {
-    path: '/docs', component: 'document-slot',
+    path: '/:language', component: 'document-slot',
     children: [{
       path: ':name', component: 'document-main',
     }, {

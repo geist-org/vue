@@ -6,14 +6,15 @@
   .bar-bg(:class="{ 'active': isActiveMenu }" @click="closeMenu")
   ex-widgets
   template(v-for='group in sides')
-    p.zi-title {{ group.name }}
+    p.zi-title {{ translate(group.name) }}
     ul(v-if='group.children && group.children.length' @click="childEvent")
       li(v-for='item in group.children' v-if='item.docName')
-        | #[router-link.component(:to='`/docs/${item.docName}`') {{ item.docName }}]
+        | #[router-link.component(:to='`/${language}/${item.docName}`') {{ translate(item.docName) }}]
 </template>
 
 <script>
 import sliders from '@zeit-ui/vue-icons/packages/sliders'
+import cnSide from './side.zh-cn'
 import docs from '#/docs/index'
 
 const SIDE_WEIGHT = {
@@ -42,7 +43,16 @@ export default {
   }),
 
   mounted() {
-    this.sides = this.parseDocs(docs)
+    const currentDocs = docs[this.language]
+    this.sides = this.parseDocs(currentDocs)
+  },
+
+  computed: {
+    language() {
+      return `${this.$route.params.language}`
+        .toLowerCase()
+        .includes('en') ? 'en-us' : 'zh-cn'
+    },
   },
 
   methods: {
@@ -85,6 +95,11 @@ export default {
       if (!matchResult || !matchResult.matches) return
 
       this.closeMenu()
+    },
+
+    translate(name) {
+      if (this.language !== 'zh-cn') return name
+      return cnSide[name] || name
     },
   },
 }

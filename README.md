@@ -20,7 +20,9 @@ import '@zeit-ui/vue/dist/zeit-ui.css'
 <br/>
 
 ## Documentation
-[more](https://vue.zeit-ui.co/)
+
+- [Document](https://vue.zeit-ui.co/)
+- [中文文档](https://vue.zeit-ui.co/zh-cn)
 
 <br/>
 

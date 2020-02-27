@@ -27,7 +27,7 @@ You can set a maximum for <code>Badge</code>.
 | **count** | badge count | `string | number` | - | - |
 | **status** | badge status | `string` | `success` / `error` / `warning` | - |
 | **max-count** | the max number can be displayed | `string | number` | - | - |
-| **show-zero** | display zero badge | `string` | - | - |
-| **dot** | display badge as a dot | `boolean` | `true` / `false` | `false` |
+| **show-zero** | display zero badge | `boolean` | - | `false` |
+| **dot** | display badge as a dot | `boolean` | - | `false` |
 
 </ex-footer>
