@@ -2,7 +2,7 @@
 <img align="center" src="https://user-images.githubusercontent.com/11304944/58761972-c9d30700-857c-11e9-9ac7-8b1d02809fc8.png">
 </p>
 
-> @zeit-ui/vue -- Vue implementation for [Zeit Style](https://github.com/zeit-ui/zeit-style), originating from [Zeit Design](https://zeit.co/design).
+> @zeit-ui/vue -- Vue implementation for [ZEIT Style](https://github.com/zeit-ui/zeit-style), originating from [ZEIT Design](https://zeit.co/design).
 
 <br/>
 
@@ -20,11 +20,12 @@ import '@zeit-ui/vue/dist/zeit-ui.css'
 <br/>
 
 ## Documentation
-[more](https://zeit-vue.now.sh/)
+[more](https://vue.zeit-ui.co/)
 
 <br/>
 
 ## Development
+
 1. fork and clone.
 2. start: `npm i && npm start`
 
@@ -32,7 +33,7 @@ import '@zeit-ui/vue/dist/zeit-ui.css'
 
 ## Showcases
 
-- Vue icons for Zeit Design: [zeit-vue-icons](https://zeit-vue-icons.now.sh/)
+- Vue icons for ZEIT Design: [zeit-vue-icons](https://zeit-vue-icons.now.sh/)
 - CDN link extraction tool: [jsdelivr](https://jsdelivr.now.sh/)
 
 <br/>
