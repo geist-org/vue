@@ -9,7 +9,7 @@
 <style scoped lang="stylus">
 .ex-layout
   display flex
-  max-width 1000px
+  max-width 1100px
   margin 0 auto
 
   +layout(xs)
