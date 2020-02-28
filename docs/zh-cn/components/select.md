@@ -23,7 +23,7 @@
 
 | 属性 | 描述 | 类型 | 推荐值 | 默认
 | ---------- | ---------- | ---- |  -------------- | ------ |
-| **v-model** | 绑定知 | `string | boolean | number` | - | - |
+| **v-model** | 绑定值 | `string | boolean | number` | - | - |
 | **size** | 框体大小 | `string` | `mini` / `small` / `medium` | - |
 | **autocomplete** | 原生属性 | `boolean` | - | `false` |
 | **autofocus** | 原生属性 | `boolean` | - | `false` |
@@ -37,7 +37,7 @@
 
 | 属性 | 描述 | 类型 | 推荐值 | 默认
 | ---------- | ---------- | ---- |  -------------- | ------ |
-| **v-model** | 绑定知 | `string | number` | - | - |
+| **v-model** | 绑定值 | `string | number` | - | - |
 | **label** | 文本 | `string` | - | - |
 | **disabled** | 是否禁用此选项 | `boolean` | - | `false` |
 
