@@ -1,7 +1,7 @@
 <template lang="pug">
 zi-row
   zi-col.container
-  zi-spacer(:x="3")
+  zi-spacer(x="3")
   zi-col.container
 </template>
 
