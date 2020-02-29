@@ -8,7 +8,7 @@
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
-| **x** | 宽度 | `number` | - | - |
-| **y** | 高度 | `number` | - | - |
+| **x** | 宽度 | `number` / `string` | - | `1` |
+| **y** | 高度 | `number` / `string` | - | `1` |
 
 </ex-footer>

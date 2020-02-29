@@ -4,10 +4,10 @@ div
     zi-spacer
   zi-spacer
   zi-row.container
-    zi-spacer(:y="2")
+    zi-spacer(y="2")
   zi-spacer
   zi-row.container
-    zi-spacer(:y="3")
+    zi-spacer(y="3")
 </template>
 
 <script>
