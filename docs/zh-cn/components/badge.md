@@ -4,7 +4,7 @@
 
 <ex-code name="ex-badge-default">
 
-你可以为 <code>Badge</code> 组件添加不通的样式。
+你可以为 <code>Badge</code> 组件添加不同的样式。
 
 </ex-code>
 
