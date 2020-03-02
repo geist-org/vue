@@ -15,6 +15,6 @@ Display text that requires attention or provides additional information.
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **type** | note type | `string` | `success` / `error` / `warning` / `secondary` / `primary` | `primary` |
 | **label** | note label | `string` | - | - |
-| **fill** | background is fill with type's color | `boolean` | - | `false` |
+| **filled** | background is fill with type's color | `boolean` | - | `false` |
 
 </ex-footer>

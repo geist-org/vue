@@ -1,16 +1,16 @@
 <template lang="pug">
 div
-  zi-note(type="success" fill) This is a filled note.
+  zi-note(type="success" filled) This is a filled note.
   br
-  zi-note(type="error" fill) This is a filled note.
+  zi-note(type="error" filled) This is a filled note.
   br
-  zi-note(type="secondary" fill) This is a filled note.
+  zi-note(type="secondary" filled) This is a filled note.
   br
-  zi-note(type="warning" fill) This is a filled note.
+  zi-note(type="warning" filled) This is a filled note.
   br
-  zi-note(fill) This is a filled note.
+  zi-note(filled) This is a filled note.
   br
-  zi-note(label="" fill) This is a filled note without label.
+  zi-note(label="" filled) This is a filled note without label.
 </template>
 
 <script>
