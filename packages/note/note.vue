@@ -1,5 +1,5 @@
 <template lang="pug">
-.zi-note(:class="`${inUseType || ''} ${fill ? 'fill' : ''}`")
+.zi-note(:class="`${inUseType || ''} ${isFilled ? 'filled' : ''}`")
    span.zi-note-type(v-if="label !== ''")
      b {{ `${label || inUseType || 'note'}:&nbsp` }}
    slot
@@ -17,6 +17,7 @@ export default {
       validator: validator.enums(['primary', 'success', 'error', 'warning', 'secondary']),
     },
     fill: Boolean,
+    filled: Boolean,
     label: String,
     success: Boolean,
     warning: Boolean,
@@ -36,6 +37,14 @@ export default {
 
     inUseType() {
       return this.classes || this.type
+    },
+
+    isFilled() {
+      if (this.fill) {
+        console.warn('[zi-note] > **DEPRECATION**: The props "fill" is deprecated.');
+        console.warn('[zi-note] > **DEPRECATION**: Please use "filled" instead of "fill".');
+      }
+      return this.fill || this.filled
     },
   },
 }
