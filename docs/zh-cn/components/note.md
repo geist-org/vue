@@ -15,6 +15,6 @@
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **type** | 组件类型 | `string` | `success` / `error` / `warning` / `secondary` / `primary` | `primary` |
 | **label** | 显示文本 | `string` | - | - |
-| **fill** | 背景填充的颜色 | `boolean` | - | `false` |
+| **filled** | 背景与颜色相反填充 | `boolean` | - | `false` |
 
 </ex-footer>
