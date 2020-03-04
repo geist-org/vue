@@ -42,7 +42,7 @@ export default {
   computed: {
     model: {
       get() {
-        return this.privateModel
+        return this.value === undefined ? this.privateModel : this.value
       },
 
       set(val) {
