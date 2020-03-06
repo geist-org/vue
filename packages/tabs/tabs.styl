@@ -1,0 +1,41 @@
+.zi-tabs-container
+  border-bottom 1px solid var(--accents-2)
+  display flex
+
+.zi-item-wrapper
+  padding 0 var(--geist-gap-half)
+  cursor pointer
+
+  &:first-child
+    padding-left 0
+
+.zi-tabs-item
+  display flex
+  align-items center
+  padding rem(6) rem(2)
+  border-bottom 2px solid transparent
+  font-size 16px
+  line-height 18px
+  color var(--accents-5)
+  margin-bottom -1px
+
+  .icon
+    width rem(14)
+    height rem(14)
+    margin-right rem(3)
+
+  &.active
+    color var(--geist-foreground)
+    border-bottom-color var(--geist-foreground)
+
+.zi-tabs-content
+  padding-top rem(10)
+
+.disabled
+  cursor default
+
+
+
+
+
+
