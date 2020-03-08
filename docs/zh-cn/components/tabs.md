@@ -4,7 +4,11 @@
 
 <ex-code name="ex-tabs-disabled"></ex-code>
 
-<ex-code name="ex-tabs-icon"></ex-code>
+<ex-code name="ex-tabs-icon">
+
+为选项卡的子项设置一个图标
+
+</ex-code>
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/tabs.md">
 
@@ -13,6 +17,7 @@
 | 属性 | 描述 | 类型 | 推荐值 | 默认
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **label-selected**(event) | 开关点击事件 | `event` | - | - |
+| **disabled** | 禁用选项卡 | `Boolean` | - | `false` |
 
 <br/>
 
@@ -23,5 +28,6 @@
 | **label**(必须属性) | 文本 | `string` | - | - |
 | **value**(必须属性) | 值，唯一性 | `string` | - | - |
 | **active** | 当前激活状态 | `boolean` | - | `false` |
+| **icon** | 设置图标 | `obeject` | - | - |
 
 </ex-footer>

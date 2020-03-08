@@ -1,6 +1,6 @@
 <template lang="pug">
 zi-tabs(@label-selected="selectHandler")
-  zi-tabs-item(v-for="item in items" :label="item.label" :value="item.value")
+  zi-tabs-item(v-for="(item, index) in items" :label="item.label" :value="item.value" :key="item.value + index")
     zi-note {{ `${item.label} content` }}
 </template>
 
@@ -12,7 +12,7 @@ export default {
     items: [
       { label: 'Setting', value: 'setting' },
       { label: 'Lambda', value: 'lambda' },
-      { label: 'Git', value: 'git' },
+      { label: 'Server', value: 'server' },
     ],
   }),
 

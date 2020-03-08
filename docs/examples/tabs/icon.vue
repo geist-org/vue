@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   zi-tabs
-    zi-tabs-item(v-for="item in items" :label="item.label" :value="item.value" :icon="item.icon")
+    zi-tabs-item(v-for="(item, index) in items" :label="item.label" :value="item.value" :key="item.value + index" :icon="item.icon")
       zi-note {{ `${item.label} content` }}
 </template>
 
