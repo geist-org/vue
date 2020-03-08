@@ -1,4 +1,4 @@
-## Switcher / 选项卡开关
+## Switcher / 切换按钮
 
 <ex-code name="ex-switcher-basic"></ex-code>
 

@@ -7,7 +7,6 @@ div
 <script>
 export default {
   name: 'ex-switcher-multiple',
-
   data: () => ({
     labels: ['Gitlab', 'Github', 'Coding', 'Gitea'],
   }),
