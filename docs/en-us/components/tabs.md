@@ -1,12 +1,22 @@
 ## Tabs
 
-<ex-code name="ex-tabs-basic"></ex-code>
+Display tab content.
 
-<ex-code name="ex-tabs-disabled"></ex-code>
+<ex-code name="ex-tabs-basic">
+
+Toggle display of different templates.
+
+</ex-code>
+
+<ex-code name="ex-tabs-disabled">
+
+Disable all items.
+
+</ex-code>
 
 <ex-code name="ex-tabs-icon">
 
-set tabs item with icon
+Set label with icon.
 
 </ex-code>
 
