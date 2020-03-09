@@ -1,8 +1,18 @@
 ## Tabs / 选项卡
 
-<ex-code name="ex-tabs-basic"></ex-code>
+显示选项卡的内容。
 
-<ex-code name="ex-tabs-disabled"></ex-code>
+<ex-code name="ex-tabs-basic">
+
+切换以显示不同的模板。
+
+</ex-code>
+
+<ex-code name="ex-tabs-disabled">
+
+禁用所有的选项。
+
+</ex-code>
 
 <ex-code name="ex-tabs-icon">
 
