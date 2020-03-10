@@ -52,7 +52,7 @@ export default {
       this.ghost && (str += ' ghost')
       this.type && (str += ` ${this.type}`)
       this.size && (str += ` ${this.size}`)
-      return str
+      return str.trim()
     },
 
     hasSuffix() {
