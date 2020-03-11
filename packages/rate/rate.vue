@@ -12,6 +12,7 @@ div.zi-rate(:class="{ disabled }")
 </template>
 
 <script>
+
 import RateIcon from './rate-icon'
 
 export default {
@@ -64,7 +65,7 @@ export default {
       if (index <= this.hoverIndex) {
         str += ' hover'
       }
-      return str
+      return str.trim()
     },
   },
 }
