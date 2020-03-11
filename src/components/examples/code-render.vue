@@ -18,6 +18,5 @@ export default {
 
 <style lang="stylus">
 pre
-  max-width 90vw
   overflow-y auto
 </style>

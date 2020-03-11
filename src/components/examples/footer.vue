@@ -25,13 +25,21 @@ export default {
 </style>
 
 <style lang="stylus">
++layout(xs)
+  .ex-attributes .zi-card
+    overflow scroll
+    
+    table
+      display block
+      overflow-x scroll
+      
 .ex-footer-link
   margin-top rem(10)
   float right
   color var(--accents-7)
   font-size .8rem
   text-transform uppercase
-
+  
   .zi-link
     margin-bottom -3px
 </style>
