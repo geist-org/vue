@@ -45,5 +45,7 @@
   display flex
   flex 1
   flex-direction column
-  min-width 100%
+
+  +layout(xs)
+    width 100%
 </style>
