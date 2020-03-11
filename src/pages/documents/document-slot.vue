@@ -45,5 +45,5 @@
   display flex
   flex 1
   flex-direction column
-  overflow hidden
+  min-width 100%
 </style>
