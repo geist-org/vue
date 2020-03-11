@@ -16,7 +16,7 @@ div(:class="[groupClass, { prefix: hasPrefix, suffix: hasSuffix, clearable }]")
   span.zi-label.suffix(v-if="suffixLabel" :class="size && size") {{ suffixLabel }}
   span.zi-label.suffix(v-if="hasSuffixIcon" :class="size && size")
     slot(name="suffixIcon")
-  DeleteIcon.close(v-if="clearable && showCloseIcon" @click="clear")
+  DeleteIcon.close(v-if="clearable && showCloseIcon" @mousedown="clear")
 </template>
 
 <script>
@@ -101,10 +101,7 @@ export default {
     },
 
     hiddenCloseIcon() {
-      const timer = setTimeout(() => {
-        this.showCloseIcon = false
-        clearTimeout(timer)
-      }, 50)
+      this.showCloseIcon = false
     },
   },
 }
