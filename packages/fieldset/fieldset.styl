@@ -9,14 +9,17 @@
   font-size rem(13)
   padding rem(20)
 
-  h1
+  h1, h2, h3, h4, h5, h6
     font-size rem(20)
-  h2, h3, h4, h5, h6, p, span
-    font-size rem(13)
-  p, div, h1, h2, h3, h4, h5, h6
-    margin-top 0
-    line-height rem(20)
-    margin-bottom rem(14)
+    line-height 1.5
+    margin 0
+    display inline-flex
+    word-break break-word
+
+  p
+    font-size rem(14)
+    line-height 1.6
+    margin var(--geist-gap-half) 0
 
 .zi-fieldset-footer
   background-color var(--accents-1)
@@ -26,7 +29,7 @@
   justify-content space-between
   align-items center
   font-size rem(12)
-  padding rem(15)
+  padding var(--geist-gap-half) var(--geist-gap)
   box-sizing border-box
 
   p, span, div
