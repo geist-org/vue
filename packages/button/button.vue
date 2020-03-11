@@ -54,10 +54,6 @@ export default {
       this.size && (str += ` ${this.size}`)
       return str.trim()
     },
-
-    hasSuffix() {
-      return this.icon && this.icon.includes('suffix')
-    },
   },
 
   components: { ZiButtonDrip },
