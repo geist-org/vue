@@ -5,65 +5,63 @@
   max-width rem(420)
   z-index 2000
   transition transform .4s, opacity .4s ease
+  
+  +layout(xs)
+    left 5vw
+    right 5vw
+    width 90vw
+    .zi-toast-container
+      width 100%
+  
+  &:hover .zi-toast-container
+    translate3d(0, 0, 0) scale(1)
+
+    &:nth-last-child(2)
+      transform translate3d(0, -80px, 0) scale(1)
+
+    &:nth-last-child(3)
+      transform translate3d(0, -160px, 0) scale(1)
+
+    &:nth-last-child(4)
+      transform translate3d(0, -240px, 0) scale(1)
 
 .zi-toast-container
-  transform translate3d(0, -0, -0) scale(1)
+  opacity 0
+  transform translate3d(0, 100%, 0) scale(1)
   transition all .4s ease
   position absolute
   bottom 0
   height rem(72)
   right 0
 
+  &.visible
+    opacity 1
+    transform none
+
   &:nth-last-child(1)
-    animation zi-toast-show-1 .4s ease forwards
     z-index 2002
 
   &:nth-last-child(2)
-    animation zi-toast-show-2 .4s ease forwards
+    transform translate3d(0, -14px, 0) scale(0.95)
     z-index 2001
 
   &:nth-last-child(3)
-    animation zi-toast-show-3 .4s ease forwards
+    transform translate3d(0, -28px, 0) scale(0.9)
     z-index 2000
 
   &:nth-last-child(4)
-    animation zi-toast-show-4 .4s ease forwards
+    transform translate3d(0, -36px, 0) scale(0.85)
     z-index 2000
 
   &:nth-last-child(n+5)
     visibility hidden
-
-@keyframes zi-toast-show-1
-  from
-    transform translate3d(0, 72px, 0)
-  to
-    transform translate3d(0, 0, 0)
-
-@keyframes zi-toast-show-2
-  from
-    transform translate3d(0, 0, 0) scale(1)
-  to
-    transform translate3d(0, -14px, 0) scale(0.95)
-
-@keyframes zi-toast-show-3
-  from
-    transform translate3d(0, -14px, 0) scale(0.95)
-  to
-    transform translate3d(0, -28px, 0) scale(0.9)
-
-@keyframes zi-toast-show-4
-  from
-    transform translate3d(0, -28px, 0) scale(0.9)
-    opacity 1
-  to
-    transform translate3d(0, -32px, 0) scale(0.85)
-    opacity 0
 
 .zi-toast
   padding 0 rem(20)
   border-radius 5px
   border 0
   width rem(420)
+  max-width 100%
   height rem(60)
   color var(--geist-foreground)
   background-color var(--geist-background)
@@ -72,6 +70,7 @@
   align-items center
   box-shadow 0 4px 9px rgba(0, 0, 0, 0.12)
   font-size rem(14)
+  box-sizing border-box
 
   &.error, &.danger
     background-color var(--geist-error)

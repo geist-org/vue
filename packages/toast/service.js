@@ -15,6 +15,11 @@ const initArea = () => {
 const insertToArea = (area, el, id) => {
   el.setAttribute('id', `zi-toast-${id}`)
   area.appendChild(el)
+
+  const timer = setTimeout(() => {
+    el.classList.add('visible')
+    clearTimeout(timer)
+  }, 0)
 }
 
 const destroyToast = (id, all) => {
