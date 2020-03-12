@@ -6,6 +6,13 @@
   z-index 2000
   transition transform .4s, opacity .4s ease
   
+  +layout(xs)
+    left 5vw
+    right 5vw
+    width 90vw
+    .zi-toast-container
+      width 100%
+  
   &:hover .zi-toast-container
     translate3d(0, 0, 0) scale(1)
 
@@ -54,6 +61,7 @@
   border-radius 5px
   border 0
   width rem(420)
+  max-width 100%
   height rem(60)
   color var(--geist-foreground)
   background-color var(--geist-background)
@@ -62,6 +70,7 @@
   align-items center
   box-shadow 0 4px 9px rgba(0, 0, 0, 0.12)
   font-size rem(14)
+  box-sizing border-box
 
   &.error, &.danger
     background-color var(--geist-error)
