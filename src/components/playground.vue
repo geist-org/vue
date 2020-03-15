@@ -5,8 +5,9 @@ div
     summary
       span.preview #[Dropdown.down] Code Editor
       ex-copy-icon.copy(@click.stop.prevent="copy")
-    div(ref="prism")
+    div
       ex-editor(:code="code" @change="change")
+      .error(v-if="error") Open console see the error
 </template>
 
 <script>
@@ -52,6 +53,7 @@ export default {
 
   data: () => ({
     vm: null,
+    error: null,
   }),
 
   props: {
@@ -99,29 +101,33 @@ export default {
     },
 
     render(code) {
-      const { template, script, styles } = parse(code)
-      let options = {}
-      if (script) {
-        options = script.replace(/export\s+default\s+/g, '')
-        // eslint-disable-next-line no-new-func
-        options = new Function('fn', `return (${options})`)()
-      }
-      options.template = template
+      try {
+        const { template, script, styles } = parse(code)
+        let options = {}
+        if (script) {
+          options = script.replace(/export\s+default\s+/g, '')
+          // eslint-disable-next-line no-new-func
+          options = new Function('fn', `return (${options})`)()
+        }
+        options.template = template
 
-      if (this.vm) {
-        this.vm.$destroy()
-        const scoped = `scoped-${this.vm._uid}`
-        this.removeStyles(scoped)
-        this.$refs.preview.$el.classList.remove(scoped)
-        this.$refs.preview.$el.removeChild(this.vm.$el)
+        if (this.vm) {
+          this.vm.$destroy()
+          const scoped = `scoped-${this.vm._uid}`
+          this.removeStyles(scoped)
+          this.$refs.preview.$el.classList.remove(scoped)
+          this.$refs.preview.$el.removeChild(this.vm.$el)
+        }
+        this.vm = new Vue(options)
+        const div = document.createElement('div')
+        this.$refs.preview.$el.append(div)
+        this.addStyles(this.$refs.preview.$el, styles)
+        this.$refs.preview.$el.classList.add(`scoped-${this.vm._uid}`)
+        this.vm.$mount(div)
+      } catch (error) {
+        console.log(error)
+        this.error = error
       }
-
-      this.vm = new Vue(options)
-      const div = document.createElement('div')
-      this.$refs.preview.$el.append(div)
-      this.addStyles(this.$refs.preview.$el, styles)
-      this.$refs.preview.$el.classList.add(`scoped-${this.vm._uid}`)
-      this.vm.$mount(div)
     },
 
     addStyles(parent, styles) {
@@ -205,4 +211,9 @@ export default {
 
 .preview
   font-size rem(13)
+
+.error
+  padding var(--geist-gap)
+  background var(--geist-foreground)
+  color var(--geist-error-dark)
 </style>
