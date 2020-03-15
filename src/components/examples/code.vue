@@ -10,8 +10,6 @@
       ex-copy-icon.copy(@click.stop.prevent="copy")
     div(ref="prism")
       prism(language="pug" class="ex-source-code" :code="codeTemplate")
-
-  ex-editor(:code="codeTemplate" @change="change")
 </template>
 
 <script>
@@ -71,10 +69,6 @@ export default {
         }
       } catch (error) {
       }
-    },
-
-    change() {
-
     },
   },
 }

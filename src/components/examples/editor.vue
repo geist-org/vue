@@ -14,7 +14,7 @@ export default {
 
   render(h) {
     return h('div', null, [
-      h('textarea', { ref: 'textarea' }, this.code),
+      h('textarea', { ref: 'textarea', autofocus: true }, this.code),
     ])
   },
 
@@ -40,4 +40,9 @@ export default {
 
 <style lang="stylus">
 @import '~codemirror/lib/codemirror.css'
+
+.CodeMirror
+  padding 0 var(--geist-gap)
+  border-radius var(--geist-radius)
+  border 1px solid var(--accents-2)
 </style>
