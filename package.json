@@ -44,6 +44,7 @@
     "@vue/cli-service": "^3.9.2",
     "@zeit-ui/vue-icons": "^3.0.0",
     "babel-eslint": "^10.0.1",
+    "codemirror": "^5.52.0",
     "eslint-config-lambdas": "^0.2.3",
     "execa": "^1.0.0",
     "fs-extra": "^8.0.1",
