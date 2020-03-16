@@ -30,7 +30,11 @@
 
 </ex-code>
 
-<!--<ex-code name="ex-button-icon"></ex-code>-->
+<ex-code name="ex-button-icon">
+
+按钮大小为'mini'或者'loading'状态的时候图标不显示。
+
+</ex-code>
 
 <ex-code name="ex-button-size">
 
@@ -51,5 +55,6 @@
 | **auto** | 自适应宽度 | `boolean` | - | `false` |
 | **ghost** | 背景与边框反色 | `boolean` | - | `false` |
 | **effect** | 点击动画 | `boolean` | - | `true` |
+| **icon** | 设置图标 | `object` | - | - |
 
 </ex-footer>

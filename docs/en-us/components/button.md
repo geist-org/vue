@@ -30,7 +30,11 @@ Contrary background and border.
 
 </ex-code>
 
-<!--<ex-code name="ex-button-icon"></ex-code>-->
+<ex-code name="ex-button-icon">
+
+If size equals 'mini' or loading status, the icon won't display.
+
+</ex-code>
 
 <ex-code name="ex-button-size">
 
@@ -51,5 +55,6 @@ Buttons have different sizes, but you can also specify styles.
 | **auto** | button width auto | `boolean` | - | `false` |
 | **ghost** | transparent background | `boolean` | - | `false` |
 | **effect** | click animation | `boolean` | - | `true` |
+| **icon** | set icon | `object` | - | - |
 
 </ex-footer>
