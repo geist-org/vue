@@ -16,3 +16,15 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus">
+body::-webkit-scrollbar {
+  width 5px
+  background-color var(--accents-1)
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color var(--accents-2)
+  border-radius 5px
+}
+</style>
