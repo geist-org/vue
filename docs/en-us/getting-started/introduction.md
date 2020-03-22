@@ -12,7 +12,8 @@ Now you can use them through the `@zeit-ui/vue`.
 
 
 ### Contact
-- [Report a issue](https://github.com/zeit-ui/vue/issues/new)
+
+- [Report an issue](https://github.com/zeit-ui/vue/issues/new)
 - Welcome share your feedback and ideas. We also love PRs.
 
 <br>
