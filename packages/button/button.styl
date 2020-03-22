@@ -2,10 +2,10 @@
   -webkit-box-align center
   -webkit-align-items center
   display inline-block
-  padding: 0 rem(22)
+  padding 0 rem(22)
   border-radius 5px
   font-weight 400
-  font-size rem(12)
+  font-size rem(14)
   cursor pointer
   user-select none
   outline none
@@ -34,27 +34,51 @@
   &.mini
     height rem(22)
     line-height rem(22)
-    padding: 0 rem(30)
+    padding 0 rem(30)
     width initial
     min-width rem(100)
+    font-size rem(12)
 
   &.small
     height rem(30)
     line-height rem(30)
-    padding: 0 rem(20)
+    padding 0 rem(20)
     width initial
     min-width rem(150)
+
+    .zi-btn-icon
+      svg
+        width rem(14)
+        height rem(14)
+
+      &.default
+        left rem(20)
+
+      &.right
+        right rem(20)
 
   &.big, &.huge
     height rem(42)
     line-height rem(42)
-    padding: 0 rem(30)
+    padding 0 rem(30)
     width initial
     min-width rem(250)
+    font-size rem(16)
+
+    .zi-btn-icon
+      svg
+        width rem(20)
+        height rem(20)
+
+      &.default
+        left rem(30)
+
+      &.right
+        right rem(30)
 
   &.primary
     background-color var(--geist-foreground)
-    border: 1px solid var(--geist-foreground)
+    border 1px solid var(--geist-foreground)
     color var(--geist-background)
 
     &:not(.loading):not(.shadow):hover
@@ -89,7 +113,7 @@
 
     &:not(.loading):not(.shadow):hover
       color var(--geist-success)
-      background: var(--geist-background)
+      background var(--geist-background)
       border-color var(--geist-success)
 
   &.abort
@@ -120,6 +144,10 @@
       border-color var(--accents-2) !important
       color #ccc !important
       cursor not-allowed !important
+
+    .zi-btn-icon
+      svg
+        opacity 0.5
 
   &.loading
     cursor default
@@ -206,7 +234,7 @@
 .zi-btn.ghost
   &.primary
     background-color var(--geist-background)
-    border: 1px solid var(--geist-foreground)
+    border 1px solid var(--geist-foreground)
     color var(--geist-foreground)
 
     &:not(.loading):not(.shadow):hover
@@ -241,12 +269,12 @@
 
     &:not(.loading):not(.shadow):hover
       color white
-      background: var(--geist-success)
+      background var(--geist-success)
       border-color var(--geist-background)
 
 .zi-dark-theme
   .zi-btn:not(.warning):not(.danger):not(.error):not(.success):not(.abort):not(.ghost)
-    background: black
+    background black
     border 1px solid #eaeaea
     color #666
 
@@ -257,7 +285,7 @@
 
     &.primary
       background-color white
-      border: 1px solid white
+      border 1px solid white
       color black
 
       &:not(.loading):not(.shadow):hover
@@ -299,3 +327,22 @@
       background-color black
       .zi-loading-shim
         background-color black
+
+.zi-btn-icon
+  position absolute
+  display flex
+  align-items center
+  top 0
+  bottom 0
+
+  svg
+    height rem(17)
+    width rem(17)
+
+  &.default
+    left rem(22)
+
+  &.right
+    right rem(22)
+
+

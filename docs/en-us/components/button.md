@@ -30,7 +30,17 @@ Contrary background and border.
 
 </ex-code>
 
-<!--<ex-code name="ex-button-icon"></ex-code>-->
+<ex-code name="ex-button-icon">
+
+In some special cases, the icon will be hidden.
+
+</ex-code>
+
+<ex-code name="ex-button-custom-icon">
+
+set any icon which you want.
+
+</ex-code>
 
 <ex-code name="ex-button-size">
 
@@ -51,5 +61,7 @@ Buttons have different sizes, but you can also specify styles.
 | **auto** | button width auto | `boolean` | - | `false` |
 | **ghost** | transparent background | `boolean` | - | `false` |
 | **effect** | click animation | `boolean` | - | `true` |
+| **icon** | set icon(left) | `component` | - | - |
+| **iconRight** | set icon(right) | `component` | - | - |
 
 </ex-footer>

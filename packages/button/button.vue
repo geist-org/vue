@@ -5,7 +5,11 @@ button.zi-btn(@click="clickHandler" :class="classes")
     i
     i
   zi-button-drip(ref="drip")
+  span.zi-btn-icon.default(v-if="showIcon")
+    component(:is="icon")
   slot
+  span.zi-btn-icon.right(v-if="showIconRight")
+    component(:is="iconRight")
 </template>
 
 <script>
@@ -35,6 +39,8 @@ export default {
       type: Boolean,
       default: true,
     },
+    icon: Object,
+    iconRight: Object,
   },
 
   data: () => ({
@@ -53,6 +59,14 @@ export default {
       this.type && (str += ` ${this.type}`)
       this.size && (str += ` ${this.size}`)
       return str.trim()
+    },
+
+    showIcon() {
+      return this.icon && this.size !== 'mini' && !this.loading
+    },
+
+    showIconRight() {
+      return this.iconRight && this.size !== 'mini' && !this.loading
     },
   },
 

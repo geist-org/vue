@@ -30,7 +30,17 @@
 
 </ex-code>
 
-<!--<ex-code name="ex-button-icon"></ex-code>-->
+<ex-code name="ex-button-icon">
+
+在一些特殊状态下图标会隐藏。
+
+</ex-code>
+
+<ex-code name="ex-button-custom-icon">
+
+设置任意一个你想要的图标
+
+</ex-code>
 
 <ex-code name="ex-button-size">
 
@@ -51,5 +61,7 @@
 | **auto** | 自适应宽度 | `boolean` | - | `false` |
 | **ghost** | 背景与边框反色 | `boolean` | - | `false` |
 | **effect** | 点击动画 | `boolean` | - | `true` |
+| **icon** | 设置图标(左边) | `component` | - | - |
+| **iconRight** | 设置图标(右边) | `component` | - | - |
 
 </ex-footer>
