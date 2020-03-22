@@ -2,7 +2,6 @@
 .zi-more(@click="toggleHandler")
   zi-button.zi-more-slot(
     circular size="small"
-    :icon="`suffix zi-icon-${toggle ? 'down' : 'up'}`"
     :loading="loading"
   ) {{ statusText }}
 </template>
