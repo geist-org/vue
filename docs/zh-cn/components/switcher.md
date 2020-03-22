@@ -1,5 +1,7 @@
 ## Switcher / 切换按钮
 
+<zi-note type="error" label="DEPRECATION">此组件将在下个版本被弃用，请使用 <zi-code>zi-tabs</zi-code> 代替。</zi-tag>
+
 <ex-code name="ex-switcher-basic"></ex-code>
 
 <ex-code name="ex-switcher-multiple"></ex-code>

@@ -16,10 +16,17 @@
 
 </ex-code>
 
+<ex-code name="ex-card-shadow">
+
+带有 `shadow` 效果的卡片。
+
+</ex-code>
+
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/card.md">
 
 | 属性 | 描述 | 类型 | 推荐值 | 默认
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **hoverable** | 打开 hover 效果 | `boolean` | - | `false` |
+| **shadow** | 打开 shadow 效果 | `boolean` | - | `false` |
 
 </ex-footer>

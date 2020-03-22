@@ -3,10 +3,20 @@
   margin 0
   width 100%
   transition all .2s ease
-  padding: var(--geist-gap-half) var(--geist-page-margin)
+  padding: var(--geist-gap)
   border-radius var(--geist-radius)
   border 1px solid var(--accents-2)
   box-sizing border-box
 
   &.hoverable:hover
     box-shadow var(--shadow-small)
+
+  &.shadow
+    box-shadow var(--shadow-small)
+    border-color transparent
+
+  &.shadow:hover
+    box-shadow var(--shadow-medium)
+
+  p, h1, h2, h3, h4, h5, h6, small
+    margin 0
