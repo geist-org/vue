@@ -1,5 +1,7 @@
 ## Switcher
 
+<zi-note type="error" label="DEPRECATION">Will be deprecated in the next version, please use <zi-code>zi-tabs</zi-code> instead of it.</zi-tag>
+
 <ex-code name="ex-switcher-basic"></ex-code>
 
 <ex-code name="ex-switcher-multiple"></ex-code>
@@ -10,7 +12,7 @@
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
-| **label-selected**[event] | label selected event | `event` | - | - |
+| **label-selected**(event) | label selected event | `event` | - | - |
 
 <br/>
 

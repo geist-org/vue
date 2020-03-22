@@ -18,6 +18,10 @@ export default {
     subscribers: [],
   }),
 
+  created() {
+    console.warn('[zeit-ui]: **DEPRECATION**: <zi-switcher> will be discarded. Please use <zi-tabs> instead of it')
+  },
+
   methods: {
     appendLabel(label) {
       if (this.labels.find(item => item === label)) {
