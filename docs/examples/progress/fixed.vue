@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  zi-progress(:percentage="percentage" fix="top" color="#409eff")
+  zi-progress(:value="percentage" fix="top" :colors="[{ value: 0, color: '#409eff' }]")
   zi-button(@click="percentage += 5" size="small") loading progress
 </template>
 

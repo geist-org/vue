@@ -1,8 +1,7 @@
 <template lang="pug">
 .zi-progress-bar(:class="fix")
   .zi-progress
-    .zi-progress__inner(:style="styles")
-  span.zi-progress__text(v-show="showText") {{ percentage <= 100 ? percentage : 100 }}
+    .zi-progress__inner(:style="styles" :class="type")
 </template>
 
 <script>
@@ -12,7 +11,7 @@ export default {
   name: 'zi-progress',
 
   props: {
-    percentage: {
+    value: {
       type: [Number, String],
       default: 0,
     },
@@ -22,11 +21,17 @@ export default {
       validator: validator.enums(['top', 'bottom']),
     },
 
-    color: [Array, String],
+    colors: Array,
 
-    showText: {
-      type: Boolean,
-      default: true,
+    max: {
+      type: [Number, String],
+      default: 100,
+    },
+
+    type: {
+      type: String,
+      default: 'default',
+      validator: validator.enums(['default', 'success', 'danger', 'warning', 'secondary']),
     },
   },
 
@@ -35,26 +40,42 @@ export default {
   }),
 
   computed: {
+    privateMax() {
+      if (Number.isNaN(Number(this.max))) throw new Error('error about max')
+      return Number(this.max)
+    },
+
+    privateValue() {
+      if (Number.isNaN(Number(this.value))) throw new Error('error about value')
+      let value = Number(this.value)
+      if (value < 0) value = 0
+      if (value > this.privateMax) value = this.privateMax
+      return value
+    },
+
     privatePercentage() {
-      if (Number.isNaN(Number(this.percentage))) throw new Error('error about percentage')
-      return Number(this.percentage)
+      return Math.round(this.privateValue / this.privateMax * 100)
     },
 
     styles() {
-      const baseStyle = { width: `${this.privatePercentage <= 100 ? this.privatePercentage : 100}%` }
-      if (!this.color) return baseStyle
+      const baseStyle = { width: `${this.privatePercentage}%` }
+      if (!this.colors || !this.colors.length) return baseStyle
       return Object.assign({}, baseStyle, {
-        backgroundColor: this.safeHex(Array.isArray(this.color) ? this.background : this.color),
+        backgroundColor: this.safeHex(this.background),
       })
     },
 
     background() {
-      const current = this.sortable.find(item => this.privatePercentage >= Number(item.num))
+      const current = this.sortable.find(item => {
+        let value = Number(item.value)
+        if (value > this.privateMax) value = this.privateMax
+        return this.privatePercentage >= Math.round(value / this.privateMax * 100)
+      })
       return current && (this.currentColor = current.color)
     },
 
     sortable() {
-      return this.color.sort((a, b) => Number(b.num) - Number(a.num))
+      return this.colors.sort((a, b) => Number(b.value) - Number(a.value))
     },
   },
 
