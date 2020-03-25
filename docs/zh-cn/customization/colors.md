@@ -4,7 +4,7 @@
 
 <ex-code name="ex-color-primary" hidden-code />
 
-你可以在任意处使用这些 CSS 变量. (这些 CSS 变量的值会随着主题变化而改变)
+你可以在任意处使用这些 CSS 变量。 (这些 CSS 变量的值会随着主题变化而改变)
 
 </ex-code>
 
@@ -12,7 +12,7 @@
 
 ### 状态
 
-使用精心设计的色彩提现组件的状态变化。(这些 CSS 变量的值不会变化)
+使用精心设计的色彩体现组件的状态变化。(这些 CSS 变量的值不会变化)
 
 <div style="margin-bottom: -30px;"></div>
 
