@@ -4,7 +4,7 @@
 
 <ex-code name="ex-color-primary" hidden-code />
 
-你可以在任意处使用这些 CSS 变量. (这些 CSS 变量的值会随着主题变化而改变)
+你可以在任意处使用这些 CSS 变量。 (这些 CSS 变量的值会随着主题变化而改变)
 
 </ex-code>
 
