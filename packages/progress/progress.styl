@@ -1,8 +1,9 @@
 .zi-progress-bar
+  width 100%
   display inline-flex
   justify-content space-between
   align-items center
-  height rem(6)
+  height rem(10)
   user-select none
 
   &.top, &.bottom
@@ -12,10 +13,6 @@
     left 0
     z-index 9999
     overflow hidden
-
-    .zi-progress__text
-      display none
-      pointer-events none
 
     .zi-progress
       width 100%
@@ -27,7 +24,7 @@
     bottom 0
 
 .zi-progress
-  width rem(300)
+  width 100%
   height 100%
   background-color var(--accents-2)
   border-radius rem(4)
@@ -35,15 +32,20 @@
 .zi-progress__inner
   width 0
   height 100%
-  background-color var(--geist-foreground)
   border-radius var(--geist-radius)
   transition: width 0.6s ease, background-color 1s ease
 
-.zi-progress__text
-  border-radius rem(16)
-  background var(--geist-foreground)
-  padding rem(1) rem(5)
-  color var(--geist-background)
-  font-size rem(12)
-  font-weight bolder
-  margin-left rem(10)
+  &.default
+    background-color var(--geist-foreground)
+
+  &.success
+    background-color var(--geist-success)
+
+  &.warning
+    background-color var(--geist-warning)
+
+  &.danger
+    background-color var(--geist-error)
+
+  &.secondary
+    background-color var(--geist-secondary)

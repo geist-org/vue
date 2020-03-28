@@ -8,11 +8,15 @@ Display a bar and a number box by default.
 
 </ex-code>
 
-<ex-code name="ex-progress-color">
+<ex-code name="ex-progress-max"></ex-code>
+
+<ex-code name="ex-progress-colors">
 
 You can set different stages to display different colors.
 
 </ex-code>
+
+<ex-code name="ex-progress-type"></ex-code>
 
 <ex-code name="ex-progress-fixed">
 
@@ -24,9 +28,9 @@ This fixed progress bar is displayed at the top of the page.
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
-| **percentage** | current percentage | `number` | `0 - 100` | `0` |
+| **value** | current percentage | `number` | - | `0` |
 | **fix** | display in fixed mode | `string` | `top` / `bottom` | - |
-| **color** | background color | `string` | hex color | - |
-| **show-text** | show number label | `boolean` | `true` / `false` | - |
-
+| **colors** | background color | `array` | hex color | - |
+| **max** | progress max number | `number` / `string` | - | `100` |
+| **type** | progress type | `string` | `default` / `success` / `danger` / `warning` / `secondary` | `default` |
 </ex-footer>
