@@ -1,11 +1,12 @@
 <template lang="pug">
-.zi-collapse
+.zi-collapse(:class="{ shadow }")
   .zi-collapse-title(@click="clickHandler")
     h3 {{ title }}
     downIcon.icon(:class="{ reverse: model }")
   zi-transition-expand
-    .zi-collapse-content(v-if="model" style="padding: 0")
-      slot
+    .zi-collapse-content(v-if="model")
+      .content
+        slot
 </template>
 
 <script>
@@ -37,6 +38,7 @@ export default {
         return this.title
       },
     },
+    shadow: Boolean,
   },
 
   mounted() {

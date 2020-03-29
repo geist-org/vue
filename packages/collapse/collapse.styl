@@ -1,12 +1,17 @@
 .zi-collapse
   text-align left
   border-bottom 1px solid var(--accents-2)
+  padding var(--geist-gap) 0
 
   &:first-child
     border-top 1px solid var(--accents-2)
 
+  &.shadow
+    box-shadow var(--shadow-small)
+    border-color transparent
+    padding var(--geist-gap)
+
 .zi-collapse-title
-  min-height rem(75)
   width 100%
   display flex
   justify-content space-between
@@ -16,6 +21,7 @@
   text-transform none
   margin 0
   cursor pointer
+  line-height 1.5
 
   >.icon
     width rem(16)
@@ -28,5 +34,13 @@
 
 .zi-collapse-content
   width 100%
-  padding-bottom rem(20)
   transition height 0.2s ease
+
+  .content
+    padding var(--geist-gap) 0
+
+    > *:first-child
+      margin-top 0
+
+    > *:last-child
+      margin-bottom 0
