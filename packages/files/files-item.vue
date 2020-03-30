@@ -147,7 +147,7 @@ export default {
   text-decoration none
   line-height 28px
   height 28px
-  color var(--geist-foreground)
+  color var(--accents-8)
   white-space nowrap
   user-select none
   display flex
@@ -157,5 +157,5 @@ export default {
     transition font-weight .15s ease-out
 
   &:hover span
-    font-weight 600
+    opacity .7
 </style>
