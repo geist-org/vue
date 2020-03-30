@@ -14,7 +14,7 @@ You need to install <zi-code>@zeit-ui/icons</zi-code> if you want to use any ico
   1. Install package: <zi-code>yarn add @zeit-ui/vue-icons</zi-code>
 
   2. Import to Vue:
-  ```vue
+  ```js
   import { install } from '@zeit-ui/vue-icons'
   import Vue from 'vue'
   
@@ -24,7 +24,7 @@ You need to install <zi-code>@zeit-ui/icons</zi-code> if you want to use any ico
   3. Try use icon component:
   ```html
   <template>
-    <zicon-apple/>
+    <apple-icon/>
   </template>
   ```
 

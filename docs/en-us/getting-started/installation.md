@@ -5,8 +5,8 @@
 <br/>
 
 <zi-note>
-Ensure your have the latest version of <zi-link href="https://nodejs.org/en/download/">NodeJS</zi-link>,
-and also need a package manager of NodeJS: <zi-link href="https://www.npmjs.com/">NPM</zi-link> or <zi-link href="https://yarnpkg.com/">Yarn</zi-link>.
+Ensure your have the latest version of <zi-link pure href="https://nodejs.org/en/download/">NodeJS</zi-link>,
+and a package manager: <zi-link pure href="https://www.npmjs.com/">NPM</zi-link> or <zi-link pure href="https://yarnpkg.com/">Yarn</zi-link>.
 </zi-note>
 
 <br/>
@@ -37,12 +37,13 @@ Get the latest version from unpkg.com:
 
 You can also refer to [Example with UMD](https://github.com/zeit-ui/vue/blob/master/examples/umd/index.html)
 
+
 <br>
 <br>
 
 ### Import a component
 
-`@zeit-ui/vue` supports import components when you actually need. e.g.:
+`@zeit-ui/vue` supports import components when you actually need:
 
 ```js
 import Vue from 'vue'

@@ -5,8 +5,8 @@
 <br/>
 
 <zi-note>
-请确定你的 <zi-link href="https://nodejs.org/en/download/">NodeJS</zi-link> 处于最新版本，
-同时你还需要准备 NodeJS 的包管理器: <zi-link href="https://www.npmjs.com/">NPM</zi-link> 或是 <zi-link href="https://yarnpkg.com/">Yarn</zi-link>.
+请确定你的 <zi-link pure href="https://nodejs.org/en/download/">NodeJS</zi-link> 处于最新版本，
+同时你还需要准备包管理器: <zi-link pure href="https://www.npmjs.com/">NPM</zi-link> 或是 <zi-link pure href="https://yarnpkg.com/">Yarn</zi-link>.
 </zi-note>
 
 <br/>

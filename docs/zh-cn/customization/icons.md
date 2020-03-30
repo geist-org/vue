@@ -24,7 +24,7 @@
   3. 随后尝试直接使用组件：
   ```html
   <template>
-    <zicon-apple/>
+    <apple-icon/>
   </template>
   ```
 
