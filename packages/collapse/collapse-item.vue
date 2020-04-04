@@ -1,8 +1,10 @@
 <template lang="pug">
 .zi-collapse(:class="{ shadow }")
-  .zi-collapse-title(@click="clickHandler")
-    h3 {{ title }}
-    downIcon.icon(:class="{ reverse: model }")
+  div
+    .zi-collapse-title(@click="clickHandler")
+      h3 {{ title }}
+      downIcon.icon(:class="{ reverse: model }")
+    .zi-collapse-subtitle(v-html="subtitle")
   zi-transition-expand
     .zi-collapse-content(v-if="model")
       .content
@@ -39,6 +41,7 @@ export default {
       },
     },
     shadow: Boolean,
+    subtitle: String,
   },
 
   mounted() {

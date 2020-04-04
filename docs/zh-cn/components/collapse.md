@@ -6,6 +6,8 @@
 
 <ex-code name="ex-collapse-multiple"></ex-code>
 
+<ex-code name="ex-collapse-subtitle"></ex-code>
+
 <ex-code name="ex-collapse-shadow"></ex-code>
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/collapse.md">
@@ -17,5 +19,6 @@
 | **title** | 用于显示的标题 | `string` | - | - |
 | **name** | 触发事件用于标识的字符 | `string | number` | - | - |
 | **shadow** | 阴影效果 | `boolean` | - | - |
+| **subtitle** | 标题详情 | `string` | - | - |
 
 </ex-footer>
