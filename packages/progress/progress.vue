@@ -41,15 +41,15 @@ export default {
 
   computed: {
     privateMax() {
-      if (Number.isNaN(Number(this.max))) throw new Error('error about max')
-      return Number(this.max)
+      if (Number.isNaN(+this.max)) throw new Error('[Progress Error]max must be Number type')
+      return +this.max
     },
 
     privateValue() {
-      if (Number.isNaN(Number(this.value))) throw new Error('error about value')
-      let value = Number(this.value)
-      if (value < 0) value = 0
-      if (value > this.privateMax) value = this.privateMax
+      if (Number.isNaN(+this.value)) throw new Error('[Progress Error]value must be Number type')
+      const value = +this.value
+      if (value < 0) return 0
+      if (value > this.privateMax) return this.privateMax
       return value
     },
 
@@ -67,7 +67,7 @@ export default {
 
     background() {
       const current = this.sortable.find(item => {
-        let value = Number(item.value)
+        let value = +item.value
         if (value > this.privateMax) value = this.privateMax
         return this.privatePercentage >= Math.round(value / this.privateMax * 100)
       })
@@ -75,7 +75,7 @@ export default {
     },
 
     sortable() {
-      return this.colors.sort((a, b) => Number(b.value) - Number(a.value))
+      return this.colors.sort((a, b) => +b.value - +a.value)
     },
   },
 
