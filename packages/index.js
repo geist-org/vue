@@ -36,6 +36,7 @@ import Textarea from './textarea'
 import Dot from './dot'
 import Spacer from './spacer'
 import Tabs from './tabs'
+import Display from './display'
 
 const install = vue => {
   Card.install(vue)
@@ -74,6 +75,7 @@ const install = vue => {
   Dot.install(vue)
   Spacer.install(vue)
   Tabs.install(vue)
+  Display.install(vue)
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
