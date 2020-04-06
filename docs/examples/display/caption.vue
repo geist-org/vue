@@ -2,11 +2,11 @@
 zi-display(shadow)
   img(width="650"
     height="305"
-    src="https://zeit.co/docs/static/docs/custom-domains/redirecting-domains.png")
+    src="/examples/redirecting-domains.png")
   template(v-slot:caption)
-    p A domain redirect that redirects requests made to
+    p A domain redirect that redirects requests made to &nbsp
       zi-code www.zeit.rocks
-      |to
+      |&nbsp to &nbsp
       zi-code zeit.rocks
 </template>
 

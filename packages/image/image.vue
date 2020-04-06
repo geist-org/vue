@@ -15,6 +15,10 @@ export default {
     caption: String,
     shadow: Boolean,
   },
+
+  mounted() {
+    if (this.caption) console.warn('[caption]: [caption] will be removed in the next version.')
+  },
 }
 </script>
 

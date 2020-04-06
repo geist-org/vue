@@ -1,17 +1,17 @@
 ## Display
-Display
+Display information and add caption.
 
 <ex-code name="ex-display-basic"></ex-code>
 
 <ex-code name="ex-display-width">
 
-set a suitable width for display's content
+set a suitable width for display's content.
 
 </ex-code>
 
 <ex-code name="ex-display-caption">
 
-use slot to set a custom caption
+use slot to set a custom caption.
 
 </ex-code>
 
@@ -20,7 +20,7 @@ use slot to set a custom caption
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **width** | content width src | `string` | - | `auto` |
-| **caption** | caption for display | `string | template` | - | - |
+| **caption** | caption for display | `string` | `template` | - | - |
 | **shadow** | content with shadow | `boolean` | - | `false` |
 
 </ex-footer>

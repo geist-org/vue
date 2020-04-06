@@ -2,7 +2,7 @@
 .zi-display
   .zi-display-content(:class="{ shadow }" :style="{ width }")
     slot
-  .zi-display-caption(v-if="caption || $slots.caption")
+  .zi-display-caption(v-if="caption || $slots.caption" :class="{ marginLarge: shadow }")
     slot(name="caption") {{ caption }}
 </template>
 
@@ -19,5 +19,4 @@ export default {
 </script>
 
 <style lang="stylus" src="./display.styl">
-
 </style>
