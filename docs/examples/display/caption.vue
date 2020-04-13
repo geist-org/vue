@@ -8,6 +8,7 @@ zi-display(shadow)
       zi-code www.zeit.rocks
       |&nbsp to &nbsp
       zi-code zeit.rocks
+      |.
 </template>
 
 <script>
