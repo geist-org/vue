@@ -16,7 +16,7 @@ export default {
   name: 'ex-collapse-subtitle',
 
   data: () => ({
-    value: '',
+    value: [],
   }),
 }
 </script>

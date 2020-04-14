@@ -1,0 +1,35 @@
+.zi-display
+  display block
+  margin rem(40) 0
+  max-width 100%
+
+.zi-display-caption
+  color var(--accents-5)
+  margin rem(21) auto 0
+  text-align center
+  font-size rem(14)
+  width 85%
+  line-height rem(21)
+
+.zi-display-content
+  display block
+  width fit-content
+  border-radius var(--geist-radius)
+  max-width 100%
+  margin 0 auto
+  overflow hidden
+
+  &.shadow
+    box-shadow var(--shadow-large)
+
+  > *:last-child
+    margin-top 0
+
+  > *:first-child
+    margin-bottom 0
+
+  img
+    display block
+
+.marginLarge
+  margin-top rem(40)

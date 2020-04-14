@@ -7,12 +7,6 @@ A display image container, you can set the size of the picture.
 
 </ex-code>
 
-<ex-code name="ex-image-caption">
-
-A picture and description.
-
-</ex-code>
-
 <ex-code name="ex-image-shadow">
 
 A picture with shadow.
@@ -26,7 +20,6 @@ A picture with shadow.
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **src** | image url | `string` | - | - |
 | **width** | image width attr | `string` | - | `auto` |
-| **caption** | caption for image | `string` | - | - |
 | **shadow** | shadow style | `boolean` | - | `false` |
 
 </ex-footer>
