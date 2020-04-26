@@ -2,7 +2,9 @@
 <img align="center" src="https://user-images.githubusercontent.com/11304944/58761972-c9d30700-857c-11e9-9ac7-8b1d02809fc8.png">
 </p>
 
-> @zeit-ui/vue -- Vue implementation for [ZEIT Style](https://github.com/zeit-ui/zeit-style), originating from [ZEIT Design](https://zeit.co/design).
+> @zeit-ui/vue -- Vue implementation for Vercel style, originating from Vercel's design.
+
+**Looking for components for react? Try [ZEIT UI React](https://github.com/zeit-ui/react).**
 
 <br/>
 
@@ -33,13 +35,5 @@ import '@zeit-ui/vue/dist/zeit-ui.css'
 
 <br/>
 
-## Showcases
-
-- Vue icons for ZEIT Design: [zeit-vue-icons](https://vue-icons.zeit-ui.co/)
-- CDN link extraction tool: [jsdelivr](https://jsdelivr.now.sh/)
-
-<br/>
-
 ## LICENSE
 [MIT](LICENSE)
-
