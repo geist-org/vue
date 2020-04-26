@@ -1,0 +1,17 @@
+body {
+  background: #eee;
+  text-align: center;
+  padding-top: 30px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Roboto';
+}
+
+.content {
+  margin: 100px auto;
+  max-width: 80vw;
+  width: 600px;
+}
