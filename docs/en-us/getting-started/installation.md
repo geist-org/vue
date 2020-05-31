@@ -2,14 +2,8 @@
 
 ### Install library
 
-<br/>
-
-<zi-note>
 Ensure your have the latest version of <zi-link pure href="https://nodejs.org/en/download/">NodeJS</zi-link>,
 and a package manager: <zi-link pure href="https://www.npmjs.com/">NPM</zi-link> or <zi-link pure href="https://yarnpkg.com/">Yarn</zi-link>.
-</zi-note>
-
-<br/>
 
 1. Run script to download:
 
