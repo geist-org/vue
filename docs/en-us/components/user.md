@@ -1,4 +1,5 @@
 ## User
+
 Display user profile or social information.
 
 <ex-code name="ex-user-basic">
@@ -18,5 +19,6 @@ show user information.
 | **src** | avatar's src | `string` | - | - |
 | **name** | username | `string` | - | - |
 | **text** | text style of avatar | `string` | - | - |
+| **altText** | alt attribute of avatar's img | `string` | - | - |
 
 </ex-footer>
