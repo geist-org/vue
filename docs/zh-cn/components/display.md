@@ -1,4 +1,5 @@
 ## 陈列框
+
 展示信息并加上说明文字。
 
 <ex-code name="ex-display-basic"></ex-code>

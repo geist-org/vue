@@ -1,4 +1,5 @@
 ## Display
+
 Display information and add caption.
 
 <ex-code name="ex-display-basic"></ex-code>
