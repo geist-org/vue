@@ -1,7 +1,7 @@
 <template lang="pug">
 .zi-toast-container
   .zi-toast(:class="type && type")
-    span.message {{ text }}
+    span.message(:class="{ action: action }") {{ text }}
     zi-button(
       v-if="action"
       auto ghost
