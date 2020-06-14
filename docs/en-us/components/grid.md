@@ -26,7 +26,7 @@ Auto fill remaining width.
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/grid.md">
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/grid.md">
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |

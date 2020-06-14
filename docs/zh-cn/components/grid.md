@@ -26,7 +26,7 @@
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/grid.md">
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/grid.md">
 
 | 属性 | 描述 | 类型 | 推荐值 | 默认
 | ---------- | ---------- | ---- |  -------------- | ------ |
