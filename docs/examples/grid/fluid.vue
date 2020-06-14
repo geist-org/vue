@@ -27,7 +27,3 @@ export default {
   name: 'ex-grid-fluid',
 }
 </script>
-
-<style scoped>
-
-</style>

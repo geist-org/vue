@@ -4,25 +4,33 @@ Fluid style layout container.
 
 <ex-code name="ex-grid-basic">
 
-Dynamically scale container width while maintaining spacing.
+Set the spacing between components.
 
 </ex-code>
 
-<ex-code name="ex-grid-fluid"></ex-code>
+<ex-code name="ex-grid-fluid">
 
-<ex-code name="ex-grid-responsive"></ex-code>
+Containers for wrapping and scaling.
 
-<ex-code name="ex-grid-auto-width">
+</ex-code>
+
+<ex-code name="ex-grid-responsive">
+
+Use different layouts for different screen widths.
+
+</ex-code>
+
+<ex-code name="ex-grid-autoWidth">
 
 Auto fill remaining width.
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/grid.md">
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/grid.md">
 
 | Attribute | Description | Type | Accepted values | Default
 | ---------- | ---------- | ---- |  -------------- | ------ |
-| **container** | set flex container | `boolean` | - | - |
+| **container** | set flex container | `boolean` | - | `fasle` |
 | **spacing** | spacing of item | `number` | - | `0` |
 | **justify** | css "justify-content" property | `string` | `justify-content` | `flex-start` |
 | **alignItems** | css "align-items" property | `string` | `align-item` | `stretch` |

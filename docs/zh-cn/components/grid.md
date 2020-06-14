@@ -1,8 +1,12 @@
 ## 栅格
 
-流体风格的布局容器
+流体风格的布局容器。
 
-<ex-code name="ex-grid-basic"></ex-code>
+<ex-code name="ex-grid-basic">
+
+设定子组件之间的间距。
+
+</ex-code>
 
 <ex-code name="ex-grid-fluid">
 
@@ -16,7 +20,7 @@
 
 </ex-code>
 
-<ex-code name="ex-grid-auto-width">
+<ex-code name="ex-grid-autoWidth">
 
 自动分配剩余宽度。
 

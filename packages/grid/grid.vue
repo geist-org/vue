@@ -7,6 +7,7 @@ div(
 
 <script>
 import { print, validator } from '../utils'
+import flexProps from './flex-passthrough'
 
 export default {
   name: 'zi-grid',
@@ -19,31 +20,31 @@ export default {
     alignContent: {
       type: String,
       default: 'stretch',
-      validator: validator.enums(['flex-start', 'flex-end', 'stretch', 'space-between', 'space-around']),
+      validator: validator.enums(flexProps.alignContent),
     },
 
     alignItems: {
       type: String,
       default: 'stretch',
-      validator: validator.enums(['flex-start', 'flex-end', 'center', 'stretch', 'baseline']),
+      validator: validator.enums(flexProps.alignItems),
     },
 
     justify: {
       type: String,
       default: 'flex-start',
-      validator: validator.enums(['flex-start', 'flex-end', 'center', 'space-between', 'space-around', 'space-evenly']),
+      validator: validator.enums(flexProps.justifyContent),
     },
 
     direction: {
       type: String,
       default: 'row',
-      validator: validator.enums(['row', 'row-reverse', 'column', 'column-reverse']),
+      validator: validator.enums(flexProps.flexDirection),
     },
 
     wrap: {
       type: String,
       default: 'wrap',
-      validator: validator.enums(['nowrap', 'wrap', 'wrap-reverse']),
+      validator: validator.enums(flexProps.flexWrap),
     },
 
     lg: {
@@ -73,11 +74,7 @@ export default {
   },
 
   computed: {
-    breakpoints() {
-      return ['xs', 'sm', 'md', 'lg', 'xl'].filter(item => this.$props[item])
-    },
-
-    flexConf() {
+    CssFlexProps() {
       const { justify, alignItems, alignContent, direction, wrap } = this.$props
       return {
         'justify-content': justify,
@@ -88,30 +85,37 @@ export default {
       }
     },
 
-    spacingConf() {
-      if (this.container) return { 'width': `calc(100% + 8px * ${this.spacing})`, 'margin': `-${4 * this.spacing}px` }
+    containerWidth() {
+      const setWidth = () => ({
+        'max-width': `calc(100% + 8px * ${this.spacing})`,
+        'margin': `-${4 * this.spacing}px`,
+      })
+      if (this.container) return setWidth()
       if (this.spacing) print.error('[Grid Error] The prop [spacing] must be used on [container] mode')
       return {}
     },
 
     classes() {
-      if (!this.container) {
-        return ['grid',
-          this.xs && 'xs',
-          this.sm && 'sm',
-          this.md && 'md',
-          this.lg && 'lg',
-          this.xl && 'xl']
-      }
-      if (this.breakpoints.length) {
-        print.error(`[Grid Error] The prop [${this.breakpoints[0]}] must be used on [item] mode`)
-      }
-      return 'grid-container'
+      const breakpointsClasses = [
+        this.xs && 'xs',
+        this.sm && 'sm',
+        this.md && 'md',
+        this.lg && 'lg',
+        this.xl && 'xl',
+      ]
+      if (!this.container) return ['grid', ...breakpointsClasses]
+      return ['grid-container', ...breakpointsClasses]
     },
 
     styles() {
-      return [this.spacingConf,
-        this.container ? { '--zeit-grid-spacing': `${this.spacing * 4}px`, ...this.flexConf } : {}]
+      const makeContainerStyle = () => ({
+        '--zeit-grid-spacing': `${this.spacing * 4}px`,
+        ...this.CssFlexProps,
+      })
+      return [
+        this.containerWidth,
+        this.container ? makeContainerStyle() : {},
+      ]
         .concat(this.getItemLayout())
     },
   },
@@ -119,15 +123,19 @@ export default {
   methods: {
     getItemLayout() {
       return ['xs', 'sm', 'md', 'lg', 'xl'].map(item => {
-        const sizes = {}
-        if (typeof this.$props[item] === 'number') {
+        const isNumberSize = typeof this.$props[item] === 'number'
+        if (!this.$props[item]) return {}
+        if (isNumberSize) {
           const width = 100 / 24 * this.$props[item]
-          sizes[`--zeit-${item}-width`] = width > 100 ? '100%' : width < 0 ? '0' : `${width}%`
-          sizes[`--zeit-${item}-grow`] = 0
-          sizes[`--zeit-${item}-basis`] = width > 100 ? '100%' : width < 0 ? '0' : `${width}%`
+          return {
+            [`--zeit-${item}-width`]: width > 100 ? '100%' : width < 0 ? '0' : `${width}%`,
+            [`--zeit-${item}-grow`]: 0,
+            [`--zeit-${item}-basis`]: width > 100 ? '100%' : width < 0 ? '0' : `${width}%`,
+          }
         }
-        if (this.$props[item] && typeof this.$props[item] !== 'number') sizes[`--zeit-${item}-grow`] = 1
-        return sizes
+        return {
+          [`--zeit-${item}-grow`]: 1,
+        }
       })
     },
   },
