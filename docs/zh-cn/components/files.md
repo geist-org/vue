@@ -2,7 +2,7 @@
 
 使用树结构展示文件与文件夹列表。
 
-<ex-code name="ex-files-basic"/>
+<ex-code name="ex-files-basic">
 
 注意: 只接受固定的数据格式。
 

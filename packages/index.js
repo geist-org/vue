@@ -38,6 +38,7 @@ import Spacer from './spacer'
 import Tabs from './tabs'
 import Display from './display'
 import User from './user'
+import Grid from './grid'
 
 const install = vue => {
   Card.install(vue)
@@ -78,6 +79,7 @@ const install = vue => {
   Tabs.install(vue)
   Display.install(vue)
   User.install(vue)
+  Grid.install(vue)
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
