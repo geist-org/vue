@@ -1,9 +1,9 @@
 <template lang="pug">
-.ex-side(:class="{ 'active': isActiveMenu }")
+.ex-side(:class="{ 'active': isActiveMenu }" @touchstart="fixFireFoxEvent")
   .bar
     sliders.bar-toggle(@click="toggleMenu")
     span.bar-title @zeit-ui/vue
-  .bar-bg(:class="{ 'active': isActiveMenu }" @click="closeMenu")
+  .bar-bg(:class="{ 'active': isActiveMenu }")
   ex-widgets
   template(v-for='group in sides')
     p.zi-title {{ translate(group.name) }}
@@ -56,6 +56,9 @@ export default {
   },
 
   methods: {
+    fixFireFoxEvent() {
+    },
+
     parseDocs(docs) {
       const group = docs
         .map(docModule => docModule.default)
@@ -77,10 +80,16 @@ export default {
 
     toggleMenu() {
       this.isActiveMenu = !this.isActiveMenu
+      if (this.isActiveMenu) {
+        document.documentElement.setAttribute('style', 'overflow: hidden;')
+        return
+      }
+      this.closeMenu()
     },
 
     closeMenu() {
       this.isActiveMenu = false
+      document.documentElement.setAttribute('style', '')
     },
 
     childEvent(event) {
