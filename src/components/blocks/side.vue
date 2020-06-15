@@ -58,6 +58,7 @@ export default {
   methods: {
     fixFireFoxEvent() {
     },
+
     parseDocs(docs) {
       const group = docs
         .map(docModule => docModule.default)
