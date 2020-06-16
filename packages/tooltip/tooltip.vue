@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Popper from 'popper.js'
+import { createPopper } from '@popperjs/core'
 import { enums } from '../utils/validator'
 
 export default {
@@ -47,16 +47,22 @@ export default {
   },
 
   mounted() {
-    new Popper(this.$refs.host, this.$refs.inner, {
+    createPopper(this.$refs.host, this.$refs.inner, {
       placement: this.placement,
-      modifiers: {
-        arrow: {
-          element: this.$refs.arrow,
+      modifiers: [
+        {
+          name: 'arrow',
+          options: {
+            element: this.$refs.arrow,
+          },
         },
-        offset: {
-          offset: '0, 8',
+        {
+          name: 'offset',
+          options: {
+            offset: [0, 8],
+          },
         },
-      },
+      ],
     })
   },
 
