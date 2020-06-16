@@ -23,52 +23,31 @@
     visibility visible
     opacity 1
 
-.zi-tooltip-box[x-placement^=bottom] .zi-tooltip-arrow
-  border-width 0 6px 6px 6px
-  top -6px
-  margin-top 0
-  margin-bottom 0
-  border-left-color transparent
-  border-right-color transparent
-  border-top-color transparent
+.zi-tooltip-arrow,
+.zi-tooltip-arrow::before
+  position: absolute
+  width: 8px
+  height: 8px
+  z-index: -1
 
-.zi-tooltip-box[x-placement^=top] .zi-tooltip-arrow
-  border-width 6px 6px 0 6px
-  border-left-color transparent
-  border-right-color transparent
-  border-bottom-color transparent
-  bottom -6px
-  left calc(50% - 6px)
-  margin-top 0
-  margin-bottom 0
+.zi-tooltip-arrow::before
+  content: ''
+  transform: rotate(45deg)
+  background: var(--geist-foreground)
 
-.zi-tooltip-box[x-placement^=left] .zi-tooltip-arrow
-  border-width 6px 0 6px 6px
-  border-top-color transparent
-  border-right-color transparent
-  border-bottom-color transparent
-  right -6px
-  top calc(50% - 6px)
-  margin-left 0
-  margin-right 0
+.zi-tooltip-box[data-popper-placement^=bottom] .zi-tooltip-arrow
+  top -4px
+  margin-left -4px
 
-.zi-tooltip-box[x-placement^=right] .zi-tooltip-arrow
-  border-width 6px 6px 6px 0
-  border-left-color transparent
-  border-top-color transparent
-  border-bottom-color transparent
-  left -6px
-  top calc(50% - 6px)
-  margin-left 0
-  margin-right 0
+.zi-tooltip-box[data-popper-placement^=top] .zi-tooltip-arrow
+  bottom -4px
+  margin-left -4px
 
-.zi-tooltip-arrow
-  width 0
-  height 0
-  border-style solid
-  position absolute
-  margin 5px
-  border-color var(--geist-foreground)
+.zi-tooltip-box[data-popper-placement^=left] .zi-tooltip-arrow
+  right 0
+
+.zi-tooltip-box[data-popper-placement^=right] .zi-tooltip-arrow
+  left -8px
 
 .zi-tooltip-inner
   width: max-content
