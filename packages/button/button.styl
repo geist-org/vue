@@ -139,6 +139,7 @@
     border-color var(--accents-2) !important
     color #ccc !important
     cursor not-allowed !important
+    pointer-events none
 
     &:hover
       background var(--accents-1) !important
@@ -152,9 +153,9 @@
 
   &.loading
     cursor default
+    pointer-events none
 
     &:hover
-      pointer-events none
       color transparent
 
 .zi-loading-shim
@@ -316,6 +317,7 @@
       border-color #333 !important
       color #666 !important
       cursor not-allowed !important
+      pointer-events none
 
       &:hover
         background #111 !important
@@ -326,6 +328,8 @@
     &.loading
       border 1px solid #333 !important
       background-color black
+      pointer-events none
+
       .zi-loading-shim
         background-color black
 
@@ -345,5 +349,10 @@
 
   &.right
     right rem(22)
+
+.tab-selected
+  outline -webkit-focus-ring-color dashed 2px
+  outline-offset 2px
+
 
 
