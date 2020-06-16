@@ -1,6 +1,6 @@
 {
   "name": "@zeit-ui/vue",
-  "version": "2.5.0-canary.1",
+  "version": "2.5.0-canary.2",
   "description": "A popular UI framework for Vue",
   "scripts": {
     "start": "vue-cli-service serve",
