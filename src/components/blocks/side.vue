@@ -1,7 +1,8 @@
 <template lang="pug">
 .ex-side(:class="{ 'active': isActiveMenu }" @touchstart="fixFireFoxEvent")
   .bar
-    sliders.bar-toggle(@click="toggleMenu")
+    button.toggle-container(@click="toggleMenu")
+      sliders.bar-toggle
     span.bar-title @zeit-ui/vue
   .bar-bg(:class="{ 'active': isActiveMenu }")
   ex-widgets

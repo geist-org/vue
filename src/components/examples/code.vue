@@ -6,8 +6,9 @@
     ex-code-render(:name="name" ref="codeRender")
   details.details(ref="details" v-if="!hiddenCode")
     summary
-      span.preview #[Dropdown.down] Code Preview
-      ex-copy-icon.copy(@click.stop.prevent="copy")
+      .summary-row
+        span.preview #[Dropdown.down] Code Preview
+        ex-copy-icon.copy(@click.stop.prevent="copy")
     div(ref="prism")
       prism(language="pug" class="ex-source-code" :code="codeTemplate")
 </template>
@@ -111,7 +112,7 @@ export default {
   width 100%
 
   &[open]
-    summary
+    .summary-row
       border-bottom none
       border-bottom-left-radius 0
       border-bottom-right-radius 0
@@ -123,7 +124,7 @@ export default {
       opacity 1
       visibility visible
 
-  summary
+  .summary-row
     padding var(--geist-gap-half) var(--geist-gap)
     border-left 1px solid var(--accents-2)
     border-bottom 1px solid var(--accents-2)
