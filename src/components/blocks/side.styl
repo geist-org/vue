@@ -55,14 +55,21 @@
   background-color var(--geist-background)
   align-items center
   justify-content space-between
-  padding 0 3rem
+  padding 0 3rem 0 1rem
   color #fafafa
 
-  > .bar-toggle
+  > .toggle-container
+    width 3rem
+    height 25px
+    padding 0
+    background-color transparent
+    border none
+    cursor pointer
+
+  .bar-toggle
     width 15px
     height 15px
     display inline-flex
-    cursor pointer
 
   > .bar-title
     color var(--accents-7)
