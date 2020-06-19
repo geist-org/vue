@@ -14,6 +14,8 @@ transition(name="zi-dialog-backdrop")
 </template>
 
 <script>
+import { bodyScroll } from '../utils'
+
 export default {
   name: 'zi-dialog',
 
@@ -55,6 +57,7 @@ export default {
   watch: {
     value(next) {
       this.privateModel = next
+      bodyScroll.lockScroll(this.privateModel)
     },
   },
 
@@ -74,6 +77,10 @@ export default {
       if (!this.closeByModal) return
       this.confirm(false)
     },
+  },
+
+  mounted() {
+    if (this.value) bodyScroll.lockScroll(this.value)
   },
 }
 </script>
