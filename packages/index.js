@@ -39,6 +39,7 @@ import Tabs from './tabs'
 import Display from './display'
 import User from './user'
 import Grid from './grid'
+import Snippet from './snippet'
 
 const install = vue => {
   Card.install(vue)
@@ -80,6 +81,7 @@ const install = vue => {
   Display.install(vue)
   User.install(vue)
   Grid.install(vue)
+  Snippet.install(vue)
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
