@@ -1,5 +1,5 @@
 <template lang="pug">
-zi-snippet(text="yarn add @zeit-ui/vue" width="300px" filled)
+zi-snippet(text="yarn add @zeit-ui/vue" width="300px")
 </template>
 
 <script>
