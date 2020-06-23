@@ -2,7 +2,7 @@
 .zi-snippet(:style="{ width }" ref="snippet" :class="[type, filled && 'filled', !copy && 'without-copy']")
   pre(v-for="lineText in texts") {{ lineText }}
   .zi-copy(@click="copyText" v-show="copy")
-    copy(:style="svgColor")
+    copy(:color="svgColor")
 </template>
 
 <script>
@@ -35,7 +35,13 @@ export default {
 
   computed: {
     svgColor() {
-      return this.filled && this.type !== 'lite' && { color: 'var(--geist-background)!important' }
+      if (this.filled && this.type !== 'lite') return 'var(--geist-background)'
+      if (this.type === 'success') return 'var(--geist-success)'
+      if (this.type === 'warning') return 'var(--geist-warning)'
+      if (this.type === 'secondary') return 'var(--accents-5)'
+      if (this.type === 'error') return 'var(--geist-error)'
+      if (this.type === 'dark') return 'var(--geist-background)'
+      return 'var(--geist-foreground)'
     },
 
     texts() {

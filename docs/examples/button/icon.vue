@@ -1,22 +1,22 @@
 <template lang="pug">
 div(:class="$style.buttons")
-  zi-button(size="small" :icon="geist") action
+  zi-button(size="small" :icon="display") action
   zi-button(:iconRight="github") github
   zi-button(size="big" :icon="database") database
 </template>
 
 <script>
-import geist from '@zeit-ui/vue-icons/packages/geist'
+import display from '@zeit-ui/vue-icons/packages/display'
 import github from '@zeit-ui/vue-icons/packages/github'
 import database from '@zeit-ui/vue-icons/packages/database'
 
 export default {
   name: 'ex-button-icon',
 
-  components: { geist, github, database },
+  components: { display, github, database },
 
   data: () => ({
-    geist,
+    display,
     github,
     database,
   }),

@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import downIcon from '@zeit-ui/vue-icons/packages/down'
+import downIcon from '../select/down-icon'
 import { print, transitions } from '../utils'
 
 const { ZiTransitionExpand } = transitions

@@ -1171,10 +1171,10 @@
   resolved "https://registry.yarnpkg.com/@zeit-ui/typography/-/typography-1.1.0.tgz#51f3ae0b7ddb223e7c629a64d515564cc4154991"
   integrity sha512-nwkRKePHTP8MxYonTkoBU1XLQeVsLzuE7kyf7pvbNT3LnCGsMY19QOdZ2+Z6qE0ffF1kOGFVLw72vNWMAYCijg==
 
-"@zeit-ui/vue-icons@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@zeit-ui/vue-icons/-/vue-icons-3.0.0.tgz#5a5c9c5c27e8fe2485d94fb465f672c8e6421f4d"
-  integrity sha512-rAl0ImCbHaLF3qRWVPg32fWC6fjCxtmcv4jqKDzOUZwpANI/XeEIFRN7vEIzljB566E/AKEKDypQL/neg1/cfA==
+"@zeit-ui/vue-icons@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@zeit-ui/vue-icons/-/vue-icons-3.1.0.tgz#03d2a84d7b3e8e7ca9cbed1826bafca352e20ea0"
+  integrity sha512-rSI7YU1GFNsWOsC4XTUJHNQnMscbotE1GKe/qe3Utq4yIBJXQWFKFTSEWjJD5bBtEUQ1CwqSuPPiGGrHPpZbJg==
 
 abab@^1.0.0:
   version "1.0.4"

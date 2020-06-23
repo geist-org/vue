@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import down from '@zeit-ui/vue-icons/packages/down'
+import down from './down-icon'
 import { validator } from '../utils'
 
 export default {

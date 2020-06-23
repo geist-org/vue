@@ -32,9 +32,9 @@
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/snippet.md">
+<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/snippet.md">
 
-| Attribute | Description | Type | Accepted values | Default
+| 属性 | 描述 | 类型 | 推荐值 | 默认
 | ---------- | ---------- | ---- |  -------------- | ------ |
 | **type** | 片段类型 | `string` | `success` / `error` / `dark` / `secondary` / `default` / `lite` / `warning` | `default` |
 | **text** | 片段内的文字 | `string | array` | - | - |
