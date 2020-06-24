@@ -1,14 +1,12 @@
-## 片段
+## Snippet / 片段
 
 显示可拷贝的命令行代码片段。
 
-<ex-code name="ex-snippet-basic">
-</ex-code>
+<ex-code name="ex-snippet-basic"></ex-code>
 
-<ex-code name="ex-snippet-width">
-</ex-code>
+<ex-code name="ex-snippet-width"></ex-code>
 
-<ex-code name="ex-snippet-multiLine">
+<ex-code name="ex-snippet-multiple">
 
 文字可以为多行。
 
@@ -22,7 +20,7 @@
 
 <ex-code name="ex-snippet-withoutCopy">
 
-设置隐藏复制按钮。
+隐藏复制按钮。
 
 </ex-code>
 

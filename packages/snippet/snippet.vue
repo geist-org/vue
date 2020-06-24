@@ -1,6 +1,9 @@
 <template lang="pug">
-.zi-snippet(:style="{ width }" ref="snippet" :class="[type, filled && 'filled', !copy && 'without-copy']")
-  pre(v-for="lineText in texts") {{ lineText }}
+.zi-snippet(
+  :style="{ width }"
+  ref="snippet"
+  :class="[type, filled ? 'filled' : '', !copy ? 'without-copy' : '']")
+  pre(v-for="(lineText, index) in texts" :key="index") {{ lineText }}
   .zi-copy(@click="copyText" v-show="copy")
     copy(:color="svgColor")
 </template>
@@ -29,33 +32,34 @@ export default {
     },
   },
 
-  data: () => ({
-    toastType: 'success',
-  }),
-
   computed: {
     svgColor() {
       if (this.filled && this.type !== 'lite') return 'var(--geist-background)'
-      if (this.type === 'success') return 'var(--geist-success)'
-      if (this.type === 'warning') return 'var(--geist-warning)'
-      if (this.type === 'secondary') return 'var(--accents-5)'
-      if (this.type === 'error') return 'var(--geist-error)'
-      if (this.type === 'dark') return 'var(--geist-background)'
-      return 'var(--geist-foreground)'
+      const currentType = {
+        success: 'var(--geist-success)',
+        warning: 'var(--geist-warning)',
+        secondary: 'var(--accents-5)',
+        error: 'var(--geist-error)',
+        dark: 'var(--geist-background)',
+        lite: 'var(--geist-foreground)',
+        default: 'var(--geist-foreground)',
+      }
+      return currentType[this.type]
     },
 
     texts() {
-      if (typeof this.text === 'string') return [this.text]
+      if (!Array.isArray(this.text)) return [this.text]
       return this.text
     },
   },
 
   methods: {
     copyText() {
-      const copyResult = clipboard.copy(this.$refs.snippet.innerText)
-      this.toastType = copyResult ? 'success' : 'danger'
+      const text = this.$refs.snippet.innerText
+      if (!text || !this.copy) return
+      clipboard.copy(text)
       this.$Toast.show({
-        type: this.toastType,
+        type: 'success',
         text: 'Copied to clipboard!',
       })
     },

@@ -2,13 +2,11 @@
 
 Display a snippet of copyable code for the command line.
 
-<ex-code name="ex-snippet-basic">
-</ex-code>
+<ex-code name="ex-snippet-basic"></ex-code>
 
-<ex-code name="ex-snippet-width">
-</ex-code>
+<ex-code name="ex-snippet-width"></ex-code>
 
-<ex-code name="ex-snippet-multiLine">
+<ex-code name="ex-snippet-multiple">
 
 The text of snippet can be any number of lines.
 

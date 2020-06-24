@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  name: 'ex-snippet-multiLine',
+  name: 'ex-snippet-multiple',
 }
 </script>

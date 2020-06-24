@@ -1,12 +1,12 @@
 <template lang="pug">
 div
-  zi-snippet(text="yarn add @zeit-ui/react" type="success" filled width="300px")
+  zi-snippet(text="yarn add @zeit-ui/vue" type="success" filled width="300px")
   zi-spacer
-  zi-snippet(text="yarn add @zeit-ui/react" type="warning" filled width="300px")
+  zi-snippet(text="yarn add @zeit-ui/vue" type="warning" filled width="300px")
   zi-spacer
-  zi-snippet(text="yarn add @zeit-ui/react" type="error" filled width="300px")
+  zi-snippet(text="yarn add @zeit-ui/vue" type="error" filled width="300px")
   zi-spacer
-  zi-snippet(text="yarn add @zeit-ui/react" type="secondary" filled width="300px")
+  zi-snippet(text="yarn add @zeit-ui/vue" type="secondary" filled width="300px")
 </template>
 
 <script>
