@@ -34,7 +34,8 @@ export default {
 
   computed: {
     svgColor() {
-      if (this.filled && this.type !== 'lite') return 'var(--geist-background)'
+      const isSpecialType = this.type !== 'lite' && this.type !== 'default'
+      if (this.filled && isSpecialType) return 'var(--geist-background)'
       const currentType = {
         success: 'var(--geist-success)',
         warning: 'var(--geist-warning)',
