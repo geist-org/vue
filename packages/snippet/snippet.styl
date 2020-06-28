@@ -1,0 +1,80 @@
+.zi-snippet
+  position relative
+  padding var(--geist-gap-half) 32pt var(--geist-gap-half) var(--geist-gap-half)
+  max-width 100%
+  border 1px solid var(--accents-2)
+  border-radius var(--geist-radius)
+  font-size 0.815rem
+
+  &.without-copy
+    padding-right var(--geist-gap-half)
+
+  &.success
+    color var(--geist-success)
+    border-color var(--geist-success)
+
+    &.filled
+      color var(--geist-background)
+      background-color var(--geist-success)
+
+  &.warning
+    color var(--geist-warning)
+    border-color var(--geist-warning)
+
+    &.filled
+      color var(--geist-background)
+      background-color var(--geist-warning)
+
+  &.error
+    color var(--geist-error)
+    border-color var(--geist-error)
+
+    &.filled
+      color var(--geist-background)
+      background-color var(--geist-error)
+
+  &.secondary
+    color var(--accents-5)
+    border-color var(--accents-5)
+
+    &.filled
+      color var(--geist-background)
+      background-color var(--accents-5)
+
+  &.dark
+    border-color var(--geist-foreground)
+    background-color var(--geist-foreground)
+    color var(--geist-background)
+
+  &.lite
+    background-color var(--accents-1)
+
+  > pre
+    border none
+    padding 0
+    margin 0
+    border-radius none
+    line-height 1.5
+    font-size 0.8125rem
+    font-family var(--font-mono)
+
+    &:before
+      content '$ '
+      user-select none
+
+   .zi-copy
+     position absolute
+     right 0
+     top calc(8pt - 2px)
+     width 32pt
+     cursor pointer
+     display inline-flex
+     justify-content center
+     align-items center
+
+     &:hover
+       opacity: 0.7;
+
+     > svg
+       width 22px
+       height 22px

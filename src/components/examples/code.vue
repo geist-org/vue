@@ -16,7 +16,7 @@
 <script>
 import 'prismjs'
 import 'prismjs/components/prism-pug'
-import Dropdown from '@zeit-ui/vue-icons/packages/down'
+import Dropdown from './arrow-icon'
 import Prism from 'vue-prism-component'
 import { getRealShape } from '../../../packages/utils/bounding'
 
