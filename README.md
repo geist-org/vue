@@ -4,7 +4,7 @@
 
 > @zeit-ui/vue -- Vue implementation for Vercel style, originating from Vercel's design.
 
-**Looking for components for react? Try [ZEIT UI React](https://github.com/zeit-ui/react).**
+**Looking for React components? Try [@zeit-ui/react](https://github.com/zeit-ui/react).**
 
 <br/>
 
@@ -16,10 +16,10 @@
 
 ```js
 import Vue from 'vue'
-import ZeitUI from '@zeit-ui/vue'
+import ZEITUI from '@zeit-ui/vue'
 import '@zeit-ui/vue/dist/zeit-ui.css'
 
-Vue.use(ZeitUI)
+Vue.use(ZEITUI)
 ```
 
 <br/>
@@ -34,7 +34,7 @@ Vue.use(ZeitUI)
 ## Development
 
 1. fork and clone.
-2. start: `npm i && npm start`
+2. start: `yarn && yarn dev`
 
 <br/>
 
