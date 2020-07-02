@@ -1,4 +1,5 @@
 ## Tooltip
+
 Displays additional information on hover.
 
 <ex-code name="ex-tooltip-basic">
@@ -31,13 +32,13 @@ You can use <code>Tooltip</code> on any <code>zeit-ui</code> component or native
 
 </ex-code>
 
-
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/tooltip.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **content** | display content | `string` | - | - |
-| **placement** | position of tooltip | `string` | `top/bottom/left/right (-start/-end)` | `bottom` |
-| **clickable** | trigger by click event | `boolean` | - | `false` |
-| **delay** | hide after a delay (ms) | `number` | - | - |
+| Attribute     | Description             | Type      | Accepted values                       | Default  |
+| ------------- | ----------------------- | --------- | ------------------------------------- | -------- |
+| **content**   | display content         | `string`  | -                                     | -        |
+| **placement** | position of tooltip     | `string`  | `top/bottom/left/right (-start/-end)` | `bottom` |
+| **clickable** | trigger by click event  | `boolean` | -                                     | `false`  |
+| **delay**     | hide after a delay (ms) | `number`  | -                                     | -        |
+
 </ex-footer>

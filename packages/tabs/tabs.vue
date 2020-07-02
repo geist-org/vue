@@ -71,4 +71,4 @@ export default {
 }
 </script>
 
-<style scoped lang="stylus" scoped src="./tabs.styl"/>
+<style scoped lang="stylus" scoped src="./tabs.styl" />

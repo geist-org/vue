@@ -13,6 +13,6 @@ export default {
 </script>
 
 <style module lang="stylus">
-  .progress div
-    margin-bottom 10px
+.progress div
+  margin-bottom 10px
 </style>

@@ -7,5 +7,5 @@ import { install } from 'vue-auto'
 
 install(Vue)
 new Vue({
-  render: h => h(app)
+  render: h => h(app),
 }).$mount('#app')

@@ -25,9 +25,7 @@ export default {
   methods: {
     init(options) {
       if (typeof options !== 'object') return (this.text = options)
-      const {
-        text, action, handler, type,
-      } = options
+      const { text, action, handler, type } = options
       this.text = text
       this.action = action
       this.handler = handler
@@ -37,4 +35,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./toast.styl"/>
+<style lang="stylus" src="./toast.styl" />

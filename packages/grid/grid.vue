@@ -88,10 +88,11 @@ export default {
     containerWidth() {
       const setWidth = () => ({
         'max-width': `calc(100% + 8px * ${this.spacing})`,
-        'margin': `-${4 * this.spacing}px`,
+        margin: `-${4 * this.spacing}px`,
       })
       if (this.container) return setWidth()
-      if (this.spacing) print.error('[Grid Error] The prop [spacing] must be used on [container] mode')
+      if (this.spacing)
+        print.error('[Grid Error] The prop [spacing] must be used on [container] mode')
       return {}
     },
 
@@ -112,11 +113,9 @@ export default {
         '--zeit-grid-spacing': `${this.spacing * 4}px`,
         ...this.CssFlexProps,
       })
-      return [
-        this.containerWidth,
-        this.container ? makeContainerStyle() : {},
-      ]
-        .concat(this.getItemLayout())
+      return [this.containerWidth, this.container ? makeContainerStyle() : {}].concat(
+        this.getItemLayout(),
+      )
     },
   },
 
@@ -126,7 +125,7 @@ export default {
         const isNumberSize = typeof this.$props[item] === 'number'
         if (!this.$props[item]) return {}
         if (isNumberSize) {
-          const width = 100 / 24 * this.$props[item]
+          const width = (100 / 24) * this.$props[item]
           return {
             [`--zeit-${item}-width`]: width > 100 ? '100%' : width < 0 ? '0' : `${width}%`,
             [`--zeit-${item}-grow`]: 0,

@@ -8,9 +8,9 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/spinner.md">
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **size** | 指示器大小 | `string` | `mini` / `small` / `normal` / `big` | - |
-| **auto** | 自动使用大小 | `boolean` | - | `false` |
+| 属性     | 描述         | 类型      | 推荐值                              | 默认    |
+| -------- | ------------ | --------- | ----------------------------------- | ------- |
+| **size** | 指示器大小   | `string`  | `mini` / `small` / `normal` / `big` | -       |
+| **auto** | 自动使用大小 | `boolean` | -                                   | `false` |
 
 </ex-footer>

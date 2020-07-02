@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - 10.0.0
+  - 13.9.0
 
 cache:
   directories:
@@ -19,4 +19,4 @@ install:
   - yarn
 
 script:
-  - yarn run build
+  - yarn build

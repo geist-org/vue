@@ -6,9 +6,9 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/spacer.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **x** | 宽度 | `number` / `string` | - | `1` |
-| **y** | 高度 | `number` / `string` | - | `1` |
+| Attribute | Description | Type                | Accepted values | Default |
+| --------- | ----------- | ------------------- | --------------- | ------- |
+| **x**     | 宽度        | `number` / `string` | -               | `1`     |
+| **y**     | 高度        | `number` / `string` | -               | `1`     |
 
 </ex-footer>

@@ -22,15 +22,15 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/link.md">
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **href** | 链接地址 | `string` | - | - |
-| **to** | Vue 路由跳转对象 | `string | object` | - | - |
-| **more** | 显示更多的图标 | `boolean` | - | `false` |
-| **color** | 链接显示颜色 | `boolean` | - | `false` |
-| **bold** | 粗体显示 | `boolean` | - | `false` |
-| **pure** | 隐藏图标 | `boolean` | - | `false` |
-| **target** | 跳转方式 | `string` | - | `_blank` |
-| **rel** | 链接的 `rel` 属性 | `string` | - | - |
+| 属性       | 描述              | 类型              | 推荐值 | 默认     |
+| ---------- | ----------------- | ----------------- | ------ | -------- |
+| **href**   | 链接地址          | `string`          | -      | -        |
+| **to**     | Vue 路由跳转对象  | `string | object` | -      | -        |
+| **more**   | 显示更多的图标    | `boolean`         | -      | `false`  |
+| **color**  | 链接显示颜色      | `boolean`         | -      | `false`  |
+| **bold**   | 粗体显示          | `boolean`         | -      | `false`  |
+| **pure**   | 隐藏图标          | `boolean`         | -      | `false`  |
+| **target** | 跳转方式          | `string`          | -      | `_blank` |
+| **rel**    | 链接的 `rel` 属性 | `string`          | -      | -        |
 
 </ex-footer>

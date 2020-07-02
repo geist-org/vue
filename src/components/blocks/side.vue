@@ -19,10 +19,10 @@ import cnSide from './side.zh-cn'
 import docs from '#/docs/index'
 
 const SIDE_WEIGHT = {
-  'start': 1,
+  start: 1,
   'getting-started': 2,
-  'customization': 3,
-  'components': 5,
+  customization: 3,
+  components: 5,
 }
 
 const DOC_WEIGHT = {
@@ -50,15 +50,12 @@ export default {
 
   computed: {
     language() {
-      return `${this.$route.params.language}`
-        .toLowerCase()
-        .includes('en') ? 'en-us' : 'zh-cn'
+      return `${this.$route.params.language}`.toLowerCase().includes('en') ? 'en-us' : 'zh-cn'
     },
   },
 
   methods: {
-    fixFireFoxEvent() {
-    },
+    fixFireFoxEvent() {},
 
     parseDocs(docs) {
       const group = docs
@@ -70,8 +67,7 @@ export default {
       return Object.keys(group)
         .sort((a, b) => SIDE_WEIGHT[a] - SIDE_WEIGHT[b])
         .map(name => {
-          const children = group[name]
-            .sort((a, b) => DOC_WEIGHT[a.docName] - DOC_WEIGHT[b.docName])
+          const children = group[name].sort((a, b) => DOC_WEIGHT[a.docName] - DOC_WEIGHT[b.docName])
           return {
             name,
             children,

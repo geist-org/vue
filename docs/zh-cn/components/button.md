@@ -50,18 +50,18 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/button.md">
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **size** | 按钮大小 | `string` | `small` / `mini` / `medium` / `big` / `huge` | `medium` |
-| **type** | 按钮类型 | `string` | `primary` / `success` / `danger` / `warning` / `abort` / `normal` | `primary` |
-| **loading** | 是否在加载中 | `boolean` | - | `false` |
-| **disabled** | 按钮是否禁用 | `boolean` | - | `false` |
-| **shadow** | 是否包含阴影 | `boolean` | - | `false` |
-| **circular** | 圆角更大的按钮 | `boolean` | - | `false` |
-| **auto** | 自适应宽度 | `boolean` | - | `false` |
-| **ghost** | 背景与边框反色 | `boolean` | - | `false` |
-| **effect** | 点击动画 | `boolean` | - | `true` |
-| **icon** | 设置图标(左边) | `component` | - | - |
-| **iconRight** | 设置图标(右边) | `component` | - | - |
+| 属性          | 描述           | 类型        | 推荐值                                                            | 默认      |
+| ------------- | -------------- | ----------- | ----------------------------------------------------------------- | --------- |
+| **size**      | 按钮大小       | `string`    | `small` / `mini` / `medium` / `big` / `huge`                      | `medium`  |
+| **type**      | 按钮类型       | `string`    | `primary` / `success` / `danger` / `warning` / `abort` / `normal` | `primary` |
+| **loading**   | 是否在加载中   | `boolean`   | -                                                                 | `false`   |
+| **disabled**  | 按钮是否禁用   | `boolean`   | -                                                                 | `false`   |
+| **shadow**    | 是否包含阴影   | `boolean`   | -                                                                 | `false`   |
+| **circular**  | 圆角更大的按钮 | `boolean`   | -                                                                 | `false`   |
+| **auto**      | 自适应宽度     | `boolean`   | -                                                                 | `false`   |
+| **ghost**     | 背景与边框反色 | `boolean`   | -                                                                 | `false`   |
+| **effect**    | 点击动画       | `boolean`   | -                                                                 | `true`    |
+| **icon**      | 设置图标(左边) | `component` | -                                                                 | -         |
+| **iconRight** | 设置图标(右边) | `component` | -                                                                 | -         |
 
 </ex-footer>

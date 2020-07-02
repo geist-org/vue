@@ -63,5 +63,4 @@ export default {
 }
 </script>
 
-<style scoped lang="stylus" src="./popover.styl">
-</style>
+<style scoped lang="stylus" src="./popover.styl"></style>

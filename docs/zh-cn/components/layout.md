@@ -35,17 +35,17 @@
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/layout.md">
 <h3>zi-row</h3>
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **gutter** | 表格间距 | `number` | - | 0 |
+| 属性        | 描述         | 类型     | 推荐值                                                | 默认    |
+| ----------- | ------------ | -------- | ----------------------------------------------------- | ------- |
+| **gutter**  | 表格间距     | `number` | -                                                     | 0       |
 | **justify** | 水平对齐方式 | `string` | `start / end / center / space-around / space-between` | `start` |
-| **align** | 垂直对齐方式 | `string` | `top / middle / bottom` | `top` |
+| **align**   | 垂直对齐方式 | `string` | `top / middle / bottom`                               | `top`   |
 
 <br/>
 <h3>zi-col</h3>
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **span** | 列占有的网格大小 | `number` | 1 - 24 | 24 |
+| 属性     | 描述             | 类型     | 推荐值 | 默认 |
+| -------- | ---------------- | -------- | ------ | ---- |
+| **span** | 列占有的网格大小 | `number` | 1 - 24 | 24   |
 
 </ex-footer>

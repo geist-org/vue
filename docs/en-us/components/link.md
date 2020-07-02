@@ -22,15 +22,15 @@ This is another style.
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/link.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **href** | jump link | `string` | - | - |
-| **to** | use vue router | `string | object` | - | - |
-| **more** | link icon | `boolean` | - | `false` |
-| **color** | show active color | `boolean` | - | `false` |
-| **bold** | font bold | `boolean` | - | `false` |
-| **pure** | hide icon | `boolean` | - | `false` |
-| **target** | jump target | `string` | - | `_blank` |
-| **rel** | a tag's rel attribute | `string` | - | - |
+| Attribute  | Description           | Type              | Accepted values | Default  |
+| ---------- | --------------------- | ----------------- | --------------- | -------- |
+| **href**   | jump link             | `string`          | -               | -        |
+| **to**     | use vue router        | `string | object` | -               | -        |
+| **more**   | link icon             | `boolean`         | -               | `false`  |
+| **color**  | show active color     | `boolean`         | -               | `false`  |
+| **bold**   | font bold             | `boolean`         | -               | `false`  |
+| **pure**   | hide icon             | `boolean`         | -               | `false`  |
+| **target** | jump target           | `string`          | -               | `_blank` |
+| **rel**    | a tag's rel attribute | `string`          | -               | -        |
 
 </ex-footer>

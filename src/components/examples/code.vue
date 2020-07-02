@@ -24,7 +24,8 @@ export default {
   name: 'ex-code',
 
   components: {
-    Prism, Dropdown,
+    Prism,
+    Dropdown,
   },
 
   data: () => ({
@@ -68,8 +69,7 @@ export default {
         if (width) {
           this.$refs.prism.setAttribute('style', `width: ${width}px;`)
         }
-      } catch (error) {
-      }
+      } catch (error) {}
     },
   },
 }

@@ -30,27 +30,27 @@
 
 ```ts
 type ToastOption = {
-  text: string,
-  action: string,
-  type: 'success' | 'warning' | 'warning',
-  duration: number,
-  handler: Function,
+  text: string
+  action: string
+  type: 'success' | 'warning' | 'warning'
+  duration: number
+  handler: Function
 }
 
 type ToastInstance = {
-  vm: Result<$mount>,
-  close: Function,    // destroy handler
+  vm: Result<$mount>
+  close: Function // destroy handler
 } & VueComponent
 ```
 
 <br/>
 
-| 方法 | 描述 | 参数
-| ---------- | ---------- | ----
-| **show** | 显示基础的通知 | `(text: string | ToastOption): ToastInstance`
-| **success** | 带有成功状态 | `(text: string | ToastOption): ToastInstance`
-| **warning** | 带有警告状态 | `(text: string | ToastOption): ToastInstance`
-| **danger** | 带有危险状态 | `(text: string | ToastOption): ToastInstance`
-| **closeAll** | 移除所有的通知 | `(): void`
+| 方法         | 描述           | 参数                                          |
+| ------------ | -------------- | --------------------------------------------- |
+| **show**     | 显示基础的通知 | `(text: string | ToastOption): ToastInstance` |
+| **success**  | 带有成功状态   | `(text: string | ToastOption): ToastInstance` |
+| **warning**  | 带有警告状态   | `(text: string | ToastOption): ToastInstance` |
+| **danger**   | 带有危险状态   | `(text: string | ToastOption): ToastInstance` |
+| **closeAll** | 移除所有的通知 | `(): void`                                    |
 
 </ex-footer>

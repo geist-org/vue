@@ -27,7 +27,8 @@ export default {
   name: 'ex-input-icon',
 
   components: {
-    github, gift,
+    github,
+    gift,
   },
 }
 </script>

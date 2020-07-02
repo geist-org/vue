@@ -107,4 +107,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./input.styl"/>
+<style lang="stylus" src="./input.styl" />

@@ -28,6 +28,7 @@ Vue.use(ZeitUI)
 <br>
 
 ### 使用 CDN
+
 从 `unpkg.com` 获取项目最新的包:
 
 ```
@@ -52,4 +53,3 @@ import '@zeit-ui/vue/lib/button.css'
 
 Button.install(Vue)
 ```
-

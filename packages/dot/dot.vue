@@ -23,4 +23,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped src="./dot.styl"/>
+<style lang="stylus" scoped src="./dot.styl" />

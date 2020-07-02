@@ -6,7 +6,6 @@
 <code>@zeit-ui/vue</code> 默认是包含 <code>@zeit-ui/typography</code> 的。
 </zi-note>
 
-
 <ex-code name="ex-typography-headings"></ex-code>
 
 <ex-code name="ex-typography-paragraph"></ex-code>

@@ -14,9 +14,9 @@ Display a collection of related information in a single unit.
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/avatar.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **footer** | fieldset's footer content | `string` | - | - |
-| **disabled** | set fieldset disabled | `boolean` | `true` / `false` | `false` |
+| Attribute    | Description               | Type      | Accepted values  | Default |
+| ------------ | ------------------------- | --------- | ---------------- | ------- |
+| **footer**   | fieldset's footer content | `string`  | -                | -       |
+| **disabled** | set fieldset disabled     | `boolean` | `true` / `false` | `false` |
 
 </ex-footer>

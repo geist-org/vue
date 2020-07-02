@@ -1,6 +1,6 @@
 <template>
   <div id="app">
     <p>app.vue</p>
-    <auto-hello/>
+    <auto-hello />
   </div>
 </template>

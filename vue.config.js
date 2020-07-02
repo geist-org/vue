@@ -4,7 +4,10 @@ const Prism = require('prismjs')
 const isBuildLib = process.env.npm_lifecycle_event === 'build:lib'
 const styleModule = isBuildLib
   ? [path.resolve(__dirname, 'packages/utils/styles/methods')]
-  : [path.resolve(__dirname, 'src/assets/styles/index'), path.resolve(__dirname, 'packages/utils/styles/methods')]
+  : [
+      path.resolve(__dirname, 'src/assets/styles/index'),
+      path.resolve(__dirname, 'packages/utils/styles/methods'),
+    ]
 
 module.exports = {
   css: {
@@ -25,7 +28,8 @@ module.exports = {
   },
 
   chainWebpack: config => {
-    config.module.rule('md')
+    config.module
+      .rule('md')
       .test(/\.md/)
       .use('vue-loader')
       .loader('vue-loader')
@@ -40,8 +44,6 @@ module.exports = {
         },
       })
 
-    config.resolve
-      .alias
-      .set('#', path.join(__dirname, './'))
+    config.resolve.alias.set('#', path.join(__dirname, './'))
   },
 }

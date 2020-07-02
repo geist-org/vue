@@ -29,4 +29,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./keyboard.styl"/>
+<style lang="stylus" src="./keyboard.styl" />

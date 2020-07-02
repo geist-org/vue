@@ -52,14 +52,12 @@ export default {
       const next = this.isEnglish ? 'zh-cn' : 'en-us'
       const path = `/${next}/${this.$route.params.name}`
       this.isEnglish = !this.isEnglish
-      this.$router
-        .push(path)
-        .finally(() => {
-          setTimeout(() => {
-            this.isLoading = false
-            location.reload()
-          }, 400)
-        })
+      this.$router.push(path).finally(() => {
+        setTimeout(() => {
+          this.isLoading = false
+          location.reload()
+        }, 400)
+      })
     },
 
     toGithub() {

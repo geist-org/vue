@@ -42,4 +42,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./badge.styl"/>
+<style lang="stylus" src="./badge.styl" />

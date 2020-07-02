@@ -75,7 +75,7 @@ export default {
       minWidth,
     })
     let renderCell = function (h, data) {
-      return <div class="table-cell">{ data.row[data.column.prop] }</div>
+      return <div class="table-cell">{data.row[data.column.prop]}</div>
     }
     column.renderCell = (h, data) => {
       if (this.$scopedSlots.default) renderCell = () => this.$scopedSlots.default(data)

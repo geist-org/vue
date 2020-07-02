@@ -28,16 +28,20 @@ export default {
     value: Boolean,
     width: String,
     cancel: {
-      type: String, default: 'cancel',
+      type: String,
+      default: 'cancel',
     },
     done: {
-      type: String, default: 'done',
+      type: String,
+      default: 'done',
     },
     beforeDone: {
-      type: Function, default: done => done(),
+      type: Function,
+      default: done => done(),
     },
     closeByModal: {
-      type: Boolean, default: true,
+      type: Boolean,
+      default: true,
     },
   },
 
@@ -85,5 +89,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped src="./dialog.styl">
-</style>
+<style lang="stylus" scoped src="./dialog.styl"></style>

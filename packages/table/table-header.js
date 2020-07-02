@@ -11,15 +11,15 @@ export default {
     return (
       <table class="zi-table">
         <colgroup>
-          {
-            this._l(this.columns, column => <col
-              width={ column.realWidth || column.width }/>)
-          }
+          {this._l(this.columns, column => (
+            <col width={column.realWidth || column.width} />
+          ))}
         </colgroup>
         <thead>
-          <tr>{
-            this._l(this.columns, column => <th>{ column.label || '#' }</th>)
-          }
+          <tr>
+            {this._l(this.columns, column => (
+              <th>{column.label || '#'}</th>
+            ))}
           </tr>
         </thead>
       </table>

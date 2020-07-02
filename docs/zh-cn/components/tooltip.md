@@ -32,14 +32,13 @@
 
 </ex-code>
 
-
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/tooltip.md">
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **content** | 显示内容 | `string` | - | - |
-| **placement** | 弹出方向 | `string` | `top/bottom/left/right (-start/-end)` | `bottom` |
-| **clickable** | 点击模式 | `boolean` | - | `false` |
-| **delay** | 延迟关闭时间(ms) | `number` | - | - |
+| 属性          | 描述             | 类型      | 推荐值                                | 默认     |
+| ------------- | ---------------- | --------- | ------------------------------------- | -------- |
+| **content**   | 显示内容         | `string`  | -                                     | -        |
+| **placement** | 弹出方向         | `string`  | `top/bottom/left/right (-start/-end)` | `bottom` |
+| **clickable** | 点击模式         | `boolean` | -                                     | `false`  |
+| **delay**     | 延迟关闭时间(ms) | `number`  | -                                     | -        |
 
 </ex-footer>

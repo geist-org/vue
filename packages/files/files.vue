@@ -12,7 +12,7 @@ export default {
   props: {
     files: {
       type: Array,
-      default: () => ([]),
+      default: () => [],
       validator(input) {
         const target = input.filter(item => !!item.name)
         if (target.length === input.length) return true

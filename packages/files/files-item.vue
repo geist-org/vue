@@ -35,7 +35,7 @@ export default {
   },
 
   props: {
-    files: { type: Array, default: () => ([]) },
+    files: { type: Array, default: () => [] },
     depth: { type: Number, default: 0 },
     defaultExpand: Boolean,
   },

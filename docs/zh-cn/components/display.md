@@ -12,16 +12,16 @@
 
 <ex-code name="ex-display-caption">
 
-使用slot添加自定义的说明内容。
+使用 slot 添加自定义的说明内容。
 
 </ex-code>
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/display.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **width** | 内容的宽度 | `string` | - | `auto` |
-| **caption** | 说明文字 | `string` | `template` | - | - |
-| **shadow** | 阴影效果 | `boolean` | - | `false` |
+| Attribute   | Description | Type      | Accepted values | Default |
+| ----------- | ----------- | --------- | --------------- | ------- |
+| **width**   | 内容的宽度  | `string`  | -               | `auto`  |
+| **caption** | 说明文字    | `string`  | `template`      | -       | - |
+| **shadow**  | 阴影效果    | `boolean` | -               | `false` |
 
 </ex-footer>

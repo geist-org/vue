@@ -8,7 +8,7 @@ import { bounding } from '../utils'
 const DEFAULT_STYLES = {
   left: '',
   top: '',
-  opacity: .8,
+  opacity: 0.8,
   transform: 'translate(-50%, -50%)',
 }
 

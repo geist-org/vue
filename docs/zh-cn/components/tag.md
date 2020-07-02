@@ -8,8 +8,8 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/tag.md">
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **type** | 组件类型 | `string` | `success` / `warning` / `danger` | - |
+| 属性     | 描述     | 类型     | 推荐值                           | 默认 |
+| -------- | -------- | -------- | -------------------------------- | ---- |
+| **type** | 组件类型 | `string` | `success` / `warning` / `danger` | -    |
 
 </ex-footer>

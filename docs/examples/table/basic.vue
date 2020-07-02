@@ -15,27 +15,32 @@ export default {
   name: 'ex-table-basic',
 
   data: () => ({
-    tableData: [{
-      name: 'apple',
-      usage: 'eat',
-      point: 'red, I like it',
-      taste: 'sweet',
-    }, {
-      name: 'orange',
-      usage: 'eat',
-      point: 'orange, fire ',
-      taste: 'sour',
-    }, {
-      name: 'lemon',
-      usage: 'picture',
-      point: 'sour',
-      taste: 'sour',
-    }, {
-      name: 'pear',
-      usage: 'eat',
-      point: 'yellow, code',
-      taste: 'sweet',
-    }],
+    tableData: [
+      {
+        name: 'apple',
+        usage: 'eat',
+        point: 'red, I like it',
+        taste: 'sweet',
+      },
+      {
+        name: 'orange',
+        usage: 'eat',
+        point: 'orange, fire ',
+        taste: 'sour',
+      },
+      {
+        name: 'lemon',
+        usage: 'picture',
+        point: 'sour',
+        taste: 'sour',
+      },
+      {
+        name: 'pear',
+        usage: 'eat',
+        point: 'yellow, code',
+        taste: 'sweet',
+      },
+    ],
   }),
 
   methods: {

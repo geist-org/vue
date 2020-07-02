@@ -31,4 +31,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./tag.styl"/>
+<style lang="stylus" src="./tag.styl" />

@@ -6,9 +6,9 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/dot.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **type** | dot's type | `string` | `primary` / `success` / `danger` / `warning` | `primary` |
-| **label** | set label | `string` | - | - |
+| Attribute | Description | Type     | Accepted values                              | Default   |
+| --------- | ----------- | -------- | -------------------------------------------- | --------- |
+| **type**  | dot's type  | `string` | `primary` / `success` / `danger` / `warning` | `primary` |
+| **label** | set label   | `string` | -                                            | -         |
 
 </ex-footer>

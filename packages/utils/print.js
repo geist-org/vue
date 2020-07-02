@@ -5,4 +5,3 @@ export const warning = msg => {
 export const error = msg => {
   console.error(msg)
 }
-

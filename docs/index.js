@@ -8,15 +8,13 @@ const pickGroupName = name => {
 }
 
 const makeModules = context => {
-  return context
-    .keys()
-    .map(path => {
-      const mdModule = context(path)
-      const name = path.split('/').reverse()[0]
-      mdModule.default.groupName = pickGroupName(path) || 'default'
-      mdModule.default.docName = name.replace(/.md/, '')
-      return mdModule
-    })
+  return context.keys().map(path => {
+    const mdModule = context(path)
+    const name = path.split('/').reverse()[0]
+    mdModule.default.groupName = pickGroupName(path) || 'default'
+    mdModule.default.docName = name.replace(/.md/, '')
+    return mdModule
+  })
 }
 const enModule = makeModules(enContext)
 const zhModule = makeModules(zhContext)

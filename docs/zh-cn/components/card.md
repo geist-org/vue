@@ -24,9 +24,9 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/card.md">
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **hoverable** | 打开 hover 效果 | `boolean` | - | `false` |
-| **shadow** | 打开 shadow 效果 | `boolean` | - | `false` |
+| 属性          | 描述             | 类型      | 推荐值 | 默认    |
+| ------------- | ---------------- | --------- | ------ | ------- |
+| **hoverable** | 打开 hover 效果  | `boolean` | -      | `false` |
+| **shadow**    | 打开 shadow 效果 | `boolean` | -      | `false` |
 
 </ex-footer>

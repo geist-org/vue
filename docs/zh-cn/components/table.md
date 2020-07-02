@@ -24,23 +24,23 @@
 
 <h3>zi-table</h3>
 
-| 属性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 描述 | 类型 | 推荐值 | 默认
-| ------------------------- | ---------- | ---- |  -------------- | ------ |
-| **data** | 表格数据 | `Array<string | number>` | - | `[]` |
-| **width** | 表格宽度 | `string | number` | - | - |
-| **empty-text** | 空单元格显示的文本 | `string | boolean` | - | `false` |
-| **hover** | hover 效果  | `boolean` | - | `false` |
-| **cell-click**(event) | 单元格点击事件  | `event` | - | - |
-| **row-click**(event) | 行的点击事件  | `event` | - | - |
+| 属性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 描述               | 类型                     | 推荐值 | 默认    |
+| ---------------------------------------------------------------------------------------------- | ------------------ | ------------------------ | ------ | ------- |
+| **data**                                                                                       | 表格数据           | `Array<string | number>` | -      | `[]`    |
+| **width**                                                                                      | 表格宽度           | `string | number`        | -      | -       |
+| **empty-text**                                                                                 | 空单元格显示的文本 | `string | boolean`       | -      | `false` |
+| **hover**                                                                                      | hover 效果         | `boolean`                | -      | `false` |
+| **cell-click**(event)                                                                          | 单元格点击事件     | `event`                  | -      | -       |
+| **row-click**(event)                                                                           | 行的点击事件       | `event`                  | -      | -       |
 
 <br/>
 <h3>zi-table-column</h3>
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **prop** | 每列的 prop 值 | `string` | - | - |
-| **label** | 标题 | `string` | - | - |
-| **width** | 列的宽度 | `string | number` | - | - |
-| **min-width** | 列的最小宽度 | `string | number` | - | - |
+| 属性          | 描述           | 类型              | 推荐值 | 默认 |
+| ------------- | -------------- | ----------------- | ------ | ---- |
+| **prop**      | 每列的 prop 值 | `string`          | -      | -    |
+| **label**     | 标题           | `string`          | -      | -    |
+| **width**     | 列的宽度       | `string | number` | -      | -    |
+| **min-width** | 列的最小宽度   | `string | number` | -      | -    |
 
 </ex-footer>

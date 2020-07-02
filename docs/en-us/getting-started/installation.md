@@ -22,6 +22,7 @@ Vue.use(ZeitUI)
 <br>
 
 ### CDN
+
 Get the latest version from unpkg.com:
 
 ```
@@ -30,7 +31,6 @@ Get the latest version from unpkg.com:
 ```
 
 You can also refer to [Example with UMD](https://github.com/zeit-ui/vue/blob/master/examples/umd/index.html)
-
 
 <br>
 <br>
@@ -47,4 +47,3 @@ import '@zeit-ui/vue/lib/button.css'
 
 Button.install(Vue)
 ```
-

@@ -36,4 +36,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./toggle.styl"/>
+<style lang="stylus" src="./toggle.styl" />

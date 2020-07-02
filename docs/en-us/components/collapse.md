@@ -12,13 +12,13 @@ Display large amounts of text in collapsible sections. Commonly referred to as a
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/collapse.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| --------- | ---------- | ---- |  -------------- | ------ |
-| **value** | collapse value | `array | string | number` | - | - |
-| **accordion** | accordion mode | `string | boolean` | `true` / `false` | `false` |
-| **title** | collapse-item's title | `string` | - | - |
-| **name** | collapse-item's name | `string | number` | - | - |
-| **shadow** | shadow effect | `boolean` | - | - |
-| **subtitle** | title's description | `string` | - | - |
+| Attribute     | Description           | Type                      | Accepted values  | Default |
+| ------------- | --------------------- | ------------------------- | ---------------- | ------- |
+| **value**     | collapse value        | `array | string | number` | -                | -       |
+| **accordion** | accordion mode        | `string | boolean`        | `true` / `false` | `false` |
+| **title**     | collapse-item's title | `string`                  | -                | -       |
+| **name**      | collapse-item's name  | `string | number`         | -                | -       |
+| **shadow**    | shadow effect         | `boolean`                 | -                | -       |
+| **subtitle**  | title's description   | `string`                  | -                | -       |
 
 </ex-footer>

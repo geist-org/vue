@@ -34,12 +34,12 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/progress.md">
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **value** | 当前进度值 | `number` | - | `0` |
-| **fix** | 固定方式 | `string` | `top` / `bottom` | - |
-| **colors** | 背景色 | `array` | hex color | - |
-| **max** | 最大值 | `number` / `string` | - | `100` |
-| **type** | 多种类型 | `string` | `default` / `success` / `danger` / `warning` / `secondary` | `default` |
+| 属性       | 描述       | 类型                | 推荐值                                                     | 默认      |
+| ---------- | ---------- | ------------------- | ---------------------------------------------------------- | --------- |
+| **value**  | 当前进度值 | `number`            | -                                                          | `0`       |
+| **fix**    | 固定方式   | `string`            | `top` / `bottom`                                           | -         |
+| **colors** | 背景色     | `array`             | hex color                                                  | -         |
+| **max**    | 最大值     | `number` / `string` | -                                                          | `100`     |
+| **type**   | 多种类型   | `string`            | `default` / `success` / `danger` / `warning` / `secondary` | `default` |
 
 </ex-footer>

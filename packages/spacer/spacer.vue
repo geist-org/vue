@@ -45,4 +45,4 @@ export default {
 }
 </script>
 
-<style scoped lang="stylus" src="./spacer.styl"/>
+<style scoped lang="stylus" src="./spacer.styl" />

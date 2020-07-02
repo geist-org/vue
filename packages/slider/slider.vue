@@ -45,7 +45,7 @@ export default {
         const remainderDots = Math.ceil(totalPercent / this.step) - 1
         const dotsNum = !(totalPercent % this.step) ? divideDots : remainderDots
         const coordinates = []
-        for (let i = 1; i <= dotsNum; i++) coordinates.push(this.step * i * 100 / totalPercent)
+        for (let i = 1; i <= dotsNum; i++) coordinates.push((this.step * i * 100) / totalPercent)
         return coordinates
       }
       return []
@@ -58,7 +58,7 @@ export default {
     },
 
     sliderMoveStyle() {
-      return (this.privateValue - this.min) * 100 / (this.max - this.min)
+      return ((this.privateValue - this.min) * 100) / (this.max - this.min)
     },
   },
 
@@ -115,10 +115,13 @@ export default {
         return
       }
       // step divide the rail into n pieces, count per step's distance
-      const stepDistance = this.railWidth / (this.max - this.min) * this.step
+      const stepDistance = (this.railWidth / (this.max - this.min)) * this.step
       // Calculate the currentX - startX has how many stepDistance, then * step can get the percent of the rail
-      const slideDistance = Math.round((this.currentX - this.startX) / stepDistance) * this.step + this.min
-      let value = Number.isInteger(slideDistance) ? slideDistance : Number.parseFloat(slideDistance.toFixed(1))
+      const slideDistance =
+        Math.round((this.currentX - this.startX) / stepDistance) * this.step + this.min
+      let value = Number.isInteger(slideDistance)
+        ? slideDistance
+        : Number.parseFloat(slideDistance.toFixed(1))
       if (this.currentX - this.startX <= 0) value = this.min
       if (this.currentX - this.startX >= this.railWidth) value = this.max
       this.$emit('input', value)
@@ -148,4 +151,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped src="./slider.styl"/>
+<style lang="stylus" scoped src="./slider.styl" />

@@ -27,4 +27,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./user.styl"/>
+<style lang="stylus" src="./user.styl" />

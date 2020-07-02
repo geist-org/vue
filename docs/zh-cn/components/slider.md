@@ -20,11 +20,11 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/slider.md">
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **v-model** | 绑定值 | `number` | `0 - 100` | `0`|
-| **step** | 步长 | `number` | - | `1` |
-| **show-stops** | 显示步长的标识点 | `boolean` | - | `false` |
-| **disabled** | 禁用滑块 | `boolean` | - | `false` |
+| 属性           | 描述             | 类型      | 推荐值    | 默认    |
+| -------------- | ---------------- | --------- | --------- | ------- |
+| **v-model**    | 绑定值           | `number`  | `0 - 100` | `0`     |
+| **step**       | 步长             | `number`  | -         | `1`     |
+| **show-stops** | 显示步长的标识点 | `boolean` | -         | `false` |
+| **disabled**   | 禁用滑块         | `boolean` | -         | `false` |
 
 </ex-footer>

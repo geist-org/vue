@@ -22,10 +22,10 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/code.md">
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **bash** | 显示 `shell` 代码 | `boolean` | - | `false` |
-| **block** | 显示代码块 | `boolean` | - | `false` |
-| **inline** | 强制单行显示 | `boolean` | - | `false` |
+| 属性       | 描述              | 类型      | 推荐值 | 默认    |
+| ---------- | ----------------- | --------- | ------ | ------- |
+| **bash**   | 显示 `shell` 代码 | `boolean` | -      | `false` |
+| **block**  | 显示代码块        | `boolean` | -      | `false` |
+| **inline** | 强制单行显示      | `boolean` | -      | `false` |
 
 </ex-footer>

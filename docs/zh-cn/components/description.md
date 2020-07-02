@@ -16,9 +16,9 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/description.md">
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| --------- | ---------- | ---- |  -------------- | ------ |
-| **title** | 标题 | `string` | - | - |
-| **content** | 内容 | `string` | - | - |
+| 属性        | 描述 | 类型     | 推荐值 | 默认 |
+| ----------- | ---- | -------- | ------ | ---- |
+| **title**   | 标题 | `string` | -      | -    |
+| **content** | 内容 | `string` | -      | -    |
 
 </ex-footer>
