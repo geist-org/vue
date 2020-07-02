@@ -20,6 +20,12 @@ Use different layouts for different screen widths.
 
 </ex-code>
 
+<ex-code name="ex-grid-hidden">
+
+Hide elements when unit size is 0.
+
+</ex-code>
+
 <ex-code name="ex-grid-autoWidth">
 
 Auto fill remaining width.

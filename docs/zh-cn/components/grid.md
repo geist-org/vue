@@ -20,6 +20,12 @@
 
 </ex-code>
 
+<ex-code name="ex-grid-hidden">
+
+当单位大小为 0 时会自动隐藏当前元素。
+
+</ex-code>
+
 <ex-code name="ex-grid-autoWidth">
 
 自动分配剩余宽度。
