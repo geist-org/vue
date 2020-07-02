@@ -50,18 +50,18 @@ Buttons have different sizes, but you can also specify styles.
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/button.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **size** | button size | `string` | `small` / `mini` / `medium` / `big` / `huge` | `medium` |
-| **type** | button type | `string` | `primary` / `success` / `danger` / `warning` / `abort` / `normal` | - |
-| **loading** | loading for button content | `boolean` | - | `false` |
-| **disabled** | set button disabled | `boolean` | - | `false` |
-| **shadow** | button with shadow | `boolean` | - | `false` |
-| **circular** | have border-radius | `boolean` | - | `false` |
-| **auto** | button width auto | `boolean` | - | `false` |
-| **ghost** | transparent background | `boolean` | - | `false` |
-| **effect** | click animation | `boolean` | - | `true` |
-| **icon** | set icon(left) | `component` | - | - |
-| **iconRight** | set icon(right) | `component` | - | - |
+| Attribute     | Description                | Type        | Accepted values                                                   | Default  |
+| ------------- | -------------------------- | ----------- | ----------------------------------------------------------------- | -------- |
+| **size**      | button size                | `string`    | `small` / `mini` / `medium` / `big` / `huge`                      | `medium` |
+| **type**      | button type                | `string`    | `primary` / `success` / `danger` / `warning` / `abort` / `normal` | -        |
+| **loading**   | loading for button content | `boolean`   | -                                                                 | `false`  |
+| **disabled**  | set button disabled        | `boolean`   | -                                                                 | `false`  |
+| **shadow**    | button with shadow         | `boolean`   | -                                                                 | `false`  |
+| **circular**  | have border-radius         | `boolean`   | -                                                                 | `false`  |
+| **auto**      | button width auto          | `boolean`   | -                                                                 | `false`  |
+| **ghost**     | transparent background     | `boolean`   | -                                                                 | `false`  |
+| **effect**    | click animation            | `boolean`   | -                                                                 | `true`   |
+| **icon**      | set icon(left)             | `component` | -                                                                 | -        |
+| **iconRight** | set icon(right)            | `component` | -                                                                 | -        |
 
 </ex-footer>

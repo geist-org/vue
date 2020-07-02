@@ -28,12 +28,12 @@ Multiple avatars can overlap and stack together.
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/avatar.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **stacked** | stacked display group | `boolean` | `true` / `false` | `false` |
-| **src** | image src | `string` | - | - |
-| **text** | display text when image is missing | `string` | - | - |
-| **size** | avatar size | `string` | `small` / `medium` / `big` / `huge` | `medium` |
-| **shape** | avatar shape | `string` | `circle` / `square` | `circle` |
+| Attribute   | Description                        | Type      | Accepted values                     | Default  |
+| ----------- | ---------------------------------- | --------- | ----------------------------------- | -------- |
+| **stacked** | stacked display group              | `boolean` | `true` / `false`                    | `false`  |
+| **src**     | image src                          | `string`  | -                                   | -        |
+| **text**    | display text when image is missing | `string`  | -                                   | -        |
+| **size**    | avatar size                        | `string`  | `small` / `medium` / `big` / `huge` | `medium` |
+| **shape**   | avatar shape                       | `string`  | `circle` / `square`                 | `circle` |
 
 </ex-footer>

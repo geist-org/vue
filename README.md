@@ -39,4 +39,5 @@ Vue.use(ZeitUI)
 <br/>
 
 ## LICENSE
+
 [MIT](LICENSE)

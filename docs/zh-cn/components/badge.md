@@ -22,12 +22,12 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/badge.md">
 
-| 属性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 描述 | 类型 | 推荐值 | 默认
-| ------------- | ------- | ----- |  ------------- | --- |
-| **count** | 显示的数字 | `string | number` | - | - |
-| **status** | 组件状态 | `string` | `success` / `error` / `warning` | - |
-| **max-count** | 最大值 | `string | number` | - | - |
-| **show-zero** | 是否显示 0 | `boolean` | - | `false` |
-| **dot** | 以圆点的方式显示 | `boolean` | `true` / `false` | `false` |
+| 属性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 描述             | 类型              | 推荐值                          | 默认    |
+| ---------------------------------- | ---------------- | ----------------- | ------------------------------- | ------- |
+| **count**                          | 显示的数字       | `string | number` | -                               | -       |
+| **status**                         | 组件状态         | `string`          | `success` / `error` / `warning` | -       |
+| **max-count**                      | 最大值           | `string | number` | -                               | -       |
+| **show-zero**                      | 是否显示 0       | `boolean`         | -                               | `false` |
+| **dot**                            | 以圆点的方式显示 | `boolean`         | `true` / `false`                | `false` |
 
 </ex-footer>

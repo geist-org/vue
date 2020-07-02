@@ -14,31 +14,36 @@ export default {
   name: 'ex-table-width',
 
   data: () => ({
-    tableData: [{
-      id: 1,
-      name: 'table',
-      time: '2019-03-09',
-      point: 'this is a scrollable table',
-      usage: 'write',
-    }, {
-      id: 2,
-      name: 'table',
-      time: '2019-03-10',
-      point: 'this is a scrollable table',
-      usage: 'read',
-    }, {
-      id: 3,
-      name: 'table',
-      time: '2019-05-03',
-      point: 'this is a scrollable table',
-      usage: 'work',
-    }, {
-      id: 4,
-      name: 'table',
-      time: '2019-05-04',
-      point: 'this is a scrollable table',
-      usage: 'option',
-    }],
+    tableData: [
+      {
+        id: 1,
+        name: 'table',
+        time: '2019-03-09',
+        point: 'this is a scrollable table',
+        usage: 'write',
+      },
+      {
+        id: 2,
+        name: 'table',
+        time: '2019-03-10',
+        point: 'this is a scrollable table',
+        usage: 'read',
+      },
+      {
+        id: 3,
+        name: 'table',
+        time: '2019-05-03',
+        point: 'this is a scrollable table',
+        usage: 'work',
+      },
+      {
+        id: 4,
+        name: 'table',
+        time: '2019-05-04',
+        point: 'this is a scrollable table',
+        usage: 'option',
+      },
+    ],
   }),
 }
 </script>

@@ -18,11 +18,11 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/more.md">
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **text** | 显示文字 | `string` | - | `show more` |
-| **textUp** | 激活时显示的文字  | `string` | - | `show more` |
-| **expand** | 默认是否展开 | `boolean` | - | `false` |
-| **loading** | 显示加载按钮 | `boolean` | - | `false` |
+| 属性        | 描述             | 类型      | 推荐值 | 默认        |
+| ----------- | ---------------- | --------- | ------ | ----------- |
+| **text**    | 显示文字         | `string`  | -      | `show more` |
+| **textUp**  | 激活时显示的文字 | `string`  | -      | `show more` |
+| **expand**  | 默认是否展开     | `boolean` | -      | `false`     |
+| **loading** | 显示加载按钮     | `boolean` | -      | `false`     |
 
 </ex-footer>

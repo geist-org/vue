@@ -8,9 +8,9 @@ Indicate an action running in the background.
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/spinner.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **size** | spinner size | `string` | `mini` / `small` / `normal` / `big` | - |
-| **auto** | auto size | `boolean` | `true` / `false` | `false` |
+| Attribute | Description  | Type      | Accepted values                     | Default |
+| --------- | ------------ | --------- | ----------------------------------- | ------- |
+| **size**  | spinner size | `string`  | `mini` / `small` / `normal` / `big` | -       |
+| **auto**  | auto size    | `boolean` | `true` / `false`                    | `false` |
 
 </ex-footer>

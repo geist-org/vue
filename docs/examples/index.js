@@ -10,7 +10,8 @@ const assignMetaTemplate = (component, meta) => {
 
 export default {
   install: vue => {
-    context.keys()
+    context
+      .keys()
       .map(path => {
         const exampleModule = context(path)
         return assignMetaTemplate(exampleModule.default, templateContext(path))

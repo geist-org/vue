@@ -18,10 +18,10 @@ use slot to set a custom caption.
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/display.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **width** | content width src | `string` | - | `auto` |
-| **caption** | caption for display | `string` | `template` | - | - |
-| **shadow** | content with shadow | `boolean` | - | `false` |
+| Attribute   | Description         | Type      | Accepted values | Default |
+| ----------- | ------------------- | --------- | --------------- | ------- |
+| **width**   | content width src   | `string`  | -               | `auto`  |
+| **caption** | caption for display | `string`  | `template`      | -       | - |
+| **shadow**  | content with shadow | `boolean` | -               | `false` |
 
 </ex-footer>

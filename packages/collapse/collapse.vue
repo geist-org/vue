@@ -51,10 +51,12 @@ export default {
         this.model = status ? name : null
         return
       }
-      this.model = status ? [...new Set(this.modelAlias.concat([name]))] : this.modelAlias.filter(r => r !== name)
+      this.model = status
+        ? [...new Set(this.modelAlias.concat([name]))]
+        : this.modelAlias.filter(r => r !== name)
     },
   },
 }
 </script>
 
-<style lang="stylus" src="./collapse.styl"/>
+<style lang="stylus" src="./collapse.styl" />

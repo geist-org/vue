@@ -12,7 +12,6 @@ div.zi-rate(:class="{ disabled }")
 </template>
 
 <script>
-
 import RateIcon from './rate-icon'
 
 export default {
@@ -71,4 +70,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./rate.styl"/>
+<style lang="stylus" src="./rate.styl" />

@@ -53,4 +53,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./link.styl"/>
+<style lang="stylus" src="./link.styl" />

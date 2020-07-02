@@ -14,8 +14,7 @@ export default {
     getCSSValue(val) {
       val = val.match(/^var\(([\s\S]*)\)/)[1]
       if (!val) return ''
-      return getComputedStyle(document.documentElement)
-        .getPropertyValue(val)
+      return getComputedStyle(document.documentElement).getPropertyValue(val)
     },
   },
 }

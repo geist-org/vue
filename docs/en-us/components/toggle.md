@@ -8,9 +8,9 @@ Displays a boolean value.
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/toogle.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **v-model** | binding value[v-model] | `string | number | boolean` | - | - |
-| **disabled** | disable toggle | `boolean` | `true` / `false` | `false` |
+| Attribute    | Description            | Type                        | Accepted values  | Default |
+| ------------ | ---------------------- | --------------------------- | ---------------- | ------- |
+| **v-model**  | binding value[v-model] | `string | number | boolean` | -                | -       |
+| **disabled** | disable toggle         | `boolean`                   | `true` / `false` | `false` |
 
 </ex-footer>

@@ -18,9 +18,9 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/avatar.md">
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **footer** | 组件的底部内容 | `string` | - | - |
-| **disabled** | 是否禁用 | `boolean` | `true` / `false` | `false` |
+| 属性         | 描述           | 类型      | 推荐值           | 默认    |
+| ------------ | -------------- | --------- | ---------------- | ------- |
+| **footer**   | 组件的底部内容 | `string`  | -                | -       |
+| **disabled** | 是否禁用       | `boolean` | `true` / `false` | `false` |
 
 </ex-footer>

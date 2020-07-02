@@ -35,17 +35,17 @@ Use <code>justify</code> and <code>align</code> make to alignment of columns.
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/layout.md">
 <h3>zi-row</h3>
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **gutter** | grid spacing | `number` | - | 0 |
+| Attribute   | Description          | Type     | Accepted values                                       | Default |
+| ----------- | -------------------- | -------- | ----------------------------------------------------- | ------- |
+| **gutter**  | grid spacing         | `number` | -                                                     | 0       |
 | **justify** | horizontal alignment | `string` | `start / end / center / space-around / space-between` | `start` |
-| **align** | vertical alignmen | `string` | `top / middle / bottom` | `top` |
+| **align**   | vertical alignmen    | `string` | `top / middle / bottom`                               | `top`   |
 
 <br/>
 <h3>zi-col</h3>
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **span** | number of column the grid spans | `number` | 1 - 24 | 24 |
+| Attribute | Description                     | Type     | Accepted values | Default |
+| --------- | ------------------------------- | -------- | --------------- | ------- |
+| **span**  | number of column the grid spans | `number` | 1 - 24          | 24      |
 
 </ex-footer>

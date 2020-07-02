@@ -52,4 +52,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./col.styl"/>
+<style lang="stylus" src="./col.styl" />

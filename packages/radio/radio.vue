@@ -72,4 +72,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./radio.styl"/>
+<style lang="stylus" src="./radio.styl" />

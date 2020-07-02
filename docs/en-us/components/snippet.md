@@ -32,12 +32,12 @@ Set snippet's background with type's color.
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/snippet.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **type** | snippet type | `string` | `success` / `error` / `dark` / `secondary` / `default` / `lite` / `warning` | `default` |
-| **text** | snippet text | `string | array` | - | - |
-| **filled** | background is filled with type's color | `boolean` | - | `false` |
-| **copy** | hide copy | `boolean` | `true` / `false` | `true` |
-| **width** | snippet width | `string` | - | - |
+| Attribute  | Description                            | Type             | Accepted values                                                             | Default   |
+| ---------- | -------------------------------------- | ---------------- | --------------------------------------------------------------------------- | --------- |
+| **type**   | snippet type                           | `string`         | `success` / `error` / `dark` / `secondary` / `default` / `lite` / `warning` | `default` |
+| **text**   | snippet text                           | `string | array` | -                                                                           | -         |
+| **filled** | background is filled with type's color | `boolean`        | -                                                                           | `false`   |
+| **copy**   | hide copy                              | `boolean`        | `true` / `false`                                                            | `true`    |
+| **width**  | snippet width                          | `string`         | -                                                                           | -         |
 
 </ex-footer>

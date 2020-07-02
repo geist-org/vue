@@ -10,16 +10,20 @@ export default {
 
   data: () => ({
     checked: '1',
-    data: [{
-      label: '1',
-      name: 'Sydney',
-    }, {
-      label: '2',
-      name: 'London',
-    }, {
-      label: '3',
-      name: 'China',
-    }],
+    data: [
+      {
+        label: '1',
+        name: 'Sydney',
+      },
+      {
+        label: '2',
+        name: 'London',
+      },
+      {
+        label: '3',
+        name: 'China',
+      },
+    ],
   }),
 
   watch: {

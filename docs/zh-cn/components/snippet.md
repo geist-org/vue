@@ -32,12 +32,12 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/snippet.md">
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **type** | 片段类型 | `string` | `success` / `error` / `dark` / `secondary` / `default` / `lite` / `warning` | `default` |
-| **text** | 片段内的文字 | `string | array` | - | - |
-| **filled** | 使用类型色填充背景 | `boolean` | - | `false` |
-| **copy** | 隐藏复制键 | `boolean` | `true` / `false` | `true` |
-| **width** | 片段宽度 | `string` | - | - |
+| 属性       | 描述               | 类型             | 推荐值                                                                      | 默认      |
+| ---------- | ------------------ | ---------------- | --------------------------------------------------------------------------- | --------- |
+| **type**   | 片段类型           | `string`         | `success` / `error` / `dark` / `secondary` / `default` / `lite` / `warning` | `default` |
+| **text**   | 片段内的文字       | `string | array` | -                                                                           | -         |
+| **filled** | 使用类型色填充背景 | `boolean`        | -                                                                           | `false`   |
+| **copy**   | 隐藏复制键         | `boolean`        | `true` / `false`                                                            | `true`    |
+| **width**  | 片段宽度           | `string`         | -                                                                           | -         |
 
 </ex-footer>

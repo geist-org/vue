@@ -41,8 +41,8 @@ export default {
 
     isFilled() {
       if (this.fill) {
-        console.warn('[zi-note] > **DEPRECATION**: The props "fill" is deprecated.');
-        console.warn('[zi-note] > **DEPRECATION**: Please use "filled" instead of "fill".');
+        console.warn('[zi-note] > **DEPRECATION**: The props "fill" is deprecated.')
+        console.warn('[zi-note] > **DEPRECATION**: Please use "filled" instead of "fill".')
       }
       return this.fill || this.filled
     },

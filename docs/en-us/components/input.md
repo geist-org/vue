@@ -31,23 +31,23 @@ please refer to <zi-link color href="https://github.com/zeit-ui/vue-icons">zeit-
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/input.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **value** | input value | `string` | - | - |
-| **placeholder** | input placeholder | `string` | - | - |
-| **clearable** | clear input value | `boolean` | `true` / `false` | `false` |
-| **size** | input size | `string` | `mini` / `small` / `medium` / `big` | - |
-| **type** | input type | `string` | `primary` / `success` / `danger` / `warning` | `primary` |
-| **form** | input value | `string` | - | - |
-| **_type** | original property | `string` | - | `text` |
-| **autocomplete** | original property, read [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) to learn more | `string` | `on` / `off` | `off` |
-| **spellcheck** | original property | `boolean` | `true` / `false` | - |
-| **autofocus** | original property | `boolean` | `true` / `false` | `false` |
-| **readonly** | input readonly | `boolean` | `true` / `false` | `false` |
-| **disabled** | input disabled | `boolean` | `true` / `false` | `false` |
-| **prefixLabel** | prefix label | `string | number` | - | - |
-| **suffixLabel** | suffix label | `string | number` | - | - |
-| **prefixIcon** (slot) | input prefix icon (see the example code above for the usage) | `slot` | - | - |
-| **suffixIcon** (slot) | suffix icon (see the example code above for the usage) | `slot` | - | - |
+| Attribute             | Description                                                                                                   | Type              | Accepted values                              | Default   |
+| --------------------- | ------------------------------------------------------------------------------------------------------------- | ----------------- | -------------------------------------------- | --------- |
+| **value**             | input value                                                                                                   | `string`          | -                                            | -         |
+| **placeholder**       | input placeholder                                                                                             | `string`          | -                                            | -         |
+| **clearable**         | clear input value                                                                                             | `boolean`         | `true` / `false`                             | `false`   |
+| **size**              | input size                                                                                                    | `string`          | `mini` / `small` / `medium` / `big`          | -         |
+| **type**              | input type                                                                                                    | `string`          | `primary` / `success` / `danger` / `warning` | `primary` |
+| **form**              | input value                                                                                                   | `string`          | -                                            | -         |
+| **\_type**            | original property                                                                                             | `string`          | -                                            | `text`    |
+| **autocomplete**      | original property, read [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) to learn more | `string`          | `on` / `off`                                 | `off`     |
+| **spellcheck**        | original property                                                                                             | `boolean`         | `true` / `false`                             | -         |
+| **autofocus**         | original property                                                                                             | `boolean`         | `true` / `false`                             | `false`   |
+| **readonly**          | input readonly                                                                                                | `boolean`         | `true` / `false`                             | `false`   |
+| **disabled**          | input disabled                                                                                                | `boolean`         | `true` / `false`                             | `false`   |
+| **prefixLabel**       | prefix label                                                                                                  | `string | number` | -                                            | -         |
+| **suffixLabel**       | suffix label                                                                                                  | `string | number` | -                                            | -         |
+| **prefixIcon** (slot) | input prefix icon (see the example code above for the usage)                                                  | `slot`            | -                                            | -         |
+| **suffixIcon** (slot) | suffix icon (see the example code above for the usage)                                                        | `slot`            | -                                            | -         |
 
 </ex-footer>

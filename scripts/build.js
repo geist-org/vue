@@ -5,31 +5,28 @@ const utils = require('./utils')
 
 const packagePath = path.join(__dirname, '../packages')
 const args = ['build', '--target', 'lib', '--name', 'zeit-ui', './packages/index.js']
-const log = (text) => `\x1b[37m${text}\x1b[2m\x1b[0m`
-const cyan = (text) => `\u001b[36m${text}\u001b[39m`
+const log = text => `\x1b[37m${text}\x1b[2m\x1b[0m`
+const cyan = text => `\u001b[36m${text}\u001b[39m`
 
 const getPackages = async () => {
   const files = await fs.readdir(packagePath)
-  return files
-    .filter(name =>
-      name !== 'document-main.vue.js'
-      && name !== 'utils'
-      && name !== 'index.js'
-    )
+  return files.filter(
+    name => name !== 'document-main.vue.js' && name !== 'utils' && name !== 'index.js',
+  )
 }
 
 const runPackage = async (name, count) => {
   await execa('vue-cli-service', [
     'build',
-    '--target', 'lib',
-    '--dest', 'lib',
-    '--name', name,
+    '--target',
+    'lib',
+    '--dest',
+    'lib',
+    '--name',
+    name,
     `./packages/${name}/index.js`,
   ])
-  console.log(
-    '\u001B[1A',
-    log(`> Lib bundle ${cyan(name)} ${log('done. No.' + count)}      `),
-  )
+  console.log('\u001B[1A', log(`> Lib bundle ${cyan(name)} ${log('done. No.' + count)}      `))
 }
 
 const bundleComponents = async () => {
@@ -44,20 +41,19 @@ const bundleComponents = async () => {
   // create multiple subprocesses results in insufficient memory
   if (process.env.CIRCLE_JOB === 'package') {
     for (const name of packages) {
-      count ++
+      count++
       await runPackage(name, count)
     }
   } else {
-    await Promise.all(packages.map(async name => {
-      count ++
-      await runPackage(name, count)
-    }))
+    await Promise.all(
+      packages.map(async name => {
+        count++
+        await runPackage(name, count)
+      }),
+    )
   }
 
-  console.log(
-    '\u001B[1A',
-    log(`> Libs bundle done. Count ${count}.               `),
-  )
+  console.log('\u001B[1A', log(`> Libs bundle done. Count ${count}.               `))
 }
 
 const buildMain = async () => {
@@ -72,7 +68,6 @@ const build = async () => {
   await buildMain()
 }
 
-build()
-  .catch(err => {
-    console.log(`Build Err: ${err}`)
-  })
+build().catch(err => {
+  console.log(`Build Err: ${err}`)
+})

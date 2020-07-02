@@ -12,9 +12,9 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/dot.md">
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **type** | 点的类型 | `string` | `primary` / `success` / `danger` / `warning` | `primary` |
-| **label** | 标签文字 | `string` | - | - |
+| 属性      | 描述     | 类型     | 推荐值                                       | 默认      |
+| --------- | -------- | -------- | -------------------------------------------- | --------- |
+| **type**  | 点的类型 | `string` | `primary` / `success` / `danger` / `warning` | `primary` |
+| **label** | 标签文字 | `string` | -                                            | -         |
 
 </ex-footer>

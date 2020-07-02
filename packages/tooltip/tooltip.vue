@@ -30,10 +30,18 @@ export default {
       type: String,
       default: 'bottom',
       validator: enums([
-        'top', 'top-start', 'top-end',
-        'bottom', 'bottom-start', 'bottom-end',
-        'left', 'left-start', 'left-end',
-        'right', 'right-start', 'right-end',
+        'top',
+        'top-start',
+        'top-end',
+        'bottom',
+        'bottom-start',
+        'bottom-end',
+        'left',
+        'left-start',
+        'left-end',
+        'right',
+        'right-start',
+        'right-end',
       ]),
     },
     clickable: Boolean,
@@ -107,4 +115,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./tooltip.styl"/>
+<style lang="stylus" src="./tooltip.styl" />

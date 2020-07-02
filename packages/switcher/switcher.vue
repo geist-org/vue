@@ -19,7 +19,9 @@ export default {
   }),
 
   created() {
-    console.warn('[zeit-ui]: **DEPRECATION**: <zi-switcher> will be discarded. Please use <zi-tabs> instead of it')
+    console.warn(
+      '[zeit-ui]: **DEPRECATION**: <zi-switcher> will be discarded. Please use <zi-tabs> instead of it',
+    )
   },
 
   methods: {
@@ -58,4 +60,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./switcher.styl"/>
+<style lang="stylus" src="./switcher.styl" />

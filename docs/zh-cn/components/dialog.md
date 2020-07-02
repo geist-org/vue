@@ -22,14 +22,14 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/avatar.md">
 
-| 属性 | 描述 | 类型 | 推荐值 | 默认
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **width** | 对话框宽度 | `string` | - | - |
-| **title** | 标题 | `string` | - | - |
-| **value** | 显示与隐藏 | `boolean` | - | `false` |
-| **cancel** | 取消按钮的文字 | `string` | - | `cancel` |
-| **done** | 确定按钮的文字  | `string` | - | `done` |
-| **beforeDone** | 确定按钮触发前的回调 | `function` | - | `done => done()` |
-| **closeByModal** | 点击背景是否可以关闭 | `boolean` | - | `true` |
+| 属性             | 描述                 | 类型       | 推荐值 | 默认             |
+| ---------------- | -------------------- | ---------- | ------ | ---------------- |
+| **width**        | 对话框宽度           | `string`   | -      | -                |
+| **title**        | 标题                 | `string`   | -      | -                |
+| **value**        | 显示与隐藏           | `boolean`  | -      | `false`          |
+| **cancel**       | 取消按钮的文字       | `string`   | -      | `cancel`         |
+| **done**         | 确定按钮的文字       | `string`   | -      | `done`           |
+| **beforeDone**   | 确定按钮触发前的回调 | `function` | -      | `done => done()` |
+| **closeByModal** | 点击背景是否可以关闭 | `boolean`  | -      | `true`           |
 
 </ex-footer>

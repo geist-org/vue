@@ -26,11 +26,12 @@ This fixed progress bar is displayed at the top of the page.
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/progress.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **value** | current percentage | `number` | - | `0` |
-| **fix** | display in fixed mode | `string` | `top` / `bottom` | - |
-| **colors** | background color | `array` | hex color | - |
-| **max** | progress max number | `number` / `string` | - | `100` |
-| **type** | progress type | `string` | `default` / `success` / `danger` / `warning` / `secondary` | `default` |
+| Attribute  | Description           | Type                | Accepted values                                            | Default   |
+| ---------- | --------------------- | ------------------- | ---------------------------------------------------------- | --------- |
+| **value**  | current percentage    | `number`            | -                                                          | `0`       |
+| **fix**    | display in fixed mode | `string`            | `top` / `bottom`                                           | -         |
+| **colors** | background color      | `array`             | hex color                                                  | -         |
+| **max**    | progress max number   | `number` / `string` | -                                                          | `100`     |
+| **type**   | progress type         | `string`            | `default` / `success` / `danger` / `warning` / `secondary` | `default` |
+
 </ex-footer>

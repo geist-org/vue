@@ -54,7 +54,7 @@ export default {
     },
 
     privatePercentage() {
-      return Math.round(this.privateValue / this.privateMax * 100)
+      return Math.round((this.privateValue / this.privateMax) * 100)
     },
 
     styles() {
@@ -69,7 +69,7 @@ export default {
       const current = this.sortable.find(item => {
         let value = +item.value
         if (value > this.privateMax) value = this.privateMax
-        return this.privatePercentage >= Math.round(value / this.privateMax * 100)
+        return this.privatePercentage >= Math.round((value / this.privateMax) * 100)
       })
       return current && (this.currentColor = current.color)
     },

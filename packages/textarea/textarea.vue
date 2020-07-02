@@ -59,4 +59,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped src="./textarea.styl"/>
+<style lang="stylus" scoped src="./textarea.styl" />

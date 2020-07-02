@@ -14,11 +14,11 @@ show user information.
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/user.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **src** | avatar's src | `string` | - | - |
-| **name** | username | `string` | - | - |
-| **text** | text style of avatar | `string` | - | - |
-| **altText** | alt attribute of avatar's img | `string` | - | - |
+| Attribute   | Description                   | Type     | Accepted values | Default |
+| ----------- | ----------------------------- | -------- | --------------- | ------- |
+| **src**     | avatar's src                  | `string` | -               | -       |
+| **name**    | username                      | `string` | -               | -       |
+| **text**    | text style of avatar          | `string` | -               | -       |
+| **altText** | alt attribute of avatar's img | `string` | -               | -       |
 
 </ex-footer>

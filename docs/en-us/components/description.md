@@ -16,9 +16,9 @@ Also support <code>slot</code>.
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/description.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| --------- | ---------- | ---- |  -------------- | ------ |
-| **title** | title | `string` | - | - |
-| **content** | content | `string` | - | - |
+| Attribute   | Description | Type     | Accepted values | Default |
+| ----------- | ----------- | -------- | --------------- | ------- |
+| **title**   | title       | `string` | -               | -       |
+| **content** | content     | `string` | -               | -       |
 
 </ex-footer>

@@ -9,8 +9,7 @@ const setBabelConfig = (useBuiltIns = false) => {
   if (!useBuiltIns && JSON.stringify(babelConfig).includes('"useBuiltIns":false')) return
 
   const value = useBuiltIns ? '"usage"' : false
-  const configStr = base
-    .replace(ident, `useBuiltIns: ${value}`)
+  const configStr = base.replace(ident, `useBuiltIns: ${value}`)
   const babelPath = path.join(__dirname, '../babel.config.js')
   fs.writeFileSync(babelPath, configStr)
 }

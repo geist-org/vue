@@ -3,36 +3,16 @@
   "version": "2.5.0-canary.3",
   "description": "A popular UI framework for Vue",
   "scripts": {
-    "start": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "NODE_ENV=production vue-cli-service build",
     "build:lib": "node scripts/build.js",
     "clear": "rm -rf dist lib",
-    "lint": "xo",
+    "lint": "eslint \"{packages,docs}/**/*.{js,vue}\"",
+    "prettier": "prettier --write .",
     "now-build": "node scripts/now-build.js && yarn run build && cp ./public/favicon.ico ./dist",
     "release": "yarn run clear && yarn run build:lib && yarn publish --access public --non-interactive"
   },
-  "pre-commit": [
-    "lint"
-  ],
-  "xo": {
-    "extends": [
-      "lambdas/vue"
-    ],
-    "rules": {
-      "prefer-object-spread": 0
-    },
-    "extensions": [
-      "vue",
-      "js"
-    ],
-    "ignore": [
-      "scripts",
-      "lib",
-      "dist",
-      "public",
-      "examples"
-    ]
-  },
+  "prettier": "@zeit-ui/prettier-config",
   "dependencies": {
     "@popperjs/core": "^2.4.2",
     "@zeit-ui/themes": "^1.0.0",
@@ -42,12 +22,14 @@
     "@types/fs-extra": "^7.0.0",
     "@vue/cli-plugin-babel": "^3.9.2",
     "@vue/cli-service": "^3.9.2",
+    "@zeit-ui/prettier-config": "^1.0.0",
     "@zeit-ui/vue-icons": "^3.1.0",
     "babel-eslint": "^10.0.1",
     "eslint-config-lambdas": "^0.2.3",
+    "eslint-plugin-prettier": "^3.1.4",
     "execa": "^1.0.0",
     "fs-extra": "^8.0.1",
-    "pre-commit": "^1.2.2",
+    "prettier": "^2.0.5",
     "prismjs": "^1.15.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
@@ -59,8 +41,7 @@
     "vue-markdown-loader": "^2.4.1",
     "vue-prism-component": "^1.1.1",
     "vue-router": "^3.0.1",
-    "vue-template-compiler": "^2.6.11",
-    "xo": "^0.24.0"
+    "vue-template-compiler": "^2.6.11"
   },
   "browserslist": {
     "production": [

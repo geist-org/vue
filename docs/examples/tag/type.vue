@@ -14,6 +14,6 @@ export default {
 </script>
 
 <style module lang="stylus">
-  .tags span
-    margin-bottom: 10px
+.tags span
+  margin-bottom: 10px
 </style>

@@ -24,22 +24,20 @@ Set label with icon.
 
 <h3>zi-tabs</h3>
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **label-selected**(event) | label selected event | `event` | - | - |
-| **disabled** | set tabs disabled | `Boolean` | - | `false` |
+| Attribute                 | Description          | Type      | Accepted values | Default |
+| ------------------------- | -------------------- | --------- | --------------- | ------- |
+| **label-selected**(event) | label selected event | `event`   | -               | -       |
+| **disabled**              | set tabs disabled    | `Boolean` | -               | `false` |
 
 <br/>
 
 <h3>zi-tabs-item</h3>
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **label**(required) | label text | `string` | - | - |
-| **value**(required) | tab's value | `string` | - | - |
-| **active** | currently active | `boolean` | - | `false` |
-| **icon** | set icon | `obeject` | - | - |
+| Attribute           | Description      | Type      | Accepted values | Default |
+| ------------------- | ---------------- | --------- | --------------- | ------- |
+| **label**(required) | label text       | `string`  | -               | -       |
+| **value**(required) | tab's value      | `string`  | -               | -       |
+| **active**          | currently active | `boolean` | -               | `false` |
+| **icon**            | set icon         | `obeject` | -               | -       |
 
 </ex-footer>
-
-

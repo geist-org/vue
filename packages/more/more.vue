@@ -45,4 +45,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./more.styl"/>
+<style lang="stylus" src="./more.styl" />

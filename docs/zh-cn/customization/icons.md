@@ -11,22 +11,21 @@
 
 ### 安装图标库
 
-  1. 运行命令: <zi-code>yarn add @zeit-ui/vue-icons</zi-code>
+1. 运行命令: <zi-code>yarn add @zeit-ui/vue-icons</zi-code>
 
-  2. 引入至项目:
-  ```vue
-  import { install } from '@zeit-ui/vue-icons'
-  import Vue from 'vue'
-  
-  install(Vue)
-  ```
+2. 引入至项目:
 
-  3. 随后尝试直接使用组件：
-  ```html
-  <template>
-    <apple-icon/>
-  </template>
-  ```
+```vue
+import { install } from '@zeit-ui/vue-icons' import Vue from 'vue' install(Vue)
+```
+
+3. 随后尝试直接使用组件：
+
+```html
+<template>
+  <apple-icon />
+</template>
+```
 
 <zi-spacer :y="2"></zi-spacer>
 
@@ -53,7 +52,6 @@
 </zi-dot>
 
 <zi-spacer :y="2"></zi-spacer>
-
 
 ### 展示
 

@@ -1,6 +1,4 @@
-const themes = [
-  'dark-theme', 'light-theme',
-]
+const themes = ['dark-theme', 'light-theme']
 
 const setTheme = theme => {
   if (typeof document === 'undefined') return

@@ -23,7 +23,15 @@ export default {
     type: {
       type: String,
       default: 'default',
-      validator: validator.enums(['default', 'dark', 'success', 'warning', 'error', 'secondary', 'lite']),
+      validator: validator.enums([
+        'default',
+        'dark',
+        'success',
+        'warning',
+        'error',
+        'secondary',
+        'lite',
+      ]),
     },
     filled: Boolean,
     copy: {
@@ -68,4 +76,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" src="./snippet.styl"/>
+<style lang="stylus" src="./snippet.styl" />

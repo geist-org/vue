@@ -9,9 +9,7 @@ ZEIT 的设计非常简洁美观，且有浓厚的 Geek 风格，这是 ZEIT 如
 
 **ZEIT UI** 是非官方的组织，且所有项目都是开源的。
 
-
 <br>
-
 
 ### 联系我们
 
@@ -24,5 +22,3 @@ ZEIT 的设计非常简洁美观，且有浓厚的 Geek 风格，这是 ZEIT 如
 ### 开源许可
 
 项目使用 [MIT LICENSE](https://github.com/zeit-ui/vue/blob/master/LICENSE) 许可证.
-
-

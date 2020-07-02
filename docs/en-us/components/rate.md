@@ -6,9 +6,9 @@
 
 <ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/rate.md">
 
-| Attribute | Description | Type | Accepted values | Default
-| ---------- | ---------- | ---- |  -------------- | ------ |
-| **v-model** | binding value[v-model] | `number` | - | - |
-| **disabled** | disable rate | `boolean` | `true` / `false` | `false` |
+| Attribute    | Description            | Type      | Accepted values  | Default |
+| ------------ | ---------------------- | --------- | ---------------- | ------- |
+| **v-model**  | binding value[v-model] | `number`  | -                | -       |
+| **disabled** | disable rate           | `boolean` | `true` / `false` | `false` |
 
 </ex-footer>

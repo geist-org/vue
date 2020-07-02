@@ -12,7 +12,6 @@ ZEIT UI is an unofficial organization, all our projects are open source.
 
 <br>
 
-
 ### Contact
 
 - [Chat on Spectrum](https://spectrum.chat/zeit-ui/vue?tab=posts)
@@ -24,5 +23,3 @@ ZEIT UI is an unofficial organization, all our projects are open source.
 ### License
 
 Licensed under the [MIT LICENSE](https://github.com/zeit-ui/vue/blob/master/LICENSE).
-
-

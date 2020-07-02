@@ -2,7 +2,7 @@ import pkg from './package.json'
 
 export default {
   mode: 'universal',
-  
+
   /*
    ** Headers of the page
    */
@@ -15,16 +15,13 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  
+
   /*
    ** Customize the progress-bar color
    */
   plugins: ['@/plugins/theme'],
   loading: { color: '#3b8070' },
-  css: [
-    '~/css/main.css',
-    '@zeit-ui/vue/dist/zeit-ui.css',
-  ],
+  css: ['~/css/main.css', '@zeit-ui/vue/dist/zeit-ui.css'],
   render: {
     bundleRenderer: {
       shouldPreload: (file, type) => {
@@ -38,17 +35,15 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    '@nuxtjs/axios',
-  ],
-  
+  modules: ['@nuxtjs/axios'],
+
   /*
    ** Axios module configuration
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
-  
+
   /*
    ** Build configuration
    */

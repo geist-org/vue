@@ -38,5 +38,4 @@ export default {
 
 .blur
   filter blur(2px)
-
 </style>

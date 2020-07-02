@@ -19,7 +19,7 @@ export const lockScroll = isLock => {
       return
     }
     elInfoStack.set(elementRef, {
-      counter: elInfo.counter ++,
+      counter: elInfo.counter++,
       initialOverflow: elInfo.initialOverflow,
       initialRight: defaultPaddingRight,
     })
@@ -54,7 +54,9 @@ const getScrollbarWidth = () => {
   const elStyle = 'position: absolute; top: -9999px; width: 50px; height: 50px; overflow: scroll;'
   scrollElement.setAttribute('style', elStyle)
   document.body.appendChild(scrollElement)
-  const scrollbarWidth = `${scrollElement.getBoundingClientRect().width - scrollElement.clientWidth}px`
+  const scrollbarWidth = `${
+    scrollElement.getBoundingClientRect().width - scrollElement.clientWidth
+  }px`
   document.body.removeChild(scrollElement)
   return scrollbarWidth
 }

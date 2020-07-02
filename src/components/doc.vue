@@ -29,9 +29,7 @@ export default {
 
   methods: {
     findDocModule(docs, docName) {
-      return docs
-        .map(docModule => docModule.default)
-        .find(content => content.docName === docName)
+      return docs.map(docModule => docModule.default).find(content => content.docName === docName)
     },
 
     safeComponentName(component) {

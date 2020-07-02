@@ -27,10 +27,14 @@ class TableLayout {
     const fixedBodyWidth = fixedColumns.reduce((total, column) => total + column.width, 0)
 
     if (flexColumns.length > 0) {
-      const bodyMinWidth = flexColumns.reduce((total, column) => total + column.minWidth, fixedBodyWidth)
+      const bodyMinWidth = flexColumns.reduce(
+        (total, column) => total + column.minWidth,
+        fixedBodyWidth,
+      )
 
       if (fixedBodyWidth > bodyWidth) {
-        this.bodyWidth = fixedBodyWidth + flexColumns.reduce((total, column) => total + column.minWidth, 0)
+        this.bodyWidth =
+          fixedBodyWidth + flexColumns.reduce((total, column) => total + column.minWidth, 0)
         return
       }
 
@@ -38,7 +42,8 @@ class TableLayout {
       const averageWidth = Math.floor(flexBodyWidth / flexColumns.length)
       flexColumns.forEach((flexColumn, index) => {
         if (!index) {
-          flexColumn.realWidth = (flexBodyWidth - averageWidth * (flexColumns.length - 1)) + flexColumn.minWidth
+          flexColumn.realWidth =
+            flexBodyWidth - averageWidth * (flexColumns.length - 1) + flexColumn.minWidth
           return
         }
         flexColumn.realWidth = averageWidth + flexColumn.minWidth

@@ -18,27 +18,27 @@ prototype: `$Toast`
 
 ```ts
 type ToastOption = {
-  text: string,
-  action: string,
-  type: 'success' | 'warning' | 'warning',
-  duration: number,
-  handler: Function,
+  text: string
+  action: string
+  type: 'success' | 'warning' | 'warning'
+  duration: number
+  handler: Function
 }
 
 type ToastInstance = {
-  vm: Result<$mount>,
-  close: Function,    // destroy handler
+  vm: Result<$mount>
+  close: Function // destroy handler
 } & VueComponent
 ```
 
 <br/>
 
-| Methods | Description | Params 
-| ---------- | ---------- | ----
-| **show** | show basic toast | `(text: string | ToastOption): ToastInstance`
-| **success** | show success toast | `(text: string | ToastOption): ToastInstance`
-| **warning** | show warning toast | `(text: string | ToastOption): ToastInstance`
-| **danger** | show danger toast | `(text: string | ToastOption): ToastInstance`
-| **closeAll** | remove all active toasts | `(): void`
+| Methods      | Description              | Params                                        |
+| ------------ | ------------------------ | --------------------------------------------- |
+| **show**     | show basic toast         | `(text: string | ToastOption): ToastInstance` |
+| **success**  | show success toast       | `(text: string | ToastOption): ToastInstance` |
+| **warning**  | show warning toast       | `(text: string | ToastOption): ToastInstance` |
+| **danger**   | show danger toast        | `(text: string | ToastOption): ToastInstance` |
+| **closeAll** | remove all active toasts | `(): void`                                    |
 
 </ex-footer>
