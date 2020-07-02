@@ -4,8 +4,15 @@
 </template>
 
 <script>
+import { validator } from '../packages/utils'
+
 export default {
   created() {
+    if (validator.isMac()) {
+      document.body.className = ''
+    } else {
+      document.body.className = 'window-scrollbar'
+    }
     let { name, language } = this.$route.params
     const paramsMissing = !name || !language
     if (!paramsMissing) return
@@ -18,12 +25,12 @@ export default {
 </script>
 
 <style lang="stylus">
-body::-webkit-scrollbar {
+.window-scrollbar::-webkit-scrollbar {
   width 5px
   background-color var(--accents-1)
 }
 
-body::-webkit-scrollbar-thumb {
+.window-scrollbar::-webkit-scrollbar-thumb {
   background-color var(--accents-2)
   border-radius 5px
 }
