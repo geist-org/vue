@@ -9,6 +9,8 @@ div(
 import { print, validator } from '../utils'
 import flexProps from './flex-passthrough'
 
+const breakpoints = ['xs', 'sm', 'md', 'lg', 'xl']
+
 export default {
   name: 'zi-grid',
 
@@ -97,13 +99,9 @@ export default {
     },
 
     classes() {
-      const breakpointsClasses = [
-        this.xs && 'xs',
-        this.sm && 'sm',
-        this.md && 'md',
-        this.lg && 'lg',
-        this.xl && 'xl',
-      ]
+      const breakpointsClasses = breakpoints.map(item => {
+        return this[item] === 0 ? `${item}-hidden` : this[item] && `${item}`
+      })
       if (!this.container) return ['grid', ...breakpointsClasses]
       return ['grid-container', ...breakpointsClasses]
     },
@@ -121,7 +119,7 @@ export default {
 
   methods: {
     getItemLayout() {
-      return ['xs', 'sm', 'md', 'lg', 'xl'].map(item => {
+      return breakpoints.map(item => {
         const isNumberSize = typeof this.$props[item] === 'number'
         if (!this.$props[item]) return {}
         if (isNumberSize) {
@@ -154,11 +152,17 @@ export default {
   flex-basis var(--zeit-xs-basis)
   width var(--zeit-xs-width)
 
+.xs-hidden
+  display none
+
 @media only screen and (max-width: 650px)
   .xs
     flex-grow var(--zeit-xs-grow)
     flex-basis var(--zeit-xs-basis)
     width var(--zeit-xs-width)
+
+  .xs-hidden
+    display none
 
 @media only screen and (min-width: 650px)
   .sm
@@ -166,11 +170,17 @@ export default {
     flex-basis var(--zeit-sm-basis)
     width var(--zeit-sm-width)
 
+  .sm-hidden
+    display none
+
 @media only screen and (min-width: 900px)
   .md
     flex-grow var(--zeit-md-grow)
     flex-basis var(--zeit-md-basis)
     width var(--zeit-md-width)
+
+  .md-hidden
+    display none
 
 @media only screen and (min-width: 1280px)
   .lg
@@ -178,9 +188,15 @@ export default {
     flex-basis var(--zeit-lg-basis)
     width var(--zeit-lg-width)
 
+  .lg-hidden
+    display none
+
 @media only screen and (min-width: 1920px)
   .xl
     flex-grow var(--zeit-xl-grow)
     flex-basis var(--zeit-xl-basis)
     width var(--zeit-xl-width)
+
+  .xl-hidden
+    display none
 </style>

@@ -2,7 +2,7 @@
 .ex-side(:class="{ 'active': isActiveMenu }" @touchstart="fixFireFoxEvent")
   .bar
     button.toggle-container(@click="toggleMenu")
-      sliders.bar-toggle
+      sliders(color="var(--geist-foreground)").bar-toggle
     span.bar-title @zeit-ui/vue
   .bar-bg(:class="{ 'active': isActiveMenu }")
   ex-widgets
