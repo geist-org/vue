@@ -99,8 +99,9 @@ export default {
     },
 
     classes() {
-      const breakpointsClasses = breakpoints
-        .map(item => this[item] === 0 ? `${item}-hidden` : this[item] && `${item}`)
+      const breakpointsClasses = breakpoints.map(item => {
+        return this[item] === 0 ? `${item}-hidden` : this[item] && `${item}`
+      })
       if (!this.container) return ['grid', ...breakpointsClasses]
       return ['grid-container', ...breakpointsClasses]
     },
