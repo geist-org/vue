@@ -19,6 +19,7 @@ import 'prismjs/components/prism-pug'
 import Dropdown from './arrow-icon'
 import Prism from 'vue-prism-component'
 import { getRealShape } from '../../../packages/utils/bounding'
+import { clipboard } from '../../../packages/utils'
 
 export default {
   name: 'ex-code',
@@ -57,7 +58,7 @@ export default {
     },
 
     async copy() {
-      await this.$copyText(this.codeTemplate)
+      clipboard.copy(this.codeTemplate)
       this.$Toast.success({
         text: 'Copied to clipboard!',
       })
