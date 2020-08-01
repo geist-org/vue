@@ -27,8 +27,6 @@ const customIcon = {
 export default {
   name: 'ex-button-custom-icon',
 
-  components: { customIcon },
-
   data: () => ({
     icon: customIcon,
   }),

@@ -25,7 +25,7 @@ const insertToArea = (area, el, id) => {
 const destroyToast = (id, all) => {
   const el = all ? initArea() : document.querySelector(`#zi-toast-${id}`)
   if (!el) return
-  el.setAttribute('style', 'opacity: 0;')
+  el.setAttribute('style', 'opacity: 0; visibility: hidden')
   const timer = setTimeout(() => {
     el.parentElement.removeChild(el)
     clearTimeout(timer)

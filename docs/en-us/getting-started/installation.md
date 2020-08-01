@@ -42,7 +42,8 @@ You can also refer to [Example with UMD](https://github.com/zeit-ui/vue/blob/mas
 ```js
 import Vue from 'vue'
 import Button from '@zeit-ui/vue/lib/button.common'
-import '@zeit-ui/themes/index.css'
+import '@zeit-ui/themes/dark.css'
+import '@zeit-ui/typography/index.css'
 import '@zeit-ui/vue/lib/button.css'
 
 Button.install(Vue)
