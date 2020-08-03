@@ -21,7 +21,10 @@ export default {
   computed: {
     isBlock() {
       if (this.inline) return false
-      if (this.bash) print.warning('[bash]: [bash] will be removed in the next version, use component [snippet] instead.')
+      if (this.bash)
+        print.warning(
+          '[bash]: [bash] will be removed in the next version, use component [snippet] instead.',
+        )
       return this.bash || this.block
     },
   },

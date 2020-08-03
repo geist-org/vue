@@ -16,7 +16,7 @@ export default {
   data: () => ({
     display,
     github,
-    database
+    database,
   }),
 }
 </script>
