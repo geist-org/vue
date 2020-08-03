@@ -13,8 +13,6 @@ import database from '@zeit-ui/vue-icons/packages/database'
 export default {
   name: 'ex-button-icon',
 
-  components: { display, github, database },
-
   data: () => ({
     display,
     github,

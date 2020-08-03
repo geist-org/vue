@@ -48,7 +48,8 @@ Vue.use(ZeitUI)
 ```js
 import Vue from 'vue'
 import Button from '@zeit-ui/vue/lib/button.common'
-import '@zeit-ui/themes/index.css'
+import '@zeit-ui/themes/dark.css'
+import '@zeit-ui/typography/index.css'
 import '@zeit-ui/vue/lib/button.css'
 
 Button.install(Vue)

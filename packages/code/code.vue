@@ -1,5 +1,5 @@
 <template lang="pug">
-pre(:class="{ 'zi-bash': bash }" v-if="isBlock")
+pre(:class="{ 'zi-bash': bash, 'zi-pre': bash || block }" v-if="isBlock")
   code
     slot
 code(v-else)
@@ -7,6 +7,8 @@ code(v-else)
 </template>
 
 <script>
+import { print } from '../utils'
+
 export default {
   name: 'zi-code',
 
@@ -19,6 +21,10 @@ export default {
   computed: {
     isBlock() {
       if (this.inline) return false
+      if (this.bash)
+        print.warning(
+          '[bash]: [bash] will be removed in the next version, use component [snippet] instead.',
+        )
       return this.bash || this.block
     },
   },

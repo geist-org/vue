@@ -14,16 +14,13 @@
       width 100%
   
   &:hover .zi-toast-container
-    translate3d(0, 0, 0) scale(1)
+    transform translate3d(0, 0, 0) scale(1)
 
     &:nth-last-child(2)
       transform translate3d(0, -80px, 0) scale(1)
 
     &:nth-last-child(3)
       transform translate3d(0, -160px, 0) scale(1)
-
-    &:nth-last-child(4)
-      transform translate3d(0, -240px, 0) scale(1)
 
 .zi-toast-container
   opacity 0
@@ -39,21 +36,25 @@
     transform none
 
   &:nth-last-child(1)
-    z-index 2002
+    z-index 2004
 
   &:nth-last-child(2)
     transform translate3d(0, -14px, 0) scale(0.95)
-    z-index 2001
+    z-index 2003
 
   &:nth-last-child(3)
     transform translate3d(0, -28px, 0) scale(0.9)
-    z-index 2000
+    z-index 2002
 
   &:nth-last-child(4)
     transform translate3d(0, -36px, 0) scale(0.85)
+    z-index 2001
+
+  &:nth-last-child(5)
+    transform translate3d(0, -46px, 0) scale(0.80)
     z-index 2000
 
-  &:nth-last-child(n+5)
+  &:nth-last-child(n+4)
     visibility hidden
 
 .zi-toast
