@@ -14,16 +14,16 @@
   },
   "prettier": "@geist-ui/prettier-config",
   "dependencies": {
-    "@popperjs/core": "^2.4.2",
     "@geist-ui/themes": "^1.0.0",
-    "@geist-ui/typography": "^1.0.0"
+    "@geist-ui/typography": "^1.0.0",
+    "@popperjs/core": "^2.4.2"
   },
   "devDependencies": {
+    "@geist-ui/prettier-config": "^1.0.0",
+    "@geist-ui/vue-icons": "^1.0.0",
     "@types/fs-extra": "^7.0.0",
     "@vue/cli-plugin-babel": "^3.9.2",
     "@vue/cli-service": "^3.9.2",
-    "@geist-ui/prettier-config": "^1.0.0",
-    "@geist-ui/vue-icons": "^1.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^7.3.1",
     "eslint-config-lambdas": "^0.2.3",
