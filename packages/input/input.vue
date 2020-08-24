@@ -20,7 +20,7 @@ div(:class="[groupClass, { prefix: hasPrefix, suffix: hasSuffix, clearable }]")
 </template>
 
 <script>
-import DeleteIcon from '@zeit-ui/vue-icons/packages/delete'
+import DeleteIcon from '@geist-ui/vue-icons/packages/delete'
 import { validator } from '../utils'
 
 export default {

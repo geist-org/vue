@@ -1,8 +1,8 @@
 {
-  "name": "nuxtjs-with-zeit-ui-vue-as-plugin",
+  "name": "nuxtjs-with-geist-ui-vue-as-plugin",
   "dependencies": {
     "@nuxtjs/axios": "5.9.6",
-    "@zeit-ui/vue": "2.3.4",
+    "@geist-ui/vue": "1.0.0",
     "node-sass": "4.13.1",
     "nuxt": "2.12.2",
     "pug": "2.0.4",
@@ -16,5 +16,5 @@
     "post-update": "yarn upgrade --latest"
   },
   "keywords": [],
-  "description": "Using @zeit-ui/vue as a plugin inside nuxt.config.js"
+  "description": "Using @geist-ui/vue as a plugin inside nuxt.config.js"
 }

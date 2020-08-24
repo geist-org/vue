@@ -20,7 +20,7 @@
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/tabs.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/tabs.md">
 
 <h3>zi-tabs</h3>
 

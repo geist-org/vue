@@ -20,8 +20,8 @@
 </template>
 
 <script>
-import github from '@zeit-ui/vue-icons/packages/github'
-import gift from '@zeit-ui/vue-icons/packages/gift'
+import github from '@geist-ui/vue-icons/packages/github'
+import gift from '@geist-ui/vue-icons/packages/gift'
 
 export default {
   name: 'ex-input-icon',

@@ -32,7 +32,7 @@ Use <code>justify</code> and <code>align</code> make to alignment of columns.
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/layout.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/layout.md">
 <h3>zi-row</h3>
 
 | Attribute   | Description          | Type     | Accepted values                                       | Default |

@@ -26,7 +26,7 @@
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/avatar.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/avatar.md">
 
 | 属性        | 描述                    | 类型      | 推荐值                              | 默认     |
 | ----------- | ----------------------- | --------- | ----------------------------------- | -------- |

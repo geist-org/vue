@@ -24,7 +24,7 @@
 
 <ex-code name="ex-toast-handler"/></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/toast.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/toast.md">
 
 下文的参数类型: `$Toast`
 

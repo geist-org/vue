@@ -1,14 +1,14 @@
 <template lang="pug">
 .example
   div
-    zi-tooltip(content="hello, zeit-ui/vue")
+    zi-tooltip(content="hello, geist-ui/vue")
       zi-button(size="small" auto) button
   div
-    zi-tooltip(content="hello, zeit-ui/vue")
+    zi-tooltip(content="hello, geist-ui/vue")
       zi-spinner
   div
-    zi-tooltip(content="hello, zeit-ui/vue")
-      zi-code yarn add @zeit-ui/vue
+    zi-tooltip(content="hello, geist-ui/vue")
+      zi-code yarn add @geist-ui/vue
 </template>
 
 <script>

@@ -3,7 +3,7 @@
   .bar
     button.toggle-container(@click="toggleMenu")
       sliders(color="var(--geist-foreground)").bar-toggle
-    span.bar-title @zeit-ui/vue
+    span.bar-title @geist-ui/vue
   .bar-bg(:class="{ 'active': isActiveMenu }")
   ex-widgets
   template(v-for='group in sides')
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import sliders from '@zeit-ui/vue-icons/packages/sliders'
+import sliders from '@geist-ui/vue-icons/packages/sliders'
 import cnSide from './side.zh-cn'
 import docs from '#/docs/index'
 

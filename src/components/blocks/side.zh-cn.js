@@ -3,7 +3,7 @@ const cnSide = {
   'getting-started': '快速开始',
   customization: '定制与主题',
   components: '所有组件',
-  introduction: '什么是 ZEIT UI',
+  introduction: '什么是 Geist UI',
   installation: '安装',
   themes: '主题',
   colors: '色彩',

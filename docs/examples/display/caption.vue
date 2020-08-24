@@ -5,9 +5,9 @@ zi-display(shadow)
     src="/examples/redirecting-domains.png")
   template(v-slot:caption)
     p A domain redirect that redirects requests made to &nbsp
-      zi-code www.zeit.rocks
+      zi-code geist-ui.dev
       |&nbsp to &nbsp
-      zi-code zeit.rocks
+      zi-code geist-ui.dev
       |.
 </template>
 

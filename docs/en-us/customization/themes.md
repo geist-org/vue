@@ -1,6 +1,6 @@
 ## Themes
 
-`@zeit-ui/vue` support **Dark Mode** now. You can switch theme at any time through a very simple API,
+`@geist-ui/vue` support **Dark Mode** now. You can switch theme at any time through a very simple API,
 no third-party styles or configs.
 
 <br>
@@ -10,20 +10,20 @@ no third-party styles or configs.
 You can use this `API` anywhere, all components are updated automatically.
 
 ```js
-import ZeitUI from '@zeit-ui/vue'
+import GeistUI from '@geist-ui/vue'
 
-ZeitUI.theme.enableLight()
-ZeitUI.theme.enableDark()
+GeistUI.theme.enableLight()
+GeistUI.theme.enableDark()
 ```
 
 <br>
 
 ### Custom theme
 
-`@zeit-ui/vue` uses `@zeit-ui/themes` as a theme & color provider, you can see the detailed variable settings in repo [@zeit-ui/themes](https://github.com/zeit-ui/themes).
+`@geist-ui/vue` uses `@geist-ui/themes` as a theme & color provider, you can see the detailed variable settings in repo [@geist-ui/themes](https://github.com/geist-org/themes).
 
 <zi-note>
-<code>@zeit-ui/vue</code> contains <code>@zeit-ui/themes</code> by default.
+<code>@geist-ui/vue</code> contains <code>@geist-ui/themes</code> by default.
 </zi-note>
 
 <br>
@@ -33,7 +33,7 @@ Of course, you can also override these variables in your own projects:
 <zi-spacer :y="1"></zi-spacer>
 
 <zi-description title="Step.1">
-  Read all css variables <zi-link color href="https://github.com/zeit-ui/themes/blob/master/src/default/index.styl">here</zi-link>.
+  Read all css variables <zi-link color href="https://github.com/geist-org/themes/blob/master/src/default/index.styl">here</zi-link>.
 </zi-description>
 <br>
 <br>

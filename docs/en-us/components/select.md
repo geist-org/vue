@@ -18,7 +18,7 @@ You can disable one <code>Item</code> or all <code>Option</code>.
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/select.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/select.md">
 <h3>zi-select</h3>
 
 | Attribute        | Description            | Type                        | Accepted values             | Default |

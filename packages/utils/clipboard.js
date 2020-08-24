@@ -1,6 +1,6 @@
 export const copy = text => {
   if (!text) return
-  const clipboardEl = document.querySelector('#zeit-clipboard')
+  const clipboardEl = document.querySelector('#geist-clipboard')
   const copyText = el => {
     const selection = window.getSelection()
     const range = document.createRange()
@@ -21,7 +21,7 @@ export const copy = text => {
     return
   }
   const el = document.createElement('div')
-  el.id = 'zeit-clipboard'
+  el.id = 'geist-clipboard'
   el.style.whiteSpace = 'pre'
   el.textContent = text
   document.body.appendChild(el)

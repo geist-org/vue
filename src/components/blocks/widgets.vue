@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import ZeitUI from '../../../packages'
-import sun from '@zeit-ui/vue-icons/packages/sun'
-import moon from '@zeit-ui/vue-icons/packages/moon'
-import github from '@zeit-ui/vue-icons/packages/github'
+import GeistUI from '../../../packages'
+import sun from '@geist-ui/vue-icons/packages/sun'
+import moon from '@geist-ui/vue-icons/packages/moon'
+import github from '@geist-ui/vue-icons/packages/github'
 
 export default {
   name: 'ex-widgets',
@@ -39,9 +39,9 @@ export default {
     switchTheme() {
       const next = this.isDark ? 'light-theme' : 'dark-theme'
       if (this.isDark) {
-        ZeitUI.theme.enableLight()
+        GeistUI.theme.enableLight()
       } else {
-        ZeitUI.theme.enableDark()
+        GeistUI.theme.enableDark()
       }
       localStorage.setItem('theme', next)
       this.isDark = !this.isDark
@@ -61,7 +61,7 @@ export default {
     },
 
     toGithub() {
-      window.open('https://github.com/zeit-ui/vue')
+      window.open('https://github.com/geist-org/vue')
     },
   },
 }

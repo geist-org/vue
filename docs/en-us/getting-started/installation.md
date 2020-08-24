@@ -7,16 +7,16 @@ and a package manager: <zi-link pure href="https://www.npmjs.com/">NPM</zi-link>
 
 1. Run script to download:
 
-<zi-code bash>npm i @zeit-ui/vue</zi-code>
+<zi-code bash>npm i @geist-ui/vue</zi-code>
 
-2. Import `@zeit-ui/vue` to your Vue project:
+2. Import `@geist-ui/vue` to your Vue project:
 
 ```js
 import Vue from 'vue'
-import ZeitUI from '@zeit-ui/vue'
-import '@zeit-ui/vue/dist/zeit-ui.css' // require style
+import GeistUI from '@geist-ui/vue'
+import '@geist-ui/vue/dist/geist-ui.css' // require style
 
-Vue.use(ZeitUI)
+Vue.use(GeistUI)
 ```
 
 <br>
@@ -26,25 +26,25 @@ Vue.use(ZeitUI)
 Get the latest version from unpkg.com:
 
 ```
-<link rel="stylesheet" href="//unpkg.com/@zeit-ui/vue@latest/dist/zeit-ui.css">
-<script src="//unpkg.com/@zeit-ui/vue@latest/dist/zeit-ui.umd.js"></script>
+<link rel="stylesheet" href="//unpkg.com/@geist-ui/vue@latest/dist/geist-ui.css">
+<script src="//unpkg.com/@geist-ui/vue@latest/dist/geist-ui.umd.js"></script>
 ```
 
-You can also refer to [Example with UMD](https://github.com/zeit-ui/vue/blob/master/examples/umd/index.html)
+You can also refer to [Example with UMD](https://github.com/geist-org/vue/blob/master/examples/umd/index.html)
 
 <br>
 <br>
 
 ### Import a component
 
-`@zeit-ui/vue` supports import components when you actually need:
+`@geist-ui/vue` supports import components when you actually need:
 
 ```js
 import Vue from 'vue'
-import Button from '@zeit-ui/vue/lib/button.common'
-import '@zeit-ui/themes/dark.css'
-import '@zeit-ui/typography/index.css'
-import '@zeit-ui/vue/lib/button.css'
+import Button from '@geist-ui/vue/lib/button.common'
+import '@geist-ui/themes/index.css'
+import '@geist-ui/typography/index.css'
+import '@geist-ui/vue/lib/button.css'
 
 Button.install(Vue)
 ```

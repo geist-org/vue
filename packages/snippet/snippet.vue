@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import copy from '@zeit-ui/vue-icons/packages/copy'
+import copy from '@geist-ui/vue-icons/packages/copy'
 import { validator, clipboard } from '../utils'
 
 export default {

@@ -48,7 +48,7 @@ Buttons have different sizes, but you can also specify styles.
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/button.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/button.md">
 
 | Attribute     | Description                | Type        | Accepted values                                                   | Default  |
 | ------------- | -------------------------- | ----------- | ----------------------------------------------------------------- | -------- |

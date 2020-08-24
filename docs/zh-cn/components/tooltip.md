@@ -28,11 +28,11 @@
 
 <ex-code name="ex-tooltip-components">
 
-你可以在任何 <code>zeit-ui</code> 组件上使用 <code>Tooltip</code>。
+你可以在任何 <code>geist-ui</code> 组件上使用 <code>Tooltip</code>。
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/tooltip.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/tooltip.md">
 
 | 属性          | 描述             | 类型      | 推荐值                                | 默认     |
 | ------------- | ---------------- | --------- | ------------------------------------- | -------- |

@@ -5,8 +5,8 @@ div.icon-box
 </template>
 
 <script>
-import FileIcon from '@zeit-ui/vue-icons/packages/file'
-import DirectoryIcon from '@zeit-ui/vue-icons/packages/folder'
+import FileIcon from '@geist-ui/vue-icons/packages/file'
+import DirectoryIcon from '@geist-ui/vue-icons/packages/folder'
 
 export default {
   name: 'zi-files-icon',

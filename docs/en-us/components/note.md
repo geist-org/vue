@@ -8,7 +8,7 @@ Display text that requires attention or provides additional information.
 
 <ex-code name="ex-note-filled"></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/note.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/note.md">
 
 | Attribute  | Description                          | Type      | Accepted values                                           | Default   |
 | ---------- | ------------------------------------ | --------- | --------------------------------------------------------- | --------- |

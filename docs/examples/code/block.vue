@@ -1,8 +1,8 @@
 <template lang="pug">
 div
-  zi-code(block) npm i @zeit-ui/vue
+  zi-code(block) npm i @geist-ui/vue
     |
-    |yarn add @zeit-ui/vue
+    |yarn add @geist-ui/vue
 </template>
 
 <script>

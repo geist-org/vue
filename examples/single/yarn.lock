@@ -1116,17 +1116,17 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.1.tgz#5c85d662f76fa1d34575766c5dcd6615abcd30d8"
   integrity sha512-FZdkNBDqBRHKQ2MEbSC17xnPFOhZxeJ2YGSfr2BKf3sujG49Qe3bB+rGCwQfIaA7WHnGeGkSijX4FuBCdrzW/g==
 
-"@zeit-ui/vue-icons@^0.1.1":
+"@geist-ui/vue-icons@^0.1.1":
   version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@zeit-ui/vue-icons/-/vue-icons-0.1.1.tgz#5ec70e94883661b2c4d11ac0ff7af29ab6afb946"
+  resolved "https://registry.yarnpkg.com/@geist-ui/vue-icons/-/vue-icons-0.1.1.tgz#5ec70e94883661b2c4d11ac0ff7af29ab6afb946"
   integrity sha512-m12lb5U54cBhMCTrX1OOFV8+wXGxCa7bhnYWKFx3zmPO37+c1L6oQodqDQcfpwk2pSEDKyjuHffiM7Wpr1ig0Q==
 
-"@zeit-ui/vue@^1.2.0-alpha.1":
+"@geist-ui/vue@^1.2.0-alpha.1":
   version "1.2.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@zeit-ui/vue/-/vue-1.2.0-alpha.1.tgz#26efe67c788100f2845364f55d7dc6fb31dc6c7d"
+  resolved "https://registry.yarnpkg.com/@geist-ui/vue/-/vue-1.2.0-alpha.1.tgz#26efe67c788100f2845364f55d7dc6fb31dc6c7d"
   integrity sha512-DgG17GwTM6jaq0whcrQc++6cbX1tUHXSFrcrZLMbpR9mcLGJZADjCfgFfzc/Uqy8kDrgcBz4LqRLgPpUteRaVQ==
   dependencies:
-    "@zeit-ui/vue-icons" "^0.1.1"
+    "@geist-ui/vue-icons" "^0.1.1"
     prismjs "^1.15.0"
     vue "^2.6.6"
     vue-prism-component "^1.1.1"

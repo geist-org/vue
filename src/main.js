@@ -2,13 +2,13 @@ import './assets/index.styl'
 import Vue from 'vue'
 import * as VueAuto from 'vue-auto'
 import App from './app.vue'
-import ZeitUI from '../packages'
+import GeistUI from '../packages'
 import router from './router'
 import Examples from '../docs/examples'
 
 VueAuto.install(Vue, { prefix: 'ex' })
 Vue.config.productionTip = false
-Vue.use(ZeitUI)
+Vue.use(GeistUI)
 Examples.install(Vue)
 
 new Vue({

@@ -20,7 +20,7 @@ You can set a maximum for <code>Badge</code>.
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/badge.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/badge.md">
 
 | Attribute&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description                     | Type              | Accepted values                 | Default |
 | --------------------------------------- | ------------------------------- | ----------------- | ------------------------------- | ------- |

@@ -18,7 +18,7 @@ If slider's range is equal to 1, you should set the step to suitable Decimal
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/slider.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/slider.md">
 
 | Attribute      | Description            | Type      | Accepted values | Default |
 | -------------- | ---------------------- | --------- | --------------- | ------- |

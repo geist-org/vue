@@ -6,9 +6,9 @@ div
 </template>
 
 <script>
-import settings from '@zeit-ui/vue-icons/packages/settings'
-import lambda from '@zeit-ui/vue-icons/packages/lambda'
-import server from '@zeit-ui/vue-icons/packages/server'
+import settings from '@geist-ui/vue-icons/packages/settings'
+import lambda from '@geist-ui/vue-icons/packages/lambda'
+import server from '@geist-ui/vue-icons/packages/server'
 
 export default {
   name: 'ex-tabs-icon',

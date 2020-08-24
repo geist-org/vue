@@ -108,7 +108,7 @@ export default {
 
     styles() {
       const makeContainerStyle = () => ({
-        '--zeit-grid-spacing': `${this.spacing * 4}px`,
+        '--geist-grid-spacing': `${this.spacing * 4}px`,
         ...this.CssFlexProps,
       })
       return [this.containerWidth, this.container ? makeContainerStyle() : {}].concat(
@@ -125,13 +125,13 @@ export default {
         if (isNumberSize) {
           const width = (100 / 24) * this.$props[item]
           return {
-            [`--zeit-${item}-width`]: width > 100 ? '100%' : width < 0 ? '0' : `${width}%`,
-            [`--zeit-${item}-grow`]: 0,
-            [`--zeit-${item}-basis`]: width > 100 ? '100%' : width < 0 ? '0' : `${width}%`,
+            [`--geist-${item}-width`]: width > 100 ? '100%' : width < 0 ? '0' : `${width}%`,
+            [`--geist-${item}-grow`]: 0,
+            [`--geist-${item}-basis`]: width > 100 ? '100%' : width < 0 ? '0' : `${width}%`,
           }
         }
         return {
-          [`--zeit-${item}-grow`]: 1,
+          [`--geist-${item}-grow`]: 1,
         }
       })
     },
@@ -145,57 +145,57 @@ export default {
   box-sizing border-box
 
 .grid
-  padding var(--zeit-grid-spacing)
+  padding var(--geist-grid-spacing)
 
 .xs
-  flex-grow var(--zeit-xs-grow)
-  flex-basis var(--zeit-xs-basis)
-  width var(--zeit-xs-width)
+  flex-grow var(--geist-xs-grow)
+  flex-basis var(--geist-xs-basis)
+  width var(--geist-xs-width)
 
 .xs-hidden
   display none
 
 @media only screen and (max-width: 650px)
   .xs
-    flex-grow var(--zeit-xs-grow)
-    flex-basis var(--zeit-xs-basis)
-    width var(--zeit-xs-width)
+    flex-grow var(--geist-xs-grow)
+    flex-basis var(--geist-xs-basis)
+    width var(--geist-xs-width)
 
   .xs-hidden
     display none
 
 @media only screen and (min-width: 650px)
   .sm
-    flex-grow var(--zeit-sm-grow)
-    flex-basis var(--zeit-sm-basis)
-    width var(--zeit-sm-width)
+    flex-grow var(--geist-sm-grow)
+    flex-basis var(--geist-sm-basis)
+    width var(--geist-sm-width)
 
   .sm-hidden
     display none
 
 @media only screen and (min-width: 900px)
   .md
-    flex-grow var(--zeit-md-grow)
-    flex-basis var(--zeit-md-basis)
-    width var(--zeit-md-width)
+    flex-grow var(--geist-md-grow)
+    flex-basis var(--geist-md-basis)
+    width var(--geist-md-width)
 
   .md-hidden
     display none
 
 @media only screen and (min-width: 1280px)
   .lg
-    flex-grow var(--zeit-lg-grow)
-    flex-basis var(--zeit-lg-basis)
-    width var(--zeit-lg-width)
+    flex-grow var(--geist-lg-grow)
+    flex-basis var(--geist-lg-basis)
+    width var(--geist-lg-width)
 
   .lg-hidden
     display none
 
 @media only screen and (min-width: 1920px)
   .xl
-    flex-grow var(--zeit-xl-grow)
-    flex-basis var(--zeit-xl-basis)
-    width var(--zeit-xl-width)
+    flex-grow var(--geist-xl-grow)
+    flex-basis var(--geist-xl-basis)
+    width var(--geist-xl-width)
 
   .xl-hidden
     display none

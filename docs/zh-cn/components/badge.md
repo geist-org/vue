@@ -20,7 +20,7 @@
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/badge.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/badge.md">
 
 | 属性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 描述             | 类型              | 推荐值                          | 默认    |
 | ---------------------------------- | ---------------- | ----------------- | ------------------------------- | ------- |

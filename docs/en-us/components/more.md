@@ -16,7 +16,7 @@ Similar to <code>Button</code>, <code>More</code> supports loading status.
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/more.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/more.md">
 
 | Attribute   | Description           | Type      | Accepted values  | Default     |
 | ----------- | --------------------- | --------- | ---------------- | ----------- |

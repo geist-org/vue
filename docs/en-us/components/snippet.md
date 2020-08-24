@@ -30,7 +30,7 @@ Set snippet's background with type's color.
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/snippet.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/snippet.md">
 
 | Attribute  | Description                            | Type             | Accepted values                                                             | Default   |
 | ---------- | -------------------------------------- | ---------------- | --------------------------------------------------------------------------- | --------- |

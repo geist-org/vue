@@ -4,7 +4,7 @@ const execa = require('execa')
 const utils = require('./utils')
 
 const packagePath = path.join(__dirname, '../packages')
-const args = ['build', '--target', 'lib', '--name', 'zeit-ui', './packages/index.js']
+const args = ['build', '--target', 'lib', '--name', 'geist-ui', './packages/index.js']
 const log = text => `\x1b[37m${text}\x1b[2m\x1b[0m`
 const cyan = text => `\u001b[36m${text}\u001b[39m`
 

@@ -12,7 +12,7 @@
 
 <ex-code name="ex-user-social"></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/zh-cn/components/user.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/zh-cn/components/user.md">
 
 | 属性        | 描述                | 类型     | 推荐值 | 默认 |
 | ----------- | ------------------- | -------- | ------ | ---- |

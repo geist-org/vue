@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  p run #[zi-code npm i @zeit-ui/vue] to install.
+  p run #[zi-code npm i @geist-ui/vue] to install.
 </template>
 
 <script>

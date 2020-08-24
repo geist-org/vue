@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  zi-code(bash) yarn add @zeit-ui/vue
+  zi-code(bash) yarn add @geist-ui/vue
 </template>
 
 <script>

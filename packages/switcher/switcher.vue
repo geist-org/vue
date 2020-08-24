@@ -20,7 +20,7 @@ export default {
 
   created() {
     console.warn(
-      '[zeit-ui]: **DEPRECATION**: <zi-switcher> will be discarded. Please use <zi-tabs> instead of it',
+      '[geist-ui]: **DEPRECATION**: <zi-switcher> will be discarded. Please use <zi-tabs> instead of it',
     )
   },
 

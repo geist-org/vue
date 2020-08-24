@@ -1,6 +1,6 @@
 {
-  "name": "@zeit-ui/vue",
-  "version": "2.5.0-canary.3",
+  "name": "@geist-ui/vue",
+  "version": "1.0.0",
   "description": "A popular UI framework for Vue",
   "scripts": {
     "dev": "vue-cli-service serve",
@@ -12,18 +12,18 @@
     "now-build": "node scripts/now-build.js && yarn run build && cp ./public/favicon.ico ./dist",
     "release": "yarn run clear && yarn run build:lib && yarn publish --access public --non-interactive"
   },
-  "prettier": "@zeit-ui/prettier-config",
+  "prettier": "@geist-ui/prettier-config",
   "dependencies": {
     "@popperjs/core": "^2.4.2",
-    "@zeit-ui/themes": "^1.0.0",
-    "@zeit-ui/typography": "^1.1.0"
+    "@geist-ui/themes": "^1.0.0",
+    "@geist-ui/typography": "^1.0.0"
   },
   "devDependencies": {
     "@types/fs-extra": "^7.0.0",
     "@vue/cli-plugin-babel": "^3.9.2",
     "@vue/cli-service": "^3.9.2",
-    "@zeit-ui/prettier-config": "^1.0.0",
-    "@zeit-ui/vue-icons": "^3.1.0",
+    "@geist-ui/prettier-config": "^1.0.0",
+    "@geist-ui/vue-icons": "^1.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^7.3.1",
     "eslint-config-lambdas": "^0.2.3",
@@ -66,19 +66,19 @@
   ],
   "keywords": [
     "vue component",
-    "zeit",
+    "geist",
     "vue ui"
   ],
   "license": "MIT",
-  "main": "dist/zeit-ui.common.js",
-  "module": "dist/zeit-ui.common.js",
+  "main": "dist/geist-ui.common.js",
+  "module": "dist/geist-ui.common.js",
   "peerDependencies": {
     "vue": "^2.5.16"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zeit-ui/vue.git"
+    "url": "git+https://github.com/geist-org/vue.git"
   },
-  "style": "dist/zeit-ui.css",
-  "unpkg": "dist/zeit-ui.umd.js"
+  "style": "dist/geist-ui.css",
+  "unpkg": "dist/geist-ui.umd.js"
 }

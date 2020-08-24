@@ -13,8 +13,8 @@ label.zi-checkbox-container(:class="{ disabled: isDisabled }")
 </template>
 
 <script>
-import unchecked from '@zeit-ui/vue-icons/packages/checkbox'
-import checked from '@zeit-ui/vue-icons/packages/checkbox-fill'
+import unchecked from '@geist-ui/vue-icons/packages/checkbox'
+import checked from '@geist-ui/vue-icons/packages/checkbox-fill'
 
 export default {
   name: 'zi-checkbox',

@@ -6,9 +6,9 @@ div(:class="$style.buttons")
 </template>
 
 <script>
-import display from '@zeit-ui/vue-icons/packages/display'
-import github from '@zeit-ui/vue-icons/packages/github'
-import database from '@zeit-ui/vue-icons/packages/database'
+import display from '@geist-ui/vue-icons/packages/display'
+import github from '@geist-ui/vue-icons/packages/github'
+import database from '@geist-ui/vue-icons/packages/database'
 
 export default {
   name: 'ex-button-icon',

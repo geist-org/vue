@@ -1,9 +1,9 @@
 ## Typography
 
-Display text using well-defined Typography. Typography is provide by [@zeit-ui/typography](https://github.com/zeit-ui/typography)
+Display text using well-defined Typography. Typography is provide by [@geist-ui/typography](https://github.com/geist-org/typography)
 
 <zi-note>
-<code>@zeit-ui/vue</code> contains <code>@zeit-ui/typography</code> by default.
+<code>@geist-ui/vue</code> contains <code>@geist-ui/typography</code> by default.
 </zi-note>
 
 <ex-code name="ex-typography-headings"></ex-code>

@@ -24,12 +24,12 @@
 
 <ex-code name="ex-input-icon">
 
-你可以在 <zi-code>zeit-ui/vue-icons</zi-code> 库获取更多的图标,
-请参阅 <zi-link color href="https://github.com/zeit-ui/vue-icons">vue-icons 文档</zi-link>。
+你可以在 <zi-code>vue-icons</zi-code> 库获取更多的图标,
+请参阅 <zi-link color href="https://github.com/geist-org/vue-icons">vue-icons 文档</zi-link>。
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/input.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/input.md">
 
 | 属性                  | 描述                                                                                              | 类型              | 推荐值                                       | 默认      |
 | --------------------- | ------------------------------------------------------------------------------------------------- | ----------------- | -------------------------------------------- | --------- |

@@ -24,12 +24,12 @@ Clear all text at a button.
 
 <ex-code name="ex-input-icon">
 
-You can get more icons from <zi-code>zeit-ui/vue-icons</zi-code> library,
-please refer to <zi-link color href="https://github.com/zeit-ui/vue-icons">zeit-ui/vue-icons</zi-link> .
+You can get more icons from <zi-code>geist-ui/vue-icons</zi-code> library,
+please refer to <zi-link color href="https://github.com/geist-org/vue-icons">vue-icons</zi-link> .
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/input.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/input.md">
 
 | Attribute             | Description                                                                                                   | Type              | Accepted values                              | Default   |
 | --------------------- | ------------------------------------------------------------------------------------------------------------- | ----------------- | -------------------------------------------- | --------- |

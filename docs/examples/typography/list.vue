@@ -7,7 +7,7 @@ div
 
   ol
     li Push a commit to trigger the deployment.
-    li You'll see the deployment status on GitHub and ZEIT dashboard.
+    li You'll see the deployment status on GitHub.
 
 </template>
 

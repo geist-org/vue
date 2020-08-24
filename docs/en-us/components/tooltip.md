@@ -28,11 +28,11 @@ Elements can be filled in the content.
 
 <ex-code name="ex-tooltip-components">
 
-You can use <code>Tooltip</code> on any <code>zeit-ui</code> component or native element.
+You can use <code>Tooltip</code> on any <code>geist-ui</code> component or native element.
 
 </ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/tooltip.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/tooltip.md">
 
 | Attribute     | Description             | Type      | Accepted values                       | Default  |
 | ------------- | ----------------------- | --------- | ------------------------------------- | -------- |

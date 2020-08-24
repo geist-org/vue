@@ -8,7 +8,7 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@zeit-ui/vue": "^1.2.0-alpha.1",
+    "@geist-ui/vue": "^1.2.0-alpha.1",
     "vue": "^2.6.6",
     "vue-auto": "^0.0.1"
   },

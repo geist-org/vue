@@ -10,7 +10,7 @@ Display large amounts of text in collapsible sections. Commonly referred to as a
 
 <ex-code name="ex-collapse-shadow"></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/collapse.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/collapse.md">
 
 | Attribute     | Description           | Type                      | Accepted values  | Default |
 | ------------- | --------------------- | ------------------------- | ---------------- | ------- |

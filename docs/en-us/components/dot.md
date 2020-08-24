@@ -4,7 +4,7 @@
 
 <ex-code name="ex-dot-label"></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/dot.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/dot.md">
 
 | Attribute | Description | Type     | Accepted values                              | Default   |
 | --------- | ----------- | -------- | -------------------------------------------- | --------- |

@@ -13,16 +13,16 @@
 
 1. 运行脚本下载:
 
-<zi-code bash>npm i @zeit-ui/vue</zi-code>
+<zi-code bash>npm i @geist-ui/vue</zi-code>
 
-2. 引入 `@zeit-ui/vue` 到你的项目中:
+2. 引入 `@geist-ui/vue` 到你的项目中:
 
 ```js
 import Vue from 'vue'
-import ZeitUI from '@zeit-ui/vue'
-import '@zeit-ui/vue/dist/zeit-ui.css' // require style
+import GeistUI from '@geist-ui/vue'
+import '@geist-ui/vue/dist/geist-ui.css' // require style
 
-Vue.use(ZeitUI)
+Vue.use(GeistUI)
 ```
 
 <br>
@@ -32,25 +32,25 @@ Vue.use(ZeitUI)
 从 `unpkg.com` 获取项目最新的包:
 
 ```
-<link rel="stylesheet" href="//unpkg.com/@zeit-ui/vue@latest/dist/zeit-ui.css">
-<script src="//unpkg.com/@zeit-ui/vue@latest/dist/zeit-ui.umd.js"></script>
+<link rel="stylesheet" href="//unpkg.com/@geist-ui/vue@latest/dist/geist-ui.css">
+<script src="//unpkg.com/@geist-ui/vue@latest/dist/geist-ui.umd.js"></script>
 ```
 
-如果你选择 CDN，也可以参考 [UMD 示例项目](https://github.com/zeit-ui/vue/blob/master/examples/umd/index.html)。
+如果你选择 CDN，也可以参考 [UMD 示例项目](https://github.com/geist-org/vue/blob/master/examples/umd/index.html)。
 
 <br>
 <br>
 
 ### 引入单个组件
 
-`@zeit-ui/vue` 支持仅引入你需要的单个组件。示例:
+`@geist-ui/vue` 支持仅引入你需要的单个组件。示例:
 
 ```js
 import Vue from 'vue'
-import Button from '@zeit-ui/vue/lib/button.common'
-import '@zeit-ui/themes/dark.css'
-import '@zeit-ui/typography/index.css'
-import '@zeit-ui/vue/lib/button.css'
+import Button from '@geist-ui/vue/lib/button.common'
+import '@geist-ui/themes/index.css'
+import '@geist-ui/typography/index.css'
+import '@geist-ui/vue/lib/button.css'
 
 Button.install(Vue)
 ```

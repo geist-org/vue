@@ -21,7 +21,7 @@ export default {
    */
   plugins: ['@/plugins/theme'],
   loading: { color: '#3b8070' },
-  css: ['~/css/main.css', '@zeit-ui/vue/dist/zeit-ui.css'],
+  css: ['~/css/main.css', '@geist-ui/vue/dist/geist-ui.css'],
   render: {
     bundleRenderer: {
       shouldPreload: (file, type) => {

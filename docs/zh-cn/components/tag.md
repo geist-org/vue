@@ -6,7 +6,7 @@
 
 <ex-code name="ex-tag-type"></ex-code>
 
-<ex-footer edit-link="https://github.com/zeit-ui/vue/edit/master/docs/en-us/components/tag.md">
+<ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/tag.md">
 
 | 属性     | 描述     | 类型     | 推荐值                           | 默认 |
 | -------- | -------- | -------- | -------------------------------- | ---- |

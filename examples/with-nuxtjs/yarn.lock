@@ -1333,23 +1333,23 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
-"@zeit-ui/themes@^1.0.0":
+"@geist-ui/themes@^1.0.0":
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@zeit-ui/themes/-/themes-1.0.0.tgz#02827668223790ac5c2dde71228125db70a45e72"
+  resolved "https://registry.yarnpkg.com/@geist-ui/themes/-/themes-1.0.0.tgz#02827668223790ac5c2dde71228125db70a45e72"
   integrity sha512-AYiPyum2z+Wcv9Ybi6/r4r1vhlJiOoCZ9ukn7eCVt5lwyTRmJa20YWAcpnbE6zfx5snXv0Av9jLxEqMvX6FYQA==
 
-"@zeit-ui/typography@^1.0.2":
+"@geist-ui/typography@^1.0.2":
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@zeit-ui/typography/-/typography-1.0.2.tgz#4a9c8c9fd36e9a7068a483803cc9f8173e2eb9cc"
+  resolved "https://registry.yarnpkg.com/@geist-ui/typography/-/typography-1.0.2.tgz#4a9c8c9fd36e9a7068a483803cc9f8173e2eb9cc"
   integrity sha512-fvpmdqjzz2BmyTu7gLmth5MH2Jc3tM06zuuAhVo3eVUVP/UElTvWu1+GRjiqyirC4IOJESW4S/vyAfe6Afur6g==
 
-"@zeit-ui/vue@2.3.4":
+"@geist-ui/vue@2.3.4":
   version "2.3.4"
-  resolved "https://registry.yarnpkg.com/@zeit-ui/vue/-/vue-2.3.4.tgz#37cc4e87643b75960d0cdaf9b29aea2c5d6bdc99"
+  resolved "https://registry.yarnpkg.com/@geist-ui/vue/-/vue-2.3.4.tgz#37cc4e87643b75960d0cdaf9b29aea2c5d6bdc99"
   integrity sha512-I5aMNV/vZYbf/JvV0Iwuko1QYgSvcC52vPVBuc0A0GHiyuPMJr+ymlrqAj+8fjFWLSwWrKnCHt3KZHN5GOcckg==
   dependencies:
-    "@zeit-ui/themes" "^1.0.0"
-    "@zeit-ui/typography" "^1.0.2"
+    "@geist-ui/themes" "^1.0.0"
+    "@geist-ui/typography" "^1.0.2"
     popper.js "^1.15.0"
 
 abbrev@1:

@@ -3,7 +3,7 @@
   zi-image.blur(
     width="95%"
     src="https://user-images.githubusercontent.com/11304944/75431638-16226a80-5988-11ea-9377-29db6f6b2469.png"
-    caption="@zeit-ui/vue-icons"
+    caption="@geist-ui/vue-icons"
   )
   .modal
     zi-button.btn(shadow type="success" @click="toIconRepo") Learn more
@@ -15,7 +15,7 @@ export default {
 
   methods: {
     toIconRepo() {
-      window.open('https://vue-icons.zeit-ui.co/')
+      window.open('https://vue-icons.geist-ui.dev/')
     },
   },
 }
