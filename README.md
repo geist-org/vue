@@ -2,7 +2,7 @@
 <img align="center" src="https://user-images.githubusercontent.com/11304944/58761972-c9d30700-857c-11e9-9ac7-8b1d02809fc8.png">
 </p>
 
-> @geist-ui/vue -- Vue implementation for Vercel style, originating from Vercel's design.
+> @geist-ui/vue -- An open-source design system for building modern websites and applications.
 
 **Looking for React components? Try [Geist React](https://github.com/geist-org/react).**
 

@@ -694,10 +694,10 @@
   resolved "https://registry.yarnpkg.com/@geist-ui/typography/-/typography-1.0.1.tgz#236f431a9dec2594461851fc8dc3e3dd30933c8a"
   integrity sha512-5LjJeIziAcmSPye5/LQ2QpslkB2WJCQpdVDlNlkZwgPXPiZyREOZtE78YhvObovjptp9W7BUmP84sD3kWN4LCQ==
 
-"@geist-ui/vue-icons@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@geist-ui/vue-icons/-/vue-icons-1.0.0.tgz#95b2f732b737b7b82252691c676e5d553228e76a"
-  integrity sha512-n93K8zJZwq9fHP1r/0HI+L2QE4DWRqqkYqbf0lLgEZYSQxsuBuOepfgIL+wJqFzFRAEDTk9Lxz0yq4OhhZpaPg==
+"@geist-ui/vue-icons@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@geist-ui/vue-icons/-/vue-icons-1.0.2.tgz#2c729d3174052735b843d187a793df56b02231ab"
+  integrity sha512-vBSP99Kj/vOvCy8wLuObtbdYK2/ZWTQab360Y9z+KQBa+/yVNETWTgx1GTmGLufHDTEo0PRUBV/HVy1QgJohoA==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
