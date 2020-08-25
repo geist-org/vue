@@ -1,5 +1,5 @@
 <p align="center" height="370">
-<img align="center" src="https://user-images.githubusercontent.com/11304944/58761972-c9d30700-857c-11e9-9ac7-8b1d02809fc8.png">
+<img align="center" src="https://user-images.githubusercontent.com/11304944/91128466-dfc96c00-e6da-11ea-8b03-a96e6b98667d.png">
 </p>
 
 > @geist-ui/vue -- An open-source design system for building modern websites and applications.
