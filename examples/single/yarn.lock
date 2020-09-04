@@ -667,6 +667,22 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@geist-ui/vue-icons@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@geist-ui/vue-icons/-/vue-icons-0.1.1.tgz#5ec70e94883661b2c4d11ac0ff7af29ab6afb946"
+  integrity sha512-m12lb5U54cBhMCTrX1OOFV8+wXGxCa7bhnYWKFx3zmPO37+c1L6oQodqDQcfpwk2pSEDKyjuHffiM7Wpr1ig0Q==
+
+"@geist-ui/vue@^1.2.0-alpha.1":
+  version "1.2.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@geist-ui/vue/-/vue-1.2.0-alpha.1.tgz#26efe67c788100f2845364f55d7dc6fb31dc6c7d"
+  integrity sha512-DgG17GwTM6jaq0whcrQc++6cbX1tUHXSFrcrZLMbpR9mcLGJZADjCfgFfzc/Uqy8kDrgcBz4LqRLgPpUteRaVQ==
+  dependencies:
+    "@geist-ui/vue-icons" "^0.1.1"
+    prismjs "^1.15.0"
+    vue "^2.6.6"
+    vue-prism-component "^1.1.1"
+    vue-router "^3.0.1"
+
 "@hapi/address@2.x.x":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.0.0.tgz#9f05469c88cb2fd3dcd624776b54ee95c312126a"
@@ -1115,22 +1131,6 @@
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.1.tgz#5c85d662f76fa1d34575766c5dcd6615abcd30d8"
   integrity sha512-FZdkNBDqBRHKQ2MEbSC17xnPFOhZxeJ2YGSfr2BKf3sujG49Qe3bB+rGCwQfIaA7WHnGeGkSijX4FuBCdrzW/g==
-
-"@geist-ui/vue-icons@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@geist-ui/vue-icons/-/vue-icons-0.1.1.tgz#5ec70e94883661b2c4d11ac0ff7af29ab6afb946"
-  integrity sha512-m12lb5U54cBhMCTrX1OOFV8+wXGxCa7bhnYWKFx3zmPO37+c1L6oQodqDQcfpwk2pSEDKyjuHffiM7Wpr1ig0Q==
-
-"@geist-ui/vue@^1.2.0-alpha.1":
-  version "1.2.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@geist-ui/vue/-/vue-1.2.0-alpha.1.tgz#26efe67c788100f2845364f55d7dc6fb31dc6c7d"
-  integrity sha512-DgG17GwTM6jaq0whcrQc++6cbX1tUHXSFrcrZLMbpR9mcLGJZADjCfgFfzc/Uqy8kDrgcBz4LqRLgPpUteRaVQ==
-  dependencies:
-    "@geist-ui/vue-icons" "^0.1.1"
-    prismjs "^1.15.0"
-    vue "^2.6.6"
-    vue-prism-component "^1.1.1"
-    vue-router "^3.0.1"
 
 abbrev@1:
   version "1.1.1"
@@ -4311,9 +4311,9 @@ locate-path@^3.0.0:
     path-exists "^3.0.0"
 
 lodash.defaultsdeep@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.0.tgz#bec1024f85b1bd96cbea405b23c14ad6443a6f81"
-  integrity sha1-vsECT4WxvZbL6kBbI8FK1kQ6b4E=
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.1.tgz#512e9bd721d272d94e3d3a63653fa17516741ca6"
+  integrity sha512-3j8wdDzYuWO3lM3Reg03MuQR957t287Rpcxp1njpEa8oDrikb+FwGdW3n+FELh/A6qib6yPit0j/pv9G/yeAqA==
 
 lodash.kebabcase@^4.1.1:
   version "4.1.1"
