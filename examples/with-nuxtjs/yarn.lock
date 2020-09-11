@@ -801,6 +801,25 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@geist-ui/themes@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@geist-ui/themes/-/themes-1.0.0.tgz#02827668223790ac5c2dde71228125db70a45e72"
+  integrity sha512-AYiPyum2z+Wcv9Ybi6/r4r1vhlJiOoCZ9ukn7eCVt5lwyTRmJa20YWAcpnbE6zfx5snXv0Av9jLxEqMvX6FYQA==
+
+"@geist-ui/typography@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@geist-ui/typography/-/typography-1.0.1.tgz#236f431a9dec2594461851fc8dc3e3dd30933c8a"
+  integrity sha512-5LjJeIziAcmSPye5/LQ2QpslkB2WJCQpdVDlNlkZwgPXPiZyREOZtE78YhvObovjptp9W7BUmP84sD3kWN4LCQ==
+
+"@geist-ui/vue@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@geist-ui/vue/-/vue-1.0.0.tgz#9bfb6c354f248657b480ba19edcc1865940f0879"
+  integrity sha512-0fzupPS4x1fkBQdby7/gwR3qsnf9bng8cR+LnFOmW4H+55Jw5gvC0BKYvh5gcW2JoQCGB1920vLr1ORjEW59TQ==
+  dependencies:
+    "@geist-ui/themes" "^1.0.0"
+    "@geist-ui/typography" "^1.0.0"
+    "@popperjs/core" "^2.4.2"
+
 "@nuxt/babel-preset-app@2.12.2":
   version "2.12.2"
   resolved "https://registry.yarnpkg.com/@nuxt/babel-preset-app/-/babel-preset-app-2.12.2.tgz#0e87c4f4f578868e74f6fa9e2a38cace5c77dac8"
@@ -1076,6 +1095,11 @@
     mustache "^2.3.0"
     stack-trace "0.0.10"
 
+"@popperjs/core@^2.4.2":
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.4.4.tgz#11d5db19bd178936ec89cd84519c4de439574398"
+  integrity sha512-1oO6+dN5kdIA3sKPZhRGJTfGVP4SWV6KqlMOwry4J3HfyD68sl/3KmG7DeYUzvN+RbhXDnv/D8vNNB8168tAMg==
+
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@types/babel-types/-/babel-types-7.0.7.tgz#667eb1640e8039436028055737d2b9986ee336e3"
@@ -1332,25 +1356,6 @@
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
-
-"@geist-ui/themes@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@geist-ui/themes/-/themes-1.0.0.tgz#02827668223790ac5c2dde71228125db70a45e72"
-  integrity sha512-AYiPyum2z+Wcv9Ybi6/r4r1vhlJiOoCZ9ukn7eCVt5lwyTRmJa20YWAcpnbE6zfx5snXv0Av9jLxEqMvX6FYQA==
-
-"@geist-ui/typography@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@geist-ui/typography/-/typography-1.0.2.tgz#4a9c8c9fd36e9a7068a483803cc9f8173e2eb9cc"
-  integrity sha512-fvpmdqjzz2BmyTu7gLmth5MH2Jc3tM06zuuAhVo3eVUVP/UElTvWu1+GRjiqyirC4IOJESW4S/vyAfe6Afur6g==
-
-"@geist-ui/vue@2.3.4":
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/@geist-ui/vue/-/vue-2.3.4.tgz#37cc4e87643b75960d0cdaf9b29aea2c5d6bdc99"
-  integrity sha512-I5aMNV/vZYbf/JvV0Iwuko1QYgSvcC52vPVBuc0A0GHiyuPMJr+ymlrqAj+8fjFWLSwWrKnCHt3KZHN5GOcckg==
-  dependencies:
-    "@geist-ui/themes" "^1.0.0"
-    "@geist-ui/typography" "^1.0.2"
-    popper.js "^1.15.0"
 
 abbrev@1:
   version "1.1.1"
@@ -2846,13 +2851,6 @@ debug@=3.1.0:
   dependencies:
     ms "2.0.0"
 
-debug@^3.0.0:
-  version "3.2.6"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
-  integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
-  dependencies:
-    ms "^2.1.1"
-
 debug@^4.1.0, debug@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
@@ -3228,9 +3226,9 @@ etag@^1.8.1, etag@~1.8.1:
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
 eventemitter3@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.0.tgz#d65176163887ee59f386d64c82610b696a4a74eb"
-  integrity sha512-qerSRB0p+UDEssxTtm6EDKcE7W4OaoisfIMl4CngyEhjpYglocpNg6UEqCvemdGhosAsg4sO2dXJOdyBifPGCg==
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
+  integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
 events@^3.0.0:
   version "3.1.0"
@@ -3514,11 +3512,9 @@ follow-redirects@1.5.10:
     debug "=3.1.0"
 
 follow-redirects@^1.0.0:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.11.0.tgz#afa14f08ba12a52963140fe43212658897bc0ecb"
-  integrity sha512-KZm0V+ll8PfBrKwMzdo5D13b1bur9Iq9Zd/RMmAoQQcl2PxxFml8cxXPaaPYVbV0RjNjq1CU7zIzAOqtUPudmA==
-  dependencies:
-    debug "^3.0.0"
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
+  integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
 
 for-in@^1.0.2:
   version "1.0.2"
@@ -3998,9 +3994,9 @@ http-proxy-middleware@^0.19.1:
     micromatch "^3.1.10"
 
 http-proxy@^1.17.0:
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/http-proxy/-/http-proxy-1.18.0.tgz#dbe55f63e75a347db7f3d99974f2692a314a6a3a"
-  integrity sha512-84I2iJM/n1d4Hdgc6y2+qY5mDaz2PUVjlg9znE9byl+q0uC3DeByqBGReQu5tpLK0TAqTIXScRUV+dg7+bUPpQ==
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/http-proxy/-/http-proxy-1.18.1.tgz#401541f0534884bbf95260334e72f88ee3976549"
+  integrity sha512-7mz/721AbnJwIVbnaSv1Cz3Am0ZLT/UBwkC92VlxhXv/k/BBQfM2fXElQNC27BVGr0uwUpplYPQM9LnaBMR5NQ==
   dependencies:
     eventemitter3 "^4.0.0"
     follow-redirects "^1.0.0"
@@ -5688,11 +5684,6 @@ pkg-up@^3.1.0:
   integrity sha512-nDywThFk1i4BQK4twPQ6TA4RT8bDY96yeuCVBWL3ePARCiEKDRSrNGbFIgUJpLp+XeIR65v8ra7WuJOFUBtkMA==
   dependencies:
     find-up "^3.0.0"
-
-popper.js@^1.15.0:
-  version "1.16.1"
-  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
-  integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
