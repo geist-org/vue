@@ -801,6 +801,25 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@geist-ui/themes@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@geist-ui/themes/-/themes-1.0.0.tgz#02827668223790ac5c2dde71228125db70a45e72"
+  integrity sha512-AYiPyum2z+Wcv9Ybi6/r4r1vhlJiOoCZ9ukn7eCVt5lwyTRmJa20YWAcpnbE6zfx5snXv0Av9jLxEqMvX6FYQA==
+
+"@geist-ui/typography@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@geist-ui/typography/-/typography-1.0.1.tgz#236f431a9dec2594461851fc8dc3e3dd30933c8a"
+  integrity sha512-5LjJeIziAcmSPye5/LQ2QpslkB2WJCQpdVDlNlkZwgPXPiZyREOZtE78YhvObovjptp9W7BUmP84sD3kWN4LCQ==
+
+"@geist-ui/vue@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@geist-ui/vue/-/vue-1.0.0.tgz#9bfb6c354f248657b480ba19edcc1865940f0879"
+  integrity sha512-0fzupPS4x1fkBQdby7/gwR3qsnf9bng8cR+LnFOmW4H+55Jw5gvC0BKYvh5gcW2JoQCGB1920vLr1ORjEW59TQ==
+  dependencies:
+    "@geist-ui/themes" "^1.0.0"
+    "@geist-ui/typography" "^1.0.0"
+    "@popperjs/core" "^2.4.2"
+
 "@nuxt/babel-preset-app@2.12.2":
   version "2.12.2"
   resolved "https://registry.yarnpkg.com/@nuxt/babel-preset-app/-/babel-preset-app-2.12.2.tgz#0e87c4f4f578868e74f6fa9e2a38cace5c77dac8"
@@ -1076,6 +1095,11 @@
     mustache "^2.3.0"
     stack-trace "0.0.10"
 
+"@popperjs/core@^2.4.2":
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.4.4.tgz#11d5db19bd178936ec89cd84519c4de439574398"
+  integrity sha512-1oO6+dN5kdIA3sKPZhRGJTfGVP4SWV6KqlMOwry4J3HfyD68sl/3KmG7DeYUzvN+RbhXDnv/D8vNNB8168tAMg==
+
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@types/babel-types/-/babel-types-7.0.7.tgz#667eb1640e8039436028055737d2b9986ee336e3"
@@ -1332,25 +1356,6 @@
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
-
-"@geist-ui/themes@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@geist-ui/themes/-/themes-1.0.0.tgz#02827668223790ac5c2dde71228125db70a45e72"
-  integrity sha512-AYiPyum2z+Wcv9Ybi6/r4r1vhlJiOoCZ9ukn7eCVt5lwyTRmJa20YWAcpnbE6zfx5snXv0Av9jLxEqMvX6FYQA==
-
-"@geist-ui/typography@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@geist-ui/typography/-/typography-1.0.2.tgz#4a9c8c9fd36e9a7068a483803cc9f8173e2eb9cc"
-  integrity sha512-fvpmdqjzz2BmyTu7gLmth5MH2Jc3tM06zuuAhVo3eVUVP/UElTvWu1+GRjiqyirC4IOJESW4S/vyAfe6Afur6g==
-
-"@geist-ui/vue@2.3.4":
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/@geist-ui/vue/-/vue-2.3.4.tgz#37cc4e87643b75960d0cdaf9b29aea2c5d6bdc99"
-  integrity sha512-I5aMNV/vZYbf/JvV0Iwuko1QYgSvcC52vPVBuc0A0GHiyuPMJr+ymlrqAj+8fjFWLSwWrKnCHt3KZHN5GOcckg==
-  dependencies:
-    "@geist-ui/themes" "^1.0.0"
-    "@geist-ui/typography" "^1.0.2"
-    popper.js "^1.15.0"
 
 abbrev@1:
   version "1.1.1"
@@ -5103,9 +5108,9 @@ no-case@^2.2.0:
     lower-case "^1.1.1"
 
 node-fetch@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
-  integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 node-gyp@^3.8.0:
   version "3.8.0"
@@ -5688,11 +5693,6 @@ pkg-up@^3.1.0:
   integrity sha512-nDywThFk1i4BQK4twPQ6TA4RT8bDY96yeuCVBWL3ePARCiEKDRSrNGbFIgUJpLp+XeIR65v8ra7WuJOFUBtkMA==
   dependencies:
     find-up "^3.0.0"
-
-popper.js@^1.15.0:
-  version "1.16.1"
-  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
-  integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
