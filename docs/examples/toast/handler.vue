@@ -1,7 +1,7 @@
 <template lang="pug">
 div(:class="$style.demo")
-  zi-button(size="small" @click="network()" type="danger") set network
-  zi-button(size="small" @click="destory()" type="success") destory
+  zi-button(size="small" @click="network()" type="danger") Set Network
+  zi-button(size="small" @click="destroy()" type="success") Destroy
 </template>
 
 <script>
@@ -13,16 +13,16 @@ export default {
       this.$Toast.show({
         type: 'danger',
         action: 'again',
-        text: 'click to try to reconnect',
-        handler: () => alert('ok'),
+        text: 'Click the button to attempt to reconnect',
+        handler: () => alert('Success'),
       })
     },
 
-    destory() {
+    destroy() {
       const instance = this.$Toast.show({
         type: 'success',
         action: 'close',
-        text: 'successful connection',
+        text: 'Connection successful',
         handler: () => instance.close(),
       })
     },
