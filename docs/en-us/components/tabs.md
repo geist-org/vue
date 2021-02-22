@@ -38,6 +38,6 @@ Set label with icon.
 | **label**(required) | label text       | `string`  | -               | -       |
 | **value**(required) | tab's value      | `string`  | -               | -       |
 | **active**          | currently active | `boolean` | -               | `false` |
-| **icon**            | set icon         | `obeject` | -               | -       |
+| **icon**            | set icon         | `object` | -               | -       |
 
 </ex-footer>
