@@ -5,7 +5,7 @@
     "@geist-ui/vue": "1.0.0",
     "node-sass": "4.13.1",
     "nuxt": "2.12.2",
-    "pug": "2.0.4",
+    "pug": "3.0.1",
     "pug-plain-loader": "1.0.0",
     "reqlim": "0.0.0"
   },
