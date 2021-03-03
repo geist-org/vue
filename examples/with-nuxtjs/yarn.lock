@@ -801,6 +801,25 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@geist-ui/themes@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@geist-ui/themes/-/themes-1.0.0.tgz#02827668223790ac5c2dde71228125db70a45e72"
+  integrity sha512-AYiPyum2z+Wcv9Ybi6/r4r1vhlJiOoCZ9ukn7eCVt5lwyTRmJa20YWAcpnbE6zfx5snXv0Av9jLxEqMvX6FYQA==
+
+"@geist-ui/typography@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@geist-ui/typography/-/typography-1.0.1.tgz#236f431a9dec2594461851fc8dc3e3dd30933c8a"
+  integrity sha512-5LjJeIziAcmSPye5/LQ2QpslkB2WJCQpdVDlNlkZwgPXPiZyREOZtE78YhvObovjptp9W7BUmP84sD3kWN4LCQ==
+
+"@geist-ui/vue@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@geist-ui/vue/-/vue-1.0.0.tgz#9bfb6c354f248657b480ba19edcc1865940f0879"
+  integrity sha512-0fzupPS4x1fkBQdby7/gwR3qsnf9bng8cR+LnFOmW4H+55Jw5gvC0BKYvh5gcW2JoQCGB1920vLr1ORjEW59TQ==
+  dependencies:
+    "@geist-ui/themes" "^1.0.0"
+    "@geist-ui/typography" "^1.0.0"
+    "@popperjs/core" "^2.4.2"
+
 "@nuxt/babel-preset-app@2.12.2":
   version "2.12.2"
   resolved "https://registry.yarnpkg.com/@nuxt/babel-preset-app/-/babel-preset-app-2.12.2.tgz#0e87c4f4f578868e74f6fa9e2a38cace5c77dac8"
@@ -1076,10 +1095,15 @@
     mustache "^2.3.0"
     stack-trace "0.0.10"
 
+"@popperjs/core@^2.4.2":
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.9.0.tgz#32e63212293dd3efbb521cd35a5020ab66eaa546"
+  integrity sha512-wjtKehFAIARq2OxK8j3JrggNlEslJfNuSm2ArteIbKyRMts2g0a7KzTxfRVNUM+O0gnBJ2hNV8nWPOYBgI1sew==
+
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
-  version "7.0.7"
-  resolved "https://registry.yarnpkg.com/@types/babel-types/-/babel-types-7.0.7.tgz#667eb1640e8039436028055737d2b9986ee336e3"
-  integrity sha512-dBtBbrc+qTHy1WdfHYjBwRln4+LWqASWakLHsWHR2NWHIFkv4W3O070IGoGLEBrJBvct3r0L1BUPuvURi7kYUQ==
+  version "7.0.9"
+  resolved "https://registry.yarnpkg.com/@types/babel-types/-/babel-types-7.0.9.tgz#01d7b86949f455402a94c788883fe4ba574cad41"
+  integrity sha512-qZLoYeXSTgQuK1h7QQS16hqLGdmqtRmN8w/rl3Au/l5x/zkHx+a4VHrHyBsi1I1vtK2oBHxSzKIu0R5p6spdOA==
 
 "@types/babylon@^6.16.2":
   version "6.16.5"
@@ -1332,25 +1356,6 @@
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
-
-"@geist-ui/themes@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@geist-ui/themes/-/themes-1.0.0.tgz#02827668223790ac5c2dde71228125db70a45e72"
-  integrity sha512-AYiPyum2z+Wcv9Ybi6/r4r1vhlJiOoCZ9ukn7eCVt5lwyTRmJa20YWAcpnbE6zfx5snXv0Av9jLxEqMvX6FYQA==
-
-"@geist-ui/typography@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@geist-ui/typography/-/typography-1.0.2.tgz#4a9c8c9fd36e9a7068a483803cc9f8173e2eb9cc"
-  integrity sha512-fvpmdqjzz2BmyTu7gLmth5MH2Jc3tM06zuuAhVo3eVUVP/UElTvWu1+GRjiqyirC4IOJESW4S/vyAfe6Afur6g==
-
-"@geist-ui/vue@2.3.4":
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/@geist-ui/vue/-/vue-2.3.4.tgz#37cc4e87643b75960d0cdaf9b29aea2c5d6bdc99"
-  integrity sha512-I5aMNV/vZYbf/JvV0Iwuko1QYgSvcC52vPVBuc0A0GHiyuPMJr+ymlrqAj+8fjFWLSwWrKnCHt3KZHN5GOcckg==
-  dependencies:
-    "@geist-ui/themes" "^1.0.0"
-    "@geist-ui/typography" "^1.0.2"
-    popper.js "^1.15.0"
 
 abbrev@1:
   version "1.1.1"
@@ -2523,7 +2528,12 @@ core-js-compat@^3.6.2:
     browserslist "^4.8.5"
     semver "7.0.0"
 
-core-js@^2.4.0, core-js@^2.6.5:
+core-js@^2.4.0:
+  version "2.6.12"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
+  integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
+
+core-js@^2.6.5:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
@@ -4734,10 +4744,15 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@^4.0.0, lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.15, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@~4.17.12:
+lodash@^4.0.0, lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.15, lodash@^4.17.3, lodash@^4.17.5, lodash@~4.17.12:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+
+lodash@^4.17.4:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 longest@^1.0.1:
   version "1.0.1"
@@ -5689,11 +5704,6 @@ pkg-up@^3.1.0:
   dependencies:
     find-up "^3.0.0"
 
-popper.js@^1.15.0:
-  version "1.16.1"
-  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
-  integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
-
 posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
@@ -6456,9 +6466,9 @@ pug-attrs@^2.0.4:
     pug-runtime "^2.0.5"
 
 pug-code-gen@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/pug-code-gen/-/pug-code-gen-2.0.2.tgz#ad0967162aea077dcf787838d94ed14acb0217c2"
-  integrity sha512-kROFWv/AHx/9CRgoGJeRSm+4mLWchbgpRzTEn8XCiwwOy6Vh0gAClS8Vh5TEJ9DBjaP8wCjS3J6HKsEsYdvaCw==
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/pug-code-gen/-/pug-code-gen-2.0.3.tgz#122eb9ada9b5bf601705fe15aaa0a7d26bc134ab"
+  integrity sha512-r9sezXdDuZJfW9J91TN/2LFbiqDhmltTFmGpHTsGdrNGp3p4SxAjjXEfnuK2e4ywYsRIVP0NeLbSAMHUcaX1EA==
   dependencies:
     constantinople "^3.1.2"
     doctypes "^1.1.0"
