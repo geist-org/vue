@@ -1,25 +1,26 @@
 <template lang="pug">
-.zi-toggle(@click="clickHandler" :class="[{ checked: !!model, disabled }, size]")
-  .inner(:style="{ width: innerSwitchRect, height: innerSwitchRect }")
+.zi-toggle(@click='clickHandler', :class='[{ checked: !!model, disabled }, size]', ref='ziToggle')
+  .inner(:style='{ width: innerSwitchRect, height: innerSwitchRect }')
 </template>
 
 <script>
 export default {
   name: 'zi-toggle',
-  beforeMount() {
-    const basic = '2px';
+  mounted() {
+    const width = this.$refs.ziToggle.getBoundingClientRect().height + 'px'
+    const basic = '2px'
     switch (this.size) {
       case 'mini':
-        this.innerSwitchRect=  `calc(.835rem - ${basic})`;
-        break;
-      case 'medium':  
-        this.innerSwitchRect=  `calc(.875rem - ${basic})`;   
-        break;
-      case 'large':    
-        this.innerSwitchRect=  `calc(1rem - ${basic})`; 
-        break;           
+        this.innerSwitchRect = `calc(${width} - ${basic})`
+        break
+      case 'medium':
+        this.innerSwitchRect = `calc(${width} - ${basic})`
+        break
+      case 'large':
+        this.innerSwitchRect = `calc(${width} - ${basic})`
+        break
       default:
-        break;
+        break
     }
   },
 
@@ -36,8 +37,8 @@ export default {
       default: 'medium',
       validator: function (value) {
         return ['mini', 'medium', 'large'].indexOf(value) !== -1
-      }
-    }
+      },
+    },
   },
 
   computed: {
