@@ -9,19 +9,7 @@ export default {
   mounted() {
     const width = this.$refs.ziToggle.getBoundingClientRect().height + 'px'
     const basic = '2px'
-    switch (this.size) {
-      case 'mini':
-        this.innerSwitchRect = `calc(${width} - ${basic})`
-        break
-      case 'medium':
-        this.innerSwitchRect = `calc(${width} - ${basic})`
-        break
-      case 'large':
-        this.innerSwitchRect = `calc(${width} - ${basic})`
-        break
-      default:
-        break
-    }
+    this.innerSwitchRect = `calc(${width} - ${basic})`
   },
 
   data: () => ({
