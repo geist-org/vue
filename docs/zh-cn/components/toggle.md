@@ -8,9 +8,10 @@
 
 <ex-footer edit-link="https://github.com/geist-org/vue/edit/master/docs/en-us/components/toogle.md">
 
-| 属性         | 描述             | 类型                        | 推荐值 | 默认    |
-| ------------ | ---------------- | --------------------------- | ------ | ------- |
-| **v-model**  | `v-model` 绑定值 | `string | number | boolean` | -      | -       |
-| **disabled** | 是否禁用         | `boolean`                   | -      | `false` |
+| 属性         | 描述             | 类型                        | 推荐值              | 默认     |
+| ------------ | ---------------- | --------------------------- | ------------------- | -------- |
+| **v-model**  | `v-model` 绑定值 | `string | number | boolean` | -                   | -        |
+| **disabled** | 是否禁用         | `boolean`                   | -                   | `false`  |
+| **size**     | 组件尺寸         | `string`                    | `mini/medium/large` | `medium` |
 
 </ex-footer>

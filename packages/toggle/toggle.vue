@@ -1,18 +1,32 @@
 <template lang="pug">
-.zi-toggle(@click="clickHandler" :class="{ checked: !!model, disabled }")
+.zi-toggle(@click='clickHandler', :class='[{ checked: !!model, disabled }, size]', ref='ziToggle')
+  .inner(:style='{ width: innerSwitchRect, height: innerSwitchRect }')
 </template>
 
 <script>
 export default {
   name: 'zi-toggle',
+  mounted() {
+    const width = this.$refs.ziToggle.getBoundingClientRect().height + 'px'
+    const basic = '2px'
+    this.innerSwitchRect = `calc(${width} - ${basic})`
+  },
 
   data: () => ({
     privateModel: undefined,
+    innerSwitchRect: '',
   }),
 
   props: {
     value: [String, Number, Boolean],
     disabled: Boolean,
+    size: {
+      type: String,
+      default: 'medium',
+      validator: function (value) {
+        return ['mini', 'medium', 'large'].indexOf(value) !== -1
+      },
+    },
   },
 
   computed: {

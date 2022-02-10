@@ -1,8 +1,9 @@
 <template lang="pug">
-.zi-more(@click="toggleHandler")
+.zi-more
   zi-button.zi-more-slot(
     circular size="small"
     :loading="loading"
+    @click="toggleHandler"
   ) {{ statusText }}
 </template>
 

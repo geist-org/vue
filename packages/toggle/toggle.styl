@@ -10,7 +10,26 @@
   width rem(28)
   cursor pointer
 
+  &.mini
+    height rem(13.36)
+    width rem(26.72)
+    border-radius rem(13.36)
+    line-height rem(13.36)
+
+  &.medium
+    height rem(14)
+    width rem(28)
+    border-radius rem(14)
+    line-height rem(14)
+
+  &.large
+    height rem(16)
+    width rem(32)
+    border-radius rem(16)
+    line-height rem(16)
+    
   &.checked
+    
     background-color var(--geist-success)
     border 1px solid var(--geist-success)
 
@@ -18,7 +37,7 @@
       background-color var(--accents-4)
       border-color var(--accents-4)
 
-    &:before
+    .inner
       right 0
       transform translate(0, -50%)
 
@@ -26,15 +45,12 @@
     background-color var(--accents-1)
     cursor not-allowed
 
-    &:before
+    .inner
       background-color var(--accents-2)
       border-color var(--accents-2)
 
-  &:before
-    content ''
+  .inner
     position absolute
-    width rem(12)
-    height rem(12)
     top 50%
     transition-property right, transform
     transition-duration .28s
@@ -45,3 +61,4 @@
     transition-timing-function cubic-bezier(0, 0, 0.2, 1)
     background-color var(--geist-background)
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.1)
+

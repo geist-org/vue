@@ -1,5 +1,8 @@
 <template lang="pug">
-zi-toggle(v-model="value")
+div
+  zi-toggle(v-model="value" size='mini' style="margin-right: 10px;")
+  zi-toggle(v-model="value" size='medium' style="margin-right: 10px;")
+  zi-toggle(v-model="value" size='large')
 </template>
 
 <script>
